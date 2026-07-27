@@ -1,0 +1,129 @@
+# Input Proxy
+
+**Global Binding:** `input`
+
+Polled keyboard and cursor state, read on demand instead of assembled from events.
+
+<Callout type="warning">
+    **Prefer `input.isKeyDown` over pairing `keyPressed` with `keyReleased` for held-key state**, such as "is the movement key currently down". A release that is never delivered — the view closes mid-hold, or the window loses focus while a key is down — leaves a press-counting surface stuck believing the key is still held, and that desync never repairs itself. A poll has no state to desync: it just asks the question again next frame.
+</Callout>
+
+---
+
+## Keyboard & Mouse State
+
+<Method
+    name="isKeyDown"
+    signature="boolean isKeyDown(int code)"
+    description="Whether a key is currently held down."
+    params={[
+        { name: "code", type: "int", desc: "A keys.* value (e.g. keys.W, keys.SPACE)." }
+    ]}
+    returns={{ type: "boolean", desc: "True while the key is held." }}
+/>
+
+<Method
+    name="isMouseDown"
+    signature="boolean isMouseDown(int button)"
+    description="Whether a mouse button is currently held down."
+    params={[
+        { name: "button", type: "int", desc: "0 = left, 1 = right, 2 = middle." }
+    ]}
+    returns={{ type: "boolean", desc: "True while the button is held." }}
+/>
+
+```javascript
+module.on("preGameTick", () => {
+    if (mc.getPlayer() === null) return;
+    if (input.isKeyDown(keys.LEFT_SHIFT) && input.isMouseDown(0)) {
+        // shift + left-click held, checked every tick — no press/release bookkeeping needed
+    }
+});
+```
+
+---
+
+## Cursor Position
+
+<Method
+    name="getMouseX"
+    signature="double getMouseX()"
+    description="Cursor X in GUI-scaled coordinates — the same space renderer draws in."
+    returns={{ type: "double", desc: "Cursor X." }}
+/>
+
+<Method
+    name="getMouseY"
+    signature="double getMouseY()"
+    description="Cursor Y in GUI-scaled coordinates."
+    returns={{ type: "double", desc: "Cursor Y." }}
+/>
+
+These read the same absolute cursor position available from `renderScreen`'s event payload (see [Render Events](../events#render-events)), but are callable from anywhere — a tick handler, a palette view, an island — without waiting for a render callback.
+
+---
+
+## Cursor Delta
+
+<Method
+    name="getMouseDeltaX"
+    signature="double getMouseDeltaX()"
+    description="Raw cursor X motion since the previous read. Draining: each call consumes the accumulated motion and the next call starts from zero. Reads 0 unless a pointerLock palette view is currently open."
+    returns={{ type: "double", desc: "X motion since the last read, or 0 with no pointer-lock view open." }}
+/>
+
+<Method
+    name="getMouseDeltaY"
+    signature="double getMouseDeltaY()"
+    description="Raw cursor Y motion since the previous read. Draining: each call consumes the accumulated motion and the next call starts from zero. Reads 0 unless a pointerLock palette view is currently open."
+    returns={{ type: "double", desc: "Y motion since the last read, or 0 with no pointer-lock view open." }}
+/>
+
+<Callout type="warning">
+    **The delta getters drain on read.** Each call returns the motion accumulated since the *previous* call and resets the accumulator to zero — call each one once per frame, not from multiple places, or the first caller each frame steals the motion the others expected to see.
+</Callout>
+
+<Callout type="info">
+    **Unbounded motion needs a `pointerLock` view.** `getMouseDeltaX()`/`getMouseDeltaY()` report real motion only while a [`pointerLock`](../ui/palette#pointer-lock) palette view is open, which hides and locks the cursor for FPS-style mouse-look. With no such view open they report `0` — the cursor is visible and its position is bounded by the window, so `getMouseX()`/`getMouseY()` are the right read instead. While the lock is held, a `pointerLock` view's own `mouseMoved` callback does **not** fire; read motion from these two getters instead.
+</Callout>
+
+```javascript
+palette.createView({
+    id: "free-look",
+    pointerLock: true,
+    render: function (x, y, w, h, dt) {
+        // mouseMoved does not fire here — the lock routes motion through these getters instead.
+        const dx = input.getMouseDeltaX();
+        const dy = input.getMouseDeltaY();
+        yaw += dx * sensitivity;
+        pitch += dy * sensitivity;
+    },
+});
+```
+
+---
+
+## Example
+
+```javascript
+script.registerModule({
+    name: "SprintPoll",
+    description: "Notifies while W and Shift are both held",
+}, (module) => {
+    let wasSprinting = false;
+
+    module.on("preGameTick", () => {
+        if (mc.getPlayer() === null) return;
+
+        const sprinting = input.isKeyDown(keys.W) && input.isKeyDown(keys.LEFT_SHIFT);
+        if (sprinting && !wasSprinting) {
+            notification.info("SprintPoll", "Sprinting");
+        }
+        wasSprinting = sprinting;
+    });
+});
+```
+
+<Callout type="info">
+    This pattern — deriving an edge (`sprinting && !wasSprinting`) from a polled state — is the held-key-safe replacement for a `keyPressed`/`keyReleased` pair: it can never get stuck in the "held" state, because every tick re-reads the true current state rather than trusting a stored flag that a lost event could leave stale.
+</Callout>

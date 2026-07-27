@@ -712,6 +712,52 @@ Each transform takes a `content` callback and brackets it with a `save`/`restore
 
 ---
 
+## Laying Out a Text Block
+
+`wrapText` / `textHeight` / `trimText` each work on a single line. Laying out a whole **block** — a paragraph that needs to flow line by line without spilling past its box — takes one more step: wrap once, then draw each returned line at its own `y`, advancing by a fixed line height between them.
+
+<Callout type="warning">
+    **`wrapText` returns a `ScriptList`, not a JS array.** Iterate it with `size()` / `get(i)` — not `.length` or `for..of` — inside a helper meant to be pasted into strict script code. (See [Types](../world/types#list) for the full `ScriptList` contract.)
+</Callout>
+
+```javascript
+// Draws `text` wrapped to maxWidth, one line per (size * 1.25), starting at (x, y).
+// Returns the total height the block consumed, so a caller can flow the next
+// block below it without guessing.
+function flowText(font, text, x, y, size, color, maxWidth) {
+    const lines = renderer.wrapText(font, text, maxWidth, size);
+    const lineHeight = size * 1.25;
+    const count = lines.size();
+    for (let i = 0; i < count; i++) {
+        renderer.text(font, lines.get(i), x, y + i * lineHeight, size, color);
+    }
+    return count * lineHeight;
+}
+```
+
+This is exactly the bug a fixed-fraction layout runs into: a card that reserves `y + h * 0.4` for a description assumes the description is always short enough to fit on one line. Once real copy comes in — a longer perk description, a name that wraps to two lines — that fixed `y` either overlaps the line below it or the text runs off the edge of the card. Measuring first and flowing from the previous block's returned height fixes it for any length of text, not just the one you tested with.
+
+Clip the whole block with `renderer.scissor` so that if a future change ever pushes a block taller than its box anyway, it's truncated cleanly inside the box instead of spilling across the rest of the screen:
+
+```javascript
+const cardX = 20, cardY = 20, cardW = 140, cardH = 90;
+renderer.roundedRect(cardX, cardY, cardW, cardH, 8, renderer.color(20, 20, 28));
+
+renderer.scissor(cardX, cardY, cardW, cardH, () => {
+    const pad = 10;
+    let y = cardY + pad;
+    y += flowText("productsans-bold", card.name, cardX + pad, y, 12, renderer.color(255, 255, 255), cardW - pad * 2);
+    y += 4;
+    flowText("productsans-medium", card.description, cardX + pad, y, 8, renderer.color(200, 200, 200), cardW - pad * 2);
+});
+```
+
+<Callout type="info">
+    A card whose text still doesn't fit at the default size can shrink to fit instead of clipping: call the measuring half of `flowText` (or just `renderer.wrapText(...).size()`) at a candidate `size`, shrink `size` while the result exceeds the available height, then draw once at the size that fits. Chomp's perk-draft cards, the flagship example in the public [scripts repository](https://github.com/opalclient/scripts), do exactly this — measure at full size, shrink in a loop until the block fits the card, then draw for real, all wrapped in a `renderer.scissor` as a last line of defense.
+</Callout>
+
+---
+
 ## Color Helpers
 
 <Callout type="info">

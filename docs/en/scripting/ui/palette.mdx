@@ -39,6 +39,13 @@ The `config` object accepts these members:
 | `keyPressed` | `function(keyCode, mods)` | no | Handles a key press. Return `true` to consume. |
 | `charTyped` | `function(codepoint)` | no | Handles a typed character. Return `true` to consume. |
 | `mouseClicked` | `function(localX, localY, button)` | no | Handles a click in content-local coordinates. Return `true` to consume. |
+| `mouseReleased` | `function(localX, localY, button)` | no | Handles a mouse-button release in content-local coordinates. Return `true` to consume. |
+| `mouseMoved` | `function(localX, localY)` | no | Handles cursor motion in content-local coordinates. Motion is not consumable — the callback has no return value. |
+| `mouseDragged` | `function(localX, localY, button, dragX, dragY)` | no | Handles motion with a button held. `dragX`/`dragY` are the displacement since the previous drag event, already in the same space as `localX`/`localY`. Return `true` to consume. |
+| `mouseScrolled` | `function(localX, localY, horizontal, vertical)` | no | Handles a scroll-wheel event in content-local coordinates. Return `true` to consume. |
+| `keyReleased` | `function(keyCode, mods)` | no | Handles a key release. `Esc` never reaches this handler — see [Key Codes](#key-codes). Return `true` to consume. |
+| `onClosed` | `function()` | no | Called once when the view is detached, for teardown: free images, stop timers, save state. |
+| `pointerLock` | `boolean` | no | Hides and locks the cursor while the view is open, for FPS-style mouse-look. `Esc` always releases the lock and closes the view first. See [Pointer Lock](#pointer-lock). |
 
 <Callout type="info">
     A callback that throws is reported to chat **once** and then suppressed: a misbehaving script can never tear down the palette frame. Returning a non-boolean from an input callback is treated as not-consumed.
@@ -90,7 +97,7 @@ Draw through the `renderer` global exactly as you would in a `renderScreen` even
 
 ## Input callbacks
 
-All three input callbacks are optional and return a boolean. Return `true` when you handle the event so it stops propagating.
+Every input callback is optional. `keyPressed`, `charTyped`, `mouseClicked`, `mouseReleased`, `mouseDragged`, `mouseScrolled`, and `keyReleased` return a boolean — return `true` when you handle the event so it stops propagating. `mouseMoved` carries motion only: it has nothing to consume, so it returns nothing.
 
 <Method
     name="keyPressed"
@@ -102,6 +109,21 @@ All three input callbacks are optional and return a boolean. Return `true` when 
     ]}
     returns={{ type: "boolean", desc: "True if the event was consumed." }}
 />
+
+<Method
+    name="keyReleased"
+    signature="boolean keyReleased(int keyCode, int mods)"
+    description="Called when a key is released while the view is focused. Esc never reaches this handler. Return true to consume the event."
+    params={[
+        { name: "keyCode", type: "int", desc: "The GLFW key code (compare with keys.UP, keys.SPACE, etc.)." },
+        { name: "mods", type: "int", desc: "Modifier bitmask: bit 0 = shift, bit 1 = ctrl." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the event was consumed." }}
+/>
+
+<Callout type="info">
+    For held-key state — a key you need to know is *down*, like movement input — prefer polling [`input.isKeyDown`](/scripting/core/input) over pairing `keyPressed` with `keyReleased`. A release that arrives while the view is closing, or after focus is lost, is never delivered, and a press-counting surface built on `keyPressed`/`keyReleased` desyncs permanently when that happens. A poll has no state to desync.
+</Callout>
 
 <Method
     name="charTyped"
@@ -125,9 +147,113 @@ All three input callbacks are optional and return a boolean. Return `true` when 
     returns={{ type: "boolean", desc: "True if the event was consumed." }}
 />
 
+<Method
+    name="mouseReleased"
+    signature="boolean mouseReleased(double localX, double localY, int button)"
+    description="Called when a mouse button is released inside the view. Coordinates are content-local. Return true to consume the event."
+    params={[
+        { name: "localX", type: "double", desc: "Release X relative to the content rectangle." },
+        { name: "localY", type: "double", desc: "Release Y relative to the content rectangle." },
+        { name: "button", type: "int", desc: "Mouse button: 0 = left, 1 = right, 2 = middle." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the event was consumed." }}
+/>
+
+<Method
+    name="mouseMoved"
+    signature="void mouseMoved(double localX, double localY)"
+    description="Called on cursor motion inside the view. Coordinates are content-local. Motion is not consumable, so there is nothing to return."
+    params={[
+        { name: "localX", type: "double", desc: "Cursor X relative to the content rectangle." },
+        { name: "localY", type: "double", desc: "Cursor Y relative to the content rectangle." }
+    ]}
+/>
+
+<Method
+    name="mouseDragged"
+    signature="boolean mouseDragged(double localX, double localY, int button, double dragX, double dragY)"
+    description="Called on motion with a mouse button held. dragX/dragY are the displacement since the previous drag event, already in the same content-local space as localX/localY. Return true to consume the event."
+    params={[
+        { name: "localX", type: "double", desc: "Cursor X relative to the content rectangle." },
+        { name: "localY", type: "double", desc: "Cursor Y relative to the content rectangle." },
+        { name: "button", type: "int", desc: "Mouse button held during the drag: 0 = left, 1 = right, 2 = middle." },
+        { name: "dragX", type: "double", desc: "X displacement since the previous drag event." },
+        { name: "dragY", type: "double", desc: "Y displacement since the previous drag event." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the event was consumed." }}
+/>
+
+<Method
+    name="mouseScrolled"
+    signature="boolean mouseScrolled(double localX, double localY, double horizontal, double vertical)"
+    description="Called on a scroll-wheel event inside the view. Coordinates are content-local. Return true to consume the event."
+    params={[
+        { name: "localX", type: "double", desc: "Cursor X relative to the content rectangle." },
+        { name: "localY", type: "double", desc: "Cursor Y relative to the content rectangle." },
+        { name: "horizontal", type: "double", desc: "Horizontal scroll amount." },
+        { name: "vertical", type: "double", desc: "Vertical scroll amount." }
+    ]}
+    returns={{ type: "boolean", desc: "True if the event was consumed." }}
+/>
+
 <Callout type="warning">
-    **Esc always closes the view.** The palette intercepts it before your handlers run, so `Esc` is never delivered to `keyPressed`. A surface can never trap the user. Do not rely on `keys.ESCAPE` reaching your view.
+    **Esc always closes the view.** The palette intercepts it before your handlers run, so `Esc` is never delivered to `keyPressed` or `keyReleased`. A surface can never trap the user. Do not rely on `keys.ESCAPE` reaching your view.
 </Callout>
+
+---
+
+## Teardown
+
+<Method
+    name="onClosed"
+    signature="void onClosed()"
+    description="Called exactly once when the view is detached from the palette, regardless of how it closed (Esc, openView into another view, or removeView). Use it for teardown: free loaded images with renderer.destroyImage, stop timers, and save any state the view should persist."
+/>
+
+```javascript
+let icon = null;
+
+palette.createView({
+    id: "gallery",
+    render: function (x, y, w, h, dt) {
+        if (icon === null) icon = renderer.loadImage("opal:textures/gallery.png");
+        if (icon.isValid()) renderer.image(icon, x, y, 32, 32, 4);
+    },
+    onClosed: function () {
+        if (icon !== null) renderer.destroyImage(icon); // runs no matter how the view closed
+        icon = null;
+    },
+});
+```
+
+---
+
+## Pointer Lock
+
+Set `pointerLock: true` on a view's config to hide and lock the cursor for the duration the view is open — the pattern for FPS-style mouse-look inside a palette view.
+
+<Callout type="warning">
+    **`Esc` always releases the lock and closes the view first.** There is no config that makes the lock outlive `Esc`, so a pointer-lock view can never trap the user behind a hidden cursor.
+</Callout>
+
+<Callout type="warning">
+    **`mouseMoved` does not fire while the lock is held.** Read motion from [`input.getMouseDeltaX()` / `input.getMouseDeltaY()`](/scripting/core/input) instead — they report unbounded raw motion only while a `pointerLock` view is open, and read `0` otherwise.
+</Callout>
+
+```javascript
+let yaw = 0, pitch = 0;
+
+palette.createView({
+    id: "mouse-look",
+    pointerLock: true,
+    render: function (x, y, w, h, dt) {
+        yaw += input.getMouseDeltaX() * 0.1;
+        pitch += input.getMouseDeltaY() * 0.1;
+        renderer.text("productsans-medium", "yaw " + yaw.toFixed(1) + " / pitch " + pitch.toFixed(1),
+            x + 10, y + 10, 8, renderer.color(255, 255, 255));
+    },
+});
+```
 
 ---
 

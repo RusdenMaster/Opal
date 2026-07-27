@@ -411,11 +411,13 @@ Raw keyboard and mouse input, plus the screen-resize hook. None are cancellable.
 | :--- | :--- | :--- |
 | `keyPress` | `KeyPressEvent` | A keyboard key is pressed. Carries the key code. |
 | `mousePress` | `MousePressEvent` | A mouse button is pressed. Carries the button code. |
+| `keyRelease` | `KeyReleaseEvent` | A keyboard key is released. Carries the key code. |
+| `mouseRelease` | `MouseReleaseEvent` | A mouse button is released. Carries the button code. |
 | `resolutionChange` | _(no readable data)_ | The GUI is resized (the framebuffer resolution changed). |
 
-Both `keyPress` and `mousePress` expose the code through the same accessor:
+All four of `keyPress`, `mousePress`, `keyRelease`, and `mouseRelease` expose the code through the same accessor:
 
-<Method name="getCode" signature="int getCode()" description="Returns the code of the key (keyPress) or mouse button (mousePress) that triggered the event. Compare it against the keys global." returns={{ type: "int", desc: "The key or mouse-button code." }} />
+<Method name="getCode" signature="int getCode()" description="Returns the code of the key (keyPress/keyRelease) or mouse button (mousePress/mouseRelease) that triggered the event. Compare it against the keys global." returns={{ type: "int", desc: "The key or mouse-button code." }} />
 
 ```javascript
 module.on("keyPress", (event) => {
@@ -426,10 +428,22 @@ module.on("mousePress", (event) => {
     if (event.getCode() === keys.MOUSE_1) { /* right click */ }
 });
 
+module.on("keyRelease", (event) => {
+    if (event.getCode() === keys.F7) { /* ... */ }
+});
+
+module.on("mouseRelease", (event) => {
+    if (event.getCode() === keys.MOUSE_1) { /* right click released */ }
+});
+
 module.on("resolutionChange", () => {
     // recompute layout that depends on screen size
 });
 ```
+
+<Callout type="info">
+    For **held-key state** — knowing whether a key is currently *down*, as opposed to reacting to the press/release edge — prefer polling [`input.isKeyDown`](core/input) over pairing `keyPress` with `keyRelease`. A dropped or reordered release leaves a press-counting surface stuck thinking the key is still held; a poll has no state to desync.
+</Callout>
 
 ## Cancelling Events
 
