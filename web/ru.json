@@ -1388,5 +1388,16 @@
       "genericTitle": "Creator link",
       "genericDescription": "This creator link isn't active. You can still get Opal Client, the premium Minecraft utility client."
     }
+  },
+  "errors": {
+    "title": "Системная ошибка",
+    "description": "Произошла непредвиденная ошибка. Наша команда уже уведомлена.",
+    "retry": "Повторить",
+    "home": "На главную",
+    "reference": "Идентификатор ошибки",
+    "card": {
+      "title": "Не удалось загрузить эту панель. Обновите страницу, чтобы повторить попытку.",
+      "retry": "Перезагрузить панель"
+    }
   }
 }
