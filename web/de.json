@@ -294,7 +294,8 @@
       "lastChanged": "Zuletzt geändert",
       "ago": "her",
       "changeable": "Änderbar alle 30 Tage",
-      "reset": "Zurücksetzen"
+      "reset": "Zurücksetzen",
+      "unbound": "Es ist noch keine Hardware-ID gebunden. Starte den Client einmal, um eine zu binden."
     },
     "docs": {
       "title": "Dokumentation",

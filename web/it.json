@@ -294,7 +294,8 @@
       "lastChanged": "Ultima modifica",
       "ago": "fa",
       "changeable": "Modificabile ogni 30 giorni",
-      "reset": "Reimposta"
+      "reset": "Reimposta",
+      "unbound": "Nessun ID hardware ancora associato. Avvia il client una volta per associarne uno."
     },
     "docs": {
       "title": "Documentazione",

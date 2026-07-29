@@ -294,7 +294,8 @@
       "lastChanged": "上次更改于",
       "ago": "前",
       "changeable": "每 30 天可更改一次",
-      "reset": "重置"
+      "reset": "重置",
+      "unbound": "尚未绑定硬件 ID。请先启动一次客户端以完成绑定。"
     },
     "docs": {
       "title": "文档",

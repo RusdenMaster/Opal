@@ -294,7 +294,8 @@
       "lastChanged": "Last changed",
       "ago": "ago",
       "changeable": "Changeable every 30 days",
-      "reset": "Reset"
+      "reset": "Reset",
+      "unbound": "No hardware ID is bound yet. Launch the client once to bind one."
     },
     "docs": {
       "title": "Documentation",

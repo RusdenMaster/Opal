@@ -294,7 +294,8 @@
       "lastChanged": "Son değiştirilme",
       "ago": "önce",
       "changeable": "30 günde bir değiştirilebilir",
-      "reset": "Sıfırla"
+      "reset": "Sıfırla",
+      "unbound": "Henüz bir donanım kimliği bağlanmadı. Bağlamak için istemciyi bir kez çalıştırın."
     },
     "docs": {
       "title": "Dokümantasyon",

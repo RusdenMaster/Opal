@@ -294,7 +294,8 @@
       "lastChanged": "Ostatnia zmiana",
       "ago": "temu",
       "changeable": "Można zmieniać co 30 dni",
-      "reset": "Resetuj"
+      "reset": "Resetuj",
+      "unbound": "Nie powiązano jeszcze żadnego identyfikatora sprzętu. Uruchom klienta raz, aby go powiązać."
     },
     "docs": {
       "title": "Dokumentacja",

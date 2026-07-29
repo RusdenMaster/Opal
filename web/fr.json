@@ -294,7 +294,8 @@
       "lastChanged": "Dernier changement",
       "ago": "il y a",
       "changeable": "Modifiable tous les 30 jours",
-      "reset": "Réinitialiser"
+      "reset": "Réinitialiser",
+      "unbound": "Aucun identifiant matériel n'est encore associé. Lancez le client une fois pour en associer un."
     },
     "docs": {
       "title": "Documentation",

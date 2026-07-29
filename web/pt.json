@@ -294,7 +294,8 @@
       "lastChanged": "Última alteração",
       "ago": "atrás",
       "changeable": "Alterável a cada 30 dias",
-      "reset": "Redefinir"
+      "reset": "Redefinir",
+      "unbound": "Nenhum ID de hardware vinculado ainda. Abra o cliente uma vez para vincular um."
     },
     "docs": {
       "title": "Documentação",
