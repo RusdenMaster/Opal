@@ -109,11 +109,11 @@
         },
         "userFriendly": {
           "title": "使いやすさ",
-          "description": "Opalはシンプルで使いやすいように設計されています。インストールしてまじですぐ使えます"
+          "description": "Opalはシンプルで使いやすいように設計されています。インストールしてまじですぐ使えます。"
         },
         "updates": {
           "title": "安定したアップデート",
-          "description": "新機能の最新情報をいち早くお届けするため、頻繁にアップデートしています"
+          "description": "新機能の最新情報をいち早くお届けするため、頻繁にアップデートしています。"
         },
         "compatibility": {
           "title": "互換性",
@@ -131,7 +131,7 @@
     },
     "media": {
       "title": "メディア",
-      "subtitle": "私達のコミュニティで作られた動画を見てください！"
+      "subtitle": "私達のコミュニティで作られた動画を見てください!"
     },
     "cta": {
       "title": "マインクラフトの体験を更に高めよう。あなたの旅はここから始まる。",
@@ -141,7 +141,7 @@
   "purchase": {
     "header": {
       "title": "お好みのエディションを選択してください",
-      "subtitle": "Opalのみ？それともTerminusを購入してOpalを無料で手に入れる？"
+      "subtitle": "Opalのみ?それともTerminusを購入してOpalを無料でゲットする?"
     },
     "chinaBanner": {
       "text": "Are you in China? Purchase from our official resellers for better support and payment options.",
