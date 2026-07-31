@@ -10,7 +10,7 @@
   "themes": [
     { "name": "default", "label": "Default" }
   ],
-  "sections": ["blog", "learn", "compare", "docs"],
+  "sections": ["blog", "learn", "compare"],
   "defaultLocale": "en",
   "products": {
     "opal": {
