@@ -1,7 +1,7 @@
 {
   "auth": {
-    "loginSuccess": "ログインに成功しました！!",
-    "loginFailed": "ログインに失敗しました。もう一度お試しください.",
+    "loginSuccess": "ログインに成功しました!",
+    "loginFailed": "ログインに失敗しました。もう一度お試しください。",
     "waiting": "ログイン待ち...",
     "dialog": {
       "title": "ログインが必要です",
