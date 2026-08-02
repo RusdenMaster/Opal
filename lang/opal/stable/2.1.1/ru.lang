@@ -1,0 +1,984 @@
+# ============================================================
+# Combat
+# ============================================================
+
+# Anti Bot
+module.anti_bot.name=Anti Bot
+module.anti_bot.description=Дополнительные Проверкаи при выборе цели.
+module.anti_bot.basic_checks.name=Базовые Проверки
+module.anti_bot.basic_checks.description=Группирует легковесные флаги на игрока, используемые для пометки сущности как бота для целей нацеливания.
+module.anti_bot.tablist.name=В Таблисте
+module.anti_bot.tablist.description=Помечает игрока как бота, если его UUID отсутствует в списке игроков на сервере.
+module.anti_bot.no_gamemode.name=Без Режима Игры (гм0, гм1, гм3)
+module.anti_bot.no_gamemode.description=Флаг, добавленный игроком в список вкладок без установленного игрового режима.
+module.anti_bot.no_properties.name=Без Свойств (Properties)
+module.anti_bot.no_properties.description=Флаг, добавляемый к списку игроков без каких-либо свойств профиля, таких как данные о скине.
+module.anti_bot.illegal_pitch.name=Неверный наклон головы (Pitch)
+module.anti_bot.illegal_pitch.description=Помечает игрока, у которого угол наклона головы превышает нормативное значение в 90 градусов.
+module.anti_bot.illegal_health.name=Неверное здоровье (Health)
+module.anti_bot.illegal_health.description=Флаг выставляется для игрока, у которого заявленное здоровье превышает максимальное.
+module.anti_bot.fake_entity_id.name=Фейковый ID Entity
+module.anti_bot.fake_entity_id.description=Помечает игрока, у которого идентификатор сущности отрицательный или превышает миллиард.
+module.anti_bot.duplicate_name.name=Дубликат имени
+module.anti_bot.duplicate_name.description=Помечает игрока, чье имя совпадает с именем другого онлайн-игрока, у которого другой UUID.
+module.anti_bot.invalid_ground.name=Неверный Ground
+module.anti_bot.invalid_ground.description=Группирует переключатель и порог для отметки игроков с непоследовательными передвижениями на земле.
+module.anti_bot.invalid_ground.enabled.name=Включен
+module.anti_bot.invalid_ground.enabled.description=Включает отслеживание игроков, сообщающих о ситуации на поле, при изменении их вертикального положения.
+module.anti_bot.invalid_ground.threshold.name=Порог (Threshold)
+module.anti_bot.invalid_ground.threshold.description=Устанавливает, сколько нарушений недопустимой зоны должно допустить игровое устройство, прежде чем его отметить.
+module.anti_bot.not_swung.name=Нет анимации Взмаха
+module.anti_bot.not_swung.description=Группирует переключатель и возраст для отметки игроков, которые никогда не отправляют анимацию замаха.
+module.anti_bot.not_swung.enabled.name=Включено
+module.anti_bot.not_swung.enabled.description=Включает отметку игроков, которые никогда не отправляли пакет анимации взмаха руки.
+module.anti_bot.not_swung.min_age.name=Мин. Возраст (Тиков)
+module.anti_bot.not_swung.min_age.description=Устанавливает минимальный возраст сущности для игрока, который никогда не бил, прежде чем его можно будет пометить.
+module.anti_bot.always_in_radius.name=Всегда в радиусе
+module.anti_bot.always_in_radius.description=Группирует переключатель и диапазон для отметки игроков, которые никогда не отходят на заданное расстояние.
+module.anti_bot.always_in_radius.enabled.name=Включено
+module.anti_bot.always_in_radius.enabled.description=Включает отметку игроков, которые не выходили за пределы установленного диапазона.
+module.anti_bot.always_in_radius.range.name=Дистанция
+module.anti_bot.always_in_radius.range.description=Устанавливает расстояние в блоках, которое игрок должен превысить, чтобы быть освобожденным от радиуса флага.
+module.anti_bot.latency_timing.name=Тайминг задержки (Latency)
+module.anti_bot.latency_timing.description=Группирует переключатель и порог для пометки игроков по времени обновления задержки, вызывающего подозрения.
+module.anti_bot.latency_timing.enabled.name=Включено
+module.anti_bot.latency_timing.enabled.description=Включает отметку игроков, у которых задержка падает до нуля в течение заданного временного интервала.
+module.anti_bot.latency_timing.threshold_ms.name=Порог (мс)
+module.anti_bot.latency_timing.threshold_ms.description=Устанавливает максимальное количество миллисекунд между обновлениями задержки для игрока, чтобы его пометить.
+
+# Aim Assist
+module.aim_assist.name=Aim Assist
+module.aim_assist.description=Помогает наводить прицел на ближайшие цели, используя легитные корректировки.
+module.aim_assist.mode.name=Режим
+module.aim_assist.mode.description=Выбирает уровень коррекции: Простой, Расширенный, Адаптивный или Чувствительный.
+module.aim_assist.silent.name=Сайлент
+module.aim_assist.silent.description=Применяет поправки прицеливания без перемещения видимой камеры; поворот отключает ваш обзор.
+module.aim_assist.targeting.name=Выбор Цели
+module.aim_assist.targeting.description=Группирует настройки выбора цели: часть тела, поле зрения, дальность, скорость и магнит.
+module.aim_assist.body_part.name=Части Тела
+module.aim_assist.body_part.description=Выбирает, на какую часть тела целиться: ближайшую, голову, грудь или ноги.
+module.aim_assist.fov.name=Угол обзора (FOV)
+module.aim_assist.fov.description=Устанавливает конус обзора в градусах, в пределах которого может быть выбран целевой объект.
+module.aim_assist.range.name=Радиус
+module.aim_assist.range.description=Устанавливает максимальное расстояние в блоках, на котором можно выбрать цель.
+module.aim_assist.speed.name=Скорость
+module.aim_assist.speed.description=Определяет, насколько сильно корректировка каждого тика тянется к цели, в процентах.
+module.aim_assist.magnet.name=Магнит
+module.aim_assist.magnet.description=Увеличивает силу притяжения, когда прицел уже близок к цели.
+module.aim_assist.visible_smoothing.name=Визуальное Сглаживание (Smoothing)
+module.aim_assist.visible_smoothing.description=Настройки видимой цели: коэффициент сглаживания и максимальный поворот за тик.
+module.aim_assist.smoothing.name=Сглаживание (Smoothing)
+module.aim_assist.smoothing.description=Определяет, как постепенно распределяются видимые исправления; более низкие значения обеспечивают более плавное перемещение.
+module.aim_assist.max_rotation/tick.name=Макс. Поворот за Тик
+module.aim_assist.max_rotation/tick.description=Определяет, на сколько градусов может повернуться видимая область за один тик.
+module.aim_assist.curve.name=Кривая (Curve)
+module.aim_assist.curve.description=Группирует расширенные настройки кривой: сглаживание кривой и ускорение.
+module.aim_assist.curve_smoothing.name=Сглаживание Кривой (Curve)
+module.aim_assist.curve_smoothing.description=Устанавливает делитель, формирующий кривую коррекции; более высокие значения облегчают движение.
+module.aim_assist.acceleration.name=Ускорение (Acceleration)
+module.aim_assist.acceleration.description=Устанавливает показатель кривой, который увеличивает коррекцию по мере увеличения отклонения от цели.
+module.aim_assist.randomization.name=Рандомизация
+module.aim_assist.randomization.description=Группирует настройки изменения на тик: скорость отклонения, джиттер и выброс.
+module.aim_assist.speed_variance.name=Разброс Скорости
+module.aim_assist.speed_variance.description=Устанавливает диапазон случайного отклонения (плюс/минус), добавляемого к скорости коррекции каждый тик.
+module.aim_assist.yaw_jitter.name=Тряска по Горизонтали (Yaw)
+module.aim_assist.yaw_jitter.description=Добавляет такое количество градусов случайного горизонтального отклонения к исправлениям.
+module.aim_assist.pitch_jitter.name=Тряска по Вертикали (Pitch)
+module.aim_assist.pitch_jitter.description=Добавляет такое количество градусов случайной вертикальной вариации к исправлениям.
+module.aim_assist.overshoot.name=Промах (Overshoot)
+module.aim_assist.overshoot.description=Давайте допустим небольшое отклонение цели на несколько градусов, прежде чем зафиксировать положение.
+module.aim_assist.adaptive.name=Адаптивный
+module.aim_assist.adaptive.description=Группирует адаптивные настройки: максимальную мощность и адаптивную чувствительность.
+module.aim_assist.max_strength.name=Макс. Сила
+module.aim_assist.max_strength.description=Режим адаптивного множителя может применяться для регулировки силы коррекции.
+module.aim_assist.adaptive_sensitivity.name=Адаптивная Чувстительность
+module.aim_assist.adaptive_sensitivity.description=Определяет, насколько быстро адаптивный режим увеличивает сложность до максимального предела.
+module.aim_assist.sensitivity.name=Чувствительность
+module.aim_assist.sensitivity.description=Группирует настройки режима чувствительности: множитель, поле зрения при активации и масштабирование расстояния.
+module.aim_assist.sens_multiplier.name=Множитель Чувствительности
+module.aim_assist.sens_multiplier.description=Умножает чувствительность мыши на это значение при наведении на цель.
+module.aim_assist.activation_fov.name=FOV Активация
+module.aim_assist.activation_fov.description=Уменьшение чувствительности применяется только тогда, когда цель находится в пределах конуса обзора.
+module.aim_assist.scale_with_distance.name=Масштабировать по Дистанции
+module.aim_assist.scale_with_distance.description=Уменьшение чувствительности усиливается по мере приближения прицеливания к центру цели.
+module.aim_assist.requirements.name=Требования
+module.aim_assist.requirements.description=Группирует условия: требуется клик, требуется оружие, проверка видимости, только по горизонтали.
+module.aim_assist.require_click.name=Требовать Клик
+module.aim_assist.require_click.description=Требуется удерживать клавишу атаки, чтобы применить корректировки помощи при наведении.
+module.aim_assist.require_weapon.name=Требовать Оружие
+module.aim_assist.require_weapon.description=Требуется удерживать оружие, чтобы применить корректировки помощи при наведении.
+module.aim_assist.visibility_check.name=Визуальный Проверка
+module.aim_assist.visibility_check.description=Только помогает достигать целей, не заблокированных вашим полем зрения.
+module.aim_assist.horizontal_only.name=Только Горизонтально
+module.aim_assist.horizontal_only.description=Ограничивает корректировки горизонтальным углом рыскания, оставляя вертикальный угол тангажа без изменений.
+module.aim_assist.draw_fov.name=Рисовать Радиус FOV
+module.aim_assist.draw_fov.description=Отображает на экране круг, показывающий конус FOV, заданный в настройках.
+module.aim_assist.targets.name=Цели
+module.aim_assist.targets.description=Определяет, какие типы сущностей могут быть выбраны в качестве цели.
+
+# Auto Clicker
+module.auto_clicker.name=Auto Clicker
+module.auto_clicker.description=Автоматически кликает за тебя.
+module.auto_clicker.mode.name=Режим
+module.auto_clicker.mode.description=Выбирает модель клик-рейта: Простая, Расширенный диапазон или Адаптивная самонастройка.
+module.auto_clicker.cps.name=КПС
+module.auto_clicker.cps.description=Устанавливает целевое количество кликов в секунду, используемое в простом режиме.
+module.auto_clicker.cps_range.name=Разброс КПС
+module.auto_clicker.cps_range.description=Устанавливает границы минимальной и максимальной частоты кликов в секунду, рандомизированные между каждым кликом.
+module.auto_clicker.variance_refresh.name=Обновление разброса
+module.auto_clicker.variance_refresh.description=Определяет, сколько кликов должно пройти, прежде чем будет пересчитан множитель дисперсии скорости.
+module.auto_clicker.drops.name=Пропуски (Drops)
+module.auto_clicker.drops.description=Разрешает кратковременные незначительные отклонения ниже целевого показателя кликабельности.
+module.auto_clicker.drop_chance.name=Шанс Пропуска
+module.auto_clicker.drop_chance.description=Устанавливает процентный шанс при каждом клике применения понижающего коэффициента.
+module.auto_clicker.spikes.name=Скачки (Spikes)
+module.auto_clicker.spikes.description=Позволяет периодически кратковременно превышать целевую частоту кликов.
+module.auto_clicker.spike_chance.name=Шанс Скачка
+module.auto_clicker.spike_chance.description=Устанавливает процентный шанс при каждом клике активации кратковременного увеличения скорости.
+module.auto_clicker.threshold.name=Порог (Threshold)
+module.auto_clicker.threshold.description=Устанавливает оценку "попадание в цель". Адаптивный режим должен достичь этого значения, прежде чем он начнет корректировать свой коэффициент кликабельности.
+module.auto_clicker.increment.name=Прирост
+module.auto_clicker.increment.description=Определяет, насколько адаптивный режим изменяет частоту кликов и оценку при каждом изменении.
+module.auto_clicker.mouse_buttons.name=Кнопки Мыши
+module.auto_clicker.mouse_buttons.description=Выбирает, какие кнопки мыши, левую и правую, активирует автокликер.
+module.auto_clicker.require_pressed.name=Только При Зажатии
+module.auto_clicker.require_pressed.description=Автокликер нажимает кнопку только тогда, когда вы физически удерживаете эту кнопку.
+module.auto_clicker.weapons_only.name=Только с Оружием
+module.auto_clicker.weapons_only.description=Только клики при удержании меча или топора в основной руке.
+module.auto_clicker.block_hit.name=Блок Хит
+module.auto_clicker.block_hit.description=Позволяет автокликеру продолжать работу, даже когда вы его блокируете.
+module.auto_clicker.requirements.name=Требования
+module.auto_clicker.requirements.description=Группирует условия клика: требуется нажатие, только оружие и блокировка попадания.
+
+# Kill Aura
+module.kill_aura.name=Kill Aura
+module.kill_aura.description=Автоматически атакует сущностей возле вас.
+module.kill_aura.mode.name=Режим
+module.kill_aura.mode.description=Выбирает, прицеливаться в одну цель или переключаться между целями в зависимости от их здоровья и недавности.
+module.kill_aura.rotation_range.name=Радиус Поворота
+module.kill_aura.rotation_range.description=Устанавливает максимальное расстояние в блоках, на котором цель ищется и поворачивается.
+module.kill_aura.swing_range.name=Дистанция Взмаха (Swing)
+module.kill_aura.swing_range.description=Устанавливает максимальное расстояние в блоках, на котором выдаются дополнительные махи фальшивой рукой.
+module.kill_aura.hide_fake_swings.name=Прятать Фейковые Взмахы (Swing)
+module.kill_aura.hide_fake_swings.description=Прекращает отрисовку ложных маятников, когда вы не смотрите непосредственно на объект.
+module.kill_aura.require_attack_key.name=Только при Зажатой Атаке
+module.kill_aura.require_attack_key.description=Модуль работает только пока удерживается клавиша атаки.
+module.kill_aura.require_weapon.name=Только с Оружием
+module.kill_aura.require_weapon.description=Модуль работает только тогда, когда в руках находится меч, топор или кирка.
+module.kill_aura.override_raycast.name=Только Raycast
+module.kill_aura.override_raycast.description=Заменяет результат попадания перекрестия на выбранную цель, чтобы атаки регистрировались именно на ней.
+module.kill_aura.tick_lookahead.name=Предсказание Тиков (Lookahead)
+module.kill_aura.tick_lookahead.description=Сохраняет текущую ориентацию и подтверждает цель лучевым лучом перед атакой.
+module.kill_aura.fov.name=Угол Обзора (FOV)
+module.kill_aura.fov.description=Ограничьте нацеливание сущностями в пределах угла обзора в градусах, находящимися перед вами.
+module.kill_aura.teams.name=Проверка Команды
+module.kill_aura.teams.description=Исключает возможность выбора игроков из вашей команды.
+module.kill_aura.visuals.name=Визуалы
+module.kill_aura.visuals.description=Переключает визуальные индикаторы, включая рамку вокруг текущей цели.
+module.kill_aura.requirements.name=Требования
+module.kill_aura.requirements.description=Группирует условия "удерживать оружие" и "удерживать клавишу атаки", которые ограничивают модуль.
+
+# Velocity
+module.velocity.name=Velocity
+module.velocity.description=Уменьшает или полностью убирает отдачу игрока при получении Взмахов.
+module.velocity.mode.name=Режим
+module.velocity.mode.description=Выбирает режим понижения скорости: Нормальный, Watchdog или MushMC.
+
+# Attack Delay
+module.attack_delay.name=Attack Delay
+module.attack_delay.description=Убирает задержку после промаха при атаке.
+module.attack_delay.max_cooldown.name=Макс. Кулдаун
+module.attack_delay.max_cooldown.description=Устанавливает максимальное количество тиков времени восстановления после промаха, где 0 отключает его.
+
+# Auto Head
+module.auto_head.name=Auto Head
+module.auto_head.description=Автоматически съедает золотые головы (Golden Heads)
+module.auto_head.heal_delay.name=Исцелить задержку
+module.auto_head.heal_delay.description=Устанавливает время ожидания в миллисекундах между поеданием золотых голов модулем.
+module.auto_head.health.name=Здоровье
+module.auto_head.health.description=Устанавливает процент здоровья, ниже которого модуль начинает восстанавливать здоровье, съев золотую голову.
+
+# Block
+module.block.name=Block
+module.block.description=Позволяет совершать нелегитимные действия во время блока или блокирует автоматически.
+module.block.blocking.name=Блокирование
+module.block.blocking.description=Позволяет игроку продолжать махать оружием и атаковать, удерживая блок.
+module.block.enabled.name=Включено
+module.block.enabled.description=Включает автоматическую блокировку мечом или щитом, когда цель находится в зоне досягаемости.
+module.block.require_attack_key.name=Только при Зажатой Атаке
+module.block.require_attack_key.description=Ограничивает автоблокировку, позволяя активировать её только при нажатой клавише атаки.
+module.block.block_range.name=Дистанция Блока
+module.block.block_range.description=Устанавливает расстояние в блоках, в пределах которого цель активирует автоматическую блокировку.
+module.block.allow_swing_while....name=Разрешить Взмах Когда...
+module.block.allow_swing_while....description=Группирует переключатель, позволяющий игроку махать и атаковать во время блокирования.
+module.block.auto_block.name=Авто Блок
+module.block.auto_block.description=Группирует переключатель автоблокировки, а также поднастройки клавиши атаки и дальности.
+
+# Lag Range
+module.lag_range.name=Lag Range
+module.lag_range.description=Задерживает пакеты при приближении к игроку для гарантированного удара.
+module.lag_range.start_buffering_at.name=Начать Буферизацию При
+module.lag_range.start_buffering_at.description=Расстояние в блоках до цели, на котором начинают задерживать исходящие пакеты.
+module.lag_range.release_range.name=Дистанция Выпуска Пакетов
+module.lag_range.release_range.description=Расстояние в блоках до цели, на котором удерживаемые пакеты освобождаются.
+module.lag_range.release_timer.name=Таймер Выпуска
+module.lag_range.release_timer.description=Максимальные пакеты миллисекунд удерживаются перед освобождением, независимо от дальности.
+module.lag_range.release_options.name=Опции Выпуска
+module.lag_range.release_options.description=Группирует диапазон выпуска и таймер выпуска, которые определяют, когда удерживаемые пакеты освобождаются.
+
+# Piercing
+module.piercing.name=Piercing
+module.piercing.description=Позволяет бить игроков сквозь блоки.
+
+# Reach
+module.reach.name=Reach
+module.reach.description=Позволяет взаимодействовать с объектами или атаковать на большем расстоянии.
+module.reach.entity_interaction_range.name=Дистанция Атаки Сущности
+module.reach.entity_interaction_range.description=Устанавливает максимальное расстояние в блоках, на котором можно атаковать или взаимодействовать с сущностями.
+module.reach.block_interaction_range.name=Дистанция Взаимодействия с Блоками
+module.reach.block_interaction_range.description=Устанавливает максимальное расстояние в блоках, на котором можно взаимодействовать с блоками.
+
+# TP Aura
+module.tp_aura.name=TP Aura
+module.tp_aura.description=Использует эксплоит телепортация на Hypixel.
+
+# WTap
+module.wtap.name=WTap
+module.wtap.description=Сбрасывает спринт, чтобы сильнее откидывать противника.
+module.wtap.chance.name=Шанс
+module.wtap.chance.description=Вероятность срабатывания клавиши направления при данной атаке.
+module.wtap.delay_ticks.name=Задержка Тиков
+module.wtap.delay_ticks.description=Время задержки в тиках после атаки, прежде чем отпустить клавишу направления.
+module.wtap.release_ticks.name=Тики Освобождения Клавиши
+module.wtap.release_ticks.description=Время удержания клавиши вперед перед возобновлением движения.
+module.wtap.only_sprinting.name=Только при Спринте
+module.wtap.only_sprinting.description=Выпускается только во время спринта игрока.
+module.wtap.only_ground.name=Только на Поверхности
+module.wtap.only_ground.description=Выпускает только тогда, когда игрок находится на земле.
+
+# ============================================================
+# Movement
+# ============================================================
+
+# Clipper
+module.clipper.name=Clipper
+module.clipper.description=Дает возможность проходить сквозь блоки вверх или вниз.
+module.clipper.limit_distance.name=Лимит Дистанции
+module.clipper.limit_distance.description=Ограничьте сканирование вверх-вниз примерно десятью блоками, вместо того чтобы доходить до максимальной высоты построения мира.
+module.clipper.upwards.name=Вверх
+module.clipper.upwards.description=Позволяет сканировать и отмечать следующую платформу выше вас, находясь на земле.
+
+# Flight
+module.flight.name=Flight
+module.flight.description=У тебя вырастают крылья в ИРЛ.
+module.flight.mode.name=Режим
+module.flight.mode.description=Выбирает стратегию полёта: свободный полёт Vanilla, планирование Fireball или Air Walk.
+
+# Long Jump
+module.long_jump.name=Long Jump
+module.long_jump.description=Позваляет прыгать дальше.
+module.long_jump.mode.name=Режим
+module.long_jump.mode.description=Выбирает, какую технику запуска модуль использует для дальнейшего продвижения.
+
+# No Slow
+module.no_slow.name=No Slow
+module.no_slow.description=Убирает ваннильные замедления, например, при использовании предметов.
+module.no_slow.mode.name=Режим
+module.no_slow.mode.description=Выбирает стратегию устранения задержек, которую модуль применяет при использовании предмета.
+module.no_slow.allow_sprinting.name=Разрешить Спринт
+module.no_slow.allow_sprinting.description=Позволяет продолжать бег на высокой скорости при использовании предмета, не снижая скорость передвижения.
+
+# Movement Recorder
+module.movement_recorder.name=Movement Recorder
+module.movement_recorder.description=Записывает и воспроизводит движения игрока.
+module.movement_recorder.show_breadcrumbs.name=Показывать след (Breadcrumbs)
+module.movement_recorder.show_breadcrumbs.description=Оставляет за собой хлебную дорожку, прослеживая записанный маршрут по миру.
+module.movement_recorder.show_block_highlights.name=Подстветка Блоков
+module.movement_recorder.show_block_highlights.description=Отмечает блоки начала и конца записи, подсвечивая их затухающим светом в мире.
+module.movement_recorder.dynamic_island.name=Dynamic Island
+module.movement_recorder.dynamic_island.description=Отображает виджет динамического управления островом записи на устройстве во время записи или воспроизведения.
+module.movement_recorder.mode.name=Режим
+module.movement_recorder.mode.description=Выбирает, записывает ли регистратор движение или воспроизводит его.
+module.movement_recorder.loop_playback.name=Зациклить воспроизведение
+module.movement_recorder.loop_playback.description=Воспроизведение начинается заново с самого начала, когда запись заканчивается.
+module.movement_recorder.teleport_to_start.name=Телепорт в Начало
+module.movement_recorder.teleport_to_start.description=Устанавливает вашу позицию непосредственно в начальную точку записи при начале воспроизведения.
+module.movement_recorder.wait_for_position.name=Ждать Позиции
+module.movement_recorder.wait_for_position.description=Ждет, пока вы не достигнете точки начала, прежде чем начать воспроизведение.
+module.movement_recorder.rotation_speed.name=Скорост Поворота
+module.movement_recorder.rotation_speed.description=Устанавливает скорость вращения вида к зафиксированным углам во время воспроизведения.
+module.movement_recorder.default_name.name=Имя по Умолчанию
+module.movement_recorder.default_name.description=Устанавливает имя по умолчанию, присваиваемое новому сохранению записи.
+module.movement_recorder.path_detail.name=Детализация Пути
+module.movement_recorder.path_detail.description=Определяет, насколько подробно сохраняется записанный путь при его упрощении.
+module.movement_recorder.filter_by_server.name=Фильтровать по Серверу
+module.movement_recorder.filter_by_server.description=Ограничивает список записей записями, сохраненными на текущем сервере.
+module.movement_recorder.auto_trim.name=Авто Обрезка
+module.movement_recorder.auto_trim.description=Автоматически обрезает неподвижные кадры с концов записи.
+module.movement_recorder.trim_threshold.name=Порог Обрезки
+module.movement_recorder.trim_threshold.description=Устанавливает расстояние перемещения, ниже которого кадры считаются неподвижными для автоматической обрезки.
+module.movement_recorder.show_info_panel.name=Инфо-Панель
+module.movement_recorder.show_info_panel.description=Отображает панель HUD-информации рекордера на экране.
+module.movement_recorder.panel_pos.name=Позиция Панели
+module.movement_recorder.panel_pos.description=Устанавливает положение панели информации рекордера на экране.
+module.movement_recorder.visuals.name=Визуалы
+module.movement_recorder.visuals.description=Группирует переключатели хлебных крошек, выделения блока и визуальных элементов Dynamic Island.
+module.movement_recorder.playback.name=Воспроизведение
+module.movement_recorder.playback.description=Группирует настройки цикла, телепортации, ожидания достижения позиции и воспроизведения скорости вращения.
+module.movement_recorder.recording.name=Запись
+module.movement_recorder.recording.description=Группирует имя по умолчанию, сведения о пути, фильтр сервера и настройки обрезки записи.
+module.movement_recorder.overlay.name=Оверлей
+module.movement_recorder.overlay.description=Группирует переключатель панели информации и настройки ее положения на экране.
+
+# Speed
+module.speed.name=Speed
+module.speed.description=Ты становишься соником ИРЛ.
+module.speed.mode.name=Режим
+module.speed.mode.description=Выбирает стратегию скорости, которую модуль применяет для увеличения горизонтального перемещения.
+
+# Eagle
+module.eagle.name=Eagle
+module.eagle.description=Автоматически приседает на краю блоков (для Ninja Bridge).
+module.eagle.only_blocks.name=Только Блоки
+module.eagle.only_blocks.description=Только авто-скрытие, когда вы держите размещаемый блок в основной или дополнительной руке.
+module.eagle.only_right_click.name=Только при ПКМ
+module.eagle.only_right_click.description=Только авто-подкрадывание, пока вы удерживаете клавишу использования (правая кнопка мыши).
+
+# Fast Stop
+module.fast_stop.name=Fast Stop
+module.fast_stop.description=Заставляет останавливаться быстрее.
+module.fast_stop.conditions.name=Условия
+module.fast_stop.conditions.description=Выбирает, применяется ли более быстрое замедление на земле, в воздухе или в обоих случаях.
+module.fast_stop.multiplier.name=Множитель
+module.fast_stop.multiplier.description=Устанавливает коэффициент 0-1, на который масштабируется горизонтальная скорость после отпускания движения.
+
+# Inventory Move
+module.inventory_move.name=Inventory Move
+module.inventory_move.description=Позволяет двигаться с открытым инвентарем.
+
+# Jump Cooldown
+module.jump_cooldown.name=Jump Cooldown
+module.jump_cooldown.description=Модифицирует дефолтный кулдаун прыжка.
+module.jump_cooldown.max_cooldown.name=Макс. Кулдаун
+module.jump_cooldown.max_cooldown.description=Устанавливает количество тиков между прыжками, где 0 убирает задержку, и прыжок происходит каждый тик.
+
+# Movement Fix
+module.movement_fix.name=Movement Fix
+module.movement_fix.description=Синхронизирует ваше движение с направлением взгляда.
+module.movement_fix.mode.name=Режим
+module.movement_fix.mode.description=Выбрать Нормальный (проецировать вход в направлении вашего взгляда) или только Спринт (зафиксировать спринт).
+module.movement_fix.packet_only.name=Только Пакеты
+module.movement_fix.packet_only.description=В режиме только Sprint, пакет, отправляемый наружу, лишается Sprint вместо информации о состоянии клиента.
+
+# Phase
+module.phase.name=Phase
+module.phase.description=Позволяет ходить сквозь блоки.
+module.phase.auto_disable.name=Авто Отключение
+module.phase.auto_disable.description=Выключите модуль, когда пройдете сквозь стену и выйдете из блока.
+
+# Safe Walk
+module.safe_walk.name=Safe Walk
+module.safe_walk.description=Позволяет ходить по краям блоков без опаски упасть вниз.
+module.safe_walk.holding_block_check.name=Проверять на Наличие Блока в Руке
+module.safe_walk.holding_block_check.description=Предотвращает падение с краев только тогда, когда вы держите размещаемый предмет блока.
+module.safe_walk.direction_check.name=Проверка на Взгляд
+module.safe_walk.direction_check.description=Предотвращает выход за края только во время нажатия клавиши движения.
+
+# Spider
+module.spider.name=Spider
+module.spider.description=Позволяет карапкаться по стенам.
+module.spider.speed.name=Скорость
+module.spider.speed.description=Устанавливает скорость подъема, применяемую при нажатии на стену для лазания по ней.
+
+# Sprint
+module.sprint.name=Sprint
+module.sprint.description=Модифицирует логику Спринта.
+module.sprint.omnidirectional.name=Во всех направлениях (Omnidirectional)
+module.sprint.omnidirectional.description=Позволяет спринтовать в любом направлении движения, а не только при движении вперёд.
+module.sprint.keep_sprint.name=Keep Sprint
+module.sprint.keep_sprint.description=Предотвращает прерывание спринта действиями, которые обычно его отменяют.
+
+# Strafe
+module.strafe.name=Strafe
+module.strafe.description=Позволяет стрейфить больше.
+module.strafe.conditions.name=Условия
+module.strafe.conditions.description=Ограничивает коррекцию скольжения, позволяя применять её только когда вы на земле, в воздухе или в обоих случаях.
+module.strafe.ncp_max.name=Макс. NCP
+module.strafe.ncp_max.description=Повышает скорость передвижения до фиксированного предела при перемещении в стороны.
+module.strafe.strength.name=Сила
+module.strafe.strength.description=Насколько сильно ваше движение перенаправляется в сторону направления ввода, в процентах.
+
+# Target Strafe
+module.target_strafe.name=Target Strafe
+module.target_strafe.description=Позволяет кружиться вокруг противника.
+module.target_strafe.strafe_mode.name=Режим Стрейфа
+module.target_strafe.strafe_mode.description=Выбирает, как движение вращается вокруг цели: описывая круги вокруг неё или оставаясь прямо позади неё.
+module.target_strafe.requirements.name=Требования
+module.target_strafe.requirements.description=Устанавливается при скольжении: только во время удержания кнопки прыжка и только при включенном модуле Скорости.
+module.target_strafe.range.name=Дистанция
+module.target_strafe.range.description=Устанавливает расстояние в блоках, которое сохраняется от цели при перемещении вокруг неё.
+module.target_strafe.show_ring.name=Показывать Кольцо
+module.target_strafe.show_ring.description=Рисует круг на земле вокруг цели, пока вы активно перемещаетесь в стороны.
+module.target_strafe.auto_3rd_person.name=Авто-вид от 3 Лица
+module.target_strafe.auto_3rd_person.description=Переключает камеру в третий режим во время перемещения в стороны и возвращает в первый режим после этого.
+
+# ============================================================
+# Utility
+# ============================================================
+
+# Disabler
+module.disabler.name=Disabler
+module.disabler.description=Позволяет уменьшать силу Анти-Чита
+module.disabler.mode.name=Режим
+module.disabler.mode.description=Выбирает, какой античит отключать: Watchdog или режим Cubecraft.
+
+# Chest Stealer
+module.chest_stealer.name=Chest Stealer
+module.chest_stealer.description=Берет только полезные или улучшенные вещи из сундуков.
+module.chest_stealer.smart.name=Smart-Режим
+module.chest_stealer.smart.description=Берёт только вещи, которые стоят дороже того, что у тебя уже есть, а не хватает всё подряд.
+module.chest_stealer.highlight_items.name=Подсвечивать Предметы
+module.chest_stealer.highlight_items.description=Визуально отмечает слоты в нагруднике, которые умный режим считает стоящими внимания.
+module.chest_stealer.delay.name=Задержка
+module.chest_stealer.delay.description=Устанавливает случайную задержку в миллисекундах между каждым предметом, извлеченным из сундука.
+
+# Auto Armor
+module.auto_armor.name=Auto Armor
+module.auto_armor.description=Автоматически надевает лучшую броню.
+module.auto_armor.delay.name=Задержка
+module.auto_armor.delay.description=Устанавливает задержку в миллисекундах между каждым действием по экипировке или выпадению брони.
+
+# Inventory Manager
+module.inventory_manager.name=Inventory Manager
+module.inventory_manager.description=Управляет вашим инвантарем.
+module.inventory_manager.delay.name=Задержка
+module.inventory_manager.delay.description=Устанавливает миллисекунды между перемещениями инвентаря, случайным образом в заданном диапазоне.
+module.inventory_manager.slots.name=Слоты
+module.inventory_manager.slots.description=Выбирает, какие типы предметов будут расположены в предпочитаемых слотах быстрого доступа.
+module.inventory_manager.sword_slot.name=Слот Меча
+module.inventory_manager.sword_slot.description=Устанавливает ячейку быстрого доступа (1-9), в которую перемещается лучший меч.
+module.inventory_manager.pickaxe_slot.name=Слот Кирки
+module.inventory_manager.pickaxe_slot.description=Устанавливает ячейку быстрого доступа (1-9), в которую перемещается лучший кирка.
+module.inventory_manager.axe_slot.name=Слот Топора
+module.inventory_manager.axe_slot.description=Устанавливает ячейку быстрого доступа (1-9), в которую перемещается лучший топор.
+module.inventory_manager.block_slot.name=Слот Блоков
+module.inventory_manager.block_slot.description=Устанавливает ячейку быстрого доступа (1-9), в которую перемещается самый большой блок.
+
+# No Fall
+module.no_fall.name=No Fall
+module.no_fall.description=Убирает дамаг от Падения
+module.no_fall.mode.name=Режим
+module.no_fall.mode.description=Выбирает стратегию «без падения»: подменяет флаг «на земле» или воспроизводит действия наблюдателя.
+
+# Anti Void
+module.anti_void.name=Anti Void
+module.anti_void.description=Предотврощает падения в пустоту.
+
+# Auto Chest
+module.auto_chest.name=Auto Chest
+module.auto_chest.description=Автоматически складывает и забирает ресурсы из сундуков.
+module.auto_chest.ticks.name=Задержка Тиков
+module.auto_chest.ticks.description=Устанавливает количество тиков, которые проходят между перемещением каждого ресурса в сундук или из него.
+module.auto_chest.auto_deposit.name=Авто-Депозит
+module.auto_chest.auto_deposit.description=Начинает автоматически размещать ваши ресурсы сразу после открытия экрана сундука.
+
+# Auto Hypixel
+module.auto_hypixel.name=Auto Hypixel
+module.auto_hypixel.description=Полезные приколдесы для Hypixel.
+module.auto_hypixel.enabled.name=Включено
+module.auto_hypixel.enabled.description=Включает модуль Auto Hypixel, активируя удобные функции Hypixel.
+module.auto_hypixel.message.name=Сообщения
+module.auto_hypixel.message.description=Устанавливает текст, отправленный в общем чате, в качестве сообщения GG после окончания игры.
+module.auto_hypixel.delay.name=Задержка
+module.auto_hypixel.delay.description=Устанавливает количество секунд ожидания перед отправкой команды /play для повторной постановки в очередь, от 0 до 8.
+module.auto_hypixel.auto_leave_on_ban.name=Авто Выход при Бане
+module.auto_hypixel.auto_leave_on_ban.description=Запускается /l, чтобы покинуть текущую игру, когда игрок исключён из неё.
+module.auto_hypixel.auto_gg.name=Auto GG
+module.auto_hypixel.auto_gg.description=Отправляет ваше сообщение в общий чат при обнаружении строки кармы в конце игры.
+module.auto_hypixel.auto_play.name=Авто Заход в Игру
+module.auto_hypixel.auto_play.description=Работает /играет в текущем режиме, когда вы попадаете в очередь или игра заканчивается.
+
+# Auto Tool
+module.auto_tool.name=Auto Tool
+module.auto_tool.description=Автоматически выбирает лучший инструмент в хотбаре.
+module.auto_tool.only_when_sneaking.name=Только при Приседе
+module.auto_tool.only_when_sneaking.description=Ограничивает автоматическое переключение инструмента только во время скрытного перемещения.
+module.auto_tool.requirements.name=Требования
+module.auto_tool.requirements.description=Группирует условия, которые должны быть выполнены до переключения модуля на другой инструмент.
+
+# Blink
+module.blink.name=Blink
+module.blink.description=Временно блокирует ваши сетевые пакеты.
+module.blink.direction.name=Направление
+module.blink.direction.description=Выбирает, сохранять ли входящие пакеты, исходящие пакеты или оба направления.
+module.blink.pulse.name=Pulse
+module.blink.pulse.description=Периодически освобождает удерживаемые пакеты вместо их бесконечного хранения.
+module.blink.pulse_delay.name=задержка Pulse
+module.blink.pulse_delay.description=Устанавливает минимальный и максимальный диапазон в миллисекундах, в течение которого каждый импульс ожидает перед освобождением удерживаемых пакетов.
+
+# Fast Use
+module.fast_use.name=Fast Use
+module.fast_use.description=Использует предметы быстрее.
+module.fast_use.enabled.name=Включено
+module.fast_use.enabled.description=Включает поведение "Размещения", которое убирает стандартную задержку между размещением предметов.
+module.fast_use.placements.name=Установка Блоков
+module.fast_use.placements.description=Обнуляет время перезарядки правого клика каждый тик, позволяя размещать блоки и предметы без задержки, присущей ванильной версии.
+
+# IRC
+module.irc.name=IRC
+module.irc.description=Позволяет общаться с другими юзерами чита.
+
+# No Rotate
+module.no_rotate.name=No Rotate
+module.no_rotate.description=Предотвращает принудительное изменение поворота сервером.
+module.no_rotate.ignore_teleports.name=Игнорировать Телепортацию
+module.no_rotate.ignore_teleports.description=Сохраняет ваш угол обзора при дальних телепортациях (на 10 или более блоков).
+
+# Party Spam
+module.party_spam.name=Party Spam
+module.party_spam.description=Спамит инвайтами в пати определенному игроку.
+module.party_spam.username.name=Никнейм
+module.party_spam.username.description=Устанавливает имя целевого игрока, отправляет повторяющиеся приглашения в группу и команды на расформирование.
+
+# Spammer
+module.spammer.name=Spammer
+module.spammer.description=Спамит в чат.
+module.spammer.delay.name=Задержка
+module.spammer.delay.description=Время ожидания в миллисекундах между каждым отправленным сообщением в чате.
+module.spammer.message.name=Сообщение
+module.spammer.message.description=Текст сообщения в чате, который нужно повторять.
+module.spammer.anti_spam_bypass.name=Обход Анти-Спам Систем
+module.spammer.anti_spam_bypass.description=Добавляет случайное число к каждому сообщению, чтобы последовательные отправки не были идентичными.
+
+# ============================================================
+# World
+# ============================================================
+
+# Timer
+module.timer.name=Timer
+module.timer.description=Модифицирует скорость игры для вас.
+module.timer.game_speed.name=Скорость
+module.timer.game_speed.description=Устанавливает множитель, применяемый к частоте игровых тиков, что ускоряет или замедляет игровой процесс.
+
+# Fast Break
+module.fast_break.name=Fast Break
+module.fast_break.description=Ломает блоки быстрее.
+module.fast_break.enabled.name=Включено
+module.fast_break.enabled.description=Включает или выключает модуль «Быстрый прорыв».
+module.fast_break.speed.name=Скорость
+module.fast_break.speed.description=Позволяет использовать бонус к скорости добычи, который быстрее ломает блоки.
+module.fast_break.cooldown.name=Кулдаун
+module.fast_break.cooldown.description=Устанавливает, насколько быстрее ломаются блоки, в процентах от вашей скорости добычи.
+module.fast_break.break_slowdown.name=Замедление при Ломании
+module.fast_break.break_slowdown.description=Предотвращает задержки в добыче, связанные с факторами воздушной среды, водной среды и утомляемостью, вызванной добычей.
+module.fast_break.spoof_ground_state.name=Подмена Ground State
+module.fast_break.spoof_ground_state.description=Сообщает о вашем присутствии на земле в пакетах данных во время добычи в воздухе.
+module.fast_break.break_cooldown.name=Кулдаун Ломания
+module.fast_break.break_cooldown.description=Переопределяет задержку в тиках между последовательными перерывами блоков.
+
+# Scaffold
+module.scaffold.name=Scaffold
+module.scaffold.description=Автоматически ставит под тобой блоки.
+module.scaffold.enabled.name=Включено
+module.scaffold.enabled.description=Включает интеллект движения, направляя направление вашего перемещения к размещаемым блокам.
+module.scaffold.diagonal_movement.name=Диагональное Движение
+module.scaffold.diagonal_movement.description=Давайте направим интеллектуальное движение вдоль диагоналей, а не только по кардинальным направлениям.
+module.scaffold.snap_movement.name=Фиксация Движения (Snap)
+module.scaffold.snap_movement.description=Фиксирует направление управляемого движения в дискретных шагах угла.
+module.scaffold.steps.name=Steps
+module.scaffold.steps.description=Устанавливает, сколько дискретных шагов по углу используется для фиксации движения, от одного до трех.
+module.scaffold.interact_cps.name=КПС Взаимодействия
+module.scaffold.interact_cps.description=Устанавливает частоту кликов в секунду для имитированных взаимодействий по размещению блоков.
+module.scaffold.mode.name=Режим
+module.scaffold.mode.description=Выбирает стратегию размещения: Vanilla, «Анти-игровое кресло» или Watchdog.
+module.scaffold.tower.name=Tower
+module.scaffold.tower.description=Блоки появляются прямо под вами, пока вы удерживаете кнопку прыжка, чтобы подняться вверх.
+module.scaffold.switch_mode.name=Switch-Режим
+module.scaffold.switch_mode.description=Выбирает способ выбора слота панели быстрого доступа: Нормальный, Панель быстрого доступа или Полный.
+module.scaffold.swing_mode.name=Swing-Режим
+module.scaffold.swing_mode.description=Определяет, отрисовывается ли маятник размещения на стороне клиента или отправляется на сервер.
+module.scaffold.snap_rotations.name=Фиксация Поворотов (Snap)
+module.scaffold.snap_rotations.description=Расположение снапсов мгновенно поворачивается, вместо интерполяции к нужному положению.
+module.scaffold.override_raycast.name=Переопределить Raycast
+module.scaffold.override_raycast.description=Заменяет клиентский рейкаст результатом попадания размещения, предоставленным модулем.
+module.scaffold.auto_jump.name=Авто Прыжок
+module.scaffold.auto_jump.description=Автоматически перепрыгивает при переходе на фиксированной высоте в режиме "одной оси".
+module.scaffold.block_overlay.name=Оверлей Блока
+module.scaffold.block_overlay.description=Выделяет исчезающим перекрытием места расположения блоков.
+module.scaffold.dynamic_island.name=Dynamic Island
+module.scaffold.dynamic_island.description=Отображает на экране статус наложения динамического острова Scaffold.
+module.scaffold.hypixel_addons.name=Аддоны для Hypixel
+module.scaffold.hypixel_addons.description=Позволяет использовать функции, специфичные для Hypixel, такие как опция Boost при нахождении на Hypixel.
+module.scaffold.movement_intelligence.name=Интеллект движения
+module.scaffold.movement_intelligence.description=Группирует переключатели, управляющие интеллектом движения, которые направляют ваше перемещение к размещаемым блокам.
+
+# Breaker
+module.breaker.name=Breaker
+module.breaker.description=Ломает важные блоки в мини-играх (Например, кровати)
+module.breaker.swing_mode.name=Режим Взмаха
+module.breaker.swing_mode.description=Устанавливает, отправляется ли маятниковое движение при броске на сервер или отображается только на стороне клиента.
+module.breaker.range.name=Дистанция
+module.breaker.range.description=Устанавливает максимальное расстояние в блоках, на котором происходит поиск и разрушение целевых блоков.
+module.breaker.break_surroundings.name=Ломать Защиту (Кровати, например)
+module.breaker.break_surroundings.description=Разрушает самый слабый соседний блок самым быстрым инструментом, а не только кровать.
+
+# ============================================================
+# Visual
+# ============================================================
+
+# Tab GUI
+module.tab_gui.name=Tab GUI
+module.tab_gui.description=Интерфейс для управления функциями клиента.
+
+# Streamer Mode
+module.streamer_mode.name=Streamer Mode
+module.streamer_mode.description=Функция для контент креаторов.
+module.streamer_mode.hide_server_id.name=Прятать ID Сервера
+module.streamer_mode.hide_server_id.description=Затемняет идентификатор целевого сервера Hypixel в сообщениях чата о передаче между серверами.
+module.streamer_mode.hide_username.name=Прятать Никнейм
+module.streamer_mode.hide_username.description=Заменяет ваше собственное имя пользователя в отображаемом тексте на настроенное имя пользователя.
+module.streamer_mode.custom_username.name=Кастомный Никнейм
+module.streamer_mode.custom_username.description=Устанавливает отображаемое имя вместо вашего имени пользователя, когда скрытие имени пользователя включено.
+
+# Post Processing
+module.post_processing.name=Post Processing
+module.post_processing.description=Позволяет настроить эффекты постобработки.
+module.post_processing.enabled.name=Включено
+module.post_processing.enabled.description=Отдельного переключателя нет; проход Blur выполняет роль мастера для эффектов постобработки.
+module.post_processing.radius.name=Радиус
+module.post_processing.radius.description=Устанавливает радиус размытия в пикселях, регулируется от 1 до 20.
+module.post_processing.blur.name=Блюр
+module.post_processing.blur.description=Создаёт размытие по экрану за пользовательским интерфейсом и служит мастером для эффекта свечения.
+module.post_processing.bloom.name=Свечение (Bloom)
+module.post_processing.bloom.description=Добавляет свечение над элементами пользовательского интерфейса, активное только при включённом размытии.
+
+# No Hurt Camera
+module.no_hurt_camera.name=No Hurt Camera
+module.no_hurt_camera.description=Отключает тряску экрана при получении урона.
+module.no_hurt_camera.no_player_model_hurt.name=Без тряски модели игрока
+module.no_hurt_camera.no_player_model_hurt.description=Также убирает мигающий красный индикатор урона с вашей модели персонажа, когда вы получаете урон.
+
+# Full Bright
+module.full_bright.name=Full Bright
+module.full_bright.description=Повышает игровкую яркость.
+
+# Discord RPC
+module.discord_rpc.name=Discord RPC
+module.discord_rpc.description=Отображает информацию об игре в вашем профиле Discord.
+module.discord_rpc.hide_server.name=Прятать Сервер
+module.discord_rpc.hide_server.description=Заменяет имя сервера в вашем присутствии в Discord на общее скрытое обозначение.
+
+# Click GUI
+module.click_gui.name=Click GUI
+module.click_gui.description=Интерфейс для управления функциями клиента.
+module.click_gui.allow_movement.name=Разрешить Передвигаться
+module.click_gui.allow_movement.description=Сохраняет активными клавиши передвижения, позволяя вам продолжать ходить, пока открыто графическое меню.
+
+# Cape
+module.cape.name=Cape
+module.cape.description=Позволяет вам выбрать любой плащ.
+module.cape.type.name=Тип
+module.cape.type.description=Выбирает отображаемый дизайн плаща и синхронизирует выбор с вашей учетной записью.
+
+# Break Progress
+module.break_progress.name=Break Progress
+module.break_progress.description=Показывает прогресс ломания блока.
+
+# Attack Effects
+module.attack_effects.name=Attack Effects
+module.attack_effects.description=Добавляет или меняет эффекты атаки.
+module.attack_effects.particles.name=Партиклы
+module.attack_effects.particles.description=Создаёт частицы критического удара и пробития на цели, которые вы атакуете.
+module.attack_effects.sounds.name=Звуки
+module.attack_effects.sounds.description=Воспроизводит только звуки атаки, которые вы включили, заглушая остальные при попадании во врага.
+
+# Animations
+module.animations.name=Animations
+module.animations.description=Модифицирует анимации в игре.
+module.animations.enabled.name=Включено
+module.animations.enabled.description=Позволяет воспроизвести анимацию блокирования мечом, чтобы меч, находящийся в руках, отображал позу блокирования.
+module.animations.block_animation.name=Анимации Блока
+module.animations.block_animation.description=Выбирает стиль анимации блокировки меча (1.7, 1.8, Rub, Stella, Bounce и т. д.).
+module.animations.always_hidden.name=Всегда Спрятано
+module.animations.always_hidden.description=Скрывает предмет щита из вида от первого лица всегда.
+module.animations.hide_offhand_slot.name=Скрыть Предмет в Левой Руке
+module.animations.hide_offhand_slot.description=Скрывает слот щита в свободной руке на панели быстрого доступа.
+module.animations.old_backwards_walking.name=Старая Анимация Ходьбы Назад
+module.animations.old_backwards_walking.description=Восстанавливает анимацию движения спиной.
+module.animations.old_armor_damage_tint.name=Старый оттенок урона брони
+module.animations.old_armor_damage_tint.description=Восстанавливает красный оттенок наследия на броне при получении урона.
+module.animations.old_sneaking.name=Старая Анимация Приседа
+module.animations.old_sneaking.description=Восстанавливает скрытную позу.
+module.animations.fix_pose_repeat.name=Исправить Повтор Позы
+module.animations.fix_pose_repeat.description=Применяет исправление, которое предотвращает повторение анимации поз игрока.
+module.animations.scale.name=Размер
+module.animations.scale.description=Устанавливает единый множитель масштаба для предмета в основной руке (1 не изменяет его).
+module.animations.offset_x.name=Смещение по X
+module.animations.offset_x.description=Перемещает предмет в основной руке влево или вправо в режиме от первого лица.
+module.animations.offset_y.name=Смещение по Y
+module.animations.offset_y.description=Перемещает предмет в основной руке вверх или вниз в режиме от первого лица.
+module.animations.swing_slowdown.name=Замедление Взамаха
+module.animations.swing_slowdown.description=Замедляет анимацию маха руки, при этом более высокие значения увеличивают продолжительность каждого маха.
+module.animations.old_cooldown_animation.name=Старая Анимация Кулдауна
+module.animations.old_cooldown_animation.description=Восстанавливает анимацию размаха с перезарядкой наследуемого предмета.
+module.animations.visual_swing_on_use.name=Визуальный Взмах При Использовании
+module.animations.visual_swing_on_use.description=Демонстрирует визуальное махание рукой, когда используется предмет.
+module.animations.hide_drop_swing.name=Скрыть Взмах при Выбрасовании
+module.animations.hide_drop_swing.description=Подавляет анимацию взмаха руки, воспроизводимую при бросании предмета.
+module.animations.equip_offset.name=Смещение Экипировки
+module.animations.equip_offset.description=Позволяет задать смещение для анимации экипировки (надевания) предмета.
+module.animations.sword_blocking.name=Блок Мечом
+module.animations.sword_blocking.description=Группирует переключатель блокировки ударов и селектор стиля анимации.
+module.animations.shields.name=Щиты
+module.animations.shields.description=Группирует параметры скрытия элемента щита и слота горячей панели для оружия в руках.
+module.animations.player.name=Игроки
+module.animations.player.description=Группирует переключатели анимации тела наследованного игрока (ходьба, скрытность, оттенок, поза).
+module.animations.item.name=Предмет
+module.animations.item.description=Группирует варианты удерживаемого элемента для смещения, масштаба, раскачивания и анимаций экипировки.
+
+# Ambience
+module.ambience.name=Ambience
+module.ambience.description=Изменяет время дня.
+module.ambience.use_real_time.name=Использовать ИРЛ Время
+module.ambience.use_real_time.description=Определяет время суток по всему миру, используя локальные системные часы компьютера каждый раз.
+module.ambience.time.name=Время
+module.ambience.time.description=Устанавливает фиксированное время суток, принудительно накладываемое на мир, в тиках Minecraft (0-23450).
+module.ambience.end_sky.name=Конец Неба
+module.ambience.end_sky.description=Заменяет небо на звездное небо из измере́ния "Коне́ц" во время́ активной работы модуля.
+
+# Overlay
+module.overlay.name=Overlay
+module.overlay.description=Отрисовывает интерфейс клиента.
+module.overlay.theme.name=Тема
+module.overlay.theme.description=Выбирает цветовую тему, заданную клиентом, или «Пользовательская», чтобы использовать собственные цвета для акцентов.
+module.overlay.primary_color.name=Основной цвет
+module.overlay.primary_color.description=Устанавливает основной цвет акцента, используемый наложением при выбранной пользовательской теме.
+module.overlay.secondary_color.name=Второй цвет
+module.overlay.secondary_color.description=Устанавливает вторичный цвет акцента, используемый наложением при выбранной пользовательской теме.
+module.overlay.enabled.name=Включено
+module.overlay.enabled.description=Включает настраиваемый интерфейс отображения эффектов статуса, заменяя стандартное отображение эффектов зелий.
+module.overlay.text_shadow.name=Тень Цвета
+module.overlay.text_shadow.description=Рисует текст пользовательской шкалы очков с тенью.
+module.overlay.left-aligned.name=Выравнивание По Левому Краю
+module.overlay.left-aligned.description=Закрепляет динамический остров на левой стороне экрана вместо центра.
+module.overlay.minecraft_elements.name=Элементы Minecraft
+module.overlay.minecraft_elements.description=Группирует переработанные элементы стандартного HUD: эффекты статуса, счетчик очков и шкала здоровья босса.
+module.overlay.status_effect_overlay.name=Оверлей Статуса Эффектов
+module.overlay.status_effect_overlay.description=Группирует настройки наложения пользовательского эффекта статуса.
+module.overlay.scoreboard.name=Scoreboard
+module.overlay.scoreboard.description=Группирует настройки включения, масштаба и тени текста для пользовательской таблицы результатов.
+module.overlay.bossbar.name=Bossbar
+module.overlay.bossbar.description=Позволяет использовать настраиваемый оверлей для полосы здоровья босса вместо стандартной.
+module.overlay.dynamic_island.name=Dynamic Island
+module.overlay.dynamic_island.description=Группирует настройки Dynamic Island, включая переключатель закрепления, выровненный по левому краю.
+
+# Target Information (Overlay)
+module.overlay.target_information.name=Информация о Цели
+module.overlay.target_information.description=Группирует настройки включения, позиции, масштаба и маршрутизации по островам для карточки информации о боевой цели.
+module.overlay.screen_position.name=Позиция на Экране
+module.overlay.screen_position.description=Устанавливает положение карточки информации на экране посредством перетаскиваемых координат.
+
+# Spotify (Overlay)
+module.overlay.spotify.name=Spotify
+module.overlay.spotify.description=Группирует настройки текущей карты: включение, положение, масштаб, остров и цвет альбома.
+module.overlay.position.name=Позиция
+module.overlay.position.description=Устанавливает положение элемента наложения на экране посредством перетаскиваемых координат.
+module.overlay.use_album_color.name=Использовать Цвет Альбома
+module.overlay.use_album_color.description=Использует доминирующий цвет обложки альбома в качестве акцентного цвета карточки Spotify.
+
+# Session Stats (Overlay)
+module.overlay.session_stats.name=Статистика за Сессию
+module.overlay.session_stats.description=Группирует настройки enable, position и scale элемента session-stats.
+
+# Notifications (Overlay)
+module.overlay.notifications.name=Notifications
+module.overlay.notifications.description=Группирует настройки элемента уведомления, включая всплывающее окно переключателя модуля.
+module.overlay.on_module_toggle.name=При Переключении Модуля
+module.overlay.on_module_toggle.description=Показывает всплывающее уведомление при включении или выключении модуля.
+
+# Toggled Modules (Overlay)
+module.overlay.toggled_modules.name=Toggled Modules
+module.overlay.toggled_modules.description=Группирует настройки списка активных модулей: включение, регистр, суффикс, смещение, категории.
+module.overlay.bar_mode.name=Bar Mode
+module.overlay.bar_mode.description=Определяет, какой край каждой строки модулей отображает акцентную полосу, или отключает её.
+module.overlay.lowercase.name=Строчные Буквы
+module.overlay.lowercase.description=Преобразует имена модулей в списке активных модулей в нижний регистр.
+module.overlay.show_suffix.name=Показывать Суффиксы
+module.overlay.show_suffix.description=Показывает суффикс активного значения каждого модуля рядом с его именем в списке.
+module.overlay.offset_scoreboard.name=Смещение Scoreboard
+module.overlay.offset_scoreboard.description=Сдвигает ванильную панель результатов в сторону, чтобы список активных модулей не перекрывал её.
+module.overlay.visible_categories.name=Видимые Категории
+module.overlay.visible_categories.description=Определяет, какие категории модулей отображаются в списке активных модулей.
+
+# Keystrokes (Overlay)
+module.overlay.keystrokes.name=Keystrokes
+module.overlay.keystrokes.description=Группирует настройки элемента "клавиши": включение, положение, масштаб и отображение клавиши.
+module.overlay.spacebar.name=Пробел
+module.overlay.spacebar.description=Показывает клавишу пробела в отображении нажатий клавиш.
+module.overlay.show_cps.name=Показывать КПС
+module.overlay.show_cps.description=Показывает текущую частоту нажатий кнопок мыши в секунду в области отображения нажатий клавиш.
+module.overlay.mouse_buttons.name=Кнопки Мыши
+module.overlay.mouse_buttons.description=Отображает клавиши левой и правой кнопок мыши в списке нажатий клавиш.
+
+# Entity ESP
+module.entity_esp.name=Entity ESP
+module.entity_esp.description=Отображает визуальные оверлеи игроков и сущностей.
+module.entity_esp.box.name=Box
+module.entity_esp.box.description=Отображает 2D-прямоугольник вокруг спроецированного ограничивающего прямоугольника каждой целевой сущности.
+module.entity_esp.box.enabled.name=Включено
+module.entity_esp.box.enabled.description=Включает наложение ящика для целевых сущностей.
+module.entity_esp.box.stroke.name=Stroke
+module.entity_esp.box.stroke.description=Добавляет обводку вокруг рамки объекта для более чётких краев.
+module.entity_esp.health_bar.name=Полоса Здоровья
+module.entity_esp.health_bar.description=Отображает вертикальную полосу рядом с каждым объектом, показывающую его текущее здоровье.
+module.entity_esp.health_bar.enabled.name=Включено
+module.entity_esp.health_bar.enabled.description=Включает отображение полоски здоровья для выбранных сущностей.
+module.entity_esp.health_bar.stroke.name=Stroke
+module.entity_esp.health_bar.stroke.description=Добавляет обводку вокруг полосы здоровья для более чётких краев.
+module.entity_esp.skeletons.name=Skeletons
+module.entity_esp.skeletons.description=Рисует линии, соединяющие конечности игрока, чтобы отследить его позу.
+module.entity_esp.skeletons.enabled.name=Включено
+module.entity_esp.skeletons.enabled.description=Включает отображение контура скелета для игровых сущностей.
+module.entity_esp.name_tags.name=Name Tags
+module.entity_esp.name_tags.description=Отображает плавающую текстовую метку над каждым целевым объектом.
+module.entity_esp.name_tags.enabled.name=Включено
+module.entity_esp.name_tags.enabled.description=Включает наложение имени для целевых сущностей.
+module.entity_esp.name_tags.elements.name=Элементы
+module.entity_esp.name_tags.elements.description=Выбирает, какие поля отображать в теге: имя, здоровье, расстояние и снаряжение.
+module.entity_esp.name_tags.indicators.name=Индикаторы
+module.entity_esp.name_tags.indicators.description=Выбирает значки статуса в теге: скрытность, сила, невидимость и блокировка.
+module.entity_esp.glow.name=Glow
+module.entity_esp.glow.description=Выделяет целевые объекты цветным свечением.
+module.entity_esp.glow.enabled.name=Включено
+module.entity_esp.glow.enabled.description=Включает контур свечения для выбранных сущностей.
+module.entity_esp.glow.color.name=Цвет
+module.entity_esp.glow.color.description=Настройка цвета подсветки: тема, цвет команды или цвет, основанный на состоянии здоровья.
+module.entity_esp.glow.hurt_flash.name=Hurt Flash
+module.entity_esp.glow.hurt_flash.description=Вспыхивает красным на короткое время, когда сущность получает урон.
+
+# Item ESP
+module.item_esp.name=Item ESP
+module.item_esp.description=Renders nametags on dropped items.
+module.item_esp.name_tags.name=Name Tags
+module.item_esp.name_tags.description=Группирует параметры тега имени для сброшенных предметов: включение, радиус поиска и отображаемые элементы.
+module.item_esp.name_tags.enabled.name=Включено
+module.item_esp.name_tags.enabled.description=Включает или выключает отображение ярлыка предмета, который выпал.
+module.item_esp.name_tags.range.name=Дистанция
+module.item_esp.name_tags.range.description=Определяет, как далеко, в блоках, вокруг вас ищутся и помечаются выпавшие предметы.
+module.item_esp.name_tags.elements.name=Элементы
+module.item_esp.name_tags.elements.description=Выбирает, какие части жетона отображать: название предмета, количество в стопке и расстояние.
+
+# Block ESP
+module.block_esp.name=Block ESP
+module.block_esp.description=Визуально подсвечивает сундуки и ресурсы.
+module.block_esp.containers.name=Сыендуки
+module.block_esp.containers.description=Группа настроек, контролирующих наложенные элементы, рисуемые на блоках-контейнерах, таких как сундуки.
+module.block_esp.containers.enabled.name=Включено
+module.block_esp.containers.enabled.description=Включает отображение наложенных прямоугольников вокруг близлежащих блоков контейнеров.
+module.block_esp.containers.filled.name=Filled
+module.block_esp.containers.filled.description=Рисует полупрозрачное заполненное лицо внутри выделенной области каждого контейнера.
+module.block_esp.containers.outline.name=Outline
+module.block_esp.containers.outline.description=Рисует линии контура, очерчивающие выделенную область каждого контейнера.
+module.block_esp.containers.types.name=Типы
+module.block_esp.containers.types.description=Выбирает, какие типы контейнеров будут выделены, например, сундуки, бочки и бункеры.
+module.block_esp.resources.name=Ресурсы
+module.block_esp.resources.description=Группа настроек, контролирующих наложенные элементы, отображаемые на рудах и минеральных блоках.
+module.block_esp.resources.enabled.name=Включено
+module.block_esp.resources.enabled.description=Включает отображение наложенных рамок вокруг близлежащих руд и блоков минералов.
+module.block_esp.resources.filled.name=Filled
+module.block_esp.resources.filled.description=Рисует полупрозрачное заполненное лицо внутри выделенной области каждого ресурса.
+module.block_esp.resources.outline.name=Outline
+module.block_esp.resources.outline.description=Рисует линии контура, очерчивающие выделенную область каждого ресурса.
+module.block_esp.resources.range.name=Дистанция
+module.block_esp.resources.range.description=Устанавливает максимальное расстояние блока от 16 до 128, в пределах которого выделяются ресурсы.
+module.block_esp.resources.ores.name=Руды
+module.block_esp.resources.ores.description=Выбирает, какие блоки руды будут выделены, например, алмазы, изумруды и древние обломки.
+module.block_esp.resources.blocks.name=Блоки
+module.block_esp.resources.blocks.description=Выбирает, какие блоки хранения минералов будут выделены, например, алмазы или незерит.
+
+
+# ==========================================================
+# Combat (added)
+# ==========================================================
+
+# Anti Fireball
+module.anti_fireball.name=Анти-Фаербол
+module.anti_fireball.description=Автоматически отклоняет близлежащие огненные шары.
+module.anti_fireball.attack_range.name=Диапазон атаки
+module.anti_fireball.attack_range.description=Устанавливает максимальное расстояние в блоках, на котором огненный шар отклоняется.
+module.anti_fireball.rotate_range.name=Диапазон поворота
+module.anti_fireball.rotate_range.description=Устанавливает максимальное расстояние в блоках, на котором прицел поворачивается к огненному шару.
+
+# Criticals
+module.criticals.name=Критики
+module.criticals.description=Заставляет каждую атаку быть критическим попаданием.
+module.criticals.mode.name=Режим
+module.criticals.mode.description=Выбирает метод критических значений; в настоящее время — Packet.
+# ==========================================================
+# Movement (added)
+# ==========================================================
+
+# Jesus
+module.jesus.name=Иисус
+module.jesus.description=Позволяет ходить по воде.
+
+# Keep Sprint
+module.keep_sprint.name=Сохранить спринт
+module.keep_sprint.description=Поддерживает ваш спринт действиями, которые его сбросят.
+
+# Step
+module.step.name=Шаг
+module.step.description=Блоки выше, чем позволяет ванильный уровень, поднимаются вверх.
+module.step.height.name=Рост
+module.step.height.description=Устанавливает максимальную высоту блока, до которой можно автоматически повышать.
+# ==========================================================
+# Utility (added)
+# ==========================================================
+
+# Auto Potion
+module.auto_potion.name=Авто зелье
+module.auto_potion.description=Автоматически бросает взрывные зелья к вашим ногам.
+module.auto_potion.splash_speed.name=Всплеск Скорости
+module.auto_potion.splash_speed.description=Бросает зелье скорости к вашим ногам, когда оно доступно.
+module.auto_potion.splash_health.name=Splash Health
+module.auto_potion.splash_health.description=Бросает исцеляющий эликсир к вашим ногам, когда ваше здоровье низкое.
+module.auto_potion.heal_hp.name=Исцелить ЗП
+module.auto_potion.heal_hp.description=Устанавливает уровень здоровья, ниже которого бросается зелье лечения.
+module.auto_potion.delay.name=Задержка
+module.auto_potion.delay.description=Устанавливает миллисекунды задержки между автоматическими бросками зелий.
+module.auto_potion.ignore_frog_potion.name=Игнорируйте Зелье Лягушки
+module.auto_potion.ignore_frog_potion.description=Игнорирует зелья лягушек при выборе зелья скорости для броска.
+# ==========================================================
+# Visual (added)
+# ==========================================================
+
+# View Clip
+module.view_clip.name=Посмотреть клип
+module.view_clip.description=Позволяет камере от третьего лица проходить сквозь стены.
+# ==========================================================
+# Other (added)
+# ==========================================================
+
+# Anti AFK
+module.anti_afk.name=Анти-АФК
+module.anti_afk.description=Предотвращает исключение из-за бездействия.
+module.anti_afk.interval.name=Интервал
+module.anti_afk.interval.description=Устанавливает, как часто выполняется автоматическое движение против простоя.
+
+# Hacker Detector
+module.hacker_detector.name=Обнаружитель хакеров
+module.hacker_detector.description=Обнаруживает читеров в вашей игре.
+module.hacker_detector.settings.name=Настройки
+module.hacker_detector.settings.description=Группирует проверки и параметры уведомлений детектора.
+module.hacker_detector.checks.name=Проверки
+module.hacker_detector.checks.description=Выбирает, какие проверки читов запускать: Автоблокировка, Омни-Спринт и Строительные леса.
+module.hacker_detector.auto_block.name=Автоблокировка
+module.hacker_detector.auto_block.description=Выделяет игроков, которые, кажется, одновременно блокируют и атакуют.
+module.hacker_detector.omni_sprint.name=Омни Спринт
+module.hacker_detector.omni_sprint.description=Флаги присваиваются игрокам, которые бегут в направлениях, не допускаемых стандартным движением.
+module.hacker_detector.scaffold.name=Леса
+module.hacker_detector.scaffold.description=Отмечает игроков, которые ставят мосты с подозрительным временем или вращением.
+module.hacker_detector.chat.name=Чат
+module.hacker_detector.chat.description=Выводит сообщение в чате, когда игрок активирует проверку.
+module.hacker_detector.notifications.name=Уведомления
+module.hacker_detector.notifications.description=Показывает всплывающее уведомление, когда игрок активирует проверку.

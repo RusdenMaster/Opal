@@ -1,0 +1,984 @@
+# ============================================================
+# Combat
+# ============================================================
+
+# Anti Bot
+module.anti_bot.name=Anti Bot
+module.anti_bot.description=Zusätzliche Bot-Überprüfung auf Servern wie Hypixel
+module.anti_bot.basic_checks.name=Basic Checks
+module.anti_bot.basic_checks.description=Gruppiert die leichten, pro-Spieler-Flags, die verwendet werden, um eine Entität als Bot für die Zielauswahl zu markieren.
+module.anti_bot.tablist.name=Tablist
+module.anti_bot.tablist.description=Markiert einen Spieler als Bot, wenn seine UUID in der Server-Tab-Liste fehlt.
+module.anti_bot.no_gamemode.name=No GameMode
+module.anti_bot.no_gamemode.description=Flags eines Spielers, die der Tab-Liste hinzugefügt wurden, ohne dass ein Spielmodus festgelegt wurde.
+module.anti_bot.no_properties.name=No Properties
+module.anti_bot.no_properties.description=Flags ein Spieler zum Tab-Verzeichnis, ohne Profilattribute wie beispielsweise Hautdaten.
+module.anti_bot.illegal_pitch.name=Illegal Pitch
+module.anti_bot.illegal_pitch.description=Markiert einen Spieler, dessen Kopfwinkel die normale 90-Grad-Grenze überschreitet.
+module.anti_bot.illegal_health.name=Illegal Health
+module.anti_bot.illegal_health.description=Markiert einen Spieler, dessen gemeldeter Gesundheitswert über seinem maximalen Gesundheitswert liegt.
+module.anti_bot.fake_entity_id.name=Fake Entity ID
+module.anti_bot.fake_entity_id.description=Markiert einen Spieler, dessen Entity-ID negativ oder größer als eine Milliarde ist.
+module.anti_bot.duplicate_name.name=Duplicate Name
+module.anti_bot.duplicate_name.description=Markiert einen Spieler, dessen Name mit dem eines anderen Online-Spielers übereinstimmt, der eine andere UUID hat.
+module.anti_bot.invalid_ground.name=Invalid Ground
+module.anti_bot.invalid_ground.description=Gruppiert den Schalter und die Schwelle für das Markieren von Spielern mit inkonsistenter Bewegung im Spiel.
+module.anti_bot.invalid_ground.enabled.name=Enabled
+module.anti_bot.invalid_ground.enabled.description=Aktiviert die Verfolgung von Spielern, die sich auf dem Spielfeld befinden, während sich ihre vertikale Position ändert.
+module.anti_bot.invalid_ground.threshold.name=Threshold
+module.anti_bot.invalid_ground.threshold.description=Legt fest, wie viele Verstöße gegen ungültigen Boden ein Spieler erreichen muss, bevor er markiert wird.
+module.anti_bot.not_swung.name=Not Swung
+module.anti_bot.not_swung.description=Gruppiert den Schalter und das Alter, um Spieler zu markieren, die nie eine Schwingungsanimation senden.
+module.anti_bot.not_swung.enabled.name=Enabled
+module.anti_bot.not_swung.enabled.description=Markiert Spieler, die noch nie ein Handbewegungspaket gesendet haben.
+module.anti_bot.not_swung.min_age.name=Min Age
+module.anti_bot.not_swung.min_age.description=Legt das minimale Alter einer Entität fest, bevor ein Spieler, der noch nie geschwungen hat, markiert werden kann.
+module.anti_bot.always_in_radius.name=Always In Radius
+module.anti_bot.always_in_radius.description=Gruppiert den Schalter und den Bereich für das Markieren von Spielern, die nie einen bestimmten Abstand verlassen.
+module.anti_bot.always_in_radius.enabled.name=Enabled
+module.anti_bot.always_in_radius.enabled.description=Markiert Spieler, die die konfigurierte Reichweite nicht verlassen haben.
+module.anti_bot.always_in_radius.range.name=Range
+module.anti_bot.always_in_radius.range.description=Legt die Distanz in Blöcken fest, die ein Spieler überschreiten muss, um vom Radius-Flag-Bereich freigegeben zu werden.
+module.anti_bot.latency_timing.name=Latency Timing
+module.anti_bot.latency_timing.description=Gruppiert den Schalter und die Schwelle für das Markieren von Spielern aufgrund verdächtiger Aktualisierungszeiten der Latenz.
+module.anti_bot.latency_timing.enabled.name=Enabled
+module.anti_bot.latency_timing.enabled.description=Aktiviert die Markierung von Spielern, deren Latenz innerhalb des Zeitfensters auf Null fällt.
+module.anti_bot.latency_timing.threshold_ms.name=Threshold MS
+module.anti_bot.latency_timing.threshold_ms.description=Legt das maximale Zeitintervall in Millisekunden fest, innerhalb dessen Latenzaktualisierungen für einen Spieler markiert werden.
+
+# Aim Assist
+module.aim_assist.name=Aim Assist
+module.aim_assist.description=Hilft beim Gegner Anvisieren (Kein lock on)
+module.aim_assist.mode.name=Mode
+module.aim_assist.mode.description=Wählt die Korrekturstufe aus: Einfach, Fortgeschritten, Adaptiv oder Sensibilität.
+module.aim_assist.silent.name=Silent
+module.aim_assist.silent.description=Wendet Zielkorrekturen an, ohne die sichtbare Kamera zu bewegen; ausschalten dreht Ihre Ansicht.
+module.aim_assist.targeting.name=Targeting
+module.aim_assist.targeting.description=Gruppiert die Zielauswahl-Einstellungen: Körperteil, FOV, Reichweite, Geschwindigkeit und Magnet.
+module.aim_assist.body_part.name=Body Part
+module.aim_assist.body_part.description=Wählt aus, welchen Körperteil er ins Visier nimmt: den nächsten, den Kopf, die Brust oder die Füße.
+module.aim_assist.fov.name=FOV
+module.aim_assist.fov.description=Legt den Sichtkegel in Grad fest, innerhalb dessen ein Ziel ausgewählt werden kann.
+module.aim_assist.range.name=Range
+module.aim_assist.range.description=Legt die maximale Entfernung in Blöcken fest, in der ein Ziel ausgewählt werden kann.
+module.aim_assist.speed.name=Speed
+module.aim_assist.speed.description=Legt fest, wie stark die Korrektur jedes Ticks das Ziel in Prozent beeinflusst.
+module.aim_assist.magnet.name=Magnet
+module.aim_assist.magnet.description=Erhöht die Zugkraft, sobald Ihr Fadenkreuz sich bereits in der Nähe des Ziels befindet.
+module.aim_assist.visible_smoothing.name=Visible Smoothing
+module.aim_assist.visible_smoothing.description=Gruppensichtbare Zielausrichtungseinstellungen: Glättungsfaktor und maximale Drehung pro Tick.
+module.aim_assist.smoothing.name=Smoothing
+module.aim_assist.smoothing.description=Wie allmählich sichtbare Korrekturen verteilt werden, wird festgelegt; niedrigere Werte sorgen für einen flüssigeren Übergang.
+module.aim_assist.max_rotation/tick.name=Max Rotation/Tick
+module.aim_assist.max_rotation/tick.description=Wie viele Grad die sichtbare Ansicht in einem einzigen Tick gedreht werden kann.
+module.aim_assist.curve.name=Curve
+module.aim_assist.curve.description=Gruppiert die erweiterten Kurveneinstellungen: Kurvenglättung und Beschleunigung.
+module.aim_assist.curve_smoothing.name=Curve Smoothing
+module.aim_assist.curve_smoothing.description=Legt den Divisor fest, der die Korrekturkurve bestimmt; höhere Werte erleichtern die Bewegung stärker.
+module.aim_assist.acceleration.name=Acceleration
+module.aim_assist.acceleration.description=Legt den Kurvenexponent fest, der die Korrektur verstärkt, wenn der Zielabstand zunimmt.
+module.aim_assist.randomization.name=Randomization
+module.aim_assist.randomization.description=Gruppiert die Variationseinstellungen pro Tick: Geschwindigkeitsvarianz, Jitter und Überschwingen.
+module.aim_assist.speed_variance.name=Speed Variance
+module.aim_assist.speed_variance.description=Legt den zufälligen Plus/Minus-Bereich fest, der zur Korrekturgeschwindigkeit pro Tick hinzugefügt wird.
+module.aim_assist.yaw_jitter.name=Yaw Jitter
+module.aim_assist.yaw_jitter.description=Summiert sich auf diese viele Grad zufälliger horizontaler Variation bei Korrekturen.
+module.aim_assist.pitch_jitter.name=Pitch Jitter
+module.aim_assist.pitch_jitter.description=Summiert sich auf diese viele Grad zufälliger vertikaler Variation bei Korrekturen.
+module.aim_assist.overshoot.name=Overshoot
+module.aim_assist.overshoot.description=Lassen Sie Korrekturen kurzzeitig das Ziel um bis zu diesen Grad vorbeiziehen, bevor sie sich einpendeln.
+module.aim_assist.adaptive.name=Adaptive
+module.aim_assist.adaptive.description=Gruppiert die adaptiven Einstellungen: maximale Stärke und adaptive Empfindlichkeit.
+module.aim_assist.max_strength.name=Max Strength
+module.aim_assist.max_strength.description=Der Multiplikator im adaptiven Modus kann die Korrekturstärke beeinflussen.
+module.aim_assist.adaptive_sensitivity.name=Adaptive Sensitivity
+module.aim_assist.adaptive_sensitivity.description=Wie schnell der adaptive Modus die Stärke in Richtung des maximalen Grenzwerts anpasst, wird hier festgelegt.
+module.aim_assist.sensitivity.name=Sensitivity
+module.aim_assist.sensitivity.description=Gruppiert die Sensitivitätsmodus-Einstellungen: Multiplikator, Aktivierungs-FOV und Distanzskalierung.
+module.aim_assist.sens_multiplier.name=Sens Multiplier
+module.aim_assist.sens_multiplier.description=Multipliziert die Maus-Empfindlichkeit mit diesem Wert, während auf ein Ziel gepeilt wird.
+module.aim_assist.activation_fov.name=Activation FOV
+module.aim_assist.activation_fov.description=Reduzierte Empfindlichkeit gilt nur, wenn sich ein Ziel innerhalb dieses FOV-Kegels befindet.
+module.aim_assist.scale_with_distance.name=Scale With Distance
+module.aim_assist.scale_with_distance.description=Je näher du mit der Zielerfassung im Zentrum liegst, desto stärker wird die Reduzierung der Empfindlichkeit.
+module.aim_assist.requirements.name=Requirements
+module.aim_assist.requirements.description=Die Bedingungen werden gruppiert: Klick erforderlich, Waffe erforderlich, Sichtprüfung, horizontal begrenzt.
+module.aim_assist.require_click.name=Require Click
+module.aim_assist.require_click.description=Benötigt das Halten des Angriffs-Keys, damit die Zielhilfe Korrekturen anwendet.
+module.aim_assist.require_weapon.name=Require Weapon
+module.aim_assist.require_weapon.description=Eine Waffe muss gehalten werden, damit die Zielhilfe Korrekturen anwendet.
+module.aim_assist.visibility_check.name=Visibility Check
+module.aim_assist.visibility_check.description=Nur unterstützt Ziele, die sich nicht in deinem Sichtfeld befinden.
+module.aim_assist.horizontal_only.name=Horizontal Only
+module.aim_assist.horizontal_only.description=Korrekturen werden auf die horizontale Gierbewegung beschränkt, während die vertikale Nickbewegung unverändert bleibt.
+module.aim_assist.draw_fov.name=Draw FOV
+module.aim_assist.draw_fov.description=Zeigt einen On-Screen-Kreis, der den konfigurierten FOV-Kegel darstellt.
+module.aim_assist.targets.name=Targets
+module.aim_assist.targets.description=Konfiguriert, welche Entitätstypen angepeilt werden können.
+
+# Auto Clicker
+module.auto_clicker.name=Auto Clicker
+module.auto_clicker.description=Klickt automatisch für dich
+module.auto_clicker.mode.name=Mode
+module.auto_clicker.mode.description=Wählt das Klickratenmodell: Einfach, Erweiterter Bereich oder Adaptive Selbstoptimierung.
+module.auto_clicker.cps.name=CPS
+module.auto_clicker.cps.description=Legt die Zielklicks pro Sekunde fest, die im einfachen Modus verwendet werden.
+module.auto_clicker.cps_range.name=CPS Range
+module.auto_clicker.cps_range.description=Legt die unteren und oberen Grenzen für die Klicks pro Sekunde fest, die zwischen jedem Klick zufällig variieren.
+module.auto_clicker.variance_refresh.name=Variance Refresh
+module.auto_clicker.variance_refresh.description=Wie viele Klicks vergehen müssen, bevor der Varianzmultiplikator der Rate neu gemischt wird.
+module.auto_clicker.drops.name=Drops
+module.auto_clicker.drops.description=Ermöglicht gelegentlich kurzzeitige Unterschreitungen der Ziel-Clickrate.
+module.auto_clicker.drop_chance.name=Drop Chance
+module.auto_clicker.drop_chance.description=Legt die prozentuale Wahrscheinlichkeit pro Klick fest, bei der eine Abwärtsrate angewendet wird.
+module.auto_clicker.spikes.name=Spikes
+module.auto_clicker.spikes.description=Ermöglicht gelegentlich kurze Ausbrüche über die Ziel-Klickrate hinaus.
+module.auto_clicker.spike_chance.name=Spike Chance
+module.auto_clicker.spike_chance.description=Legt die prozentuale Wahrscheinlichkeit pro Klick für einen Aufwärts-Rate-Schub fest.
+module.auto_clicker.threshold.name=Threshold
+module.auto_clicker.threshold.description=Der Trefferquote-Wert, der erreicht werden muss, bevor der adaptive Modus die Klickrate beeinflusst.
+module.auto_clicker.increment.name=Increment
+module.auto_clicker.increment.description=Legt fest, wie stark der adaptive Modus seine Klickrate und Punktzahl bei jeder Anpassung verändert.
+module.auto_clicker.mouse_buttons.name=Mouse Buttons
+module.auto_clicker.mouse_buttons.description=Wählt aus, welche Maustasten – links und rechts – der Autoklicker auslöst.
+module.auto_clicker.require_pressed.name=Require Pressed
+module.auto_clicker.require_pressed.description=Nur ein Autoklick simuliert einen Klick, während du die Taste physisch gedrückt hältst.
+module.auto_clicker.weapons_only.name=Weapons Only
+module.auto_clicker.weapons_only.description=Nur Klicks funktionieren, wenn ein Schwert oder eine Axt in der Haupt Hand gehalten wird.
+module.auto_clicker.block_hit.name=Block Hit
+module.auto_clicker.block_hit.description=Erlaubt dem Autoklicker, weiterzulaufen, während du ihn blockierst.
+module.auto_clicker.requirements.name=Requirements
+module.auto_clicker.requirements.description=Gruppiert die Klick-Bedingungen: gedrückt erforderlich, nur Waffen und Blocktreffer.
+
+# Kill Aura
+module.kill_aura.name=Kill Aura
+module.kill_aura.description=Greift automatisch Gegner, Tiere und Monster für dich an
+module.kill_aura.mode.name=Mode
+module.kill_aura.mode.description=Wählt, ob auf ein Ziel fixiert oder zwischen Zielen nach Gesundheit und Aktualität gewechselt werden soll.
+module.kill_aura.rotation_range.name=Rotation Range
+module.kill_aura.rotation_range.description=Legt die maximale Distanz in Blöcken fest, in der nach einem Ziel gesucht und es ausgerichtet wird.
+module.kill_aura.swing_range.name=Swing Range
+module.kill_aura.swing_range.description=Legt die maximale Distanz in Blöcken fest, in der zusätzliche falsche Armschwünge ausgegeben werden.
+module.kill_aura.hide_fake_swings.name=Hide Fake Swings
+module.kill_aura.hide_fake_swings.description=Überspringt das Rendern falscher Schwingungen, wenn Sie nicht direkt auf ein Objekt schauen.
+module.kill_aura.require_attack_key.name=Require Attack Key
+module.kill_aura.require_attack_key.description=Läuft das Modul nur, solange die Angriffstaste gedrückt wird.
+module.kill_aura.require_weapon.name=Require Weapon
+module.kill_aura.require_weapon.description=Läuft das Modul nur, wenn ein Schwert, eine Axt oder eine Spitzhacke gehalten wird.
+module.kill_aura.override_raycast.name=Override Raycast
+module.kill_aura.override_raycast.description=Ersetzt dein Fadenkreuztreffergebnis durch das ausgewählte Ziel, sodass Angriffe darauf registriert werden.
+module.kill_aura.tick_lookahead.name=Tick Lookahead
+module.kill_aura.tick_lookahead.description=Behält die abgehende Rotation unverändert und bestätigt das Ziel mit einem Raycast, bevor es angreift.
+module.kill_aura.fov.name=FOV
+module.kill_aura.fov.description=Begrenzt die Zielausrichtung auf Entitäten innerhalb dieses Sichtkegelwinkels in Grad vor Ihnen.
+module.kill_aura.teams.name=Team Check
+module.kill_aura.teams.description=Schließt Spieler aus deinem eigenen Team von der Zielauswahl aus.
+module.kill_aura.visuals.name=Visuals
+module.kill_aura.visuals.description=Schaltet visuelle Indikatoren ein, einschließlich eines Rahmens um das aktuelle Ziel.
+module.kill_aura.requirements.name=Requirements
+module.kill_aura.requirements.description=Gruppiert die Bedingungen "Waffe halten" und "Angriffs-Taste halten", die das Modul sperren.
+
+# Velocity
+module.velocity.name=Velocity
+module.velocity.description=Verringert den Rückstoß bei Treffern von Gegnern
+module.velocity.mode.name=Mode
+module.velocity.mode.description=Wählt aus, welcher Geschwindigkeitsreduzierungsmodus angewendet wird: Normal, Watchdog oder MushMC.
+
+# Attack Delay
+module.attack_delay.name=Attack Delay
+module.attack_delay.description=Entfernt die Verzögerung nach einem verfehlten Angriff
+module.attack_delay.max_cooldown.name=Max Cooldown
+module.attack_delay.max_cooldown.description=Legt die Anzahl der Ticks fest, auf die die Abklingzeit des Nachfolgeantiffs begrenzt wird. 0 entfernt die Begrenzung.
+
+# Auto Head
+module.auto_head.name=Auto Head
+module.auto_head.description=Isst automatisiert Golden Heads
+module.auto_head.heal_delay.name=Heal Delay
+module.auto_head.heal_delay.description=Stellt die Abkühlzeit in Millisekunden ein, die das Modul zwischen dem Verzehr goldener Köpfe abwartet.
+module.auto_head.health.name=Health
+module.auto_head.health.description=Legt den Gesundheitswert fest, bei dem oder unter dem das Modul einen goldenen Kopf frisst, um sich zu heilen.
+
+# Block
+module.block.name=Block
+module.block.description=Erlaubt illegale Aktionen beim Blocken oder blockt automatisch
+module.block.blocking.name=Blocking
+module.block.blocking.description=Erlaubt dem Spieler, weiter zu schwingen und anzugreifen, während er blockt.
+module.block.enabled.name=Enabled
+module.block.enabled.description=Aktiviert automatisch das Blocken mit Schwert oder Schild, wenn sich ein Ziel in Reichweite befindet.
+module.block.require_attack_key.name=Require Attack Key
+module.block.require_attack_key.description=Beschränkt den Auto-Block auf das Feuern nur, solange die Angriffstaste gedrückt wird.
+module.block.block_range.name=Block Range
+module.block.block_range.description=Legt die Distanz in Blöcken fest, innerhalb derer ein Ziel die automatische Blockierung auslöst.
+module.block.allow_swing_while....name=Allow Swing While...
+module.block.allow_swing_while....description=Gruppiert den Schalter, mit dem der Spieler schwingen und angreifen kann, während er blockt.
+module.block.auto_block.name=Auto Block
+module.block.auto_block.description=Gruppiert den Auto-Block-Schalter sowie dessen Angriffs-Taste- und Reichweiten-Unterfunktionen.
+
+# Lag Range
+module.lag_range.name=Lag Range
+module.lag_range.description=Laggt deine Packets gezielt um dir einen Lag-Vorteil zu verschaffen
+module.lag_range.start_buffering_at.name=Start Buffering At
+module.lag_range.start_buffering_at.description=Distanz in Blöcken zu einem Ziel, bei der ausgehende Pakete zurückgehalten werden.
+module.lag_range.release_range.name=Release Range
+module.lag_range.release_range.description=Die Entfernung in Blöcken zum Ziel, bei der die gehaltenen Pakete freigegeben werden.
+module.lag_range.release_timer.name=Release Timer
+module.lag_range.release_timer.description=Maximal lange Pakete werden vor der Freigabe zurückgehalten, unabhängig vom Bereich.
+module.lag_range.release_options.name=Release Options
+module.lag_range.release_options.description=Gruppiert den Freigabe-Bereich und den Freigabe-Timer, die steuern, wann gehaltene Pakete freigegeben werden.
+
+# Piercing
+module.piercing.name=Piercing
+module.piercing.description=Interagiere durch bestimmtes durch
+
+# Reach
+module.reach.name=Reach
+module.reach.description=Erlaubt es dir weiter zu interagieren oder anzugreifen
+module.reach.entity_interaction_range.name=Entity Interaction Range
+module.reach.entity_interaction_range.description=Legt die maximale Distanz in Blöcken fest, in der du Kreaturen angreifen oder mit ihnen interagieren kannst.
+module.reach.block_interaction_range.name=Block Interaction Range
+module.reach.block_interaction_range.description=Legt die maximale Distanz in Blöcken fest, in der du mit Blöcken interagieren kannst.
+
+# TP Aura
+module.tp_aura.name=TP Aura
+module.tp_aura.description=Teleportiert dich zu Gegnern und greift sie an
+
+# WTap
+module.wtap.name=WTap
+module.wtap.description=Lässt W los um mehr Rückstoß zu geben
+module.wtap.chance.name=Chance
+module.wtap.chance.description=Prozentuale Wahrscheinlichkeit, dass ein Angriff die Freigabe der Vorwärtstaste auslöst.
+module.wtap.delay_ticks.name=Delay Ticks
+module.wtap.delay_ticks.description=Anzahl der Ticks, die nach dem Angriff gewartet werden müssen, bevor die Vorwärts-Taste losgelassen wird.
+module.wtap.release_ticks.name=Release Ticks
+module.wtap.release_ticks.description=Anzahl der Ticks, während der die Vorwärtstaste gedrückt bleibt, bevor die Bewegung wieder aufgenommen wird.
+module.wtap.only_sprinting.name=Only Sprinting
+module.wtap.only_sprinting.description=Löst die Freigabe nur aus, während der Spieler sprintet.
+module.wtap.only_ground.name=Only Ground
+module.wtap.only_ground.description=Löst den Effekt nur aus, wenn sich der Spieler auf dem Boden befindet.
+
+# ============================================================
+# Movement
+# ============================================================
+
+# Clipper
+module.clipper.name=Clipper
+module.clipper.description=Clippt dich durch Blöcke nach oben oder unten wenn möglich
+module.clipper.limit_distance.name=Limit Distance
+module.clipper.limit_distance.description=Begrenze den Auf- und Ab-Scan auf etwa zehn Blöcke anstatt bis zur Weltbauhöhe zu reichen.
+module.clipper.upwards.name=Upwards
+module.clipper.upwards.description=Ermöglicht das Scannen und das Anclippen bis zur nächsten Plattform über Ihnen, während Sie sich am Boden befinden.
+
+# Flight
+module.flight.name=Flight
+module.flight.description=Gibt dir die Fähigkeit zu fliegen
+module.flight.mode.name=Mode
+module.flight.mode.description=Wählt die Flugstrategie: Vanilla Freiflug, Feuerball Gleitflug oder Luftlauf.
+
+# Long Jump
+module.long_jump.name=Long Jump
+module.long_jump.description=Erlaubt es dir weiter zu springen
+module.long_jump.mode.name=Mode
+module.long_jump.mode.description=Wählt die Starttechnik aus, mit der das Modul dich weiter vorwärts katapultiert.
+
+# No Slow
+module.no_slow.name=No Slow
+module.no_slow.description=Kein Verlangsamen beim Nutzen von Gegenständen
+module.no_slow.mode.name=Mode
+module.no_slow.mode.description=Wählt aus, welche Strategie zur Verlangsamungsbeseitigung das Modul anwendet, während Sie ein Element verwenden.
+module.no_slow.allow_sprinting.name=Allow Sprinting
+module.no_slow.allow_sprinting.description=Behält deine Sprintgeschwindigkeit bei, während du ein Item benutzt, anstatt die Gehgeschwindigkeit anzunehmen.
+
+# Movement Recorder
+module.movement_recorder.name=Movement Recorder
+module.movement_recorder.description=Nimmt deine Bewegungen auf und spielt sie wieder ab
+module.movement_recorder.show_breadcrumbs.name=Show Breadcrumbs
+module.movement_recorder.show_breadcrumbs.description=Zeichnet eine Krummelspur, die den aufgezeichneten Pfad durch die Welt verfolgt.
+module.movement_recorder.show_block_highlights.name=Show Block Highlights
+module.movement_recorder.show_block_highlights.description=Markiert die Start- und Endblöcke der Aufnahme mit ausblendenden Highlights in der Welt.
+module.movement_recorder.dynamic_island.name=Dynamic Island
+module.movement_recorder.dynamic_island.description=Zeigt das dynamische Insel-Steuerungselement des Aufnahmegeräts während der Aufnahme oder Wiedergabe an.
+module.movement_recorder.mode.name=Mode
+module.movement_recorder.mode.description=Wählt aus, ob der Recorder Bewegungen aufzeichnet oder abspielt.
+module.movement_recorder.loop_playback.name=Loop Playback
+module.movement_recorder.loop_playback.description=Startet die Wiedergabe vom Anfang neu, wenn die Aufnahme beendet ist.
+module.movement_recorder.teleport_to_start.name=Teleport to Start
+module.movement_recorder.teleport_to_start.description=Setzt Ihre Position direkt auf den Startpunkt der Aufnahme, wenn die Wiedergabe beginnt.
+module.movement_recorder.wait_for_position.name=Wait for Position
+module.movement_recorder.wait_for_position.description=Wartet, bis du den Startpunkt erreichst, bevor die Wiedergabe beginnt.
+module.movement_recorder.rotation_speed.name=Rotation Speed
+module.movement_recorder.rotation_speed.description=Legt fest, wie schnell sich Ihre Ansicht während der Wiedergabe zu aufgezeichneten Winkeln dreht.
+module.movement_recorder.default_name.name=Default Name
+module.movement_recorder.default_name.description=Legt den Standardnamen für neu gespeicherte Aufnahmen fest.
+module.movement_recorder.path_detail.name=Path Detail
+module.movement_recorder.path_detail.description=Legt fest, wie viele Details bei der Vereinfachung des aufgezeichneten Pfads erhalten bleiben.
+module.movement_recorder.filter_by_server.name=Filter by Server
+module.movement_recorder.filter_by_server.description=Beschränkt die Aufnahmeliste auf die Aufnahmen, die auf dem aktuellen Server gespeichert sind.
+module.movement_recorder.auto_trim.name=Auto Trim
+module.movement_recorder.auto_trim.description=Trimmt automatisch nahezu unbewegte Einzelbilder vom Anfang einer Aufnahme.
+module.movement_recorder.trim_threshold.name=Trim Threshold
+module.movement_recorder.trim_threshold.description=Legt die Bewegungsdistanz fest, unterhalb derer Frames als stationär für automatischen Zuschnitt gewertet werden.
+module.movement_recorder.show_info_panel.name=Show Info Panel
+module.movement_recorder.show_info_panel.description=Zeigt das HUD-Informationsfeld des Aufnehmers auf dem Bildschirm an.
+module.movement_recorder.panel_pos.name=Panel Pos
+module.movement_recorder.panel_pos.description=Positioniert das Recorder-Info-Panel auf dem Bildschirm.
+module.movement_recorder.visuals.name=Visuals
+module.movement_recorder.visuals.description=Gruppiert die Brotkrümel-, Block-Highlight- und Dynamic-Island-Visuelle-Umschalter.
+module.movement_recorder.playback.name=Playback
+module.movement_recorder.playback.description=Gruppiert die Einstellungen für Schleife, Teleport, Warten auf Position und Wiedergabe der Rotationsgeschwindigkeit.
+module.movement_recorder.recording.name=Recording
+module.movement_recorder.recording.description=Gruppiert den Standardnamen, den Pfad, den Serverfilter und die Trim-Aufnahmeeinstellungen.
+module.movement_recorder.overlay.name=Overlay
+module.movement_recorder.overlay.description=Gruppiert den Umschalter für das Info-Panel und dessen Einstellungen für die Bildschirmposition.
+
+# Speed
+module.speed.name=Speed
+module.speed.description=Du bewegst dich schneller
+module.speed.mode.name=Mode
+module.speed.mode.description=Wählt die Geschwindigkeitsstrategie aus, die das Modul anwendet, um Ihre horizontale Bewegung zu erhöhen.
+
+# Eagle
+module.eagle.name=Eagle
+module.eagle.description=Sneaked automatisch am Rand eines Blocks damit man leichter Ninja-Bridgen kann (Bridge Assist or Safewalk Sneak)
+module.eagle.only_blocks.name=Only Blocks
+module.eagle.only_blocks.description=Nur Auto-Schnüffeln, während du einen platzierbaren Block in deiner Haupt- oder Auslösehand hältst.
+module.eagle.only_right_click.name=Only Right Click
+module.eagle.only_right_click.description=Nur Auto-Schnüffeln, während du die Benutze-Taste (Rechtsklick) gedrückt hältst.
+
+# Fast Stop
+module.fast_stop.name=Fast Stop
+module.fast_stop.description=Entfernt den kleinen Rutscher beim Aufhören zu laufen
+module.fast_stop.conditions.name=Conditions
+module.fast_stop.conditions.description=Wählt, ob die schnellere Verzögerung am Boden, in der Luft oder beidem gilt.
+module.fast_stop.multiplier.name=Multiplier
+module.fast_stop.multiplier.description=Legt den 0-1-Faktor fest, mit dem die horizontale Geschwindigkeit skaliert wird, sobald die Bewegung losgelassen wird.
+
+# Inventory Move
+module.inventory_move.name=Inventory Move
+module.inventory_move.description=Erlaubt es dir dich im Inventar zu bewegen
+
+# Jump Cooldown
+module.jump_cooldown.name=Jump Cooldown
+module.jump_cooldown.description=Entfernt den Cooldown beim Springen gedrückt halten
+module.jump_cooldown.max_cooldown.name=Max Cooldown
+module.jump_cooldown.max_cooldown.description=Legt die Anzahl der Ticks zwischen Sprüngen fest, wobei 0 die Verzögerung entfernt und du jeden Tick springst.
+
+# Movement Fix
+module.movement_fix.name=Movement Fix
+module.movement_fix.description=Fixiert deine Bewegung an deine Rotation
+module.movement_fix.mode.name=Mode
+module.movement_fix.mode.description=Wählt Normal (projiziert den Input auf Ihre Blickrichtung) oder nur Sprint (Sprint fixieren).
+module.movement_fix.packet_only.name=Packet Only
+module.movement_fix.packet_only.description=Im Sprint-Only-Modus werden Sprints aus dem ausgehenden Paket entfernt, anstatt den Client-Status zu berücksichtigen.
+
+# Phase
+module.phase.name=Phase
+module.phase.description=Ermöglicht es dir durch Wände zu gehen
+module.phase.auto_disable.name=Auto Disable
+module.phase.auto_disable.description=Schalten Sie das Modul ab, sobald Sie die Wand geräumt und den Block verlassen haben.
+
+# Safe Walk
+module.safe_walk.name=Safe Walk
+module.safe_walk.description=Du fällst am Rand von einem Block nicht runter
+module.safe_walk.holding_block_check.name=Holding Block Check
+module.safe_walk.holding_block_check.description=Verhindert nur das Abspringen von Kanten, solange du ein platzierbares Blockelement hältst.
+module.safe_walk.direction_check.name=Direction Check
+module.safe_walk.direction_check.description=Verhindert nur das Abspringen von Kanten, solange du eine Bewegungstaste gedrückt hältst.
+
+# Spider
+module.spider.name=Spider
+module.spider.description=Lässt dich Wände hochklettern
+module.spider.speed.name=Speed
+module.spider.speed.description=Legt die beim Anlehnen an eine Wand zum Klettern ausgeübte Aufwärtsgeschwindigkeit fest.
+
+# Sprint
+module.sprint.name=Sprint
+module.sprint.description=Ändert wie Sprinten funktioniert
+module.sprint.omnidirectional.name=Omnidirectional
+module.sprint.omnidirectional.description=Ermöglicht das Sprinten in jede beliebige Bewegungsrichtung, nicht nur beim Vorwärtslaufen.
+module.sprint.keep_sprint.name=Keep Sprint
+module.sprint.keep_sprint.description=Verhindert, dass der Sprint durch Aktionen unterbrochen wird, die ihn normalerweise abbrechen würden.
+
+# Strafe
+module.strafe.name=Strafe
+module.strafe.description=Besseres Strafen in der Luft und auf dem Boden
+module.strafe.conditions.name=Conditions
+module.strafe.conditions.description=Begrenzt die Strafe auf den Moment, in dem du am Boden, in der Luft oder beidem bist.
+module.strafe.ncp_max.name=NCP Max
+module.strafe.ncp_max.description=Erhöht deine Bewegungsgeschwindigkeit auf ein höheres, festes Limit, während du dich seitwärts bewegst.
+module.strafe.strength.name=Strength
+module.strafe.strength.description=Wie stark Ihre Bewegung in Richtung Ihrer Eingangsrichtung umgelenkt wird, als Prozentsatz.
+
+# Target Strafe
+module.target_strafe.name=Target Strafe
+module.target_strafe.description=Lässt dich in Kreisen um Ziele gehen
+module.target_strafe.strafe_mode.name=Strafe Mode
+module.target_strafe.strafe_mode.description=Wählt aus, wie sich die Bewegung um das Ziel bewegt: es umkreist oder bleibt direkt dahinter.
+module.target_strafe.requirements.name=Requirements
+module.target_strafe.requirements.description=Auslösung beim Strafen: nur während des Springens und nur wenn das Geschwindigkeitsmodul aktiviert ist.
+module.target_strafe.range.name=Range
+module.target_strafe.range.description=Legt die Distanz in Blöcken fest, die beim Strafing um das Ziel herum eingehalten wird.
+module.target_strafe.show_ring.name=Show Ring
+module.target_strafe.show_ring.description=Zeichnet einen Ring auf dem Boden um das Ziel, während du aktiv seitwärts gleitest.
+module.target_strafe.auto_3rd_person.name=Auto 3rd Person
+module.target_strafe.auto_3rd_person.description=Schaltet die Kamera beim Strafen in die Third-Person-Ansicht um und danach wieder zurück in die First-Person-Ansicht.
+
+# ============================================================
+# Utility
+# ============================================================
+
+# Disabler
+module.disabler.name=Disabler
+module.disabler.description=Schwächt das Anti-Cheat
+module.disabler.mode.name=Mode
+module.disabler.mode.description=Wählt aus, welcher Anti-Cheat der Disabler ins Visier nimmt, entweder Watchdog oder Cubecraft-Modus.
+
+# Chest Stealer
+module.chest_stealer.name=Chest Stealer
+module.chest_stealer.description=Nimmt automatisch Loot aus der Kiste
+module.chest_stealer.smart.name=Smart
+module.chest_stealer.smart.description=Nimmt nur Gegenstände, die mehr wert sind als das, was man bereits besitzt, anstatt alles zu nehmen.
+module.chest_stealer.highlight_items.name=Highlight Items
+module.chest_stealer.highlight_items.description=Markiert visuell die Brusttaschen, die der intelligente Modus für wert betrachtend hält.
+module.chest_stealer.delay.name=Delay
+module.chest_stealer.delay.description=Legt die randomisierte Wartezeit in Millisekunden zwischen jedem Gegenstand fest, der aus der Truhe gezogen wird.
+
+# Auto Armor
+module.auto_armor.name=Auto Armor
+module.auto_armor.description=Zieht automatisch die beste Rüstung an
+module.auto_armor.delay.name=Delay
+module.auto_armor.delay.description=Legt die Wartezeit in Millisekunden zwischen jeder Aktion zum Ausrüsten oder Fallenlassen von Rüstungen fest.
+
+# Inventory Manager
+module.inventory_manager.name=Inventory Manager
+module.inventory_manager.description=Sortiert dein Inventar automatisch
+module.inventory_manager.delay.name=Delay
+module.inventory_manager.delay.description=Legt die Millisekunden zwischen Inventurbewegungen fest, wobei der Wert innerhalb des Bereichs zufällig bestimmt wird.
+module.inventory_manager.slots.name=Slots
+module.inventory_manager.slots.description=Wählt aus, welche Arten von Gegenständen in die bevorzugten Schnellzugriffsleistenplätze sortiert werden.
+module.inventory_manager.sword_slot.name=Sword Slot
+module.inventory_manager.sword_slot.description=Setzt den Hotbar-Slot (1-9), in den das beste Schwert bewegt wird.
+module.inventory_manager.pickaxe_slot.name=Pickaxe Slot
+module.inventory_manager.pickaxe_slot.description=Setzt den Hotbar-Slot (1-9), in den die beste Spitzhacke bewegt wird.
+module.inventory_manager.axe_slot.name=Axe Slot
+module.inventory_manager.axe_slot.description=Setzt den Hotbar-Slot (1-9), in den die beste Axt verschoben wird.
+module.inventory_manager.block_slot.name=Block Slot
+module.inventory_manager.block_slot.description=Setzt den Hotbar-Slot (1-9), in den der größte Stapel Blöcke bewegt wird.
+
+# No Fall
+module.no_fall.name=No Fall
+module.no_fall.description=Entfernt deinen Fallschaden
+module.no_fall.mode.name=Mode
+module.no_fall.mode.description=Wählt die Strategie, bei der es nicht zum Absturz kommt: Spoof bearbeitet die Bodenmarkierung oder Watchdog nimmt die Bewegung auf.
+
+# Anti Void
+module.anti_void.name=Anti Void
+module.anti_void.description=Verhindert dass du in das Void fällst
+
+# Auto Chest
+module.auto_chest.name=Auto Chest
+module.auto_chest.description=Legt bestimmte Sachen in Kisten und holt anderes raus
+module.auto_chest.ticks.name=Ticks
+module.auto_chest.ticks.description=Setzt die Client-Ticks zwischen jedem verschobenen Ressourcenstapel zum oder vom Truhe.
+module.auto_chest.auto_deposit.name=Auto Deposit
+module.auto_chest.auto_deposit.description=Beginnt automatisch, Ihre Ressourcen abzuspeichern, sobald ein Truhenbildschirm geöffnet wird.
+
+# Auto Hypixel
+module.auto_hypixel.name=Auto Hypixel
+module.auto_hypixel.description=Nützliche Funktionen für Hypixel
+module.auto_hypixel.enabled.name=Enabled
+module.auto_hypixel.enabled.description=Aktiviert das Auto Hypixel-Modul und ermöglicht so die Komfortfunktionen von Hypixel.
+module.auto_hypixel.message.name=Message
+module.auto_hypixel.message.description=Legt den im All-Chat gesendeten Text nach Spielende als GG-Nachricht fest.
+module.auto_hypixel.delay.name=Delay
+module.auto_hypixel.delay.description=Legt fest, wie viele Sekunden gewartet werden soll, bevor /play zum erneuten Anreihen gesendet wird, von 0 bis 8.
+module.auto_hypixel.auto_leave_on_ban.name=Auto Leave on Ban
+module.auto_hypixel.auto_leave_on_ban.description=Löst den Spieler aus dem aktuellen Spiel.
+module.auto_hypixel.auto_gg.name=Auto GG
+module.auto_hypixel.auto_gg.description=Sendet deine GG-Nachricht im All-Chat, sobald eine Endspiel-Karma-Zeile erkannt wird.
+module.auto_hypixel.auto_play.name=Auto Play
+module.auto_hypixel.auto_play.description=Läuft / spielt im aktuellen Modus, wenn du in die Warteschlange stehst oder ein Spiel endet.
+
+# Auto Tool
+module.auto_tool.name=Auto Tool
+module.auto_tool.description=Wechselt automatisch zum besten Werkzeug in der Hotbar
+module.auto_tool.only_when_sneaking.name=Only when Sneaking
+module.auto_tool.only_when_sneaking.description=Begrenzt den automatischen Werkzeugwechsel auf den Moment, in dem du dich anschleichst.
+module.auto_tool.requirements.name=Requirements
+module.auto_tool.requirements.description=Gruppiert die Bedingungen, die erfüllt sein müssen, bevor das Modul Werkzeuge wechselt.
+
+# Blink
+module.blink.name=Blink
+module.blink.description=Hält deine Pakete kurz auf
+module.blink.direction.name=Direction
+module.blink.direction.description=Wählt, ob eingehende Pakete, ausgehende Pakete oder beide Richtungen festgehalten werden sollen.
+module.blink.pulse.name=Pulse
+module.blink.pulse.description=Gibt die gehaltenen Pakete periodisch frei, anstatt sie unbegrenzt zu behalten.
+module.blink.pulse_delay.name=Pulse Delay
+module.blink.pulse_delay.description=Legt den minimalen und maximalen Millisekundenbereich fest, auf den jeder Impuls wartet, bevor gehaltene Pakete freigegeben werden.
+
+# Fast Use
+module.fast_use.name=Fast Use
+module.fast_use.description=Benutzt Sachen schneller
+module.fast_use.enabled.name=Enabled
+module.fast_use.enabled.description=Aktiviert das Verhalten "Placements", das die Standard-Verzögerung zwischen dem Platzieren von Objekten entfernt.
+module.fast_use.placements.name=Placements
+module.fast_use.placements.description=Setzt das Cooldown für Rechtsklick auf Null bei jedem Tick, sodass Blöcke und Gegenstände ohne die Verzögerung der Vanilla-Version platziert werden können.
+
+# IRC
+module.irc.name=IRC
+module.irc.description=Lässt dich mit anderen Opal Nutzern chatten
+
+# No Rotate
+module.no_rotate.name=No Rotate
+module.no_rotate.description=Server kann deine Blickrichtung nicht ändern
+module.no_rotate.ignore_teleports.name=Ignore Teleports
+module.no_rotate.ignore_teleports.description=Behält die Blickrichtung für Weitdistanz-Teleports bei (10 oder mehr Blöcken Entfernung).
+
+# Party Spam
+module.party_spam.name=Party Spam
+module.party_spam.description=Bombardiert einen Spieler mit Party Einladungen
+module.party_spam.username.name=Username
+module.party_spam.username.description=Legt den Namen des Zielspielers fest, sendet wiederholte Einladungen zur Gruppe und Befehle zum Auflösen.
+
+# Spammer
+module.spammer.name=Spammer
+module.spammer.description=Spammt den Chat
+module.spammer.delay.name=Delay
+module.spammer.delay.description=Millisekunden, die zwischen jeder gesendeten Chatnachricht gewartet werden sollen.
+module.spammer.message.name=Message
+module.spammer.message.description=Der Text der Chatnachricht, der wiederholt gesendet werden soll.
+module.spammer.anti_spam_bypass.name=Anti Spam Bypass
+module.spammer.anti_spam_bypass.description=Fügt jeder Nachricht eine zufällige Nummer hinzu, sodass aufeinanderfolgende Senden nicht identisch sind.
+
+# ============================================================
+# World
+# ============================================================
+
+# Timer
+module.timer.name=Timer
+module.timer.description=Ändert wie schnell das Spiel läuft
+module.timer.game_speed.name=Game Speed
+module.timer.game_speed.description=Legt den Multiplikator für die Spiel-Tickrate fest, wodurch das Spiel beschleunigt oder verlangsamt wird.
+
+# Fast Break
+module.fast_break.name=Fast Break
+module.fast_break.description=Baut Blöcke schneller ab
+module.fast_break.enabled.name=Enabled
+module.fast_break.enabled.description=Schaltet das Fast Break-Modul ein oder aus.
+module.fast_break.speed.name=Speed
+module.fast_break.speed.description=Ermöglicht einen Boost der Abbaugeschwindigkeit, der Blöcke schneller abbricht.
+module.fast_break.cooldown.name=Cooldown
+module.fast_break.cooldown.description=Legt fest, um wie viel schneller Blöcke abgebaut werden, als prozentualer Anstieg der Abbaugeschwindigkeit.
+module.fast_break.break_slowdown.name=Break Slowdown
+module.fast_break.break_slowdown.description=Verhindert Verzögerungen im Bergbau durch Faktoren in der Luft, im Wasser und durch Bergbauermüdung.
+module.fast_break.spoof_ground_state.name=Spoof Ground State
+module.fast_break.spoof_ground_state.description=Berichtet, dass du dich während des Bergbaus in der Luft in Bewegungspaketen befindest.
+module.fast_break.break_cooldown.name=Break Cooldown
+module.fast_break.break_cooldown.description=Überschreibt die Verzögerung in Ticks zwischen aufeinanderfolgenden Blockumbrüchen.
+
+# Scaffold
+module.scaffold.name=Scaffold
+module.scaffold.description=Baut automatisch unter dir während du läufst
+module.scaffold.enabled.name=Enabled
+module.scaffold.enabled.description=Aktiviert die Bewegungsintelligenz und lenkt Ihre Bewegungsrichtung auf platzierbare Blöcke.
+module.scaffold.diagonal_movement.name=Diagonal Movement
+module.scaffold.diagonal_movement.description=Lasst uns die Bewegungsintelligenz entlang von Diagonalen lenken, anstatt nur in Hauptrichtungen.
+module.scaffold.snap_movement.name=Snap Movement
+module.scaffold.snap_movement.description=Klickt die gesteuerte Bewegungsrichtung auf diskrete Winkelstufen.
+module.scaffold.steps.name=Steps
+module.scaffold.steps.description=Legt fest, wie viele diskrete Winkelstufen die Bewegungsschnappung verwendet, von eins bis drei.
+module.scaffold.interact_cps.name=Interact CPS
+module.scaffold.interact_cps.description=Legt die Klicks-pro-Sekunde-Rate für simulierte Blockplatzierungsinteraktionen fest.
+module.scaffold.mode.name=Mode
+module.scaffold.mode.description=Wählt die Platzierungsstrategie-Option: Vanilla, Anti-Gaming-Stuhl oder Watchdog.
+module.scaffold.tower.name=Tower
+module.scaffold.tower.description=Platziert Blöcke direkt unter dir, während du die Sprungtaste gedrückt hältst, um dich vertikal nach oben zu bewegen.
+module.scaffold.switch_mode.name=Switch Mode
+module.scaffold.switch_mode.description=Wählt aus, wie der Block-Schnellzugriff-Slot ausgewählt wird: Normal, Schnellzugriffleiste oder Voll.
+module.scaffold.swing_mode.name=Swing Mode
+module.scaffold.swing_mode.description=Ob der Armschwung der Platzierung clientseitig gerendert wird oder serverseitig gesendet wird, wird festgelegt.
+module.scaffold.snap_rotations.name=Snap Rotations
+module.scaffold.snap_rotations.description=Die Platzierung von Schnappbefestigungen wird sofort rotiert, anstatt sich darauf hin zu interpolieren.
+module.scaffold.override_raycast.name=Override Raycast
+module.scaffold.override_raycast.description=Ersetzt den Client-Raycast durch das eigene Platzierungsergebnis des Moduls.
+module.scaffold.auto_jump.name=Auto Jump
+module.scaffold.auto_jump.description=Springt automatisch beim Überbrücken in fester Höhe im gleichen Y-Modus.
+module.scaffold.block_overlay.name=Block Overlay
+module.scaffold.block_overlay.description=Zeichnet eine verblassende Überlagerung, die hervorhebt, wo Blöcke platziert sind.
+module.scaffold.dynamic_island.name=Dynamic Island
+module.scaffold.dynamic_island.description=Zeigt die Statusüberlagerung der Scaffold Dynamic Island auf dem Bildschirm an.
+module.scaffold.hypixel_addons.name=Hypixel Addons
+module.scaffold.hypixel_addons.description=Ermöglicht Hypixel-spezifische Zusatzfunktionen wie die Boost-Option, wenn man sich auf Hypixel befindet.
+module.scaffold.movement_intelligence.name=Movement Intelligence
+module.scaffold.movement_intelligence.description=Gruppiert die Umschalt-Intelligenz-Schalter, die Ihre Bewegung in Richtung platzierbarer Blöcke lenken.
+
+# Breaker
+module.breaker.name=Breaker
+module.breaker.description=Baut automatisch spezifizierte Blöcke ab
+module.breaker.swing_mode.name=Swing Mode
+module.breaker.swing_mode.description=Ob die Armbewegung beim Brechen an den Server gesendet oder nur clientseitig angezeigt wird, wird festgelegt.
+module.breaker.range.name=Range
+module.breaker.range.description=Legt die maximale Distanz in Blöcken fest, in der nach Zielblöcken gesucht und diese zerstört werden.
+module.breaker.break_surroundings.name=Break Surroundings
+module.breaker.break_surroundings.description=Bricht den schwächsten benachbarten Block mit dem schnellsten Werkzeug, anstatt nur das Bett selbst.
+
+# ============================================================
+# Visual
+# ============================================================
+
+# Tab GUI
+module.tab_gui.name=Tab GUI
+module.tab_gui.description=Lässt dich mit den Pfeiltasten Module anmachen oder Einstellungen öffnen ohne das Click GUI zu öffnen
+
+# Streamer Mode
+module.streamer_mode.name=Streamer Mode
+module.streamer_mode.description=Extra Optionen fürs Streamen
+module.streamer_mode.hide_server_id.name=Hide Server ID
+module.streamer_mode.hide_server_id.description=Verschleiert die Hypixel-Zielserver-ID in Nachrichten zum Servertransfer.
+module.streamer_mode.hide_username.name=Hide Username
+module.streamer_mode.hide_username.description=Ersetzt deinen eigenen Benutzernamen in angezeigten Texten durch den konfigurierten benutzerdefinierten Benutzernamen.
+module.streamer_mode.custom_username.name=Custom Username
+module.streamer_mode.custom_username.description=Legt den angezeigten Ersetzungsnamen fest, der anstelle deines Benutzernamens angezeigt wird, wenn die Benutzernamensausblendung aktiviert ist.
+
+# Post Processing
+module.post_processing.name=Post Processing
+module.post_processing.description=Erlaubt dir Post-Processing Effekte einzustellen
+module.post_processing.enabled.name=Enabled
+module.post_processing.enabled.description=Es gibt keinen separaten Schalter; der Blur-Pass dient als Master für Nachbearbeitungseffekte.
+module.post_processing.radius.name=Radius
+module.post_processing.radius.description=Der Bildschirm-Blur-Radius in Pixeln wird festgelegt, einstellbar von 1 bis 20.
+module.post_processing.blur.name=Blur
+module.post_processing.blur.description=Erzeugt einen Bildschirmraumbildunschärfe-Effekt hinter der Benutzeroberfläche und dient als Master für den Bloom-Pass.
+module.post_processing.bloom.name=Bloom
+module.post_processing.bloom.description=Fügt den UI-Elementen einen Glüheffekt hinzu, der nur aktiv ist, wenn auch Unschärfe aktiviert ist.
+
+# No Hurt Camera
+module.no_hurt_camera.name=No Hurt Camera
+module.no_hurt_camera.description=Kamera wackelt nicht mehr wenn du Schaden nimmst
+module.no_hurt_camera.no_player_model_hurt.name=No Player Model Hurt
+module.no_hurt_camera.no_player_model_hurt.description=Entfernt außerdem den roten Schadensblitz von Ihrem eigenen Spieler-Modell, wenn Sie Schaden erleiden.
+
+# Full Bright
+module.full_bright.name=Full Bright
+module.full_bright.description=Macht alles hell egal wie dunkel es ist
+
+# Discord RPC
+module.discord_rpc.name=Discord RPC
+module.discord_rpc.description=Zeigt in Discord an was du gerade spielst
+module.discord_rpc.hide_server.name=Hide Server
+module.discord_rpc.hide_server.description=Ersetzt den Servernamen in deiner Discord-Anwesenheit durch ein generisches, verstecktes Label.
+
+# Click GUI
+module.click_gui.name=Click GUI
+module.click_gui.description=Client Modul und Einstellungs-Menü
+module.click_gui.allow_movement.name=Allow Movement
+module.click_gui.allow_movement.description=Behält deine Bewegungstasten aktiv, sodass du dich auch mit geöffneter Klick-GUI bewegen kannst.
+
+# Cape
+module.cape.name=Cape
+module.cape.description=Gibt dir ein Cape deiner Wahl
+module.cape.type.name=Type
+module.cape.type.description=Wählt das angezeigte Umhangdesign aus und synchronisiert die Auswahl mit deinem Konto.
+
+# Break Progress
+module.break_progress.name=Break Progress
+module.break_progress.description=Zeigt den Fortschritt beim Abbauen eines Blocks an
+
+# Attack Effects
+module.attack_effects.name=Attack Effects
+module.attack_effects.description=Coole Effekte beim Angreifen
+module.attack_effects.particles.name=Particles
+module.attack_effects.particles.description=Erzeugt kritische Treffer- und Schärfepartikel auf die Ziele, die du angreifst.
+module.attack_effects.sounds.name=Sounds
+module.attack_effects.sounds.description=Spielt nur die Angriffsklangtypen, die du aktivierst, und blendet die anderen aus, wenn du eine Entität triffst.
+
+# Animations
+module.animations.name=Animations
+module.animations.description=Ändert verschiedene Ingame-Animationen
+module.animations.enabled.name=Enabled
+module.animations.enabled.description=Ermöglicht die Animation zum Blocken mit dem Schwert, sodass ein gehaltenes Schwert eine blockende Pose zeigt.
+module.animations.block_animation.name=Block Animation
+module.animations.block_animation.description=Wählt den Animationsstil für den Schwertblock (1.7, 1.8, Rub, Stella, Bounce usw.).
+module.animations.always_hidden.name=Always Hidden
+module.animations.always_hidden.description=Verbirgt das Schild-Item jederzeit in der Ego-Perspektive.
+module.animations.hide_offhand_slot.name=Hide Offhand Slot
+module.animations.hide_offhand_slot.description=Verbirgt den Nebenhand-Schild-Slot in der Schnellleiste.
+module.animations.old_backwards_walking.name=Old Backwards Walking
+module.animations.old_backwards_walking.description=Stellt die Animation des rückwärtsgehenden Erbes wieder her.
+module.animations.old_armor_damage_tint.name=Old Armor Damage Tint
+module.animations.old_armor_damage_tint.description=Stellt die beim Beschädigung angezeigte rote Farbtönung der Rüstung wieder her.
+module.animations.old_sneaking.name=Old Sneaking
+module.animations.old_sneaking.description=Stellt die Pose des heimlichen Schleichens wieder her.
+module.animations.fix_pose_repeat.name=Fix Pose Repeat
+module.animations.fix_pose_repeat.description=Behebt einen Fehler, der verhindert, dass die Spielerpose-Animation sich wiederholt.
+module.animations.scale.name=Scale
+module.animations.scale.description=Setzt einen einheitlichen Skalierungsfaktor für den ausgerüsteten Gegenstand (1 lässt ihn unverändert).
+module.animations.offset_x.name=Offset X
+module.animations.offset_x.description=Verschiebt das Hauptgegenstand in der Ego-Perspektive nach links oder rechts.
+module.animations.offset_y.name=Offset Y
+module.animations.offset_y.description=Verschiebt das Hauptgegenstand im Ego-Modus nach oben oder unten.
+module.animations.swing_slowdown.name=Swing Slowdown
+module.animations.swing_slowdown.description=Verlangsamt die Animation des Schwunges, wobei höhere Werte dazu führen, dass jeder Schwung länger dauert.
+module.animations.old_cooldown_animation.name=Old Cooldown Animation
+module.animations.old_cooldown_animation.description=Stellt die Animation des Abklingzeit-Schwingens für das Legacy-Item wieder her.
+module.animations.visual_swing_on_use.name=Visual Swing on Use
+module.animations.visual_swing_on_use.description=Führt eine visuelle Handbewegung aus, während ein Gegenstand benutzt wird.
+module.animations.hide_drop_swing.name=Hide Drop Swing
+module.animations.hide_drop_swing.description=Unterdrückt die Armbewegungsanimation, die beim Loslassen eines Gegenstands abgespielt wird.
+module.animations.equip_offset.name=Equip Offset
+module.animations.equip_offset.description=Ermöglicht eine Verschiebung der Ausrüstungs-(Hebungs-)Animation des Gegenstands.
+module.animations.sword_blocking.name=Sword Blocking
+module.animations.sword_blocking.description=Gruppiert den Schalter zum Blocken mit dem Schwert und den Auswahler für den Animationsstil.
+module.animations.shields.name=Shields
+module.animations.shields.description=Gruppiert die Optionen zum Ausblenden des Schilditems und des zugehörigen Schnellzugriffs für den Nebenbewaffnungsslot.
+module.animations.player.name=Player
+module.animations.player.description=Gruppiert die Legacy-Spieler-Körperanimationstoggles (Gehen, Schleichen, Farbgebung, Pose).
+module.animations.item.name=Item
+module.animations.item.description=Gruppiert die Optionen für das gehaltene Objekt bezüglich Versatz, Skalierung, Schwingung und Ausrüstungsanimationen.
+
+# Ambience
+module.ambience.name=Ambience
+module.ambience.description=Ändert die Tageszeit
+module.ambience.use_real_time.name=Use Real Time
+module.ambience.use_real_time.description=Ermittelt die Tageszeit der Welt anhand der lokalen Systemuhr Ihres Computers bei jedem Tick.
+module.ambience.time.name=Time
+module.ambience.time.description=Legt die feste Tageszeit fest, die auf die Welt aufgezwungen wird, in Minecraft-Ticks (0-23450).
+module.ambience.end_sky.name=End Sky
+module.ambience.end_sky.description=Ersetzt den Himmel durch den Sternenhimmel des End-Dimensions-Skybox, während das Modul aktiv ist.
+
+# Overlay
+module.overlay.name=Overlay
+module.overlay.description=Zeigt das Interface von dem Client wie Watermark oder Modulliste
+module.overlay.theme.name=Theme
+module.overlay.theme.description=Wählt das Farbthema des Kunden aus oder „Benutzerdefiniert“, um Akzente aus Ihren eigenen Farben zu gestalten.
+module.overlay.primary_color.name=Primary Color
+module.overlay.primary_color.description=Legt die primäre Akzentfarbe fest, die von der Overlay-Darstellung verwendet wird, wenn das benutzerdefinierte Design ausgewählt ist.
+module.overlay.secondary_color.name=Secondary Color
+module.overlay.secondary_color.description=Legt die sekundäre Akzentfarbe fest, die von der Overlay-Darstellung verwendet wird, wenn das benutzerdefinierte Design ausgewählt ist.
+module.overlay.enabled.name=Enabled
+module.overlay.enabled.description=Aktiviert die benutzerdefinierte Status-Effekt-Überlagerung und ersetzt die Standard-Trank-Effekt-Anzeige.
+module.overlay.text_shadow.name=Text Shadow
+module.overlay.text_shadow.description=Zeichnet den Text der benutzerdefinierten Punktetafel mit einem Schlagschatten.
+module.overlay.left-aligned.name=Left-aligned
+module.overlay.left-aligned.description=Verankert die dynamische Insel an der linken Seite des Bildschirms anstatt in der Mitte.
+module.overlay.minecraft_elements.name=Minecraft Elements
+module.overlay.minecraft_elements.description=Gruppiert die überarbeiteten Vanilla-HUD-Elemente: Zustandsanzeigen, Punktestand und Bossleiste.
+module.overlay.status_effect_overlay.name=Status Effect Overlay
+module.overlay.status_effect_overlay.description=Gruppiert die Einstellungen für die benutzerdefinierte Status-Effekt-Überlagerung.
+module.overlay.scoreboard.name=Scoreboard
+module.overlay.scoreboard.description=Gruppiert die Einstellungen für Aktivierung, Skalierung und Textschatten der benutzerdefinierten Punktetafel.
+module.overlay.bossbar.name=Bossbar
+module.overlay.bossbar.description=Ermöglicht die benutzerdefinierte Bossbar-Überlagerung anstelle der Standard-Bossbar.
+module.overlay.dynamic_island.name=Dynamic Island
+module.overlay.dynamic_island.description=Gruppiert die dynamischen Insel-Einstellungen, einschließlich des linksbündigen Verankerungsschalters.
+
+# Target Information (Overlay)
+module.overlay.target_information.name=Target Information
+module.overlay.target_information.description=Gruppiert die Einstellungen für Aktivierung, Position, Skalierung und Insel-Routing der Kampffokussierungs-Karte.
+module.overlay.screen_position.name=Screen Position
+module.overlay.screen_position.description=Positioniert die Zielinfo-Karte über draggable Koordinaten auf dem Bildschirm.
+
+# Spotify (Overlay)
+module.overlay.spotify.name=Spotify
+module.overlay.spotify.description=Gruppiert die Einstellungen für Aktivierung, Position, Skalierung, Insel und Albumfarbe der aktuell abgespielten Karte.
+module.overlay.position.name=Position
+module.overlay.position.description=Positioniert das Overlay-Element über draggable Koordinaten auf dem Bildschirm.
+module.overlay.use_album_color.name=Use Album Color
+module.overlay.use_album_color.description=Verwendet die dominante Farbe des Albumcovers als Akzentfarbe für die Spotify-Karte.
+
+# Session Stats (Overlay)
+module.overlay.session_stats.name=Session Stats
+module.overlay.session_stats.description=Gruppiert die Einstellungen für aktivieren, Position und Skalierung des Session-Stats-Elements.
+
+# Notifications (Overlay)
+module.overlay.notifications.name=Notifications
+module.overlay.notifications.description=Die Einstellungen des Benachrichtigungselements werden gruppiert, einschließlich des Modul-Umschalt-Popups.
+module.overlay.on_module_toggle.name=On Module Toggle
+module.overlay.on_module_toggle.description=Zeigt ein Benachrichtigungsfenster an, wenn ein Modul aktiviert oder deaktiviert wird.
+
+# Toggled Modules (Overlay)
+module.overlay.toggled_modules.name=Toggled Modules
+module.overlay.toggled_modules.description=Gruppiert die Einstellungen für die aktive Modulliste: aktivieren, Groß-/Kleinschreibung, Suffix, Versatz, Kategorien.
+module.overlay.bar_mode.name=Bar Mode
+module.overlay.bar_mode.description=Welche Kante jeder Modulzeile die Akzentuierungslinie zeichnet oder deaktiviert.
+module.overlay.lowercase.name=Lowercase
+module.overlay.lowercase.description=Rendert Modulnamen in der aktiven Modulliste in Kleinbuchstaben.
+module.overlay.show_suffix.name=Show Suffix
+module.overlay.show_suffix.description=Zeigt neben dem Namen jedes Moduls in der Liste dessen aktiven Wertzusatz.
+module.overlay.offset_scoreboard.name=Offset Scoreboard
+module.overlay.offset_scoreboard.description=Schiebt die Vanille-Ergebnistabelle zur Seite, damit die Liste der aktiven Module nicht darüber liegt.
+module.overlay.visible_categories.name=Visible Categories
+module.overlay.visible_categories.description=Wählt aus, welche Modulkategorien in der aktiven Modulliste angezeigt werden.
+
+# Keystrokes (Overlay)
+module.overlay.keystrokes.name=Keystrokes
+module.overlay.keystrokes.description=Gruppiert die Einstellungen für Aktivierung, Position, Skalierung und Key-Display des Keystrokes-Elements.
+module.overlay.spacebar.name=Spacebar
+module.overlay.spacebar.description=Zeigt die Leertaste im Protokoll der Tastenanschläge an.
+module.overlay.show_cps.name=Show CPS
+module.overlay.show_cps.description=Zeigt die Live-Klicks-pro-Sekunde-Anzeige der Maustasten im Tastenanschlag-Fenster.
+module.overlay.mouse_buttons.name=Mouse Buttons
+module.overlay.mouse_buttons.description=Zeigt die linken und rechten Maustasten in der Tasteneingabe-Anzeige.
+
+# Entity ESP
+module.entity_esp.name=Entity ESP
+module.entity_esp.description=Zeigt Spieler und Entitäten durch Wände an
+module.entity_esp.box.name=Box
+module.entity_esp.box.description=Zeichnet ein 2D-Rechteck um die projizierte Begrenzungsbox jeder Zielentität.
+module.entity_esp.box.enabled.name=Enabled
+module.entity_esp.box.enabled.description=Aktiviert die Box-Überlagerung für gezielte Entitäten.
+module.entity_esp.box.stroke.name=Stroke
+module.entity_esp.box.stroke.description=Fügt um die Umrandungsbox der Entität einen Umriss hinzu, um schärfere Kanten zu erzielen.
+module.entity_esp.health_bar.name=Health Bar
+module.entity_esp.health_bar.description=Zeigt eine vertikale Linie neben jeder Entität, die ihren aktuellen Gesundheitszustand anzeigt.
+module.entity_esp.health_bar.enabled.name=Enabled
+module.entity_esp.health_bar.enabled.description=Aktiviert die Gesundheitsleistenüberlagerung für gezielte Einheiten.
+module.entity_esp.health_bar.stroke.name=Stroke
+module.entity_esp.health_bar.stroke.description=Fügt dem Gesundheitsbalken einen Umriss hinzu, um schärfere Kanten zu erhalten.
+module.entity_esp.skeletons.name=Skeletons
+module.entity_esp.skeletons.description=Zeichnet Linien, die die Gliedmaßen eines Spielers verbinden, um dessen Körperhaltung abzuzeichnen.
+module.entity_esp.skeletons.enabled.name=Enabled
+module.entity_esp.skeletons.enabled.description=Zeigt die Skelettlinienüberlagerung für Spieler-Entitäten an.
+module.entity_esp.name_tags.name=Name Tags
+module.entity_esp.name_tags.description=Zeichnet ein schwebendes Textfeld über jeder Zielentität.
+module.entity_esp.name_tags.enabled.name=Enabled
+module.entity_esp.name_tags.enabled.description=Aktiviert die Namensschildüberlagerung für gezielte Entitäten.
+module.entity_esp.name_tags.elements.name=Elements
+module.entity_esp.name_tags.elements.description=Wählt aus, welche Felder im Tag angezeigt werden: Name, Gesundheit, Entfernung und Ausrüstung.
+module.entity_esp.name_tags.indicators.name=Indicators
+module.entity_esp.name_tags.indicators.description=Wählt Status-Icons im Tag: schleichen, Stärke, unsichtbar und blockieren.
+module.entity_esp.glow.name=Glow
+module.entity_esp.glow.description=Markiert Zielentitäten mit einem farbigen Leuchteffekt.
+module.entity_esp.glow.enabled.name=Enabled
+module.entity_esp.glow.enabled.description=Aktiviert die Umrandung des Glühens für ausgewählte Entitäten.
+module.entity_esp.glow.color.name=Color
+module.entity_esp.glow.color.description=Sets leuchten in Farben: Thema, Teamfarbe oder gesundheitsbezogene Farbe.
+module.entity_esp.glow.hurt_flash.name=Hurt Flash
+module.entity_esp.glow.hurt_flash.description=Zuckt kurz rot auf, wenn die Entität Schaden nimmt.
+
+# Item ESP
+module.item_esp.name=Item ESP
+module.item_esp.description=Zeigt liegengebliebene Items mit Namen an
+module.item_esp.name_tags.name=Name Tags
+module.item_esp.name_tags.description=Gruppiert die Optionen für den Namensschild des fallen gelassenen Gegenstands: aktivieren, Suchradius und welche Elemente angezeigt werden.
+module.item_esp.name_tags.enabled.name=Enabled
+module.item_esp.name_tags.enabled.description=Aktiviert oder deaktiviert die Anzeige von Namensschildern für heruntergefallene Gegenstände.
+module.item_esp.name_tags.range.name=Range
+module.item_esp.name_tags.range.description=Legt fest, wie weit in Blöcken heruntergefallene Gegenstände um dich herum durchsucht und beschriftet werden.
+module.item_esp.name_tags.elements.name=Elements
+module.item_esp.name_tags.elements.description=Wählt aus, welche Namensschild-Elemente angezeigt werden: Gegenstandname, Stapelanzahl und Entfernung.
+
+# Block ESP
+module.block_esp.name=Block ESP
+module.block_esp.description=Zeigt ausgewählte Blöcke durch Wände
+module.block_esp.containers.name=Containers
+module.block_esp.containers.description=Einstellungen, die die Darstellung von Box-Overlays auf Containerblöcken wie Truhen steuern.
+module.block_esp.containers.enabled.name=Enabled
+module.block_esp.containers.enabled.description=Aktiviert die Box-Overlays, die um benachbarte Containerblöcke gezeichnet sind.
+module.block_esp.containers.filled.name=Filled
+module.block_esp.containers.filled.description=Zeichnet ein transparent gefülltes Gesicht innerhalb des Hervorhebungsfelds jedes Containers.
+module.block_esp.containers.outline.name=Outline
+module.block_esp.containers.outline.description=Zeichnet die Umrandungslinien, die das Hervorhebungsfeld jedes Containers umreißen.
+module.block_esp.containers.types.name=Types
+module.block_esp.containers.types.description=Wählt aus, welche Behältertypen hervorgehoben werden, wie beispielsweise Truhen, Fässer und Trichtersilos.
+module.block_esp.resources.name=Resources
+module.block_esp.resources.description=Gruppe von Einstellungen, die die auf Erzen und Mineralblöcken gezeichneten Box-Overlays steuern.
+module.block_esp.resources.enabled.name=Enabled
+module.block_esp.resources.enabled.description=Aktiviert die Box-Overlays um benachbarte Erze und Mineralblöcke.
+module.block_esp.resources.filled.name=Filled
+module.block_esp.resources.filled.description=Zeichnet ein transparent gefülltes Gesicht innerhalb jedes Ressourcen-Hervorhebungsfeldes.
+module.block_esp.resources.outline.name=Outline
+module.block_esp.resources.outline.description=Zeichnet die Umrandungslinien, die das Hervorhebungsfeld jeder Ressource umgeben.
+module.block_esp.resources.range.name=Range
+module.block_esp.resources.range.description=Legt die maximale Blockdistanz von 16 bis 128 fest, innerhalb derer Ressourcen hervorgehoben werden.
+module.block_esp.resources.ores.name=Ores
+module.block_esp.resources.ores.description=Wählt aus, welche Erzblöcke hervorgehoben werden, beispielsweise Diamant, Smaragd und uralte Trümmer.
+module.block_esp.resources.blocks.name=Blocks
+module.block_esp.resources.blocks.description=Wählt aus, welche Mineral-Lagerblöcke hervorgehoben werden, beispielsweise Diamant oder Netherit.
+
+
+# ==========================================================
+# Combat (added)
+# ==========================================================
+
+# Anti Fireball
+module.anti_fireball.name=Antifeuer
+module.anti_fireball.description=Lenkt Feuerbälle in der Nähe automatisch ab.
+module.anti_fireball.attack_range.name=Angriffsreichweite
+module.anti_fireball.attack_range.description=Legt die maximale Distanz in Blöcken fest, in der ein Feuerball abgelenkt wird.
+module.anti_fireball.rotate_range.name=Drehbereich
+module.anti_fireball.rotate_range.description=Legt die maximale Distanz in Blöcken fest, in der sich die Zielrichtung bei einer Feuerball-Magie auf den Feuerball richtet.
+
+# Criticals
+module.criticals.name=Kritiker
+module.criticals.description=Zwingt jeden Angriff zu einem kritischen Treffer.
+module.criticals.mode.name=Mode
+module.criticals.mode.description=Wählt die kritischen Methode; aktuell Paket.
+# ==========================================================
+# Movement (added)
+# ==========================================================
+
+# Jesus
+module.jesus.name=Jesus
+module.jesus.description=Ermöglicht es Ihnen, auf dem Wasser zu gehen.
+
+# Keep Sprint
+module.keep_sprint.name=Behalte den Sprint
+module.keep_sprint.description=Hält deinen Sprint durch Aktionen aufrecht, die ihn zurücksetzen würden.
+
+# Step
+module.step.name=Schritt
+module.step.description=Blöcke, die höher sind als die von Vanilla erlaubte Höhe, werden platziert.
+module.step.height.name=Höhe
+module.step.height.description=Legt die maximale Blockhöhe fest, auf die Sie automatisch aufsteigen können.
+# ==========================================================
+# Utility (added)
+# ==========================================================
+
+# Auto Potion
+module.auto_potion.name=Autotrank
+module.auto_potion.description=Wirft automatisch Trankflaschen zu deinen Füßen.
+module.auto_potion.splash_speed.name=Spritzgeschwindigkeit
+module.auto_potion.splash_speed.description=Wirft eine Sprudel-Geschwindigkeitstrank bei Bedarf zu deinen Füßen.
+module.auto_potion.splash_health.name=Splash Health
+module.auto_potion.splash_health.description=Wirft eine heilende Trankfontäne zu deinen Füßen, wenn deine Gesundheit niedrig ist.
+module.auto_potion.heal_hp.name=Heile HP
+module.auto_potion.heal_hp.description=Legt den Gesundheitswert fest, unterhalb dessen eine Sprüh-Heiltrank geworfen wird.
+module.auto_potion.delay.name=Verzögerung
+module.auto_potion.delay.description=Stellt die Millisekunden ein, die zwischen automatischen Trankwürfen gewartet werden sollen.
+module.auto_potion.ignore_frog_potion.name=Froschtrank ignorieren
+module.auto_potion.ignore_frog_potion.description=Ignoriert Tränke der Frösche bei der Auswahl einer Trank der Geschwindigkeit zum Werfen.
+# ==========================================================
+# Visual (added)
+# ==========================================================
+
+# View Clip
+module.view_clip.name=Ansicht Clip
+module.view_clip.description=Erlaube der Kamera im dritten Person-Modus, durch Wände zu sehen.
+# ==========================================================
+# Other (added)
+# ==========================================================
+
+# Anti AFK
+module.anti_afk.name=Anti-AFK
+module.anti_afk.description=Verhindert, dass du wegen Inaktivität rausgeworfen wirst.
+module.anti_afk.interval.name=Intervall
+module.anti_afk.interval.description=Legt fest, wie oft eine automatische Anti-Idle-Bewegung ausgeführt wird.
+
+# Hacker Detector
+module.hacker_detector.name=Hacker-Erkennungs-System
+module.hacker_detector.description=Erkennt Spieler auf, die in Ihrem Spiel betrügen.
+module.hacker_detector.settings.name=Einstellungen
+module.hacker_detector.settings.description=Gruppiert die Prüfungen und Benachrichtigungsoptionen des Detektors.
+module.hacker_detector.checks.name=Kontrollen
+module.hacker_detector.checks.description=Wählt aus, welche Cheat-Checks ausgeführt werden: Auto Block, Omni Sprint und Scaffold.
+module.hacker_detector.auto_block.name=Automatische Blockade
+module.hacker_detector.auto_block.description=Spieler kennzeichnen, die scheinbar gleichzeitig blocken und angreifen.
+module.hacker_detector.omni_sprint.name=Omni Sprint
+module.hacker_detector.omni_sprint.description=Markiert Spieler, die in Richtungen sprinten, die die normale Bewegung nicht erlaubt.
+module.hacker_detector.scaffold.name=Gerüst
+module.hacker_detector.scaffold.description=Markiert Spieler, die Brückenblöcke mit verdächtigem Timing oder einer verdächtigen Drehung platzieren.
+module.hacker_detector.chat.name=Gespräch
+module.hacker_detector.chat.description=Gibt eine Chat-Nachricht aus, wenn ein Spieler einen Check auslöst.
+module.hacker_detector.notifications.name=Benachrichtigungen
+module.hacker_detector.notifications.description=Zeigt eine Popup-Benachrichtigung an, wenn ein Spieler einen Check auslöst.
