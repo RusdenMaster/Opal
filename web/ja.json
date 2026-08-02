@@ -11,49 +11,49 @@
   "branding": {
     "meta": {
       "title": "ブランディング",
-      "description": "プレスおよびクリエイティブ利用のための、公式オパールクライアントのブランドアセット、ロゴ、およびカラーパレット."
+      "description": "宣伝およびクリエイティブ利用のための、公式Opalクライアントのブランドアセット、ロゴ、およびカラーパレットです。"
     },
     "hero": {
-      "title": "オパール クライアント ブランド",
-      "description": "メディア、再販業者、および報道機関向けの公式ブランドアセット、ロゴ、およびカラーパレットです。これらのアセットを使用する際は、当社のガイドラインを遵守してください."
+      "title": "Opal クライアント ブランド",
+      "description": "メディアや再販業者向けの公式ブランドアセットです。これらを使用する際は、当社のガイドラインを遵守してください!"
     },
     "guidelines": {
       "title": "利用ガイドライン",
       "do": {
-        "title": "する",
+        "title": "利用条件",
         "items": [
-          "このページにある公式アセットをご利用ください",
-          "リサイズ時にアスペクト比を維持する",
-          "コントラストの強い背景で使用する",
-          "該当する場合、オパールクライアントにクレジットを付与する"
+          "このページにある公式アセットを使用してください",
+          "リサイズ時にアスペクト比を変更しないでください",
+          "ロゴが目立つように使用してください",
+          "アセットを使用する際は、Opalクライアントのクレジットを記載してください"
         ]
       },
       "dont": {
-        "title": "だめ",
+        "title": "ガイドラインに反する行為",
         "items": [
-          "ロゴを改変または歪める",
-          "許可なく推奨する意味で使用する",
-          "視覚的に類似した背景で使用する",
-          "非公式アセットを使用して再構築する"
+          "非公式のアセットを使用して再製作する",
+          "ロゴの改変、アスペクト比の変更",
+          "許可なく宣伝目的で使用する",
+          "視覚的に類似した背景で使用する"
         ]
       }
     },
     "logos": {
       "title": "ロゴアセット",
-      "description": "ダーク、ライト、アイコン専用のバリエーションをご用意しています.",
-      "download": "SVGをダウンロード",
+      "description": "ダーク、ライト、アイコンのみ等の種類を用意しています。ご利用目的に合ったものをお選びください!",
+      "download": "画像をダウンロード",
       "items": {
         "full_dark": {
-          "name": "ロゴ — ダーク背景",
-          "description": "ロゴ全体と組み込みのダーク背景カード"
+          "name": "ロゴ - ダーク背景",
+          "description": "ロゴ全体が組み込まれたダーク背景カード"
         },
         "wordmark_light": {
-          "name": "ワードマーク — 明るい背景",
-          "description": "背景が明るい場合に用いる、水平のロゴタイプ"
+          "name": "ワードマーク - 明るい背景",
+          "description": "明るい背景での使用に適したロゴタイプ"
         },
         "wordmark_dark": {
-          "name": "ワードマーク — ダーク背景",
-          "description": "ダークな背景での使用に適した水平ロゴタイプ"
+          "name": "ワードマーク - ダーク背景",
+          "description": "暗い背景での使用に適したロゴタイプ"
         },
         "icon": {
           "name": "アイコンのみ",
@@ -63,45 +63,45 @@
     },
     "colors": {
       "title": "カラーパレット",
-      "description": "Opalエクスペリエンス全体で一貫して使用されるクライアントテーマカラー.",
-      "primary": "主要な",
-      "secondary": "二次",
-      "copy": "コピーを複製",
-      "copied": "コピー完了！!"
+      "description": "Opalクライアント全てで一貫して使用されるクライアントテーマカラーです。",
+      "primary": "原色",
+      "secondary": "二次色",
+      "copy": "コピー",
+      "copied": "クリップボードにコピーされました!"
     }
   },
   "home": {
     "hero": {
       "texts": [
         {
-          "before": "ゲームを支配せよ",
-          "after": "。"
+          "before": "ゲームを支配せよ。",
+          "after": "."
         },
         {
-          "before": "真似できない性能",
-          "after": "。"
+          "before": "性能は真似できない。",
+          "after": "."
         },
         {
-          "before": "唯一無二。絶対。",
-          "after": "。"
+          "before": "唯一無二。",
+          "after": "."
         },
         {
-          "before": "本物を選ぼう",
-          "after": "。"
+          "before": "これぞ本物。",
+          "after": "."
         },
         {
-          "before": "真似されるのは一流の証",
-          "after": "。"
+          "before": "真似されるのは一流の証。",
+          "after": "."
         }
       ],
       "brand": "Opal Client",
-      "description": "最高の体験を得られるように作られたMinecraftの便利mod。 OpalはFabricのMinecraft 1.21.10に対応していて、滑らかで快適な体験を1.8と最新バージョンのサーバー両方で提供しています。",
+      "description": "最高の体験を得られるように作られたクライアント。 OpalはMinecraft 26.2に対応していて、滑らかで快適な体験を1.8と最新バージョンの両方で提供しています。",
       "purchase": "購入",
-      "badge": "8.99ドル 一生涯"
+      "badge": "8.99$ 永久アクセス"
     },
     "features": {
       "title": "なぜOpalを選ぶの？",
-      "subtitle": "豊富な機能を備えていて、他のクライアントに戻りたくなくなるでしょう。",
+      "subtitle": "洗練された豊富な機能を備えています。他のクライアントを使う理由はありません。",
       "items": {
         "abundant": {
           "title": "多彩な機能",
@@ -109,11 +109,11 @@
         },
         "userFriendly": {
           "title": "使いやすさ",
-          "description": "Opalはシンプルで使いやすいように設計されています。インストールしてまじですぐ使えます"
+          "description": "Opalはシンプルで使いやすいように設計されています。インストールしてマジですぐ使えます。"
         },
         "updates": {
           "title": "安定したアップデート",
-          "description": "新機能の最新情報をいち早くお届けするため、頻繁にアップデートしています"
+          "description": "新機能の最新情報をいち早くお届けするため、頻繁にアップデートしています。"
         },
         "compatibility": {
           "title": "互換性",
@@ -121,7 +121,7 @@
         },
         "trusted": {
           "title": "コミュニティからの信頼",
-          "description": "Opalは長年Client開発に携わってきた一流の開発者によって開発されています。"
+          "description": "Opalは長年クライアント開発に携わってきた一流の開発者によって開発されています。"
         },
         "quality": {
           "title": "最高級の品質",
@@ -131,27 +131,27 @@
     },
     "media": {
       "title": "メディア",
-      "subtitle": "私達のコミュニティで作られた動画を見てください！"
+      "subtitle": "私達のコミュニティで作られた動画を見てください!"
     },
     "cta": {
-      "title": "マインクラフトの体験を更に高めよう。あなたの旅はここから始まる。",
+      "title": "Minecraftの体験を更に高めよう。あなたの旅はここから始まる。",
       "button": "今すぐ購入"
     }
   },
   "purchase": {
     "header": {
       "title": "お好みのエディションを選択してください",
-      "subtitle": "Opal単体？それともTerminusを購入してOpalを無料で手に入れる？"
+      "subtitle": "Opalのみ?それともTerminusを購入してOpalを無料でゲットする?"
     },
     "chinaBanner": {
-      "text": "Are you in China? Purchase from our official resellers for better support and payment options.",
-      "link": "View Resellers"
+      "text": "中国にお住まいですか? 公式代理店から購入することで、地域決済方法の利用、そしてより良いサポートを受けることができます。",
+      "link": "代理店を探す"
     },
     "opal": {
       "title": "Opal Client",
       "price": "8.99",
       "currency": "USD",
-      "description": "必須のハイブリッドなマインクラフトの便利クライアント。洗練されていてかつ軽量で、未検知。",
+      "description": "シンプルで使いやすい、Minecraftのハイブリッドクライアント。洗練されていてかつ軽量で、検知されることはありません。",
       "featuresTitle": "含まれる内容",
       "features": [
         "Opal Client (永久)",
@@ -162,7 +162,7 @@
       "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
     },
     "terminus": {
-      "badge": "最高のコスパ",
+      "badge": "コスパ最高!",
       "title": "Terminus: Minigame Edition",
       "price": "45.00",
       "currency": "USD",
@@ -179,54 +179,54 @@
       "paymentMethods": "Card, Apple Pay, Google Pay, Klarna, CashApp, WeChat Pay"
     },
     "crypto": {
-      "title": "仮想通貨で支払う？",
+      "title": "仮想通貨でのお支払いですか?",
       "description": "USDT、BTC、ETH、LTC、またはXMRでの支払いについては、Discordでチケットを開いてください。"
     },
     "cryptoPayments": {
       "title": "暗号通貨決済",
-      "description": "ライトコインまたはビットコインによる自動配送。鍵は受信時に生成されます."
+      "description": "LitecoinまたはBitcoinで決済します。キーは受取時に生成されます。"
     },
     "alternativeMethods": {
       "title": "代替手段",
-      "description": "Monero (XMR)、Ethereum、または地域決済方法でのお支払いください.",
+      "description": "Monero (XMR)、Ethereum、または地域決済方法でお支払いください。",
       "ticket": "チケット（XMR / その他）"
     },
     "resellers": {
       "title": "公式代理店",
-      "description": "信頼できるパートナーから地域に合わせた支払い方法とサポートでOpalを購入",
+      "description": "信頼できるパートナーから地域に合わせた支払い方法とサポートでOpalを購入できます。",
       "visit": "ストアを見る",
       "localized": {
         "title": "多様な決済方法が使えます",
         "description": "地域別の価格設定や上記に記載されていない特定の支払い方法をお探しですか？公式代理店が対応いたします。"
       }
     },
-    "terms": "購入することで、利用規約に同意したものとみなされます。永久とは、製品が提供されている期間を意味します。",
+    "terms": "購入すると、利用規約に同意したものとみなされます。永久とは、製品が提供されている期間を意味します。",
     "faq": {
       "title": "よくある質問",
       "items": [
         {
-          "q": "Opalをどうやってインストールすればいいですか？?",
-          "a": "購入後、ダッシュボードからOpalランチャーをダウンロードしてください。Fabricのインストール、認証、アップデートを自動的に処理します."
+          "q": "Opalをどうやってインストールすればいいですか?",
+          "a": "購入後、ダッシュボードからOpalランチャーをダウンロードしてください。Fabricのインストール、認証、アップデートを自動的に処理します。"
         },
         {
-          "q": "オパールはどのMinecraftのバージョンに対応していますか？?",
-          "a": "オパルはMinecraft 26.2のFabric上で動作し、1.8形式と最新バージョンのサーバーの両方に対応しています."
+          "q": "OpalはどのMinecraftのバージョンに対応していますか?",
+          "a": "OpalはMinecraft 26.2のFabric上で動作し、1.8形式と最新バージョンのサーバーの両方に対応しています。"
         },
         {
-          "q": "オパールは複数のコンピューターで使用できますか？?",
-          "a": "ライセンスは、一度に1つのデバイスでのみ有効です。デバイスを切り替えるには、ダッシュボードからHWIDを30日ごとにリセットできます."
+          "q": "Opalは複数のコンピューターで使用できますか?",
+          "a": "ライセンスは、一度に1つのデバイスでのみ有効です。デバイスを切り替えるには、ダッシュボードからHWIDを30日ごとにリセットできます。"
         },
         {
-          "q": "どのようなお支払い方法をお受けしていますか？?",
-          "a": "カード、Apple Pay、Google Pay、Klarna、Cash App、WeChat Pay、そして暗号通貨（BTC、LTC、USDT、ETH、XMR）."
+          "q": "どの支払い方法が使えますか?",
+          "a": "カード、Apple Pay、Google Pay、Klarna、Cash App、WeChat Pay、そして暗号通貨（BTC、LTC、USDT、ETH、XMR）でのお支払いが可能です。"
         },
         {
-          "q": "払い戻しはありますか？?",
-          "a": "全セールスは最終的です。$8.99では、リスクを最小限に抑えてオパールをお試しいただけるよう、ハードルを低く保っています."
+          "q": "払い戻しはありますか?",
+          "a": "払い戻しは出来ません。リスクを最小限に抑えてOpalをお試しいただけるよう、$8.99とハードルを低く保っています。"
         },
         {
-          "q": "オパールとターミナスは、どう違うのですか？?",
-          "a": "オパールは、$8.99のハイブリッドゴースト＋露骨なクライアントです。ターミナスは、$45向けのプレミアムミニゲーム版で、オパールが無料で含まれています。既存のオパールユーザーは、$36.99でアップグレードできます."
+          "q": "OpalとTerminusは、どう違うのですか?",
+          "a": "Opalは、$8.99のGhostとBlatantモジュールを含むハイブリッドなクライアントです。Terminusは、$45のプレミアムなミニゲームクライアントで、Opalが無料で含まれています。既存のOpalユーザーは、$36.99でアップグレードができます。"
         }
       ]
     }
@@ -248,15 +248,15 @@
       "users": "ユーザー",
       "network": "ネットワーク",
       "forums": "フォーラム",
-      "inbox": "受信トレイ",
+      "inbox": "通知",
       "signOut": "サインアウト",
-      "cloud": "雲",
+      "cloud": "クラウド",
       "discountBanner": "割引バナー",
       "openMenu": "ナビゲーションメニューを開く",
       "coins": "コイン",
-      "support": "支援",
+      "support": "ヘルプ",
       "supportQueue": "列",
-      "creator": "Creator"
+      "creator": "クリエイター"
     },
     "overview": {
       "title": "概要",
@@ -268,7 +268,7 @@
     "news": {
       "title": "ニュース",
       "view": "表示",
-      "empty": "現時点ではここに何もない。時間を開けてから確認してください！"
+      "empty": "今はまだ何もありません。後でまた見に来てください。"
     },
     "downloads": {
       "title": "ダウンロード",
@@ -286,10 +286,10 @@
       "availableSince": "利用開始日",
       "updated": "更新済み",
       "changelog": "更新ログ",
-      "maintenance": "A new launcher build is on the way. Downloads will be back shortly."
+      "maintenance": "ランチャーの新しいビルドがまもなく公開されます。ダウンロードは公開時に利用可能になります。"
     },
     "access": {
-      "title": "アクセス制御",
+      "title": "アクセス",
       "hwid": "ハードウェアID",
       "lastChanged": "最終変更日",
       "ago": "前",
@@ -307,7 +307,7 @@
     },
     "changelog": {
       "title": "更新ログ",
-      "description": "最新版のOpalに何が追加されたか確認しましょう！",
+      "description": "最新版のOpalに何が追加されたか確認しましょう!",
       "opalLauncher": "Opalランチャー",
       "opal": "Opal",
       "launcherBadge": "ランチャー",
@@ -315,20 +315,20 @@
     },
     "activate": {
       "title": "ライセンスを有効化",
-      "description": "下記より購入アクセスを取得するか、アクティベーションキーを使用してください.",
+      "description": "下記より購入アクセスを取得するか、アクティベーションキーを使用してください。",
       "forms": {
         "redeem": {
           "placeholder": "OPAL-XXXX-XXXX-XXXX"
         },
-        "continue": "続ける",
+        "continue": "次へ",
         "coupon": {
           "placeholder": "クーポンコード（任意）"
         }
       },
       "success": {
         "title": "おめでとうございます!",
-        "description": "Opalへのアクセスが認められました。 <br />ようこそ！",
-        "dashboard": "ダッシュボードへ進む"
+        "description": "Opalへのアクセスが認められました。 <br />ようこそ!",
+        "dashboard": "ダッシュボードへ"
       },
       "errors": {
         "invalidKey": "コードが存在しないか、すでに有効化されています。",
@@ -345,16 +345,16 @@
         "card": "カード",
         "crypto": "暗号",
         "cta": "支払い手続きを続行してください",
-        "haveKey": "ライセンスキーはお持ちですか？?",
-        "checkFailed": "今、そのコードを確認できません.",
-        "checkoutFailed": "チェックアウトを開始できませんでした。もう一度お試しください.",
-        "codeExpiredContinue": "This code has expired — continuing without the discount.",
-        "codeDroppedContinue": "This code can no longer be applied — continuing without the discount.",
-        "creatorCodeOffer": "Creator code {code} is available.",
-        "applyOffer": "Apply code",
+        "haveKey": "ライセンスキーをお持ちですか?",
+        "checkFailed": "現在、このコードを確認できません。もう一度お試しください。",
+        "checkoutFailed": "チェックアウトを開始できませんでした。もう一度お試しください。",
+        "codeExpiredContinue": "このコードは有効期限が切れています。 - 割引を適用せずに続行します。",
+        "codeDroppedContinue": "このコードはご利用いただけません。 - 割引を適用せずに続行します。",
+        "creatorCodeOffer": "クリエイターコード: {code} は利用可能です!",
+        "applyOffer": "コードを適用",
         "paymentMethod": "支払い方法",
-        "unavailable": "価格は現在ご利用いただけません。しばらくしてから再度お試しください.",
-        "waiver": "利用規約に同意し、このデジタルコンテンツへの即時アクセスを希望します。納品が開始された時点で、14日間のクーリングオフ期間を放棄することに同意します."
+        "unavailable": "現在ご利用いただけません。しばらくしてから再度お試しください。",
+        "waiver": "利用規約に同意し、このデジタルコンテンツへの即時アクセスを希望します。納品が開始された時点で、14日間のクーリングオフ期間を放棄することに同意します。"
       }
     }
   },
@@ -364,28 +364,28 @@
       "noDescription": "説明がありません",
       "ago": "前",
       "edit": "編集",
-      "editTitle": "編集する {name}",
+      "editTitle": "{name} を編集する",
       "nameLabel": "名前",
       "namePlaceholder": "{name}の素晴らしいコンフィグ",
       "descriptionLabel": "説明",
-      "descriptionPlaceholder": "このコンフィグは何のためですか？共有したいメモがあれば追加してください。",
+      "descriptionPlaceholder": "このコンフィグをどのように使用しますか?共有したいメモがあれば追加してください。",
       "saveChanges": "変更を保存",
-      "copyCommand": "ロードコマンドをコピー",
-      "copiedToast": "コマンドをクリップボードにコピーしました！",
+      "copyCommand": "コマンドをコピー",
+      "copiedToast": "コマンドをクリップボードにコピーしました!",
       "publish": "公開",
-      "publishTitle": "あなたのコンフィグを公開しましょう！",
-      "publishDescription": "既存の公開コンフィグを選択して更新するか、設定を新規として公開する。設定を公開すると、他のユーザーが閲覧できるようになります。",
+      "publishTitle": "あなたのコンフィグを公開しましょう!",
+      "publishDescription": "既存の公開コンフィグを選択して更新するか、新規のコンフィグとして公開することができます。設定を公開すると、他のユーザーが閲覧できるようになります。",
       "chooseConfig": "公開するコンフィグを選択",
       "publishNew": "新しいコンフィグとして公開",
       "clone": "非公開のコンフィグに複製",
-      "cloneTitle": "本当にそれでいいですか？",
-      "cloneDescription": "あなたはこのコンフィグを自分の非公開のコンフィグとして複製しようとしています。",
-      "cancel": "中断",
+      "cloneTitle": "よろしいですか?",
+      "cloneDescription": "このコンフィグを自分の非公開のコンフィグとして複製します。",
+      "cancel": "キャンセル",
       "continue": "続行",
       "delete": "削除",
-      "deleteTitle": "本当にそれでいいですか？",
+      "deleteTitle": "本当に実行しますか?",
       "deleteDescription": "{name} ({id}) は関連するすべてのデータとともに永久に削除されます。この操作は取り消せません。",
-      "changesSaved": "変更が保存されました！"
+      "changesSaved": "変更が保存されました!"
     }
   },
   "settings": {
@@ -399,55 +399,55 @@
       "title": "アカウント",
       "username": {
         "title": "ユーザー名",
-        "description": "これはあなたのアカウントに関連付けられているユーザー名です。",
-        "toast": "ユーザー名が変更されました！",
-        "cooldown": "ユーザーネームが再び変更できるようになるまで: {time}.",
-        "requirements": "ユーザー名は1 ~ 24までの間に設定しないといけません",
+        "description": "あなたのOpalアカウントのユーザー名です。",
+        "toast": "ユーザー名が変更されました!",
+        "cooldown": "ユーザーネームが再び変更できるようになるまで: {time}",
+        "requirements": "ユーザー名は1 ~ 24文字以内に設定してください。",
         "save": "変更を保存"
       },
       "email": {
         "title": "メールアドレス",
-        "description": "これはあなたのアカウントに紐づけられたメールアドレスです。",
-        "footer": "メールアドレスは変更不可",
-        "currentLabel": "現在メール",
+        "description": "あなたのOpalアカウントに紐づけられたメールアドレスです。",
+        "footer": "変更不可",
+        "currentLabel": "現在のメールアドレス",
         "newLabel": "新しいメールアドレス",
         "newPlaceholder": "新しいメールアドレスを入力してください",
         "passwordLabel": "現在のパスワード",
         "passwordPlaceholder": "パスワードを入力して確認してください",
-        "cooldown": "メールアドレスは{time}で再度変更できます.",
-        "save": "認証を送信してください",
-        "toast": "確認メールが送信されました！新しいメールの受信トレイをご確認ください.",
-        "cancelled": "メールアドレス変更の依頼はキャンセルされました.",
+        "cooldown": "メールアドレスはあと{time}で再度変更できます。",
+        "save": "確認",
+        "toast": "確認メールが送信されました！新しく設定したメールの受信トレイをご確認ください。",
+        "cancelled": "キャンセルされました",
         "pendingBadge": "保留",
-        "pendingDescription": "確認メールが送信されました。新しいアドレスを確認するには、リンクをクリックしてください。（24時間以内に有効）.",
+        "pendingDescription": "確認メールが送信されました。新しいアドレスを確認するには、24時間以内にリンクをクリックしてください。",
         "cancel": "キャンセル"
       }
     },
     "connections": {
-      "title": "接続",
+      "title": "連携",
       "card": {
-        "title": "接続",
-        "description": "他のサービスとあなたのアカウントを紐づけして追加の機能にアクセスできるようにしましょう！",
-        "connected": "接続済み",
+        "title": "連携",
+        "description": "他のサービスとあなたのアカウントを紐づけして追加の機能にアクセスできるようにしましょう!",
+        "connected": "連携済み",
         "ago": "前",
-        "requiresSetup": "初期設定が必要",
-        "notConnected": "未接続",
-        "disconnect": "切断",
-        "connect": "接続",
+        "requiresSetup": "初期設定を行う必要があります",
+        "notConnected": "未連携",
+        "disconnect": "解除",
+        "connect": "連携",
         "connectSpotify": "Spotifyに接続",
         "setup": "セットアップ",
         "spotify": {
           "title": "Spotifyとの連携を設定",
-          "description": "連携を有効化するにはあなたのSpotifyアプリを作成しないといけません。これはSpotifyのAPI制限が原因です",
+          "description": "連携を有効化するにはSpotifyアプリの作成が必要です。Spotify Premiumアカウントが必要になります。",
           "instructions": "手順:",
           "step1": "{link}をクリック",
           "step2": "新しいアプリを作る(名前や説明はお好みで)",
           "step3": "このリダイレクトURIをアプリの設定に追加:",
-          "copied": "コピーしました！",
+          "copied": "コピーしました!",
           "clientId": "クライアントID",
-          "clientIdPlaceholder": "あなたのSpotifyクライアントID",
+          "clientIdPlaceholder": "SpotifyクライアントID",
           "clientSecret": "クライアントシークレット",
-          "clientSecretPlaceholder": "あなたのSpotifyクライアントシークレット",
+          "clientSecretPlaceholder": "Spotifyクライアントシークレット",
           "saving": "保存中...",
           "save": "認証情報を保存"
         }
@@ -456,17 +456,17 @@
     "security": {
       "title": "セキュリティ",
       "password": {
-        "title": "パスワードを変える",
+        "title": "パスワードを変更",
         "description": "セキュリティを向上させるため、他で使いまわしていない文字数の多いパスワードをおすすめします。",
         "current": "今のパスワード",
         "new": "新しいパスワード",
-        "requirements": "パスワードは6 ~ 72文字以内でないといけません。",
+        "requirements": "パスワードは6 ~ 72文字以内で設定してください。",
         "save": "変更を保存",
-        "toast": "パスワードは変更されました！"
+        "toast": "パスワードが変更されました!"
       },
       "twoFactor": {
         "title": "2段階認証",
-        "description": "TOTP2段階認証でアカウントを守りましょう",
+        "description": "TOTP2段階認証でアカウントを守りましょう。",
         "button": "2段階認証を有効化",
         "footer": "信用できる認証アプリ(1Password, Google Authenticator, Authyなど)がおすすめです。",
         "enabled": "有効",
@@ -474,7 +474,7 @@
         "setup": {
           "title": "2段階認証をセットアップ",
           "description": "認証アプリでQRコードをスキャンしてください",
-          "manualEntry": "スキャンできない？コードを手動で打つ:",
+          "manualEntry": "スキャンできませんか?コードを手動で入力してください:",
           "verificationCode": "認証コード",
           "verify": "認証 & 有効",
           "verifying": "認証中...",
@@ -483,16 +483,16 @@
         "backup": {
           "title": "バックアップコードを保存",
           "description": "このコードは認証アプリを失った場合に使います。各コードは一回のみ使用可能です。",
-          "warning": "コードは二度と表示されないので、安全な場所に保管してください。",
+          "warning": "このコードは二度と表示されません。安全な場所に保管してください。",
           "copy": "全てのコードをコピー",
-          "copied": "コピーされました！",
-          "confirm": "コードを保存しました"
+          "copied": "コピーされました!",
+          "confirm": "コードを保存しました。"
         },
         "disableDialog": {
           "title": "2段階認証を無効化",
-          "description": "パスワードを入力して確認。この操作はアカウントの安全性を低くします。",
+          "description": "パスワードを入力して確認します。この操作によってアカウントの安全性が下がります。",
           "password": "パスワード",
-          "cancel": "中断",
+          "cancel": "キャンセル",
           "confirm": "2段階認証を無効化する",
           "disabling": "無効化中..."
         },
@@ -511,15 +511,15 @@
   "auth": {
     "login": {
       "title": "アカウントにサインイン",
-      "description": "認証情報を入力して進む",
+      "description": "認証情報を入力して次へ",
       "email": "メールアドレス",
       "password": "パスワード",
-      "forgotPassword": "パスワードを忘れましたか？",
+      "forgotPassword": "パスワードを忘れましたか?",
       "signIn": "サインイン",
-      "noAccount": "アカウントを持っていない？",
+      "noAccount": "アカウントを持っていませんか?",
       "signUp": "サインアップ",
       "twoFactor": {
-        "title": "2要素コード",
+        "title": "2段階認証コード",
         "back": "戻る",
         "hint": "認証アプリから6桁のコードを入力、それかバックアップコード。"
       }
@@ -528,7 +528,7 @@
       "title": "アプリを承認する",
       "request": "{app}がアカウントに接続したいようです",
       "allow": "許可",
-      "deny": "否定"
+      "deny": "拒否"
     },
     "register": {
       "title": "アカウントを作る",
@@ -540,7 +540,7 @@
       "licenseKey": "ライセンスキー",
       "licenseKeyOptional": "ライセンスキー（任意）",
       "submit": "サインアップ",
-      "haveAccount": "もうアカウントを持っている？",
+      "haveAccount": "もうアカウントを持っていますか?",
       "signIn": "サインイン"
     },
     "spotify": {
@@ -575,7 +575,7 @@
       "edit": "編集",
       "close": "閉じる",
       "confirm": "確認",
-      "noPermission": "あなたは必要な権限を持っていません",
+      "noPermission": "権限がありません",
       "thisMonth": "今月",
       "remaining": "残っている",
       "unknown": "不明",
@@ -629,9 +629,9 @@
         "history": "HWIDの履歴",
         "resetConfirm": {
           "title": "ハードウェアIDをリセット",
-          "description": "本当に{name}のハードウェアIDをリセットしますか？再認証が必要になります。",
+          "description": "本当に{name}のハードウェアIDをリセットしますか?再認証が必要になります。",
           "confirm": "HWIDをリセット",
-          "cancel": "中断"
+          "cancel": "キャンセル"
         },
         "historyDialog": {
           "title": "HWIDの履歴",
@@ -640,8 +640,8 @@
           "eventSet": "HWIDをセット",
           "eventReset": "HWIDをリセット"
         },
-        "resetSuccess": "ハードウェアIDが正常にリセットされました！",
-        "resetError": "ハードウェアIDをリセットするのに失敗しました。"
+        "resetSuccess": "ハードウェアIDが正常にリセットされました!",
+        "resetError": "ハードウェアIDのリセットに失敗しました。"
       },
       "pagination": {
         "page": "ページ{current} / {total}",
@@ -771,7 +771,7 @@
         "title": "メディアアカウントを追加",
         "description": "ネットワークのメディアプログラムにコンテンツクリエイターを追加する。",
         "name": "名前",
-        "namePlaceholder": "作者の名前かチャンネル名",
+        "namePlaceholder": "クリエイターの名前またはチャンネル名",
         "platform": "プラットフォーム",
         "platformPlaceholder": "プラットフォームを選択",
         "platformUrl": "チャンネル/プロファイル URL",
@@ -784,7 +784,7 @@
         "submit": "メディアを追加",
         "success": "メディアアカウントが作成されました",
         "successWithKey": "メディアアカウントが作成されました! コピーされたキー: {key}",
-        "error": "メディアアカウントを作成するのに失敗しました"
+        "error": "メディアアカウントの作成に失敗しました"
       },
       "edit": {
         "title": "メディアアカウントを編集する",
@@ -857,7 +857,7 @@
     },
     "customers": {
       "title": "お客様",
-      "subtitle": "あなたのネットワークからキーをリデームしたユーザー.",
+      "subtitle": "あなたのネットワークからキーをリデームしたユーザー",
       "col": {
         "username": "ユーザー名",
         "email": "メール",
@@ -865,49 +865,49 @@
         "redeemed": "贖われた",
         "prefix": "接頭辞"
       },
-      "empty": "まだお客さんは来ていません。誰かがあなたのキーを償還した途端に、彼らがここに現れます.",
+      "empty": "まだお客さんは来ていません。誰かがあなたのキーを償還した途端に、彼らがここに現れます",
       "chargeback": {
         "action": "チャージバックを報告する",
         "title": "チャージバックを報告する",
         "reason": "理由",
         "confirm": "キーを無効化し、報告する"
       },
-      "privacyNote": "お客様の情報はこちらにありますので、バイヤーのサポートにお役立てください。機密情報として扱ってください."
+      "privacyNote": "お客様の情報はこちらにありますので、バイヤーのサポートにお役立てください。機密情報として扱ってください。"
     },
     "notes": {
       "title": "メモ",
       "add": "メモを追加",
-      "placeholder": "メモを書きなさい….",
-      "empty": "まだメモはありません.",
+      "placeholder": "メモを書きなさい…",
+      "empty": "まだメモはありません",
       "shared": "あなたと管理者チームに表示されます"
     },
     "refLink": {
       "title": "紹介リンク",
       "copy": "リンクをコピー",
       "copied": "リンクがクリップボードにコピーされました",
-      "hint": "このリンクを皆様と共有してください。すべてのアクセスがキャンペーンの統計に反映されます."
+      "hint": "このリンクを皆様と共有してください。すべてのアクセスがキャンペーンの統計に反映されます"
     }
   },
   "footer": {
-    "copyright": "Opal Client. すべての権利は留保される。",
+    "copyright": "Opal Client. All rights reserved.",
     "terms": "利用規約",
     "privacy": "プライバシーポリシー",
-    "tagline": "ゲームをオパールクライアントで制覇しよう.",
+    "tagline": "ゲームをOpalで制覇しよう。",
     "product": "製品",
     "purchase": "購入",
     "dashboard": "ダッシュボード",
     "branding": "ブランディング",
-    "resellers": "転売業者",
-    "legal": "法的",
-    "disclosures": "開示",
+    "resellers": "公式代理店",
+    "legal": "法律",
+    "disclosures": "開示情報",
     "gdpr": "一般データ保護規則",
-    "ccpa": "カリフォルニア州のプライバシー",
+    "ccpa": "CCPA",
     "dmca": "DMCA",
     "community": "コミュニティ",
     "discord": "Discord",
     "youtube": "YouTube",
     "github": "GitHub",
-    "disclosure_notice": "ユーザーデータに影響を及ぼしたセキュリティインシデントを公表しました.",
+    "disclosure_notice": "ユーザーデータに影響を及ぼしたセキュリティインシデントを公表しました",
     "disclosure_link": "開示事項を全文お読みください",
     "resources": "資源",
     "blog": "ブログ",
@@ -923,7 +923,7 @@
   },
   "forums": {
     "warningTitle": "バグのチェック",
-    "warning": "レポートを作る前にバグが報告されているか確認してください。同じ報告をすると直すのが遅れます",
+    "warning": "レポートを作る前にバグが報告されているか確認してください。同じ報告をすると修正が遅れます",
     "roadmap": {
       "title": "ロードマップ",
       "searchPlaceholder": "ロードマップを検索...",
@@ -936,12 +936,12 @@
     "suggestions": {
       "title": "提案",
       "new": "新しい提案",
-      "searchPlaceholder": "提案を探す...",
+      "searchPlaceholder": "検索...",
       "allStatuses": "すべてのステータス",
       "pending": "保留中",
       "approved": "承認済み",
       "denied": "拒否済み",
-      "planned": "計画された",
+      "planned": "計画中",
       "empty": "指定した条件に一致する提案が見つかりませんでした。",
       "noItems": "まだ提案はありません",
       "detailTitle": "提案詳細",
@@ -950,12 +950,12 @@
       "devResponseLabel": "開発者対応",
       "devResponsePlaceholder": "公式な返信を追加してください...",
       "saveResponse": "応答を保存",
-      "discussionLocked": "この提案については議論を終了しました.",
-      "noComments": "まだコメントはありません。最初に参加して、あなたの考えを共有してください.",
+      "discussionLocked": "この提案については議論を終了しました。",
+      "noComments": "まだコメントはありません。最初に参加して、あなたの考えを共有してください。",
       "addComment": "コメントを追加",
-      "commentPlaceholder": "あなたの考えを共有してください.",
+      "commentPlaceholder": "あなたの考えを共有してください。",
       "postComment": "コメント投稿",
-      "replyPlaceholder": "返信を書いてください.",
+      "replyPlaceholder": "返信を書いてください。",
       "post": "投稿",
       "cancel": "キャンセル",
       "sortBy": "並び替え",
@@ -999,12 +999,12 @@
       "devResponseLabel": "開発者対応",
       "devResponsePlaceholder": "公式な返信を追加してください...",
       "saveResponse": "応答を保存",
-      "discussionLocked": "このバグ報告の議論は終了しました.",
-      "noComments": "まだコメントはありません。最初に参加して、あなたの考えを共有してください.",
+      "discussionLocked": "このバグ報告の議論は終了しました。",
+      "noComments": "まだコメントはありません。最初に参加して、あなたの考えを共有してください。",
       "addComment": "コメントを追加",
-      "commentPlaceholder": "あなたの考えを共有してください.",
+      "commentPlaceholder": "あなたの考えを共有してください。",
       "postComment": "コメント投稿",
-      "replyPlaceholder": "返信を書いてください.",
+      "replyPlaceholder": "返信を書いてください。",
       "post": "投稿",
       "cancel": "キャンセル",
       "sortBy": "並び替え",
@@ -1015,7 +1015,7 @@
         "title": "バグを報告",
         "titleLabel": "問題のタイトル",
         "titlePlaceholder": "簡単な要約",
-        "versionLabel": "Client Version",
+        "versionLabel": "バージョン",
         "descriptionLabel": "説明",
         "descriptionPlaceholder": "何が起こった？",
         "stepsLabel": "再現方法",
@@ -1061,7 +1061,7 @@
         "created": "アイテムが作成されました",
         "deleted": "アイテムが削除されました"
       },
-      "confirmDelete": "本当にそれでいいですか？"
+      "confirmDelete": "本当に実行しますか?"
     },
     "suggestions": {
       "title": "提案",
@@ -1085,7 +1085,7 @@
         "denied": "提案が拒否されました",
         "deleted": "提案が削除されました"
       },
-      "confirmDeny": "提案を拒否しますか？",
+      "confirmDeny": "提案を拒否しますか?",
       "confirmDelete": "本当にそれでいいですか？この操作は提案を永久に削除します。"
     },
     "bugs": {
@@ -1116,14 +1116,14 @@
     }
   },
   "cloud": {
-    "title": "雲"
+    "title": "クラウド"
   },
   "relations": {
     "title": "関係",
     "add": {
       "button": "関係を追加",
       "title": "関係を追加",
-      "description": "リストに友達か敵を追加してください。これにより、ゲーム内での彼らの表示に影響が出ます.",
+      "description": "リストに友達か敵を追加してください。これにより、ゲーム内での彼らの表示に影響が出ます。",
       "type": "関係の種類",
       "user_type": "ユーザータイプ",
       "submit": "関係を追加",
@@ -1134,30 +1134,30 @@
     "types": {
       "friend": "友達",
       "enemy": "敵",
-      "opal": "オパール ユーザー",
+      "opal": "Opalユーザー",
       "minecraft": "マインクラフト"
     },
     "inputs": {
-      "minecraft_placeholder": "ノッチ",
+      "minecraft_placeholder": "Notch",
       "opal_placeholder": "ユーザー名",
       "minecraft_label": "ユーザー名 / UUID",
       "opal_label": "ユーザー名設定"
     },
     "list": {
-      "empty": "友達や敵を追加して始めましょう！見つかった関係はありません!",
+      "empty": "今はまだ誰もいません。友達または敵を追加して始めましょう!",
       "remove_success": "関係を削除",
       "remove_error": "関係を削除できませんでした",
       "unknown": "不明"
     },
     "errors": {
-      "opal_not_found": "オパールユーザーが見つかりません",
+      "opal_not_found": "Opalユーザーが見つかりません",
       "self_add": "自分自身を追加することはできません",
-      "minecraft_not_found": "マインクラフトのユーザーが見つかりませんでした",
-      "exists": "既に既存の関係があります"
+      "minecraft_not_found": "Minecraftのユーザーが見つかりませんでした",
+      "exists": "既に設定済みです"
     }
   },
   "inbox": {
-    "title": "受信トレイ",
+    "title": "通知",
     "unread": "未読通知",
     "allRead": "全部終わった",
     "markAllRead": "既読にする",
@@ -1168,31 +1168,31 @@
   "blog": {
     "meta": {
       "title": "ブログ",
-      "description": "オパール・クライアントからの最新ニュース、ガイド、アップデートをお届けします."
+      "description": "Opalクライアントからの最新ニュース、ガイド、アップデートをお届けします。"
     }
   },
   "compare": {
     "meta": {
       "title": "比較",
-      "description": "オパールクライアントが他のMinecraftクライアントとどう比較されるか見てみましょう."
+      "description": "Opalクライアントが他のMinecraftクライアントとどう比較されるか見てみましょう。"
     }
   },
   "learn": {
     "meta": {
       "title": "学ぶ",
-      "description": "マインクラフトPvPとオパールクライアントに関するガイド、チュートリアル、およびリソース."
+      "description": "マインクラフトPvPとOpalクライアントに関するガイド、チュートリアル、およびリソース。"
     }
   },
   "support": {
     "title": "支援",
-    "subtitle": "チケットを開いていただければ、担当者がご連絡いたします.",
+    "subtitle": "チケットを開いていただければ、担当者がご連絡いたします。",
     "new": "新しいチケット",
     "cancel": "キャンセル",
     "steering": {
-      "intro": "チケットは、アカウント、請求、および技術サポート用です.",
-      "bug": "バグが見つかりましたか？こちらでご報告ください",
+      "intro": "チケットはアカウント、請求、および技術サポート用です。",
+      "bug": "バグが見つかりましたか？こちらでご報告ください:",
       "forumsLink": "フォーラム",
-      "security": "深刻なセキュリティ問題ですか？チケットをセキュリティとしてマークしてください."
+      "security": "深刻なセキュリティ問題ですか?チケットをセキュリティとしてマークしてください。"
     },
     "categories": {
       "billing": "請求",
@@ -1203,52 +1203,52 @@
     },
     "form": {
       "subject": "主題",
-      "subjectPlaceholder": "何を手伝ってほしいですか？?",
+      "subjectPlaceholder": "何を手伝ってほしいですか?",
       "category": "カテゴリー",
-      "securityHint": "セキュリティチケットは直接管理者へ行き、サポートアシスタントをスキップします.",
+      "securityHint": "セキュリティチケットは直接管理者へ行き、サポートアシスタントをスキップします。",
       "body": "メッセージ",
-      "bodyPlaceholder": "できるだけ詳しく問題を説明してください.",
+      "bodyPlaceholder": "できるだけ詳しく問題を説明してください。",
       "submit": "チケットを作成する",
-      "creating": "創造する…",
-      "created": "チケット作成"
+      "creating": "送信中…",
+      "created": "チケット送信完了"
     },
     "status": {
-      "open": "開く",
+      "open": "対応中",
       "pending": "保留",
       "resolved": "解決済み",
-      "closed": "閉じています"
+      "closed": "対応終了"
     },
     "message": "メッセージ",
     "messages": "メッセージ",
     "untitled": "件名なしチケット",
     "openConversation": "率直な対話",
     "empty": "まだチケットはありません",
-    "emptyDescription": "チケットを開くと、ここに表示されます.",
-    "failed": "サポートは一時的に利用できません.",
+    "emptyDescription": "チケットを開くと、ここに表示されます。",
+    "failed": "サポートは現在一時的に利用できません。",
     "retry": "もう一度試してください",
     "errors": {
-      "generic": "何か問題が発生しました。もう一度お試しください.",
-      "too_many_open_tickets": "チケットが多すぎます。新しいものを開く前に、既存のものを一つ閉じてください.",
-      "unknown_product": "アカウントを製品と照合できませんでした。更新してもう一度お試しください.",
-      "ticket_closed": "このチケットはクローズされており、これ以上の返信は受け付けていません."
+      "generic": "問題が発生しました。もう一度お試しください。",
+      "too_many_open_tickets": "チケットが多すぎます。新しいものを開く前に、既存のものを一つ閉じてください。",
+      "unknown_product": "アカウントを製品と照合できませんでした。更新してもう一度お試しください。",
+      "ticket_closed": "このチケットはクローズされており、これ以上の返信は受け付けていません。"
     },
     "thread": {
       "back": "サポートに戻る",
       "you": "あなた",
       "agent": "サポートエージェント",
       "system": "システム",
-      "empty": "まだメッセージはありません.",
+      "empty": "まだメッセージはありません。",
       "send": "送る",
       "replyPlaceholder": "返信を書いてください",
-      "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します.",
-      "closed": "このチケットはクローズされています。さらにサポートが必要な場合は、新しいチケットを開いてください.",
+      "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します。",
+      "closed": "このチケットはクローズされています。さらにサポートが必要な場合は、新しいチケットを開いてください。",
       "notFound": "チケットが見つかりませんでした",
-      "notFoundDescription": "削除されているか、リンクが間違っているのかもしれません."
+      "notFoundDescription": "削除されているか、リンクが間違っています。"
     }
   },
   "supportAgent": {
     "title": "サポートキュー",
-    "subtitle": "顧客チケットのトリアージ、返信、解決.",
+    "subtitle": "顧客チケットのトリアージ、返信、解決",
     "filters": {
       "all": "すべて",
       "open": "開く",
@@ -1295,31 +1295,31 @@
       "assigned": "あなたに割り当てられました",
       "status": "状況",
       "category": "カテゴリー",
-      "empty": "まだメッセージはありません.",
+      "empty": "まだメッセージはありません。",
       "send": "送る",
       "replyPlaceholder": "返信を書いてください",
-      "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します.",
-      "closed": "このチケットはクローズされています.",
+      "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します。",
+      "closed": "このチケットはクローズされています。",
       "reopen": "再開",
       "notFound": "チケットが見つかりませんでした"
     },
     "searchPlaceholder": "件名または顧客を検索…",
     "searchClear": "検索をクリア",
-    "emptySearch": "検索またはフィルターに一致するチケットはありません.",
+    "emptySearch": "検索またはフィルターに一致するチケットはありません。",
     "empty": "列は解消されました",
-    "emptyDescription": "新しいチケットは、お客様が開封するとこちらに表示されます.",
-    "failed": "サポートは一時的に利用できません.",
+    "emptyDescription": "新しいチケットは、お客様が開封するとこちらに表示されます。",
+    "failed": "サポートは一時的に利用できません。",
     "retry": "もう一度試してください",
     "untitled": "件名なしチケット",
     "unassigned": "未割り当て",
     "older": "古いチケット",
     "errors": {
-      "generic": "何か問題が発生しました。もう一度お試しください."
+      "generic": "問題が発生しました。もう一度お試しください。"
     }
   },
   "creator": {
-    "title": "Creator",
-    "description": "Your channel, clicks, and payout stats.",
+    "title": "クリエイター",
+    "description": "チャンネルの統計情報",
     "profile": {
       "title": "Channel",
       "tier": "Tier",
@@ -1369,7 +1369,7 @@
     }
   },
   "creatorLanding": {
-    "badge": "Creator partner",
+    "badge": "クリエイターパートナー",
     "title": "{name} x Opal",
     "subtitle": "{name} invited you to try Opal, the premium Minecraft utility client.",
     "percentOff": "{percent}% off",
@@ -1386,7 +1386,7 @@
       "title": "{name} x Opal discount",
       "description": "{name} partnered with Opal Client. Follow their creator link to get started with the premium Minecraft utility client.",
       "descriptionDiscount": "{name} partnered with Opal Client — use their code for {discount} the premium Minecraft utility client.",
-      "genericTitle": "Creator link",
+      "genericTitle": "クリエイターリンク",
       "genericDescription": "This creator link isn't active. You can still get Opal Client, the premium Minecraft utility client."
     }
   },

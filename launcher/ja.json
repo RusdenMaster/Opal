@@ -1,7 +1,7 @@
 {
   "auth": {
-    "loginSuccess": "ログインに成功しました！!",
-    "loginFailed": "ログインに失敗しました。もう一度お試しください.",
+    "loginSuccess": "ログインに成功しました!",
+    "loginFailed": "ログインに失敗しました。もう一度お試しください。",
     "waiting": "ログイン待ち...",
     "dialog": {
       "title": "ログインが必要です",
@@ -10,29 +10,29 @@
       "loginButton": "ブラウザでログインしてください"
     },
     "screen": {
-      "title": "サインが必要です",
-      "description": "OpalとTerminusのランチャーを使用するには、ログインが必要です。ブラウザにリダイレクトされ、認証を完了します.",
-      "loginButton": "ブラウザでログインしてください"
+      "title": "ログインが必要です",
+      "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
+      "loginButton": "リダイレクトしてログイン"
     },
     "checking": {
       "title": "認証確認中",
-      "subtitle": "お待ちください."
+      "subtitle": "Opal Launcherは、ブラウザでの認証を待機しています。"
     }
   },
   "changelog": {
-    "empty": "このチャンネルには、まだ変更履歴はありません."
+    "empty": "このチャンネルには、まだ何もありません。"
   },
   "comingSoon": {
     "eyebrow": "近日公開",
-    "body": "まだリリース前ですが、間近です。いつ Opal 船は、こちらが勝手にずまれてしまいます。 自分でリフレッシュする必要はありません.",
+    "body": "リリースまで間もなくです。Opal Launcherは自動でアップデートを実行します。自分で更新する必要はありません。",
     "factsLabel": "ランダムな事実の表示"
   },
   "common": {
     "cancel": "キャンセル",
-    "save": "保存してください",
-    "saveChanges": "変更を保存してください",
+    "save": "保存",
+    "saveChanges": "変更を保存",
     "saved": "変更を保存しました!",
-    "close": "近く",
+    "close": "閉じる",
     "browse": "閲覧する",
     "back": "後",
     "retry": "再試行",
@@ -50,17 +50,17 @@
     "defaultName": "プレイヤー",
     "signedOut": "ログアウト済み",
     "authenticated": "認証済み",
-    "signedInAs": "{name}にサインインしました",
+    "signedInAs": "{name}にサインインしています",
     "logout": "ログアウト"
   },
   "home": {
-    "welcome": "いらっしゃいませ",
-    "welcomeBack": "おかえりです。{name}",
-    "subtitle": "プロフィール、モッド、および起動設定を管理してください。準備ができたら、選択したプロフィールでゲームを開始してください.",
+    "welcome": "ようこそ",
+    "welcomeBack": "おかえりなさい! {name}",
+    "subtitle": "プロフィール、Mod、および起動設定の管理ができます。準備ができたら、ゲームを開始しましょう!",
     "stats": {
       "userId": "ユーザーID",
-      "launch": "発射",
-      "launches": "発射",
+      "launch": "起動",
+      "launches": "起動回数",
       "online": "オンライン"
     },
     "news": {
@@ -69,9 +69,9 @@
     }
   },
   "logs": {
-    "description": "現在のゲームセッションからの出力.",
+    "description": "現在のゲームセッションからの出力を表示します。",
     "copied": "Copied {count, plural, one {# line} other {# lines}}",
-    "uploadError": "ログのアップロードに失敗しました。代わりにコピーを試してください",
+    "uploadError": "ログのアップロードに失敗しました。代わりにコピーを試してください。",
     "linkCopied": "ログリンクをコピーしました",
     "copyAll": "ログをすべてコピーしてください",
     "shareTitle": "Mclo.gs (リンクコピー済み)",
@@ -81,7 +81,7 @@
     "clearSearch": "明確な検索",
     "empty": {
       "title": "ログはまだありません",
-      "hint": "セッションを開始し、その出力はここにストリーミングされます."
+      "hint": "ゲームを開始すると、ログがここに出力されます."
     },
     "noMatches": {
       "title": "該当なし",
@@ -90,15 +90,15 @@
   },
   "mods": {
     "header": {
-      "description": "モッドを管理する",
-      "descriptionFor": "{name}のモッドを管理する",
-      "descriptionForStream": "{name} ({stream}) のモッドを管理する",
-      "refresh": "さっぱり",
-      "openFolder": "モッドフォルダを開く"
+      "description": "Modを管理する",
+      "descriptionFor": "{name}のModを管理する",
+      "descriptionForStream": "{name} ({stream}) のModを管理する",
+      "refresh": "同期",
+      "openFolder": "Modsフォルダを開く"
     },
     "vanilla": {
-      "title": "バニラ版のMODは無効化されています.",
-      "body": "FabricまたはOpalに切り替えてモッドを管理してください."
+      "title": "バニラ版はModが無効化されています。",
+      "body": "FabricまたはOpalに切り替えるとModが導入可能になります。"
     },
     "table": {
       "selectAll": "全てを選択してください",
@@ -115,170 +115,170 @@
       "viewOnModrinth": "Modrinth での表示"
     },
     "required": {
-      "present": "必要なモッドは存在します ({count})",
-      "missing": "必要なモッドが不足しています ({count})",
-      "warning": "必要なモッドがすべて揃ってからでないと、起動できません."
+      "present": "必要なModが揃っています",
+      "missing": "必要なModが{count}個不足しています",
+      "warning": "必要なModが不足しているため、起動できません"
     },
     "incompatible": {
-      "title": "互換性のないモッドを検出しました ({count})",
-      "warning": "これらのものを削除して、クラッシュや未定義動作を避けてください."
+      "title": "互換性のないModを検出しました ({count})",
+      "warning": "これらのModを削除してください。クラッシュや想定されていない動作をする可能性があります。"
     },
     "recommended": {
-      "title": "推奨モッド ({count})"
+      "title": "推奨Mod ({count})"
     }
   },
   "nav": {
-    "home": "家",
+    "home": "ホーム",
     "mods": "MOD",
-    "packs": "荷物",
-    "profiles": "プロフィール",
-    "changelog": "履歴書",
+    "packs": "パック",
+    "profiles": "起動構成",
+    "changelog": "更新履歴",
     "logs": "ログ",
     "settings": "設定",
-    "scripts": "脚本"
+    "scripts": "スクリプト"
   },
   "packs": {
     "browser": {
-      "title": "パッケージマネージャー",
-      "subtitle": "リソースパックとシェーダーを管理してください.",
-      "import": "輸入"
+      "title": "パックマネージャー",
+      "subtitle": "リソースパックとシェーダーの管理画面です。",
+      "import": "インポート"
     },
     "tabs": {
       "resource": "リソースパック",
       "shader": "シェーダー"
     },
     "emptyState": {
-      "title": "No {type, select, shader {shader} other {resource}} packs found.",
-      "body": "輸入またはマーケットプレイスを閲覧してください."
+      "title": "{type, select, shader {shader} other {resource}}が見つかりませんでした。",
+      "body": "インポートまたはマーケットプレイスからダウンロードしてください。"
     },
     "containsShaders": "シェーダーが含まれます",
-    "confirmDelete": "このパックを削除してもよろしいですか？?",
+    "confirmDelete": "このパックを削除しますか?",
     "card": {
       "enable": "可能にする",
       "disable": "停止する",
       "download": "ダウンロード"
     },
     "marketplace": {
-      "title": "Browse {type, select, shader {Shaders} other {Resource Packs}}",
+      "title": "{type, select, shader {Shaders} other {Resource Packs}}を探す",
       "poweredBy": "Modrinth で動⼒されています",
-      "searchPlaceholder": "検索….",
+      "searchPlaceholder": "検索…",
       "search": "検索",
-      "noResults": "結果は見つかりませんでした.",
-      "noResultsHint": "別の検索を試してみてください.",
+      "noResults": "見つかりませんでした。",
+      "noResultsHint": "別のワードで検索してみてください。",
       "searchFailed": "マーケットでの検索に失敗しました",
-      "downloaded": "ダウンロード {name}",
+      "downloaded": "{name}をダウンロードしました",
       "downloadFailed": "ダウンロードに失敗しました：{error}",
       "unknownError": "不明なエラー",
-      "noActiveProfile": "アクティブなプロフィールはありません",
+      "noActiveProfile": "アクティブな起動構成はありません",
       "removeFailed": "パックの削除に失敗しました"
     },
     "toast": {
       "loadFailed": "ローカルパックの読み込みに失敗しました",
-      "imported": "輸入{name}",
+      "imported": "{name}を追加しました",
       "importFailed": "パックのインポートに失敗しました",
-      "noActiveProfile": "アクティブなプロフィールは選択されていません",
+      "noActiveProfile": "アクティブな起動構成は選択されていません",
       "packEnabled": "パック有効",
-      "packDisabled": "荷物制限あり",
+      "packDisabled": "パック無効",
       "toggleFailed": "パックの切り替えに失敗しました",
       "packDeleted": "削除されました",
-      "deleteFailed": "パックの削除に失敗しました",
-      "packRemoved": "荷物が片付けられました"
+      "deleteFailed": "削除に失敗しました",
+      "packRemoved": "削除されました"
     }
   },
   "profiles": {
     "count": "{count, plural, one {# profile} other {# profiles}}",
-    "confirmDelete": "このプロフィールを削除しますか？?",
+    "confirmDelete": "このプロフィールを削除しますか?",
     "namePlaceholder": "プロフィール名",
     "descriptionPlaceholder": "説明",
     "descriptionOptionalPlaceholder": "説明（任意）",
     "selectProfile": "プロフィールを選択してください{name}",
     "defaultCannotDelete": "デフォルトのプロフィールは削除できません",
     "create": {
-      "title": "新しいプロフィール",
-      "submit": "作りなさい"
+      "title": "新しく起動構成を作成する",
+      "submit": "作成"
     },
     "edit": {
-      "title": "プロフィールを編集する"
+      "title": "起動構成を編集"
     },
     "type": {
       "opal": "Opal",
-      "vanilla": "バニラ",
+      "vanilla": "Vanilla",
       "fabric": "Fabric"
     },
     "stream": {
-      "stable": "安定",
-      "canary": "カナリア",
-      "nightly": "毎晩 (毎晩)"
+      "stable": "安定版",
+      "canary": "Canary (開発版)",
+      "nightly": "Nightly (開発版)"
     },
     "empty": {
-      "title": "まだプロフィールはありません",
+      "title": "まだ起動構成はありません",
       "body": "始めに作ってみましょう"
     },
     "versionPicker": {
       "selectVersion": "バージョンを選択してください.",
       "minecraftVersion": "Minecraft バージョン...",
-      "search": "検索バージョン….",
-      "empty": "情報は見つかりませんでした.",
-      "loading": "読み込み中….",
-      "snapshot": "（写真）"
+      "search": "検索…",
+      "empty": "見つかりませんでした",
+      "loading": "読み込み中…",
+      "snapshot": "スナップショット"
     },
     "toast": {
       "streamRestricted": "現時点では、安定接続のみが利用可能です",
-      "selectVersion": "Minecraftのバージョンをお選びください",
+      "selectVersion": "Minecraftのバージョンを選んでください",
       "nameTypeRequired": "名前とタイプは必須です",
-      "created": "プロフィール作成済み",
-      "createFailed": "プロフィール作成に失敗しました",
-      "updated": "プロフィールを更新しました",
-      "updateFailed": "プロフィールを更新できませんでした",
-      "deleted": "プロフィール削除済み",
-      "deleteFailed": "プロフィールを削除できませんでした"
+      "created": "起動構成作成済み",
+      "createFailed": "作成に失敗しました",
+      "updated": "起動構成を更新しました",
+      "updateFailed": "起動構成を更新できませんでした",
+      "deleted": "削除済み",
+      "deleteFailed": "削除できませんでした"
     }
   },
   "settings": {
     "title": "設定",
-    "description": "ゲームのインストール設定を、お好みに合わせてください.",
+    "description": "ゲームのインストール設定を、お好みに合わせてください。",
     "memory": {
       "label": "メモリ割り当て",
       "hint": "(RAM) MB",
       "enterValue": "値を入力してください"
     },
     "gameDirectory": {
-      "label": "ゲーム一覧",
-      "hint": "(Minecraft フォルダ)"
+      "label": "ゲームディレクトリ",
+      "hint": "(%appdata%/.minecraft)"
     },
     "resolution": {
-      "label": "決議",
+      "label": "起動時の解像度",
       "hint": "(幅 × 高さ)"
     },
     "language": {
       "label": "言語",
-      "hint": "（起動画面）"
+      "hint": "（ランチャー）"
     }
   },
   "sidebar": {
-    "selectProfile": "プロフィールを選択してください",
-    "release": "発表：",
-    "version": "Version:",
+    "selectProfile": "起動構成を選択してください",
+    "release": "リリース:",
+    "version": "バージョン:",
     "hostVersion": "ホスト v{version}",
     "launcherVersion": "ランチャー v{version}",
     "status": {
-      "play": "遊ぶ",
-      "preparing": "準備中.",
-      "downloading": "ダウンロード中….",
-      "extracting": "抽出中….",
-      "launching": "発射開始….",
-      "stop": "止まれ"
+      "play": "起動",
+      "preparing": "準備中",
+      "downloading": "ダウンロード中…",
+      "extracting": "抽出中…",
+      "launching": "起動中…",
+      "stop": "停止"
     }
   },
   "scripts": {
-    "searchPlaceholder": "検索スクリプト…",
-    "searchAria": "検索スクリプト",
+    "searchPlaceholder": "スクリプトを検索…",
+    "searchAria": "スクリプトを検索",
     "clearSearch": "明確な検索",
     "emptyTitle": "スクリプトはまだありません",
-    "emptyHint": "クライアント用のスクリプトはこちらに表示されます.",
+    "emptyHint": "クライアント用のスクリプトはこちらに表示されます",
     "noMatches": "該当なし",
-    "noMatchesHint": "「{query}」に一致するものはありません.",
-    "pinned": "釘付け",
+    "noMatchesHint": "「{query}」に一致するものはありません",
+    "pinned": "ピン止め",
     "installs": "{count, plural, one {install} other {installs}}"
   }
 }
