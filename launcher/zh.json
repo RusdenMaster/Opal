@@ -88,7 +88,7 @@
       "hint": "没有找到匹配“{query}”的内容。"
     }
   },
-"mods": {
+  "mods": {
     "header": {
       "description": "管理模组",
       "descriptionFor": "管理 {name} 的模组",
@@ -185,7 +185,7 @@
       "packRemoved": "资源包已移除"
     }
   },
-"profiles": {
+  "profiles": {
     "count": "{count, plural, one {# 个配置文件} other {# 个配置文件}}",
     "confirmDelete": "确定要删除这个配置文件吗？",
     "namePlaceholder": "输入配置文件名称",
