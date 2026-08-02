@@ -115,7 +115,7 @@
       "viewOnModrinth": "Modrinth での表示"
     },
     "required": {
-      "present": "必要なModが揃っています",
+      "present": "必要なModが揃っています ({count})",
       "missing": "必要なModが{count}個不足しています",
       "warning": "必要なModが不足しているため、起動できません"
     },
