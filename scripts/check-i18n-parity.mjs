@@ -34,9 +34,30 @@ function flatten(value, prefix = '', out = new Map()) {
   return out;
 }
 
+// Top-level ICU argument names only. Text inside plural/select branches is
+// locale-owned prose (translators may drop or reword literals like
+// `shader {shader}`), so nested braces never count as format tokens.
+function icuTopLevelArgs(s) {
+  const names = [];
+  let depth = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === '{') {
+      if (depth === 0) {
+        const m = /^\{\s*([A-Za-z_]\w*)\s*[,}]/.exec(s.slice(i));
+        if (m) names.push(`{${m[1]}}`);
+      }
+      depth++;
+    } else if (c === '}' && depth > 0) {
+      depth--;
+    }
+  }
+  return names;
+}
+
 const tokens = (s) =>
   typeof s === 'string'
-    ? [...s.matchAll(/\{\w+\}|%[sd]/g)].map((m) => m[0]).sort().join(',')
+    ? [...icuTopLevelArgs(s), ...(s.match(/%[sd]/g) ?? [])].sort().join(',')
     : '';
 
 function compare(enMap, locMap, label) {
