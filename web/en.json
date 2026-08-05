@@ -133,6 +133,12 @@
       "title": "Media",
       "subtitle": "Check out some videos made by our community!"
     },
+    "guides": {
+      "title": "Guides & updates",
+      "subtitle": "The latest posts and guides from the Opal team.",
+      "viewAllBlog": "View all posts",
+      "viewAllLearn": "View all guides"
+    },
     "cta": {
       "title": "Elevate your Minecraft experience. Your journey starts here.",
       "button": "Purchase now"

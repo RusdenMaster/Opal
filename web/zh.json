@@ -133,6 +133,12 @@
       "title": "走近瞧瞧",
       "subtitle": "欣赏我们用户的精彩锦集"
     },
+    "guides": {
+      "title": "指南与动态",
+      "subtitle": "来自 Opal 团队的最新文章与指南。",
+      "viewAllBlog": "查看全部文章",
+      "viewAllLearn": "查看全部指南"
+    },
     "cta": {
       "title": "提升您 Minecraft 体验的旅途\n从此处开启",
       "button": "立即购买"
