@@ -345,7 +345,7 @@
     "slug": "how-to-install-fabric-mods",
     "title": "Minecraft'ta Fabric Modları Nasıl Kurulur",
     "description": "Minecraft için Fabric Loader ve modları, Opal Client dahil olmak üzere adım adım kurulum rehberi.",
-    "excerpt": "Minecraft 1.21.10 için Fabric Loader kurulumu ve mod yükleme rehberi (başlangıç seviyesine uygun).",
+    "excerpt": "Minecraft 26.2 için Fabric Loader kurulumu ve mod yükleme rehberi (başlangıç seviyesine uygun).",
     "category": "Setup",
     "date": "2026-04-06",
     "author": "trq"

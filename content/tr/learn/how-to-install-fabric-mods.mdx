@@ -1,7 +1,7 @@
 ---
 title: Minecraft'ta Fabric Modları Nasıl Kurulur
 description: Minecraft için Fabric Loader ve modları, Opal Client dahil olmak üzere adım adım kurulum rehberi.
-excerpt: Minecraft 1.21.10 için Fabric Loader kurulumu ve mod yükleme rehberi (başlangıç seviyesine uygun).
+excerpt: Minecraft 26.2 için Fabric Loader kurulumu ve mod yükleme rehberi (başlangıç seviyesine uygun).
 date: 2026-04-06
 lastUpdated: 2026-06-04
 category: Setup
@@ -11,18 +11,18 @@ faqs:
     a: Evet, Opal bir Fabric modudur. Opal Başlatıcı, Fabric kurulumunu otomatik olarak halleder, ancak manuel olarak kuruyorsanız öncelikle Fabric Loader'a ihtiyacınız var.
   - q: Forge ile birlikte Fabric modlarını kullanabilir miyim?
     a: Hayır. Fabric ve Forge, uyumsuz formatlara sahip ayrı mod yükleyicileridir. Opal yalnızca Fabric gerektirir.
-  - q: Minecraft 1.21 için hangi Java sürümüne ihtiyacım var?
-    a: Java 21 veya daha güncel bir sürüm. Eski sürümler (Java 8, 17) modern Minecraft ile çalışmayacaktır. Java 21'i Adoptium veya Oracle'dan indirin.
+  - q: Minecraft 26.2 için hangi Java sürümüne ihtiyacım var?
+    a: Java 25 veya daha güncel bir sürüm. Eski sürümler (Java 8, 17) modern Minecraft ile çalışmayacaktır. Java 25'i Adoptium veya Oracle'dan indirin.
   - q: Fabric modları Minecraft kurulumumu bozacak mı?
     a: Hayır. Fabric modları yalnızca modlar klasörüne aittir. Bir sorun olursa, modun JAR dosyasını kaldırın ve vanilla'yı başlatın. Dünyalarınız ve kayıtlarınız etkilenmez.
   - q: Opal'ı diğer Fabric modlarıyla birlikte çalışır durumda tutabilir miyim?
-    a: Genellikle evet, diğer modlar çakışmadığı sürece. Opal, Fabric 1.21.10 üzerinde bağımsız bir istemci modu olarak çalışacak şekilde tasarlanmıştır.
+    a: Genellikle evet, diğer modlar çakışmadığı sürece. Opal, Fabric 26.2 üzerinde bağımsız bir istemci modu olarak çalışacak şekilde tasarlanmıştır.
 ---
 
 <KeyTakeaways>
 
 - Fabric, hafif bir mod yükleyicisidir; öncelikle Fabric Loader'ı kurun, ardından mod JAR dosyalarını mods klasörüne atın.
-- Minecraft 1.21 için Java 21 veya daha yenisini ve Minecraft'ı kurmadan önce en az bir kez başlatmış olmanız gerekir.
+- Minecraft 26.2 için Java 25 veya daha yenisini ve Minecraft'ı kurmadan önce en az bir kez başlatmış olmanız gerekir.
 - Mod JAR dosyaları Windows'ta %appdata%\.minecraft\mods klasörüne, macOS ve Linux'ta ise eşdeğer konuma atılır.
 - Opal, bir yükleyici sistemi kullanır: Opal Launcher, Fabric, kimlik doğrulama, kurulum ve güncellemeleri sizin için halleder.
 
@@ -33,7 +33,7 @@ Fabric, Minecraft için hafif bir [mod yükleyicisi](https://en.learn/what-is-a-
 Başlamadan önce, şunlara sahip olduğunuzdan emin olun:
 
 - **Minecraft Java Edition** yüklü ve en az bir kez başlatılmış
-- **Java 21** veya daha yeni sürümü yüklü (MC 1.21+ için gereklidir)
+- **Java 25** veya daha yeni sürümü yüklü (MC 26.2+ için gereklidir)
 - Çalışır durumda bir internet bağlantısı
 ## Fabric Yükleyici'yi yükleyin
 
@@ -50,7 +50,7 @@ Resmi Fabric web sitesine **fabricmc.net** adresinden gidin, **İndir** seçene�
 İndirdiğiniz Fabric kurulum JAR dosyasını çalıştırın, ardından bu ayarların doğru olduğundan emin olun:
 
 - **Client** sekmesi seçili olmalı
-- **Minecraft Sürümü:** 1.21.10 (veya hedef sürümünüz)
+- **Minecraft Sürümü:** 26.2 (veya hedef sürümünüz)
 - **Loader Sürümü:** En son kararlı sürüm (0.17.x önerilir)
 - **Kurulum Konumu:** Varsayılan `.minecraft` dizininiz
 
@@ -60,7 +60,7 @@ Resmi Fabric web sitesine **fabricmc.net** adresinden gidin, **İndir** seçene�
 
 <Step title="Kurulumu doğrulayın">
 
-Minecraft Başlatıcı'sını açın, **Installations** sekmesine tıklayın ve **fabric-loader-1.21.10** (veya benzeri) adında yeni bir profil bulun. Seçin ve **Play** butonuna tıklayın. Eğer Minecraft, başlık ekranında Fabric logosuyla birlikte açılıyorsa, her şey yolunda demektir
+Minecraft Başlatıcı'sını açın, **Installations** sekmesine tıklayın ve **fabric-loader-26.2** (veya benzeri) adında yeni bir profil bulun. Seçin ve **Play** butonuna tıklayın. Eğer Minecraft, başlık ekranında Fabric logosuyla birlikte açılıyorsa, her şey yolunda demektir
 
 </Step>
 
@@ -132,7 +132,7 @@ Başlatıcı önerilen yaklaşımdır: her şeyi sizin için yönetir.
 Fabric'i doğru Minecraft sürümü için yüklediğinizden emin olun. Gerekirse yükleyiciyi yeniden çalıştırın.
 
 ### "Oyun başlatıldığında çöküyor"
-- **Java 21**'in (Java 8 veya 17 değil) kurulu olduğundan emin olun
+- **Java 25**'in (Java 8 veya 17 değil) kurulu olduğundan emin olun
 - `mods` klasöründeki uyumsuz modları kaldırın
 - Fabric Loader'ın güncel olduğundan emin olun
 
@@ -172,9 +172,9 @@ Hayır. Fabric ve Forge, uyumsuz mod formatlarına sahip ayrı mod yükleyiciler
 
 </FAQItem>
 
-<FAQItem question="Minecraft 1.21 için hangi Java sürümüne ihtiyacım var?">
+<FAQItem question="Minecraft 26.2 için hangi Java sürümüne ihtiyacım var?">
 
-Java 21 veya daha yeni bir sürüm. Eski Java sürümleri (8, 17) modern Minecraft ile uyumlu çalışmayacaktır. Java 21'i Adoptium veya Oracle'dan indirin
+Java 25 veya daha yeni bir sürüm. Eski Java sürümleri (8, 17) modern Minecraft ile uyumlu çalışmayacaktır. Java 25'i Adoptium veya Oracle'dan indirin
 
 </FAQItem>
 
@@ -186,7 +186,7 @@ Hayır. Fabric modları yalnızca `mods` klasörüne aittir. Bir sorun olursa, m
 
 <FAQItem question="Opal'ı diğer Fabric modlarıyla birlikte çalışır durumda tutabilir miyim?">
 
-Genel olarak evet, diğer modlar çakışmadığı sürece. Opal, Fabric 1.21.10 üzerinde bağımsız bir istemci modu olarak çalışacak şekilde tasarlanmıştır
+Genel olarak evet, diğer modlar çakışmadığı sürece. Opal, Fabric 26.2 üzerinde bağımsız bir istemci modu olarak çalışacak şekilde tasarlanmıştır
 
 </FAQItem>
 
@@ -198,4 +198,4 @@ Genel olarak evet, diğer modlar çakışmadığı sürece. Opal, Fabric 1.21.10
   { href: "/tr/blog/essential-fabric-mods-every-player-should-have", label: "Zorunlu Fabric modlar", description: "Bir sonraki modların klasörüne ne koyacağını." },
 ]} />
 
-<CTA href="/tr/purchase">Opal Fabric 1.21.10'u $8.99 için edinin</CTA>
+<CTA href="/tr/purchase">Opal Fabric 26.2'u $8.99 için edinin</CTA>
