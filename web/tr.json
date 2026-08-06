@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Cevap yaz…",
       "hint": "Markdown destekleniyor. Ctrl+Enter gönderir.",
       "closed": "Bu bilet kapatıldı. Daha fazla yardıma ihtiyacınız varsa yeni bir bilet açın.",
+      "seen": "Görülmüş",
+      "copyTranscript": "Kopya metin",
+      "copied": "Çözülen kayıt",
+      "copyFailed": "Transkripti kopyalamayı başaramadım",
       "notFound": "Bilet bulunamadı",
       "notFoundDescription": "Belki kaldırılmış, ya da bağlantı hatalı olabilir."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Markdown destekleniyor. Ctrl+Enter gönderir.",
       "closed": "Bu bilet kapatıldı.",
       "reopen": "Yeniden aç",
+      "seen": "Görülmüş",
+      "copyTranscript": "Kopya metin",
+      "copied": "Çözülen kayıt",
+      "copyFailed": "Transkripti kopyalamayı başaramadım",
       "notFound": "Bilet bulunamadı"
     },
     "searchPlaceholder": "Konu veya müşteri ara…",

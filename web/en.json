@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Write a reply…",
       "hint": "Markdown is supported. Ctrl+Enter sends.",
       "closed": "This ticket is closed. Open a new one if you need more help.",
+      "seen": "Seen",
+      "copyTranscript": "Copy transcript",
+      "copied": "Transcript copied",
+      "copyFailed": "Couldn't copy the transcript",
       "notFound": "Ticket not found",
       "notFoundDescription": "It may have been removed, or the link is wrong."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Markdown is supported. Ctrl+Enter sends.",
       "closed": "This ticket is closed.",
       "reopen": "Reopen",
+      "seen": "Seen",
+      "copyTranscript": "Copy transcript",
+      "copied": "Transcript copied",
+      "copyFailed": "Couldn't copy the transcript",
       "notFound": "Ticket not found"
     },
     "searchPlaceholder": "Search subject or customer…",

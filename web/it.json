@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Scrivi una risposta…",
       "hint": "Il Markdown è supportato. Ctrl+Invio invia.",
       "closed": "Questo ticket è stato chiuso. Apri un nuovo ticket se hai bisogno di ulteriore assistenza.",
+      "seen": "Visto",
+      "copyTranscript": "Copia della trascrizione",
+      "copied": "Trascrizione copiata",
+      "copyFailed": "Non è stato possibile copiare la trascrizione",
       "notFound": "Biglietto non trovato",
       "notFoundDescription": "Potrebbe essere stato rimosso, oppure il link non è corretto."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Il Markdown è supportato. Ctrl+Invio invia.",
       "closed": "Questo ticket è chiuso.",
       "reopen": "Riaprire",
+      "seen": "Visto",
+      "copyTranscript": "Copia della trascrizione",
+      "copied": "Trascrizione copiata",
+      "copyFailed": "Non è stato possibile copiare la trascrizione",
       "notFound": "Biglietto non trovato"
     },
     "searchPlaceholder": "Cerca argomento o cliente…",

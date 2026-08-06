@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Napisz odpowiedź…",
       "hint": "Obsługiwany jest Markdown. Ctrl+Enter wysyła.",
       "closed": "Ten bilet został zamknięty. Otwórz nowy, jeśli potrzebujesz dalszej pomocy.",
+      "seen": "Widziany",
+      "copyTranscript": "Kopia transkryptu",
+      "copied": "Przepis skopiowano",
+      "copyFailed": "Nie można było skopiować transkryptu",
       "notFound": "Bilet nie znaleziono",
       "notFoundDescription": "Możliwe, że to zostało usunięte, albo link jest nieprawidłowy."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Obsługiwany jest Markdown. Ctrl+Enter wysyła.",
       "closed": "Bilet został zamknięty.",
       "reopen": "Ponownie otworzyć",
+      "seen": "Widziany",
+      "copyTranscript": "Kopia transkryptu",
+      "copied": "Przepis skopiowano",
+      "copyFailed": "Nie można było skopiować transkryptu",
       "notFound": "Bilet nie znaleziono"
     },
     "searchPlaceholder": "Wyszukaj temat lub klienta…",

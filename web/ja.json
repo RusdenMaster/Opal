@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "返信を書いてください",
       "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します。",
       "closed": "このチケットはクローズされています。さらにサポートが必要な場合は、新しいチケットを開いてください。",
+      "seen": "見られた",
+      "copyTranscript": "写稿",
+      "copied": "写記録",
+      "copyFailed": "書き起こしをコピーできませんでした",
       "notFound": "チケットが見つかりませんでした",
       "notFoundDescription": "削除されているか、リンクが間違っています。"
     }
@@ -1301,6 +1305,10 @@
       "hint": "マークダウンがサポートされています。Ctrl+Enterで送信します。",
       "closed": "このチケットはクローズされています。",
       "reopen": "再開",
+      "seen": "見られた",
+      "copyTranscript": "写稿",
+      "copied": "写記録",
+      "copyFailed": "書き起こしをコピーできませんでした",
       "notFound": "チケットが見つかりませんでした"
     },
     "searchPlaceholder": "件名または顧客を検索…",

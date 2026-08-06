@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Répondez…",
       "hint": "Markdown est pris en charge. Ctrl+Entrée envoie.",
       "closed": "Ce ticket est fermé. Ouvrez-en un nouveau si vous avez besoin d'aide supplémentaire.",
+      "seen": "Vu",
+      "copyTranscript": "Copie de la transcription",
+      "copied": "Transcription copiée",
+      "copyFailed": "Impossible de copier la transcription",
       "notFound": "Billet non trouvé",
       "notFoundDescription": "Il se peut qu'il ait été supprimé, ou que le lien soit incorrect."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Markdown est pris en charge. Ctrl+Entrée envoie.",
       "closed": "Ce ticket est fermé.",
       "reopen": "Rouvrir",
+      "seen": "Vu",
+      "copyTranscript": "Copie de la transcription",
+      "copied": "Transcription copiée",
+      "copyFailed": "Impossible de copier la transcription",
       "notFound": "Billet non trouvé"
     },
     "searchPlaceholder": "Rechercher un sujet ou un client…",

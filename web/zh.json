@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "请回复…",
       "hint": "Markdown 支持。Ctrl+Enter 发送.",
       "closed": "此工单已关闭。如果您需要更多帮助，请发起新的工单.",
+      "seen": "看见",
+      "copyTranscript": "复制稿件",
+      "copied": "謄本已複製",
+      "copyFailed": "无法复制记录",
       "notFound": "未找到票",
       "notFoundDescription": "可能已被移除，或者链接有误."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Markdown 支持。Ctrl+Enter 发送.",
       "closed": "此工单已关闭.",
       "reopen": "重新开放",
+      "seen": "看见",
+      "copyTranscript": "复制稿件",
+      "copied": "謄本已複製",
+      "copyFailed": "无法复制记录",
       "notFound": "未找到票"
     },
     "searchPlaceholder": "搜索主题或客户…",
