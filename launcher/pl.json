@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "Katalog gier",
       "hint": "(Katalog Minecrafta)",
-      "openFolder": "Otwórz folder"
+      "openFolder": "Otwórz folder",
+      "openFolderFailed": "Nie udało się otworzyć folderu"
     },
     "resolution": {
       "label": "Rozwiązanie",
@@ -264,6 +265,7 @@
       "clear": "Wyczyść",
       "loading": "Obliczanie…",
       "gameRunningHint": "Zamknij grę przed czyszczeniem magazynu.",
+      "noGameDirectory": "Ustaw katalog gry, aby zobaczyć wykorzystanie miejsca.",
       "categories": {
         "assets": "Zasoby",
         "libraries": "Biblioteki",
@@ -292,6 +294,7 @@
         "noActiveProfile": "Nie wybrano aktywnego profilu",
         "notFound": "Nie znaleziono osobnej instalacji Minecrafta",
         "nothingToImport": "Nie ma nic do zaimportowania",
+        "noVersion": "Przed importem wybierz wersję Minecrafta dla tego profilu",
         "success": "Zaimportowano {count, plural, one {# plik} other {# plików}}",
         "failed": "Nie udało się zaimportować ustawień Minecrafta"
       },

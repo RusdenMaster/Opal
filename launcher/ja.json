@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "ゲームディレクトリ",
       "hint": "(%appdata%/.minecraft)",
-      "openFolder": "フォルダを開く"
+      "openFolder": "フォルダを開く",
+      "openFolderFailed": "フォルダを開けませんでした"
     },
     "resolution": {
       "label": "起動時の解像度",
@@ -264,6 +265,7 @@
       "clear": "消去",
       "loading": "計算中…",
       "gameRunningHint": "ストレージを消去する前にゲームを終了してください。",
+      "noGameDirectory": "ストレージの使用状況を確認するには、ゲームディレクトリを設定してください。",
       "categories": {
         "assets": "アセット",
         "libraries": "ライブラリ",
@@ -292,6 +294,7 @@
         "noActiveProfile": "アクティブな起動構成が選択されていません",
         "notFound": "個別のMinecraftインストールが見つかりません",
         "nothingToImport": "インポートする項目がありません",
+        "noVersion": "インポートする前に、このプロファイルのMinecraftバージョンを選択してください",
         "success": "{count, plural, one {#個のファイル} other {#個のファイル}}をインポートしました",
         "failed": "Minecraftの設定のインポートに失敗しました"
       },

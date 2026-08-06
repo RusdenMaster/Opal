@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "Oyunlar Yönetimi",
       "hint": "(Minecraft klasörü)",
-      "openFolder": "Klasörü aç"
+      "openFolder": "Klasörü aç",
+      "openFolderFailed": "Klasör açılamadı"
     },
     "resolution": {
       "label": "Çözüm",
@@ -264,6 +265,7 @@
       "clear": "Temizle",
       "loading": "Hesaplanıyor…",
       "gameRunningHint": "Depolamayı temizlemeden önce oyunu kapatın.",
+      "noGameDirectory": "Depolama kullanımını görmek için bir oyun dizini ayarlayın.",
       "categories": {
         "assets": "Varlıklar",
         "libraries": "Kitaplıklar",
@@ -292,6 +294,7 @@
         "noActiveProfile": "Aktif profil seçilmedi",
         "notFound": "Ayrı bir Minecraft kurulumu bulunamadı",
         "nothingToImport": "İçe aktarılacak bir şey yok",
+        "noVersion": "İçe aktarmadan önce bu profil için bir Minecraft sürümü seçin",
         "success": "{count, plural, one {# dosya} other {# dosya}} içe aktarıldı",
         "failed": "Minecraft ayarları içe aktarılamadı"
       },

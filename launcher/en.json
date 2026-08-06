@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "Game directory",
       "hint": "(Minecraft folder)",
-      "openFolder": "Open folder"
+      "openFolder": "Open folder",
+      "openFolderFailed": "Failed to open folder"
     },
     "resolution": {
       "label": "Resolution",
@@ -264,6 +265,7 @@
       "clear": "Clear",
       "loading": "Calculating…",
       "gameRunningHint": "Close the game before clearing storage.",
+      "noGameDirectory": "Set a game directory to see storage usage.",
       "categories": {
         "assets": "Assets",
         "libraries": "Libraries",
@@ -292,6 +294,7 @@
         "noActiveProfile": "No active profile selected",
         "notFound": "No separate Minecraft installation found",
         "nothingToImport": "Nothing to import",
+        "noVersion": "Select a Minecraft version for this profile before importing",
         "success": "Imported {count, plural, one {# file} other {# files}}",
         "failed": "Failed to import Minecraft settings"
       },

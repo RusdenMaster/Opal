@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "Elenco giochi",
       "hint": "(Cartella Minecraft)",
-      "openFolder": "Apri cartella"
+      "openFolder": "Apri cartella",
+      "openFolderFailed": "Impossibile aprire la cartella"
     },
     "resolution": {
       "label": "Risoluzione",
@@ -264,6 +265,7 @@
       "clear": "Cancella",
       "loading": "Calcolo in corso…",
       "gameRunningHint": "Chiudi il gioco prima di cancellare l'archiviazione.",
+      "noGameDirectory": "Imposta una cartella di gioco per vedere l'utilizzo dello spazio di archiviazione.",
       "categories": {
         "assets": "Risorse",
         "libraries": "Librerie",
@@ -292,6 +294,7 @@
         "noActiveProfile": "Nessun profilo attivo selezionato",
         "notFound": "Nessuna installazione separata di Minecraft trovata",
         "nothingToImport": "Niente da importare",
+        "noVersion": "Seleziona una versione di Minecraft per questo profilo prima di importare",
         "success": "{count, plural, one {# file} other {# file}} importati",
         "failed": "Impossibile importare le impostazioni di Minecraft"
       },

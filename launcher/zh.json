@@ -247,7 +247,8 @@
     "gameDirectory": {
       "label": "游戏目录",
       "hint": "Minecraft 文件夹位置",
-      "openFolder": "打开文件夹"
+      "openFolder": "打开文件夹",
+      "openFolderFailed": "无法打开文件夹"
     },
     "resolution": {
       "label": "分辨率",
@@ -264,6 +265,7 @@
       "clear": "清除",
       "loading": "计算中……",
       "gameRunningHint": "清除存储前请先关闭游戏。",
+      "noGameDirectory": "请设置游戏目录以查看存储使用情况。",
       "categories": {
         "assets": "资源文件",
         "libraries": "库文件",
@@ -292,6 +294,7 @@
         "noActiveProfile": "未选择激活的配置文件",
         "notFound": "未找到独立的 Minecraft 安装",
         "nothingToImport": "没有可导入的内容",
+        "noVersion": "导入前请为该配置文件选择一个 Minecraft 版本",
         "success": "已导入 {count, plural, one {# 个文件} other {# 个文件}}",
         "failed": "导入 Minecraft 设置失败"
       },
