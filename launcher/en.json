@@ -231,8 +231,10 @@
       "updated": "Profile updated",
       "updateFailed": "Failed to update profile",
       "deleted": "Profile deleted",
-      "deleteFailed": "Failed to delete profile"
-    }
+      "deleteFailed": "Failed to delete profile",
+      "openFolderFailed": "Failed to open profile folder"
+    },
+    "openFolder": "Open folder"
   },
   "settings": {
     "title": "Settings",
@@ -244,7 +246,8 @@
     },
     "gameDirectory": {
       "label": "Game directory",
-      "hint": "(Minecraft folder)"
+      "hint": "(Minecraft folder)",
+      "openFolder": "Open folder"
     },
     "resolution": {
       "label": "Resolution",
@@ -253,6 +256,50 @@
     "language": {
       "label": "Language",
       "hint": "(launcher interface)"
+    },
+    "storage": {
+      "label": "Storage",
+      "hint": "(disk usage by category)",
+      "clearAll": "Clear all",
+      "clear": "Clear",
+      "loading": "Calculating…",
+      "gameRunningHint": "Close the game before clearing storage.",
+      "categories": {
+        "assets": "Assets",
+        "libraries": "Libraries",
+        "javaRuntimes": "Java runtimes",
+        "clientBuilds": "Client builds",
+        "orphaned": "Orphaned profiles"
+      },
+      "confirm": {
+        "title": "Clear {category}?",
+        "titleAll": "Clear all storage?",
+        "body": "This deletes {size} of files. They'll be re-downloaded next time they're needed.",
+        "bodyAll": "This deletes {size} across every category. Everything will be re-downloaded next time it's needed."
+      },
+      "toast": {
+        "cleared": "Cleared {category}",
+        "clearedAll": "Storage cleared",
+        "clearFailed": "Failed to clear {category}",
+        "clearAllFailed": "Failed to clear storage"
+      }
+    },
+    "mcImport": {
+      "label": "Import from Minecraft",
+      "hint": "(bring over your keybinds, video settings, and server list)",
+      "button": "Import",
+      "toast": {
+        "noActiveProfile": "No active profile selected",
+        "notFound": "No separate Minecraft installation found",
+        "nothingToImport": "Nothing to import",
+        "success": "Imported {count, plural, one {# file} other {# files}}",
+        "failed": "Failed to import Minecraft settings"
+      },
+      "confirm": {
+        "title": "Overwrite existing files?",
+        "body": "These files already exist in this profile and will be overwritten: {files}",
+        "action": "Overwrite and import"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +314,8 @@
       "downloading": "Downloading...",
       "extracting": "Extracting...",
       "launching": "Launching...",
-      "stop": "Stop"
+      "stop": "Stop",
+      "verifying": "Verifying"
     }
   },
   "scripts": {
@@ -280,5 +328,12 @@
     "noMatchesHint": "Nothing matches “{query}”.",
     "pinned": "Pinned",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Import my Minecraft settings",
+      "success": "Imported your Minecraft settings",
+      "failed": "Couldn't import your Minecraft settings"
+    }
   }
 }

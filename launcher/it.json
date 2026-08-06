@@ -231,8 +231,10 @@
       "updated": "Profilo aggiornato",
       "updateFailed": "Aggiornamento fallito",
       "deleted": "Profilo eliminato",
-      "deleteFailed": "Impossibile eliminare il profilo"
-    }
+      "deleteFailed": "Impossibile eliminare il profilo",
+      "openFolderFailed": "Impossibile aprire la cartella del profilo"
+    },
+    "openFolder": "Apri cartella"
   },
   "settings": {
     "title": "Impostazioni",
@@ -244,7 +246,8 @@
     },
     "gameDirectory": {
       "label": "Elenco giochi",
-      "hint": "(Cartella Minecraft)"
+      "hint": "(Cartella Minecraft)",
+      "openFolder": "Apri cartella"
     },
     "resolution": {
       "label": "Risoluzione",
@@ -253,6 +256,50 @@
     "language": {
       "label": "Linguaggio",
       "hint": "(interfaccia del lanciatore)"
+    },
+    "storage": {
+      "label": "Archiviazione",
+      "hint": "(utilizzo dello spazio per categoria)",
+      "clearAll": "Cancella tutto",
+      "clear": "Cancella",
+      "loading": "Calcolo in corso…",
+      "gameRunningHint": "Chiudi il gioco prima di cancellare l'archiviazione.",
+      "categories": {
+        "assets": "Risorse",
+        "libraries": "Librerie",
+        "javaRuntimes": "Runtime Java",
+        "clientBuilds": "Build del client",
+        "orphaned": "Profili orfani"
+      },
+      "confirm": {
+        "title": "Cancellare {category}?",
+        "titleAll": "Cancellare tutta l'archiviazione?",
+        "body": "Questo elimina {size} di file. Verranno riscaricati la prossima volta che servono.",
+        "bodyAll": "Questo elimina {size} in tutte le categorie. Tutto verrà riscaricato la prossima volta che serve."
+      },
+      "toast": {
+        "cleared": "{category} cancellato",
+        "clearedAll": "Archiviazione cancellata",
+        "clearFailed": "Impossibile cancellare {category}",
+        "clearAllFailed": "Impossibile cancellare l'archiviazione"
+      }
+    },
+    "mcImport": {
+      "label": "Importa da Minecraft",
+      "hint": "(porta i tuoi tasti, le impostazioni video e la lista server)",
+      "button": "Importa",
+      "toast": {
+        "noActiveProfile": "Nessun profilo attivo selezionato",
+        "notFound": "Nessuna installazione separata di Minecraft trovata",
+        "nothingToImport": "Niente da importare",
+        "success": "{count, plural, one {# file} other {# file}} importati",
+        "failed": "Impossibile importare le impostazioni di Minecraft"
+      },
+      "confirm": {
+        "title": "Sovrascrivere i file esistenti?",
+        "body": "Questi file esistono già in questo profilo e verranno sovrascritti: {files}",
+        "action": "Sovrascrivi e importa"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +314,8 @@
       "downloading": "In download...",
       "extracting": "Estrazione...",
       "launching": "Avvio...",
-      "stop": "Smetti"
+      "stop": "Smetti",
+      "verifying": "Verifica in corso"
     }
   },
   "scripts": {
@@ -280,5 +328,12 @@
     "noMatchesHint": "Nessun risultato corrisponde a “{query}”.",
     "pinned": "Agganciato",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Importa le mie impostazioni di Minecraft",
+      "success": "Le tue impostazioni di Minecraft sono state importate",
+      "failed": "Impossibile importare le tue impostazioni di Minecraft"
+    }
   }
 }

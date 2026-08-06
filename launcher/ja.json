@@ -231,8 +231,10 @@
       "updated": "起動構成を更新しました",
       "updateFailed": "起動構成を更新できませんでした",
       "deleted": "削除済み",
-      "deleteFailed": "削除できませんでした"
-    }
+      "deleteFailed": "削除できませんでした",
+      "openFolderFailed": "プロフィールフォルダを開けませんでした"
+    },
+    "openFolder": "フォルダを開く"
   },
   "settings": {
     "title": "設定",
@@ -244,7 +246,8 @@
     },
     "gameDirectory": {
       "label": "ゲームディレクトリ",
-      "hint": "(%appdata%/.minecraft)"
+      "hint": "(%appdata%/.minecraft)",
+      "openFolder": "フォルダを開く"
     },
     "resolution": {
       "label": "起動時の解像度",
@@ -253,6 +256,50 @@
     "language": {
       "label": "言語",
       "hint": "（ランチャー）"
+    },
+    "storage": {
+      "label": "ストレージ",
+      "hint": "（カテゴリ別のディスク使用量）",
+      "clearAll": "すべて消去",
+      "clear": "消去",
+      "loading": "計算中…",
+      "gameRunningHint": "ストレージを消去する前にゲームを終了してください。",
+      "categories": {
+        "assets": "アセット",
+        "libraries": "ライブラリ",
+        "javaRuntimes": "Javaランタイム",
+        "clientBuilds": "クライアントビルド",
+        "orphaned": "孤立した起動構成"
+      },
+      "confirm": {
+        "title": "{category}を消去しますか？",
+        "titleAll": "すべてのストレージを消去しますか？",
+        "body": "これにより{size}のファイルが削除されます。必要になった際に再度ダウンロードされます。",
+        "bodyAll": "これによりすべてのカテゴリの{size}が削除されます。必要になった際にすべて再度ダウンロードされます。"
+      },
+      "toast": {
+        "cleared": "{category}を消去しました",
+        "clearedAll": "ストレージを消去しました",
+        "clearFailed": "{category}の消去に失敗しました",
+        "clearAllFailed": "ストレージの消去に失敗しました"
+      }
+    },
+    "mcImport": {
+      "label": "Minecraftからインポート",
+      "hint": "（キー配置、映像設定、サーバーリストを引き継ぎます）",
+      "button": "インポート",
+      "toast": {
+        "noActiveProfile": "アクティブな起動構成が選択されていません",
+        "notFound": "個別のMinecraftインストールが見つかりません",
+        "nothingToImport": "インポートする項目がありません",
+        "success": "{count, plural, one {#個のファイル} other {#個のファイル}}をインポートしました",
+        "failed": "Minecraftの設定のインポートに失敗しました"
+      },
+      "confirm": {
+        "title": "既存のファイルを上書きしますか？",
+        "body": "これらのファイルはこの起動構成にすでに存在し、上書きされます：{files}",
+        "action": "上書きしてインポート"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +314,8 @@
       "downloading": "ダウンロード中…",
       "extracting": "抽出中…",
       "launching": "起動中…",
-      "stop": "停止"
+      "stop": "停止",
+      "verifying": "確認中"
     }
   },
   "scripts": {
@@ -280,5 +328,12 @@
     "noMatchesHint": "「{query}」に一致するものはありません",
     "pinned": "ピン止め",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "自分のMinecraft設定をインポートする",
+      "success": "Minecraft設定をインポートしました",
+      "failed": "Minecraft設定をインポートできませんでした"
+    }
   }
 }

@@ -231,8 +231,10 @@
       "updated": "Profil aktualisiert",
       "updateFailed": "Profil konnte nicht aktualisiert werden",
       "deleted": "Profil gelöscht",
-      "deleteFailed": "Profil konnte nicht gelöscht werden"
-    }
+      "deleteFailed": "Profil konnte nicht gelöscht werden",
+      "openFolderFailed": "Profilordner konnte nicht geöffnet werden"
+    },
+    "openFolder": "Ordner öffnen"
   },
   "settings": {
     "title": "Einstellungen",
@@ -244,7 +246,8 @@
     },
     "gameDirectory": {
       "label": "Spiele-Verzeichnis",
-      "hint": "(Minecraft-Ordner)"
+      "hint": "(Minecraft-Ordner)",
+      "openFolder": "Ordner öffnen"
     },
     "resolution": {
       "label": "Auflösung",
@@ -253,6 +256,50 @@
     "language": {
       "label": "Sprache",
       "hint": "(Startbildschirm)"
+    },
+    "storage": {
+      "label": "Speicher",
+      "hint": "(Speichernutzung nach Kategorie)",
+      "clearAll": "Alles leeren",
+      "clear": "Leeren",
+      "loading": "Wird berechnet…",
+      "gameRunningHint": "Schließen Sie das Spiel, bevor Sie den Speicher leeren.",
+      "categories": {
+        "assets": "Assets",
+        "libraries": "Bibliotheken",
+        "javaRuntimes": "Java-Laufzeitumgebungen",
+        "clientBuilds": "Client-Builds",
+        "orphaned": "Verwaiste Profile"
+      },
+      "confirm": {
+        "title": "{category} leeren?",
+        "titleAll": "Gesamten Speicher leeren?",
+        "body": "Dies löscht {size} an Dateien. Sie werden bei Bedarf erneut heruntergeladen.",
+        "bodyAll": "Dies löscht {size} über alle Kategorien hinweg. Alles wird bei Bedarf erneut heruntergeladen."
+      },
+      "toast": {
+        "cleared": "{category} geleert",
+        "clearedAll": "Speicher geleert",
+        "clearFailed": "{category} konnte nicht geleert werden",
+        "clearAllFailed": "Speicher konnte nicht geleert werden"
+      }
+    },
+    "mcImport": {
+      "label": "Aus Minecraft importieren",
+      "hint": "(Tastenbelegung, Videoeinstellungen und Serverliste übernehmen)",
+      "button": "Importieren",
+      "toast": {
+        "noActiveProfile": "Kein aktives Profil ausgewählt",
+        "notFound": "Keine separate Minecraft-Installation gefunden",
+        "nothingToImport": "Nichts zu importieren",
+        "success": "{count, plural, one {# Datei} other {# Dateien}} importiert",
+        "failed": "Minecraft-Einstellungen konnten nicht importiert werden"
+      },
+      "confirm": {
+        "title": "Vorhandene Dateien überschreiben?",
+        "body": "Diese Dateien sind in diesem Profil bereits vorhanden und werden überschrieben: {files}",
+        "action": "Überschreiben und importieren"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +314,8 @@
       "downloading": "Herunterladen...",
       "extracting": "Extrahieren...",
       "launching": "Starten...",
-      "stop": "Halt"
+      "stop": "Halt",
+      "verifying": "Wird überprüft"
     }
   },
   "scripts": {
@@ -280,5 +328,12 @@
     "noMatchesHint": "Nichts passt zu “{query}”.",
     "pinned": "Angepinnt",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Meine Minecraft-Einstellungen importieren",
+      "success": "Ihre Minecraft-Einstellungen wurden importiert",
+      "failed": "Ihre Minecraft-Einstellungen konnten nicht importiert werden"
+    }
   }
 }

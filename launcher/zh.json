@@ -231,8 +231,10 @@
       "updated": "配置文件已更新",
       "updateFailed": "更新配置文件失败",
       "deleted": "配置文件已删除",
-      "deleteFailed": "删除配置文件失败"
-    }
+      "deleteFailed": "删除配置文件失败",
+      "openFolderFailed": "无法打开配置文件文件夹"
+    },
+    "openFolder": "打开文件夹"
   },
   "settings": {
     "title": "设置",
@@ -244,7 +246,8 @@
     },
     "gameDirectory": {
       "label": "游戏目录",
-      "hint": "Minecraft 文件夹位置"
+      "hint": "Minecraft 文件夹位置",
+      "openFolder": "打开文件夹"
     },
     "resolution": {
       "label": "分辨率",
@@ -253,6 +256,50 @@
     "language": {
       "label": "语言",
       "hint": "启动器显示语言"
+    },
+    "storage": {
+      "label": "存储",
+      "hint": "（按类别显示磁盘占用）",
+      "clearAll": "全部清除",
+      "clear": "清除",
+      "loading": "计算中……",
+      "gameRunningHint": "清除存储前请先关闭游戏。",
+      "categories": {
+        "assets": "资源文件",
+        "libraries": "库文件",
+        "javaRuntimes": "Java 运行环境",
+        "clientBuilds": "客户端构建",
+        "orphaned": "孤立的配置文件"
+      },
+      "confirm": {
+        "title": "确定要清除「{category}」吗？",
+        "titleAll": "确定要清除全部存储吗？",
+        "body": "这将删除 {size} 的文件，下次需要时会重新下载。",
+        "bodyAll": "这将删除所有类别共 {size} 的内容，下次需要时会全部重新下载。"
+      },
+      "toast": {
+        "cleared": "已清除「{category}」",
+        "clearedAll": "存储已清除",
+        "clearFailed": "清除「{category}」失败",
+        "clearAllFailed": "清除存储失败"
+      }
+    },
+    "mcImport": {
+      "label": "从 Minecraft 导入",
+      "hint": "（导入按键设置、画面设置和服务器列表）",
+      "button": "导入",
+      "toast": {
+        "noActiveProfile": "未选择激活的配置文件",
+        "notFound": "未找到独立的 Minecraft 安装",
+        "nothingToImport": "没有可导入的内容",
+        "success": "已导入 {count, plural, one {# 个文件} other {# 个文件}}",
+        "failed": "导入 Minecraft 设置失败"
+      },
+      "confirm": {
+        "title": "覆盖现有文件？",
+        "body": "以下文件已存在于该配置文件中，将被覆盖：{files}",
+        "action": "覆盖并导入"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +314,8 @@
       "downloading": "正在下载……",
       "extracting": "正在解压……",
       "launching": "正在启动……",
-      "stop": "停止"
+      "stop": "停止",
+      "verifying": "正在验证"
     }
   },
   "scripts": {
@@ -280,5 +328,12 @@
     "noMatchesHint": "没有找到匹配“{query}”的内容。",
     "pinned": "已置顶",
     "installs": "{count, plural, one {# 次安装} other {# 次安装}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "导入我的 Minecraft 设置",
+      "success": "已导入你的 Minecraft 设置",
+      "failed": "无法导入你的 Minecraft 设置"
+    }
   }
 }
