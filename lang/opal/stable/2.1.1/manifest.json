@@ -10,7 +10,8 @@
     { "code": "fr" },
     { "code": "ru" },
     { "code": "tr" },
-    { "code": "zh" }
+    { "code": "zh" },
+    { "code": "ar" }
   ],
   "defaultLocale": "en"
 }

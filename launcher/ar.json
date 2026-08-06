@@ -1,0 +1,342 @@
+{
+  "auth": {
+    "loginSuccess": "تم تسجيل الدخول بنجاح!",
+    "loginFailed": "فشل تسجيل الدخول. يرجى المحاولة مرة أخرى.",
+    "waiting": "جاري تسجيل الدخول...",
+    "dialog": {
+      "title": "تسجيل الدخول مطلوب",
+      "description": "يرجى تسجيل الدخول إلى حسابك Opal حساب للاستمرار.",
+      "redirectNotice": "سيتم توجيهك إلى متصفحك لإكمال عملية المصادقة.",
+      "loginButton": "تسجيل الدخول عبر المتصفح"
+    },
+    "screen": {
+      "title": "تسجيل الدخول مطلوب",
+      "description": "يجب أن تكون مسجلاً للدخول لاستخدام مُشغِّل Opal x Terminus. سيتم توجيهك إلى متصفحك لإكمال عملية المصادقة.",
+      "loginButton": "تسجيل الدخول عبر المتصفح"
+    },
+    "checking": {
+      "title": "التحقق من المصادقة",
+      "subtitle": "الرجاء الانتظار..."
+    }
+  },
+  "changelog": {
+    "empty": "لا توجد إدخالات سجل التغييرات لهذا القناة حتى الآن."
+  },
+  "comingSoon": {
+    "eyebrow": "قريبًا",
+    "body": "لم يخرج بعد، لكننا قريبون. متى Opal تتراجع هذه الشاشة تلقائيًا، ولست بحاجة أبدًا لتحديثها.",
+    "factsLabel": "شريط حقائق عشوائية"
+  },
+  "common": {
+    "cancel": "إلغاء",
+    "save": "أنقذ",
+    "saveChanges": "احفظ التغييرات",
+    "saved": "تم الحفظ!",
+    "close": "أغلق",
+    "browse": "تصفّح",
+    "back": "خلف",
+    "retry": "حاول مرة أخرى",
+    "loading": "جاري التحميل…",
+    "add": "أضف",
+    "remove": "أَزِلْ",
+    "delete": "حذف",
+    "edit": "حرّر",
+    "confirm": "أكد",
+    "iconAlt": "{brand} رمز",
+    "logoAlt": "شعار {brand}",
+    "avatarAlt": "صورة رمزية لـ {name}"
+  },
+  "header": {
+    "defaultName": "لاعب",
+    "signedOut": "تم تسجيل الخروج",
+    "authenticated": "مُصَدَّقٌ عليه",
+    "signedInAs": "تم تسجيل الدخول باسم {name}",
+    "logout": "تسجيل خروج"
+  },
+  "home": {
+    "welcome": "أهلاً وسهلاً",
+    "welcomeBack": "أهلاً بعودتك، {name}",
+    "subtitle": "إدارة ملفات التعريف والتعديلات وإعدادات التشغيل. عندما تكون مستعدًا، ابدأ اللعبة بالملف المحدد.",
+    "stats": {
+      "userId": "معرّف المستخدم",
+      "launch": "إطلاق",
+      "launches": "أطلقت",
+      "online": "عبر الإنترنت"
+    },
+    "news": {
+      "title": "أخبار",
+      "empty": "لا جديد حتى الآن"
+    }
+  },
+  "logs": {
+    "description": "مخرجات جلسة اللعب الحالية.",
+    "copied": "نسخ {count, plural, one {# سطر} other {# سطور}}",
+    "uploadError": "لم يتم تحميل السجلات — جرّب النسخ بدلاً من ذلك",
+    "linkCopied": "تم نسخ رابط السجل",
+    "copyAll": "انسخ جميع السجلات",
+    "shareTitle": "شارك على mclo.gs (الرابط مكرّر)",
+    "shareAria": "شارك السجلات مع mclo.gs",
+    "searchPlaceholder": "سجلات البحث…",
+    "searchAria": "سجلات البحث",
+    "clearSearch": "بحث واضح",
+    "empty": {
+      "title": "لا يوجد سجلات حتى الآن",
+      "hint": "ابدأ جلسة وسيكون مخرَجها مُتاحًا هنا."
+    },
+    "noMatches": {
+      "title": "لا توجد نتائج مطابقة",
+      "hint": "لا يوجد تطابق لـ “{query}”."
+    }
+  },
+  "mods": {
+    "header": {
+      "description": "إدارة التعديلات",
+      "descriptionFor": "إدارة التعديلات لـ {name}",
+      "descriptionForStream": "إدارة التعديلات لـ {name} ({stream})",
+      "refresh": "انعش",
+      "openFolder": "افتح مجلد التعديلات"
+    },
+    "vanilla": {
+      "title": "تم تعطيل التعديلات لنسخة Vanilla.",
+      "body": "انتقل إلى Fabric أو Opal لإدارة التعديلات."
+    },
+    "table": {
+      "selectAll": "اختر الكل",
+      "selectRow": "اختر صفًّا",
+      "name": "اسم",
+      "version": "النسخة",
+      "deleteSelected": "{count, plural, one {حذف # محدد} other {حذف # محددة}}",
+      "noResults": "لا توجد نتائج."
+    },
+    "search": {
+      "placeholder": "ابحث..."
+    },
+    "ruleCard": {
+      "viewOnModrinth": "عرض على Modrinth"
+    },
+    "required": {
+      "present": "المعدّلات المطلوبة موجودة ({count})",
+      "missing": "المعدّلات المطلوبة مفقودة ({count})",
+      "warning": "لن تتمكن من الإطلاق حتى تتوفر جميع التعديلات المطلوبة."
+    },
+    "incompatible": {
+      "title": "تم الكشف عن تعديلات غير متوافقة ({count})",
+      "warning": "تخلصوا منها لتجنب الأعطال أو السلوك غير المحدد."
+    },
+    "recommended": {
+      "title": "الخلفات الموصى بها ({count})"
+    }
+  },
+  "nav": {
+    "home": "بيت",
+    "mods": "تعديلات",
+    "packs": "حزم",
+    "profiles": "ملفات تعريف",
+    "changelog": "سجل التغييرات",
+    "logs": "سجلات",
+    "settings": "الإعدادات",
+    "scripts": "نصوص"
+  },
+  "packs": {
+    "browser": {
+      "title": "مدير الحزم",
+      "subtitle": "إدارة حزم الموارد والظلّيات.",
+      "import": "استيراد"
+    },
+    "tabs": {
+      "resource": "حزم الموارد",
+      "shader": "ظلّالات"
+    },
+    "emptyState": {
+      "title": "لم يتم العثور على حزم {type, select, shader {شيدر} other {موارد}}.",
+      "body": "استورد واحدًا أو تصفح السوق."
+    },
+    "containsShaders": "يحتوي على مؤثرات الإضاءة",
+    "confirmDelete": "هل أنت متأكد من أنك تريد حذف هذه المجموعة؟?",
+    "card": {
+      "enable": "فَعِّل",
+      "disable": "عطّل",
+      "download": "تنزيل"
+    },
+    "marketplace": {
+      "title": "تصفح {type, select, shader {الشيدرات} other {حزم الموارد}}",
+      "poweredBy": "مدعوم بواسطة Modrinth",
+      "searchPlaceholder": "ابحث...",
+      "search": "بحث",
+      "noResults": "لم يتم العثور على نتائج.",
+      "noResultsHint": "جرّب بحثًا آخر.",
+      "searchFailed": "فشل البحث في السوق",
+      "downloaded": "تمّ التنزيل {name}",
+      "downloadFailed": "فشل التنزيل: {error}",
+      "unknownError": "خطأ غير معروف",
+      "noActiveProfile": "لا يوجد ملف شخصي نشط",
+      "removeFailed": "فشل إزالة الحزمة"
+    },
+    "toast": {
+      "loadFailed": "فشل تحميل الحزم المحلية",
+      "imported": "مُستَورد {name}",
+      "importFailed": "فشل استيراد الحزمة",
+      "noActiveProfile": "لم يتم تحديد ملف تعريف نشط",
+      "packEnabled": "الحزمة مفعلة",
+      "packDisabled": "تعبئة معاق",
+      "toggleFailed": "فشل تبديل المجموعة",
+      "packDeleted": "تم الحذف",
+      "deleteFailed": "فشل حذف الحزمة",
+      "packRemoved": "تمت إزالة العبوة"
+    }
+  },
+  "profiles": {
+    "count": "{count, plural, one {# ملف تعريف} other {# ملفات تعريف}}",
+    "confirmDelete": "حذف هذا الملف الشخصي؟?",
+    "namePlaceholder": "اسم الملف الشخصي",
+    "descriptionPlaceholder": "وصف",
+    "descriptionOptionalPlaceholder": "وصف (اختياري)",
+    "selectProfile": "اختر الملف الشخصي {name}",
+    "defaultCannotDelete": "لا يمكن حذف الملف الشخصي الافتراضي",
+    "create": {
+      "title": "ملف جديد",
+      "submit": "خلق"
+    },
+    "edit": {
+      "title": "تعديل الملف الشخصي"
+    },
+    "type": {
+      "opal": "Opal",
+      "vanilla": "فانيليا",
+      "fabric": "Fabric"
+    },
+    "stream": {
+      "stable": "ثابت",
+      "canary": "كناري",
+      "nightly": "ليليًّا"
+    },
+    "empty": {
+      "title": "لا توجد ملفات شخصية حتى الآن",
+      "body": "أنشئ واحدًا للبدء"
+    },
+    "versionPicker": {
+      "selectVersion": "اختر الإصدار...",
+      "minecraftVersion": "Minecraft إصدار...",
+      "search": "ابحث عن الإصدار...",
+      "empty": "لا توجد نسخة.",
+      "loading": "جارِ التحميل...",
+      "snapshot": "صورة"
+    },
+    "toast": {
+      "streamRestricted": "التيار المستقر فقط متاح حاليًا",
+      "selectVersion": "الرجاء اختيار نسخة من Minecraft",
+      "nameTypeRequired": "الاسم والنوع مطلوبان",
+      "created": "تم إنشاء الملف الشخصي",
+      "createFailed": "فشل إنشاء الملف الشخصي",
+      "updated": "تم التحديث",
+      "updateFailed": "فشل تحديث الملف الشخصي",
+      "deleted": "تم حذف الملف الشخصي",
+      "deleteFailed": "فشل حذف الملف الشخصي",
+      "openFolderFailed": "فشل فتح مجلد الملف الشخصي"
+    },
+    "openFolder": "افتح المجلد"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "description": "قم بتكوين تثبيت اللعبة حسب رغبتك.",
+    "memory": {
+      "label": "تخصيص الذاكرة",
+      "hint": "(ذاكرة الوصول العشوائي بالميجابايت)",
+      "enterValue": "أدخل قيمة"
+    },
+    "gameDirectory": {
+      "label": "دليل الألعاب",
+      "hint": "(مجلد Minecraft)",
+      "openFolder": "افتح المجلد",
+      "openFolderFailed": "لم يتم فتح المجلد"
+    },
+    "resolution": {
+      "label": "قرار",
+      "hint": "(عرض × ارتفاع)"
+    },
+    "language": {
+      "label": "لغة",
+      "hint": "واجهة المشغّل"
+    },
+    "storage": {
+      "label": "تخزين",
+      "hint": "استخدام القرص حسب الفئة",
+      "clearAll": "أفرغ الكل",
+      "clear": "واضح",
+      "loading": "يُحْسَب..",
+      "gameRunningHint": "أغلق اللعبة قبل مسح التخزين.",
+      "noGameDirectory": "عيّن دليل لعبة لعرض استخدام التخزين.",
+      "categories": {
+        "assets": "الأصول",
+        "libraries": "المكتبات",
+        "javaRuntimes": "أوقات تشغيل جافا",
+        "clientBuilds": "يَبْنِي الْعَمِيلُ",
+        "orphaned": "ملفات يتيمة"
+      },
+      "confirm": {
+        "title": "واضح {category}?",
+        "titleAll": "مسح كل التخزين؟?",
+        "body": "سيؤدي هذا إلى حذف {size} من الملفات. سيتم إعادة تنزيلها في المرة القادمة عند الحاجة إليها.",
+        "bodyAll": "سيؤدي هذا إلى حذف {size} من جميع الفئات. سيتم إعادة تنزيل كل شيء في المرة القادمة عند الحاجة إليه."
+      },
+      "toast": {
+        "cleared": "تمت الموافقة على {category}",
+        "clearedAll": "تمت إفراغ المساحة التخزينية",
+        "clearFailed": "فشل المسح {category}",
+        "clearAllFailed": "فشل مسح التخزين"
+      }
+    },
+    "mcImport": {
+      "label": "استيراد من Minecraft",
+      "hint": "(أحضر إعدادات ربط المفاتيح، وإعدادات الفيديو، وقائمة الخوادم الخاصة بك)",
+      "button": "استيراد",
+      "toast": {
+        "noActiveProfile": "لم يتم تحديد ملف تعريف نشط",
+        "notFound": "لم يتم العثور على تثبيت Minecraft منفصل",
+        "nothingToImport": "لا يوجد ما يستورد",
+        "noVersion": "اختر إصدار Minecraft لهذا الملف الشخصي قبل الاستيراد",
+        "success": "تم الاستيراد {count, plural, one {# ملف} other {# ملفات}}",
+        "failed": "فشل استيراد إعدادات Minecraft"
+      },
+      "confirm": {
+        "title": "هل تريد استبدال الملفات الموجودة؟?",
+        "body": "هذه الملفات موجودة بالفعل في هذا الملف الشخصي وسيتم استبدالها: {files}",
+        "action": "تجاوز واستيراد"
+      }
+    }
+  },
+  "sidebar": {
+    "selectProfile": "اختر الملف الشخصي",
+    "release": "إصدار",
+    "version": "لا توجد نسخة",
+    "hostVersion": "مضيف الإصدار {version}",
+    "launcherVersion": "مشغّل v{version}",
+    "status": {
+      "play": "لعب",
+      "preparing": "يُستَعَدُّ...",
+      "downloading": "جارٍ التحميل...",
+      "extracting": "جاري الاستخراج...",
+      "launching": "إطلاق...",
+      "stop": "توقف",
+      "verifying": "التحقق"
+    }
+  },
+  "scripts": {
+    "searchPlaceholder": "ابحث عن النصوص…",
+    "searchAria": "بحث النصوص",
+    "clearSearch": "بحث واضح",
+    "emptyTitle": "لا توجد نصوص بعد",
+    "emptyHint": "ستظهر نصوص المجتمع المخصصة لعميلك هنا.",
+    "noMatches": "لا توجد نتائج مطابقة",
+    "noMatchesHint": "لا يوجد تطابق لـ “{query}”.",
+    "pinned": "ثَبَتَ",
+    "installs": "{count, plural, one {تثبيت} other {تثبيتات}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "استورد إعدادات Minecraft الخاصة بي",
+      "success": "استوردت إعدادات Minecraft الخاصة بك",
+      "failed": "لم نتمكن من استيراد إعدادات Minecraft الخاصة بك"
+    }
+  }
+}

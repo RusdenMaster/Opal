@@ -1,0 +1,1412 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "purchase": "شراء",
+    "branding": "الهوية البصرية",
+    "discord": "Discord",
+    "dashboard": "لوحة التحكم",
+    "manage": "إدارة",
+    "blog": "مدونة"
+  },
+  "branding": {
+    "meta": {
+      "title": "الهوية البصرية",
+      "description": "أصول العلامة التجارية الرسمية لـ Opal Client، والشعارات، ولوحة الألوان للاستخدام الإعلامي والإبداعي."
+    },
+    "hero": {
+      "title": "علامة Opal Client التجارية",
+      "description": "الأصول التجارية الرسمية والشعارات ولوحة الألوان للإعلام والموزعين والصحافة. يُرجى اتباع إرشاداتنا عند استخدام هذه الأصول."
+    },
+    "guidelines": {
+      "title": "إرشادات الاستخدام",
+      "do": {
+        "title": "يُسمح",
+        "items": [
+          "استخدم الأصول الرسمية من هذه الصفحة",
+          "حافظ على نسبة الأبعاد عند تغيير الحجم",
+          "استخدمها على خلفيات متباينة",
+          "أشر إلى Opal Client عند الاقتضاء"
+        ]
+      },
+      "dont": {
+        "title": "لا يُسمح",
+        "items": [
+          "تعديل الشعار أو تشويهه",
+          "استخدامه للإيحاء بالتأييد دون إذن",
+          "استخدامه على خلفيات متشابهة بصريًا",
+          "إعادة إنشائه باستخدام أصول غير رسمية"
+        ]
+      }
+    },
+    "logos": {
+      "title": "أصول الشعار",
+      "description": "متوفر بنسخ داكنة وفاتحة وأيقونة فقط.",
+      "download": "تحميل SVG",
+      "items": {
+        "full_dark": {
+          "name": "الشعار — خلفية داكنة",
+          "description": "الشعار الكامل مع بطاقة خلفية داكنة مدمجة"
+        },
+        "wordmark_light": {
+          "name": "الشعار النصي — خلفية فاتحة",
+          "description": "شعار نصي أفقي للاستخدام على الخلفيات الفاتحة"
+        },
+        "wordmark_dark": {
+          "name": "الشعار النصي — خلفية داكنة",
+          "description": "شعار نصي أفقي للاستخدام على الخلفيات الداكنة"
+        },
+        "icon": {
+          "name": "الأيقونة فقط",
+          "description": "أيقونة مستقلة للصور الرمزية وأيقونات المواقع"
+        }
+      }
+    },
+    "colors": {
+      "title": "لوحة الألوان",
+      "description": "ألوان السمة المستخدمة في تجربة Opal.",
+      "primary": "رئيسي",
+      "secondary": "ثانوي",
+      "copy": "نسخ الكود",
+      "copied": "تم النسخ!"
+    }
+  },
+  "home": {
+    "hero": {
+      "texts": [
+        {
+          "before": "تسيطر على اللعبة مع",
+          "after": "."
+        },
+        {
+          "before": "رائع لدرجة أن المنافسين يتظاهرون بأنهم",
+          "after": "."
+        },
+        {
+          "before": "الأصل. الأفضل. دائمًا",
+          "after": "."
+        },
+        {
+          "before": "لماذا تقبل بالنسخ وأنت تملك",
+          "after": "?"
+        },
+        {
+          "before": "التقليد إطراء. التميز هو",
+          "after": "."
+        }
+      ],
+      "brand": "Opal Client",
+      "description": "مود مساعد مميز لـ Minecraft مصمم لأفضل تجربة ممكنة. يدعم Opal حاليًا Fabric لـ Minecraft 1.21.10، مما يوفر تجربة سلسة وممتعة على سيرفرات 1.8 والإصدارات الأحدث.",
+      "purchase": "شراء",
+      "badge": "$8.99 عُمْرٌ مَديدٌ"
+    },
+    "features": {
+      "title": "لماذا تختار Opal؟",
+      "subtitle": "مع مجموعتنا الغنية من المميزات، لن ترغب بالعودة لأي كلاينت آخر.",
+      "items": {
+        "abundant": {
+          "title": "مميزات وفيرة",
+          "description": "يمتلك Opal عددًا ضخمًا من الموديولات مع خيارات تخصيص متنوعة."
+        },
+        "userFriendly": {
+          "title": "سهل الاستخدام",
+          "description": "صُمم Opal ليكون بسيطًا وسهل الاستخدام. فقط ثبّته وانطلق!"
+        },
+        "updates": {
+          "title": "تحديثات مستمرة",
+          "description": "نقدم تحديثات متكررة لمواكبة أحدث المميزات."
+        },
+        "compatibility": {
+          "title": "توافق شامل",
+          "description": "تم اختبار Opal للتوافق مع Windows وmacOS وLinux."
+        },
+        "trusted": {
+          "title": "موثوق من الآلاف",
+          "description": "طوّر Opal مطورون بارزون عملوا على كلاينتات لسنوات."
+        },
+        "quality": {
+          "title": "جودة مميزة",
+          "description": "نهتم بمستخدمينا ونسعى لجعل كلاينتنا بأفضل مستوى ممكن."
+        }
+      }
+    },
+    "media": {
+      "title": "ميديا",
+      "subtitle": "شاهد فيديوهات أنشأها مجتمعنا!"
+    },
+    "cta": {
+      "title": "ارفع تجربتك في Minecraft. رحلتك تبدأ من هنا.",
+      "button": "اشتري الآن"
+    }
+  },
+  "purchase": {
+    "header": {
+      "title": "اختر إصدارك",
+      "subtitle": "احصل على Opal منفردًا، أو افتح التجربة الكاملة مع Terminus واحصل على Opal مجانًا."
+    },
+    "chinaBanner": {
+      "text": "هل أنت في الصين؟ اشتر من الموزعين الرسميين للحصول على دعم أفضل وخيارات دفع محلية.",
+      "link": "عرض الموزعين"
+    },
+    "opal": {
+      "title": "Opal Client",
+      "price": "8.99",
+      "currency": "USD",
+      "description": "كلاينت Minecraft الهجين الأساسي. نظيف وخفيف وغير قابل للكشف.",
+      "featuresTitle": "ما يتضمنه",
+      "features": [
+        "Opal Client (مدى الحياة)",
+        "جميع التحديثات المستقبلية",
+        "وصول لدعم Discord"
+      ],
+      "button": "شراء Opal",
+      "paymentMethods": "بطاقة، Apple Pay، Google Pay، Klarna، CashApp، WeChat Pay"
+    },
+    "terminus": {
+      "badge": "أفضل قيمة",
+      "title": "Terminus: نسخة الألعاب الصغيرة",
+      "price": "45.00",
+      "currency": "USD",
+      "description": "الكلاينت الأمثل للألعاب الصغيرة. يشمل Opal Client مجانًا للأبد.",
+      "featuresTitle": "ما يتضمنه",
+      "features": [
+        "Terminus: نسخة الألعاب الصغيرة (مدى الحياة)",
+        "Opal Client مجانًا (مدى الحياة)",
+        "جميع التحديثات المستقبلية",
+        "وصول لدعم Discord",
+        "دعم ذو أولوية"
+      ],
+      "button": "شراء باقة Terminus",
+      "paymentMethods": "بطاقة، Apple Pay، Google Pay، Klarna، CashApp، WeChat Pay"
+    },
+    "crypto": {
+      "title": "الدفع بالعملات الرقمية؟",
+      "description": "افتح تذكرة في Discord للدفع بـ USDT أو BTC أو ETH أو LTC أو XMR."
+    },
+    "cryptoPayments": {
+      "title": "الدفع بالعملات الرقمية",
+      "description": "تسليم تلقائي عبر Litecoin أو Bitcoin. يُولَّد مفتاحك فور استلام الدفع."
+    },
+    "alternativeMethods": {
+      "title": "طرق دفع بديلة",
+      "description": "ادفع بـ Monero (XMR) أو Ethereum أو طرق الدفع المحلية.",
+      "ticket": "تذكرة (XMR / أخرى)"
+    },
+    "resellers": {
+      "title": "الموزعون الرسميون",
+      "description": "اشتر Opal من شركائنا الموثوقين لطرق دفع محلية ودعم متخصص.",
+      "visit": "زيارة المتجر",
+      "localized": {
+        "title": "طرق الدفع العالمية",
+        "description": "هل تبحث عن أسعار إقليمية أو طرق دفع محددة غير مدرجة أعلاه؟ موزعونا الرسميون يمكنهم المساعدة."
+      }
+    },
+    "terms": "بإتمام الشراء، توافق على شروط الخدمة. جميع المبيعات نهائية. كلمة \"مدى الحياة\" تعني طوال عمر المنتج.",
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "items": [
+        {
+          "q": "كيف أثبت؟ Opal?",
+          "a": "حمّل مُشغّل Opal من لوحة التحكم الخاصة بك بعد الشراء. فهو يتعامل مع تثبيت Fabric والمصادقة والتحديثات تلقائيًا."
+        },
+        {
+          "q": "أي إصدار من Minecraft تدعمه Opal؟?",
+          "a": "تعمل Opal على Fabric لـ Minecraft 26.2 وهي متوافقة مع كل من خوادم الأسلوب 1.8 وخوادم الإصدارات الحديثة."
+        },
+        {
+          "q": "هل يمكنني استخدام؟ Opal على عدة أجهزة حاسوب?",
+          "a": "ترخيص واحد يعمل على جهاز واحد في كل مرة. يمكنك إعادة تعيين مُعرّف الأجهزة الخاص بك (HWID) من خلال لوحة التحكم كل 30 يومًا لتغيير الأجهزة."
+        },
+        {
+          "q": "ما هي طرق الدفع التي تقبلونها؟?",
+          "a": "بطاقة، أبل باي، جوجل باي، كلارنا، كاش آب، ويد تشات باي، والعملات الرقمية (بيت كوين، لايت كوين، تي زد يو إس تي، إيثريوم، مونيرو)."
+        },
+        {
+          "q": "هل توجد سياسة استرجاع؟?",
+          "a": "البيع نهائي $8.99, نحافظ على الحاجز منخفضًا لتتمكن من المحاولة Opal بأقل خطر."
+        },
+        {
+          "q": "ما الفرق بين Opal و Terminus?",
+          "a": "Opal هو مزيج من شبح + عميل صارخ $8.99. Terminus هو إصدار لعبة مصغرة فاخر لـ $45 ذلك يشمل Opal حرّ. موجود Opal يُمْكِنُ لِلْمُسْتَخْدِمِينَ التَّرْقِيَةَ لِـ $36.99."
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "manage": "إدارة",
+    "nav": {
+      "home": "الرئيسية",
+      "purchase": "شراء",
+      "discord": "Discord",
+      "docs": "التوثيق",
+      "setup": "الإعداد",
+      "configs": "الإعدادات",
+      "changelog": "سجل التغييرات",
+      "activate": "تفعيل",
+      "settings": "الإعدادات",
+      "overview": "نظرة عامة",
+      "users": "المستخدمون",
+      "network": "الشبكة",
+      "forums": "المنتديات",
+      "inbox": "صندوق الوارد",
+      "signOut": "تسجيل خروج",
+      "cloud": "غيمة",
+      "discountBanner": "بانر خصم",
+      "openMenu": "افتح قائمة التنقل",
+      "coins": "عملات",
+      "support": "دعم",
+      "supportQueue": "طابور",
+      "creator": "خالق"
+    },
+    "overview": {
+      "title": "نظرة عامة",
+      "userId": "معرف المستخدم",
+      "launch": "تشغيل",
+      "launches": "مرات التشغيل",
+      "online": "متصل"
+    },
+    "news": {
+      "title": "الأخبار",
+      "view": "عرض",
+      "empty": "لا يوجد شيء هنا بعد. تحقق لاحقًا!"
+    },
+    "downloads": {
+      "title": "التحميلات",
+      "opalClient": "Opal Client",
+      "downloadOpal": "تحميل Opal",
+      "selectRelease": "اختر إصدارًا",
+      "download": "تحميل",
+      "updated": "تم التحديث",
+      "ownedSince": "مملوك منذ",
+      "changelog": "سجل التغييرات"
+    },
+    "launcher": {
+      "title": "اللانشر",
+      "opalLauncher": "Opal Launcher",
+      "availableSince": "متوفر منذ",
+      "updated": "تم التحديث",
+      "changelog": "سجل التغييرات",
+      "maintenance": "سيصدر إصدار جديد من المشغل قريبًا. ستتوفر التنزيلات قريبًا."
+    },
+    "access": {
+      "title": "التحكم بالوصول",
+      "hwid": "معرف الجهاز",
+      "lastChanged": "آخر تغيير",
+      "ago": "مضت",
+      "changeable": "قابل للتغيير كل 30 يومًا",
+      "reset": "إعادة تعيين",
+      "unbound": "لم يتم ربط أي مُعرّف جهاز حتى الآن. شغّل العميل مرة واحدة لربط واحد."
+    },
+    "docs": {
+      "title": "التوثيق",
+      "description": "تعلم كيفية استخدام Opal بكامل إمكاناته.",
+      "nav": {
+        "setup": "الإعداد",
+        "modules": "الموديولات"
+      }
+    },
+    "changelog": {
+      "title": "سجل التغييرات",
+      "description": "تعرف على المستجدات في أحدث إصدار من Opal!",
+      "opalLauncher": "Opal Launcher",
+      "opal": "Opal",
+      "launcherBadge": "لانشر",
+      "noNotes": "لا يوجد سجل تغييرات لهذا الإصدار."
+    },
+    "activate": {
+      "title": "تفعيل الترخيص",
+      "description": "اشترِ الوصول أدناه، أو استبدل مفتاح التفعيل.",
+      "forms": {
+        "redeem": {
+          "placeholder": "OPAL-XXXX-XXXX-XXXX"
+        },
+        "continue": "متابعة",
+        "coupon": {
+          "placeholder": "رمز القسيمة (اختياري)"
+        }
+      },
+      "success": {
+        "title": "تهانينا!",
+        "description": "تم منحك صلاحية الوصول إلى Opal. <br />مرحبًا بك!",
+        "dashboard": "الذهاب للوحة التحكم"
+      },
+      "errors": {
+        "invalidKey": "الكود غير موجود أو تم استخدامه مسبقًا.",
+        "invalidCredentials": "بيانات الدخول غير صحيحة.",
+        "generic": "حدث خطأ ما. حاول مجددًا لاحقًا.",
+        "failedCheckout": "فشل بدء عملية الدفع"
+      },
+      "buy": {
+        "oneTime": "مرة واحدة",
+        "codePlaceholder": "صانع أو رمز ترويجي",
+        "apply": "تطبيق",
+        "appliedCreator": "كود الخالق",
+        "appliedCoupon": "قسيمة",
+        "card": "بطاقة",
+        "crypto": "كريبتو",
+        "cta": "تابع إلى الدفع",
+        "haveKey": "هل لديك مفتاح ترخيص؟?",
+        "checkFailed": "لم أتمكن من فحص هذا الكود الآن.",
+        "checkoutFailed": "لم يتمكن من بدء الدفع. حاول مرة أخرى.",
+        "codeExpiredContinue": "انتهت صلاحية هذا الرمز — المتابعة بدون الخصم.",
+        "codeDroppedContinue": "تم انتهاء صلاحية هذا الرمز — المتابعة بدون خصم.",
+        "creatorCodeOffer": "رمز المُصنِّع {code} مُتاح.",
+        "applyOffer": "طبّق الكود",
+        "paymentMethod": "طريقة الدفع",
+        "unavailable": "تَوَّقَّفَ التسعير مؤقتًا. يُرجى المحاولة مرة أخرى بعد قليل.",
+        "waiver": "أوافق على <شروط الخدمة>شروط الخدمة> وأرغب في الوصول الفوري إلى هذا المحتوى الرقمي. أفهم أنه بمجرد بدء التسليم، أتنازل عن حقي في الانسحاب لمدة 14 يومًا."
+      }
+    }
+  },
+  "configs": {
+    "title": "الإعدادات العامة",
+    "card": {
+      "noDescription": "لا يوجد وصف",
+      "ago": "مضت",
+      "edit": "تعديل",
+      "editTitle": "تعديل {name}",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "إعداد {name} المميز",
+      "descriptionLabel": "الوصف",
+      "descriptionPlaceholder": "ما هذا الإعداد؟ أضف أي ملاحظات تريد مشاركتها.",
+      "saveChanges": "حفظ التغييرات",
+      "copyCommand": "نسخ أمر التحميل",
+      "copiedToast": "تم نسخ الأمر!",
+      "publish": "نشر",
+      "publishTitle": "اجعل إعدادك عامًا!",
+      "publishDescription": "اختر إعدادًا عامًا موجودًا للتحديث أو انشر إعدادك كجديد. عند النشر، يمكن للمستخدمين الآخرين رؤيته.",
+      "chooseConfig": "اختر إعدادًا للنشر...",
+      "publishNew": "نشر كإعداد جديد",
+      "clone": "نسخ إلى إعداداتي الخاصة",
+      "cloneTitle": "هل أنت متأكد تمامًا؟",
+      "cloneDescription": "أنت على وشك نسخ هذا الإعداد إلى إعداداتك الخاصة.",
+      "cancel": "إلغاء",
+      "continue": "متابعة",
+      "delete": "حذف",
+      "deleteTitle": "هل أنت متأكد تمامًا؟",
+      "deleteDescription": "سيُحذف {name} ({id}) نهائيًا مع جميع البيانات المرتبطة به. هذا الإجراء لا يمكن التراجع عنه.",
+      "changesSaved": "تم حفظ التغييرات!"
+    }
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "nav": {
+      "account": "الحساب",
+      "security": "الأمان",
+      "connections": "الاتصالات"
+    },
+    "account": {
+      "title": "الحساب",
+      "username": {
+        "title": "اسم المستخدم",
+        "description": "هذا هو اسم المستخدم المرتبط بحسابك.",
+        "toast": "تم تغيير اسم المستخدم!",
+        "cooldown": "يمكنك تغيير اسم المستخدم مجددًا خلال {time}.",
+        "requirements": "يجب أن يكون اسم المستخدم بين 1 و24 حرفًا.",
+        "save": "حفظ التغييرات"
+      },
+      "email": {
+        "title": "البريد الإلكتروني",
+        "description": "هذا هو البريد الإلكتروني المرتبط بحسابك.",
+        "footer": "لا يمكن تغيير البريد الإلكتروني.",
+        "currentLabel": "البريد الإلكتروني الحالي",
+        "newLabel": "عنوان بريد إلكتروني جديد",
+        "newPlaceholder": "أدخل عنوان بريد إلكتروني جديدًا",
+        "passwordLabel": "كلمة المرور الحالية",
+        "passwordPlaceholder": "أدخل كلمة المرور لتأكيد",
+        "cooldown": "يمكنك تغيير عنوان بريدك الإلكتروني مرة أخرى في {time}.",
+        "save": "أرسل التحقق",
+        "toast": "تم إرسال رسالة تأكيد عبر البريد الإلكتروني! تحقق من صندوق الوارد الجديد الخاص بك.",
+        "cancelled": "تم إلغاء طلب تغيير البريد الإلكتروني.",
+        "pendingBadge": "قيد الانتظار",
+        "pendingDescription": "تم إرسال بريد إلكتروني للتحقق. انقر على الرابط لتأكيد عنوانك الجديد (ينتهي في 24 ساعة).",
+        "cancel": "إلغاء"
+      }
+    },
+    "connections": {
+      "title": "الاتصالات",
+      "card": {
+        "title": "الاتصالات",
+        "description": "اربط حسابك بخدمات خارجية للوصول إلى مميزات إضافية.",
+        "connected": "متصل",
+        "ago": "مضت",
+        "requiresSetup": "يتطلب إعدادًا",
+        "notConnected": "غير متصل",
+        "disconnect": "قطع الاتصال",
+        "connect": "اتصال",
+        "connectSpotify": "ربط Spotify",
+        "setup": "إعداد",
+        "spotify": {
+          "title": "إعداد تكامل Spotify",
+          "description": "أنشئ تطبيق Spotify الخاص بك لتفعيل التكامل. هذا مطلوب بسبب حدود API من Spotify.",
+          "instructions": "التعليمات:",
+          "step1": "اذهب إلى {link}",
+          "step2": "أنشئ تطبيقًا جديدًا (أي اسم أو وصف)",
+          "step3": "أضف Redirect URI التالي إلى إعدادات تطبيقك:",
+          "copied": "تم النسخ!",
+          "clientId": "Client ID",
+          "clientIdPlaceholder": "Spotify Client ID الخاص بك",
+          "clientSecret": "Client Secret",
+          "clientSecretPlaceholder": "Spotify Client Secret الخاص بك",
+          "saving": "جاري الحفظ...",
+          "save": "حفظ البيانات"
+        }
+      }
+    },
+    "security": {
+      "title": "الأمان",
+      "password": {
+        "title": "تغيير كلمة المرور",
+        "description": "لأمانك، ننصح باختيار كلمة مرور قوية لا تستخدمها في مكان آخر.",
+        "current": "كلمة المرور الحالية",
+        "new": "كلمة المرور الجديدة",
+        "requirements": "يجب أن تكون كلمة المرور الجديدة بين 6 و72 حرفًا.",
+        "save": "حفظ التغييرات",
+        "toast": "تم تغيير كلمة المرور!"
+      },
+      "twoFactor": {
+        "title": "المصادقة الثنائية",
+        "description": "احمِ حسابك بالمصادقة الثنائية TOTP.",
+        "button": "تفعيل 2FA",
+        "footer": "ننصح باستخدام تطبيق موثوق للمصادقة الثنائية مثل 1Password أو Google Authenticator أو Authy.",
+        "enabled": "مُفعَّل",
+        "disable": "تعطيل",
+        "setup": {
+          "title": "إعداد المصادقة الثنائية",
+          "description": "امسح رمز QR بتطبيق المصادقة (Google Authenticator أو Authy وما شابه)",
+          "manualEntry": "لا تستطيع المسح؟ أدخل هذا الكود يدويًا:",
+          "verificationCode": "كود التحقق",
+          "verify": "تحقق وفعّل",
+          "verifying": "جاري التحقق...",
+          "cancel": "إلغاء"
+        },
+        "backup": {
+          "title": "احفظ أكواد الاسترداد",
+          "description": "يمكن استخدام هذه الأكواد للوصول لحسابك إذا فقدت تطبيق المصادقة. كل كود يُستخدم مرة واحدة فقط.",
+          "warning": "احفظ هذه الأكواد في مكان آمن. لن تُعرض مجددًا.",
+          "copy": "نسخ جميع الأكواد",
+          "copied": "تم النسخ!",
+          "confirm": "لقد حفظتُ أكوادِي"
+        },
+        "disableDialog": {
+          "title": "تعطيل المصادقة الثنائية",
+          "description": "أدخل كلمة مرورك للتأكيد. سيجعل هذا حسابك أقل أمانًا.",
+          "password": "كلمة المرور",
+          "cancel": "إلغاء",
+          "confirm": "تعطيل 2FA",
+          "disabling": "جاري التعطيل..."
+        },
+        "toast": {
+          "setupFailed": "فشل بدء إعداد 2FA",
+          "enabled": "تم تفعيل 2FA بنجاح",
+          "invalidCode": "كود التحقق غير صحيح",
+          "disabled": "تم تعطيل 2FA",
+          "invalidPassword": "كلمة المرور غير صحيحة",
+          "copied": "تم نسخ أكواد الاسترداد",
+          "secretCopied": "تم نسخ الكود السري"
+        }
+      }
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول إلى حسابك",
+      "description": "أدخل بيانات الدخول للمتابعة.",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "forgotPassword": "نسيت كلمة المرور؟",
+      "signIn": "تسجيل الدخول",
+      "noAccount": "ليس لديك حساب؟",
+      "signUp": "إنشاء حساب",
+      "twoFactor": {
+        "title": "كود المصادقة الثنائية",
+        "back": "رجوع",
+        "hint": "أدخل الكود المكون من 6 أرقام من تطبيق المصادقة، أو أحد أكواد الاسترداد."
+      }
+    },
+    "authorize": {
+      "title": "تفويض التطبيق",
+      "request": "يريد {app} الاتصال بحسابك",
+      "allow": "سماح",
+      "deny": "رفض"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "description": "أدخل بياناتك للتسجيل.",
+      "username": "اسم المستخدم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "licenseKey": "مفتاح الترخيص",
+      "licenseKeyOptional": "مفتاح الترخيص (اختياري)",
+      "submit": "إنشاء حساب",
+      "haveAccount": "هل لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول"
+    },
+    "spotify": {
+      "connect": "ربط Spotify"
+    }
+  },
+  "reseller": {
+    "title": "إحصائيات الموزع",
+    "description": "عرض إحصائيات استخدام المفاتيح لكل بادئة موزع.",
+    "total": "الإجمالي",
+    "used": "مُستخدَم",
+    "available": "متاح"
+  },
+  "network": {
+    "title": "الشبكة",
+    "networkSuffix": "شبكة",
+    "nav": {
+      "overview": "نظرة عامة",
+      "users": "المستخدمون",
+      "resellers": "الموزعون",
+      "keys": "المفاتيح",
+      "media": "ميديا",
+      "payments": "المدفوعات",
+      "customers": "زبائن"
+    },
+    "common": {
+      "loadMore": "حمّل المزيد",
+      "loading": "جاري التحميل...",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "delete": "حذف",
+      "edit": "تعديل",
+      "close": "إغلاق",
+      "confirm": "تأكيد",
+      "noPermission": "ليس لديك صلاحية للوصول إلى هذا.",
+      "thisMonth": "هذا الشهر",
+      "remaining": "متبقٍ",
+      "unknown": "غير معروف",
+      "never": "أبدًا",
+      "all": "الكل",
+      "yes": "نعم",
+      "no": "لا"
+    },
+    "overview": {
+      "totalKeysGenerated": "إجمالي المفاتيح المُولَّدة",
+      "usersInNetwork": "المستخدمون في الشبكة",
+      "withKeysFrom": "بمفاتيح من {count} موزع",
+      "withKeysFromPlural": "بمفاتيح من {count} موزعين",
+      "mediaKeysThisMonth": "مفاتيح الميديا هذا الشهر",
+      "amountOwed": "المبلغ المستحق",
+      "networkInfo": "معلومات الشبكة",
+      "currency": "العملة",
+      "exchangeRate": "سعر الصرف",
+      "keyPrice": "سعر المفتاح",
+      "mediaKeyPrefix": "بادئة مفتاح الميديا",
+      "yourPermissions": "صلاحياتك",
+      "generateKeys": "توليد المفاتيح",
+      "manageResellers": "إدارة الموزعين",
+      "manageMedia": "إدارة الميديا",
+      "viewUsers": "عرض المستخدمين",
+      "resellers": "الموزعون",
+      "noResellersYet": "لا يوجد موزعون في هذه الشبكة بعد."
+    },
+    "users": {
+      "title": "المستخدمون",
+      "count": "{count} مستخدم في شبكتك",
+      "countPlural": "{count} مستخدمين في شبكتك",
+      "noUsersYet": "لم يُعثر على مستخدمين في شبكتك بعد.",
+      "noResellersFirst": "لا يوجد موزعون في هذه الشبكة بعد. أضف موزعين أولًا لرؤية المستخدمين.",
+      "searchPlaceholder": "ابحث بالاسم أو البريد الإلكتروني...",
+      "allResellers": "جميع الموزعين",
+      "noMatchFilters": "لا يوجد مستخدمون يطابقون فلاتر البحث.",
+      "never": "أبدًا",
+      "table": {
+        "user": "المستخدم",
+        "reseller": "الموزع",
+        "key": "المفتاح",
+        "hwid": "HWID",
+        "registered": "تاريخ التسجيل",
+        "actions": "الإجراءات"
+      },
+      "hwid": {
+        "bound": "مُرتبط",
+        "notBound": "غير مرتبط",
+        "reset": "إعادة تعيين HWID",
+        "history": "سجل HWID",
+        "resetConfirm": {
+          "title": "إعادة تعيين معرف الجهاز",
+          "description": "هل أنت متأكد من إعادة تعيين معرف الجهاز لـ {name}؟ سيحتاج إلى إعادة المصادقة عند تسجيل الدخول التالي.",
+          "confirm": "إعادة تعيين HWID",
+          "cancel": "إلغاء"
+        },
+        "historyDialog": {
+          "title": "سجل HWID",
+          "description": "تغييرات معرف الجهاز لـ {name}",
+          "noHistory": "لا يوجد تغييرات HWID مسجلة.",
+          "eventSet": "تم تعيين HWID",
+          "eventReset": "تمت إعادة تعيين HWID"
+        },
+        "resetSuccess": "تمت إعادة تعيين معرف الجهاز بنجاح!",
+        "resetError": "فشل إعادة تعيين معرف الجهاز."
+      },
+      "pagination": {
+        "page": "الصفحة {current} من {total}",
+        "previous": "السابق",
+        "next": "التالي"
+      }
+    },
+    "resellers": {
+      "title": "الموزعون",
+      "count": "{count} موزع في شبكتك",
+      "countPlural": "{count} موزعين في شبكتك",
+      "addReseller": "إضافة موزع",
+      "noResellersYet": "لا يوجد موزعون بعد. أضف أول موزع لبدء توليد المفاتيح.",
+      "viewStore": "عرض المتجر",
+      "table": {
+        "reseller": "الموزع",
+        "prefix": "البادئة",
+        "keys": "المفاتيح",
+        "users": "المستخدمون",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء",
+        "active": "نشط",
+        "inactive": "غير نشط"
+      },
+      "create": {
+        "title": "إضافة موزع",
+        "description": "أضف موزعًا جديدًا لشبكتك. ستُستخدم البادئة لتوليد المفاتيح.",
+        "name": "الاسم",
+        "namePlaceholder": "اسم الموزع",
+        "prefix": "بادئة المفتاح",
+        "prefixPlaceholder": "مثال: HHKW",
+        "prefixHint": "2-10 أحرف/أرقام كبيرة. ستكون المفاتيح: PREFIX-XXXXXXXXXXXX",
+        "storeUrl": "رابط المتجر (اختياري)",
+        "storeUrlPlaceholder": "https://...",
+        "description_field": "الوصف (اختياري)",
+        "descriptionPlaceholder": "الوصف الظاهر في صفحة الموزع العامة...",
+        "contactInfo": "معلومات التواصل (اختياري)",
+        "contactInfoPlaceholder": "WeChat، QQ، Discord، وما إلى ذلك.",
+        "submit": "إضافة موزع",
+        "success": "تم إنشاء الموزع",
+        "error": "فشل إنشاء الموزع"
+      },
+      "edit": {
+        "title": "تعديل الموزع",
+        "description": "تحديث بيانات {name}.",
+        "submit": "حفظ التغييرات",
+        "success": "تم تحديث الموزع",
+        "error": "فشل تحديث الموزع"
+      },
+      "delete": {
+        "confirm": "هل أنت متأكد من حذف \"{name}\"؟ لا يمكن التراجع عن هذا.",
+        "success": "تم حذف الموزع",
+        "error": "فشل حذف الموزع"
+      }
+    },
+    "keys": {
+      "title": "المفاتيح",
+      "count": "{count} مفتاح في شبكتك",
+      "countPlural": "{count} مفاتيح في شبكتك",
+      "stats": "{total} إجمالي • {used} مستردة • {unused} متاحة",
+      "noKeysYet": "لا توجد مفاتيح بعد",
+      "noResellersFirst": "لا يوجد موزعون في هذه الشبكة بعد. أضف موزعين أولًا لتوليد المفاتيح.",
+      "generateKeys": "توليد المفاتيح",
+      "copyUnusedKeys": "نسخ المفاتيح غير المستخدمة",
+      "allResellers": "جميع الموزعين",
+      "allKeys": "جميع المفاتيح",
+      "unusedOnly": "غير مستخدمة فقط",
+      "usedOnly": "مستخدمة فقط",
+      "noMatchFilters": "لا توجد مفاتيح تطابق فلاتر البحث.",
+      "table": {
+        "key": "المفتاح",
+        "reseller": "الموزع",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء",
+        "redeemed": "تاريخ الاسترداد",
+        "used": "مستخدم",
+        "unused": "غير مستخدم",
+        "media": "ميديا"
+      },
+      "copy": {
+        "single": "تم نسخ المفتاح",
+        "multiple": "تم نسخ {count} مفاتيح",
+        "noUnused": "لا توجد مفاتيح غير مستخدمة للنسخ"
+      },
+      "generate": {
+        "title": "توليد المفاتيح",
+        "description": "وَلِّد مفاتيح لموزع. ستُحسب عليك ${price} لكل مفتاح.",
+        "reseller": "الموزع",
+        "resellerPlaceholder": "اختر موزعًا",
+        "count": "عدد المفاتيح",
+        "countPlaceholder": "1-100",
+        "submit": "توليد المفاتيح",
+        "success": "تم توليد {count} مفاتيح - ${usd} ({local} {currency})",
+        "error": "فشل توليد المفاتيح",
+        "result": {
+          "title": "تم توليد المفاتيح",
+          "description": "تم توليد {count} مفاتيح. انسخها الآن — لن تتمكن من رؤيتها مجددًا.",
+          "amountOwed": "المبلغ المستحق:",
+          "copyAll": "نسخ جميع المفاتيح"
+        }
+      },
+      "pagination": {
+        "page": "الصفحة {current} من {total}",
+        "previous": "السابق",
+        "next": "التالي"
+      }
+    },
+    "media": {
+      "title": "ميديا",
+      "count": "{count} حساب ميديا في شبكتك",
+      "countPlural": "{count} حسابات ميديا في شبكتك",
+      "monthlyUsage": "{used}/{limit} مفتاح مستخدم هذا الشهر • {remaining} متبقٍ",
+      "noPermission": "ليس لديك صلاحية لإدارة حسابات الميديا.",
+      "addMedia": "إضافة ميديا",
+      "noMediaYet": "لم يُعثر على حسابات ميديا.",
+      "table": {
+        "name": "الاسم",
+        "platform": "المنصة",
+        "key": "المفتاح",
+        "status": "الحالة",
+        "added": "تاريخ الإضافة",
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "noKey": "لا يوجد مفتاح"
+      },
+      "create": {
+        "title": "إضافة حساب ميديا",
+        "description": "أضف منشئ محتوى إلى برنامج الميديا في شبكتك.",
+        "name": "الاسم",
+        "namePlaceholder": "اسم المنشئ أو القناة",
+        "platform": "المنصة",
+        "platformPlaceholder": "اختر المنصة",
+        "platformUrl": "رابط القناة/الملف الشخصي",
+        "platformUrlPlaceholder": "https://youtube.com/@channel",
+        "notes": "ملاحظات",
+        "notesPlaceholder": "معلومات التواصل، تخصص المحتوى، وما إلى ذلك.",
+        "generateKey": "توليد مفتاح",
+        "keysRemaining": "{count} مفتاح ميديا متبقٍ هذا الشهر",
+        "limitReached": "تم الوصول للحد الشهري",
+        "submit": "إضافة ميديا",
+        "success": "تم إنشاء حساب الميديا",
+        "successWithKey": "تم إنشاء حساب الميديا! تم نسخ المفتاح: {key}",
+        "error": "فشل إنشاء حساب الميديا"
+      },
+      "edit": {
+        "title": "تعديل حساب الميديا",
+        "description": "تحديث بيانات حساب الميديا.",
+        "submit": "حفظ التغييرات",
+        "success": "تم تحديث حساب الميديا",
+        "error": "فشل تحديث حساب الميديا"
+      },
+      "delete": {
+        "confirm": "حذف حساب الميديا \"{name}\"؟",
+        "success": "تم حذف حساب الميديا",
+        "error": "فشل حذف حساب الميديا"
+      },
+      "generateKey": {
+        "confirm": "توليد مفتاح لـ \"{name}\"؟",
+        "success": "تم توليد المفتاح ونسخه: {code}",
+        "error": "فشل توليد المفتاح"
+      },
+      "actions": {
+        "generateKey": "توليد مفتاح",
+        "edit": "تعديل",
+        "delete": "حذف"
+      }
+    },
+    "payments": {
+      "title": "المدفوعات",
+      "noPermission": "ليس لديك صلاحية لعرض المدفوعات.",
+      "balanceOwed": "الرصيد المستحق",
+      "youOwe": "رصيد مستحق",
+      "overpaid": "رصيد دائن",
+      "settled": "تم التسوية",
+      "totalCharges": "إجمالي المبالغ المحسوبة",
+      "keysGenerated": "مفاتيح مولَّدة",
+      "paymentsReceived": "المدفوعات المستلمة",
+      "payments": "مدفوعات",
+      "keyPrice": "سعر المفتاح",
+      "perKeyGenerated": "لكل مفتاح مولَّد",
+      "noPaymentsYet": "لا توجد سجلات دفع بعد. تُنشأ السجلات عند توليد المفاتيح.",
+      "table": {
+        "chargeback": "إلغاء الدفع",
+        "type": "النوع",
+        "generatedBy": "مولَّد بواسطة",
+        "keys": "المفاتيح",
+        "usdAmount": "المبلغ بالدولار",
+        "localAmount": "المبلغ المحلي",
+        "date": "التاريخ",
+        "charge": "رسوم",
+        "payment": "دفعة"
+      },
+      "status": {
+        "pending": "قيد الانتظار",
+        "confirmed": "تأكيد",
+        "void": "فراغ",
+        "expired": "منتهي الصلاحية"
+      },
+      "settle": "سداد الدين",
+      "method": {
+        "crypto": "كريبتو",
+        "wechat": "وي تشات باي"
+      },
+      "amount": "كمية",
+      "full": "توازن كامل",
+      "pending": {
+        "title": "دفعة معلقة",
+        "resume": "استئناف الدفع",
+        "cancel": "إلغاء الدفع"
+      },
+      "intentCreated": "تم إنشاء الدفع. ننتقل بك إلى صفحة الدفع...",
+      "owedVsPaid": "مستحق مقابل مدفوع"
+    },
+    "customers": {
+      "title": "زبائن",
+      "subtitle": "الأشخاص الذين استردوا مفتاحًا من شبكتك.",
+      "col": {
+        "username": "اسم المستخدم",
+        "email": "بريد إلكتروني",
+        "created": "تم إنشاء الحساب",
+        "redeemed": "مُفْدَى",
+        "prefix": "بادئة"
+      },
+      "empty": "حتى الآن لا يوجد عملاء. يظهرون هنا بمجرد أن يقوم شخص ما باسترداد أحد مفاتيحك.",
+      "chargeback": {
+        "action": "تَقْدِيمُ تَعْدِيلِ الْحِسَابِ",
+        "title": "إبلاغ عن اعتراض",
+        "reason": "عقل",
+        "confirm": "تعطيل المفتاح والإبلاغ"
+      },
+      "privacyNote": "تفاصيل العملاء موجودة هنا لمساعدتك في دعم مشترياتك. حافظ عليها سرية."
+    },
+    "notes": {
+      "title": "ملاحظات",
+      "add": "أضِفْ مُلاحظةً",
+      "placeholder": "اكتب ملاحظة...",
+      "empty": "لا توجد ملاحظات حتى الآن.",
+      "shared": "مرئي لك وللفريق الإداري"
+    },
+    "refLink": {
+      "title": "رابط الإحالة الخاص بك",
+      "copy": "انسخ الرابط",
+      "copied": "تمت إضافة الرابط إلى الحافظة",
+      "hint": "شارك هذا الرابط مع جمهورك. كل زيارة تُحسب في إحصائيات حملتك."
+    }
+  },
+  "footer": {
+    "copyright": "Opal × Terminus. جميع الحقوق محفوظة.",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "tagline": "هيمن على اللعبة مع Opal Client.",
+    "product": "منتج",
+    "purchase": "شراء",
+    "dashboard": "لوحة القيادة",
+    "branding": "العلامة التجارية",
+    "resellers": "بائعون بالجملة",
+    "legal": "قانوني",
+    "disclosures": "الإفصاحات",
+    "gdpr": "حماية البيانات العامة",
+    "ccpa": "الخصوصية في كاليفورنيا",
+    "dmca": "ديمة",
+    "community": "مجتمع",
+    "discord": "خلاف",
+    "youtube": "يوتيوب",
+    "github": "غيتهاب",
+    "disclosure_notice": "كشفنا عن حادث أمني أثر على بيانات المستخدمين.",
+    "disclosure_link": "إقرأ الإفصاح الكامل →",
+    "resources": "الموارد",
+    "blog": "مدونة",
+    "learn": "تعلّم",
+    "compare": "قارن"
+  },
+  "banner": {
+    "presets": {
+      "christmas": "تخفيضات الأعياد: استخدم كود HOLIDAY10 للحصول على خصم 10% حتى 31 ديسمبر",
+      "new_year": "تخفيضات السنة الجديدة: استخدم كود NEWYEAR10 للحصول على خصم 10% حتى 7 يناير",
+      "lunar_new_year": "تخفيضات رأس السنة القمرية: استخدم كود LUNAR10 للحصول على خصم 10% حتى 3 مارس"
+    }
+  },
+  "forums": {
+    "warningTitle": "تحقق من الأخطاء المعروفة. هذا ليس لمشاكل التشغيل أو الدعم!",
+    "warning": "قبل إنشاء تقرير، يُرجى التحقق مما إذا كان الخطأ قد أُبلغ عنه بالفعل. التقارير المكررة تؤخر الإصلاحات.",
+    "roadmap": {
+      "title": "خارطة الطريق",
+      "searchPlaceholder": "ابحث في خارطة الطريق...",
+      "allCategories": "جميع الفئات",
+      "empty": "لا توجد عناصر",
+      "planned": "مخطط",
+      "inProgress": "قيد التنفيذ",
+      "done": "مكتمل"
+    },
+    "suggestions": {
+      "title": "الاقتراحات",
+      "new": "اقتراح جديد",
+      "searchPlaceholder": "ابحث في الاقتراحات...",
+      "allStatuses": "جميع الحالات",
+      "pending": "قيد الانتظار",
+      "approved": "مقبول",
+      "denied": "مرفوض",
+      "planned": "مخطط",
+      "empty": "لم يُعثر على اقتراحات تطابق الفلاتر.",
+      "noItems": "لا توجد اقتراحات بعد",
+      "detailTitle": "تفاصيل الاقتراح",
+      "discussion": "النقاش",
+      "officialResponse": "الرد الرسمي",
+      "devResponseLabel": "رد المطور",
+      "devResponsePlaceholder": "أضف ردًا رسميًا...",
+      "saveResponse": "حفظ الرد",
+      "discussionLocked": "النقاش مغلق لهذا الاقتراح.",
+      "noComments": "لا توجد تعليقات بعد. كن أول من يشارك رأيه.",
+      "addComment": "إضافة تعليق",
+      "commentPlaceholder": "شارك رأيك...",
+      "postComment": "نشر التعليق",
+      "replyPlaceholder": "اكتب ردًا...",
+      "post": "نشر",
+      "cancel": "إلغاء",
+      "sortBy": "ترتيب حسب",
+      "sortDefault": "افتراضي",
+      "sortVotes": "الأكثر تصويتًا",
+      "sortNewest": "الأحدث",
+      "sortOldest": "الأقدم",
+      "dialog": {
+        "title": "اقتراح ميزة",
+        "titleLabel": "العنوان",
+        "titlePlaceholder": "وصف موجز لاقتراحك",
+        "contentLabel": "الوصف",
+        "contentPlaceholder": "قدم تفاصيل حول اقتراحك",
+        "submit": "إرسال",
+        "submitting": "جاري الإرسال...",
+        "success": "تم إرسال الاقتراح بنجاح"
+      }
+    },
+    "nav": {
+      "roadmap": "خارطة الطريق",
+      "suggestions": "الاقتراحات",
+      "bugs": "تقارير الأخطاء",
+      "changelog": "سجل التغييرات"
+    },
+    "bugs": {
+      "title": "تقارير الأخطاء",
+      "new": "الإبلاغ عن خطأ",
+      "searchPlaceholder": "ابحث في الأخطاء...",
+      "allStatuses": "جميع الحالات",
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "invalid": "غير صالح",
+      "empty": "لم يُعثر على تقارير أخطاء تطابق الفلاتر.",
+      "noItems": "لم يُبلَّغ عن أخطاء بعد.",
+      "version": "إصدار الكلاينت",
+      "steps": "خطوات إعادة الإنتاج",
+      "description": "الوصف",
+      "detailTitle": "تفاصيل تقرير الخطأ",
+      "discussion": "النقاش",
+      "officialResponse": "الرد الرسمي",
+      "devResponseLabel": "رد المطور",
+      "devResponsePlaceholder": "أضف ردًا رسميًا...",
+      "saveResponse": "حفظ الرد",
+      "discussionLocked": "النقاش مغلق لهذا التقرير.",
+      "noComments": "لا توجد تعليقات بعد. كن أول من يشارك رأيه.",
+      "addComment": "إضافة تعليق",
+      "commentPlaceholder": "شارك رأيك...",
+      "postComment": "نشر التعليق",
+      "replyPlaceholder": "اكتب ردًا...",
+      "post": "نشر",
+      "cancel": "إلغاء",
+      "sortBy": "ترتيب حسب",
+      "sortDefault": "افتراضي",
+      "sortNewest": "الأحدث",
+      "sortOldest": "الأقدم",
+      "dialog": {
+        "title": "الإبلاغ عن خطأ",
+        "titleLabel": "عنوان المشكلة",
+        "titlePlaceholder": "ملخص موجز",
+        "versionLabel": "إصدار الكلاينت",
+        "descriptionLabel": "الوصف",
+        "descriptionPlaceholder": "ماذا حدث؟",
+        "stepsLabel": "خطوات إعادة الإنتاج",
+        "stepsPlaceholder": "1. اذهب إلى...\n2. انقر على...",
+        "submit": "إرسال التقرير",
+        "submitting": "جاري الإرسال...",
+        "success": "تم إرسال تقرير الخطأ"
+      }
+    }
+  },
+  "manage": {
+    "roadmap": {
+      "title": "خارطة الطريق",
+      "searchPlaceholder": "ابحث في خارطة الطريق...",
+      "filterStatus": "فلترة حسب الحالة",
+      "allStatuses": "جميع الحالات",
+      "addItem": "إضافة عنصر",
+      "editItem": "تعديل عنصر",
+      "createItem": "إنشاء عنصر",
+      "titleLabel": "العنوان",
+      "descriptionLabel": "الوصف",
+      "categoryLabel": "الفئة",
+      "categoryPlaceholder": "مثال: الكلاينت",
+      "typeLabel": "النوع",
+      "feature": "ميزة",
+      "bug": "خطأ",
+      "statusLabel": "الحالة",
+      "planned": "مخطط",
+      "inProgress": "قيد التنفيذ",
+      "done": "مكتمل",
+      "save": "حفظ",
+      "saving": "جاري الحفظ...",
+      "table": {
+        "title": "العنوان",
+        "category": "الفئة",
+        "type": "النوع",
+        "status": "الحالة",
+        "actions": "الإجراءات",
+        "empty": "لم يُعثر على عناصر"
+      },
+      "toast": {
+        "updated": "تم تحديث العنصر",
+        "created": "تم إنشاء العنصر",
+        "deleted": "تم حذف العنصر"
+      },
+      "confirmDelete": "هل أنت متأكد؟"
+    },
+    "suggestions": {
+      "title": "الاقتراحات",
+      "searchPlaceholder": "ابحث في الاقتراحات...",
+      "filterStatus": "فلترة حسب الحالة",
+      "allStatuses": "جميع الحالات",
+      "pending": "قيد الانتظار",
+      "approved": "مقبول",
+      "denied": "مرفوض",
+      "table": {
+        "content": "المحتوى",
+        "author": "المؤلف",
+        "votes": "التصويتات",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+        "empty": "لم يُعثر على اقتراحات"
+      },
+      "toast": {
+        "approved": "تم قبول الاقتراح ومنح العملات",
+        "denied": "تم رفض الاقتراح",
+        "deleted": "تم حذف الاقتراح"
+      },
+      "confirmDeny": "رفض هذا الاقتراح؟",
+      "confirmDelete": "هل أنت متأكد تمامًا؟ سيُحذف الاقتراح نهائيًا."
+    },
+    "bugs": {
+      "title": "تقارير الأخطاء",
+      "searchPlaceholder": "ابحث في تقارير الأخطاء...",
+      "filterStatus": "فلترة حسب الحالة",
+      "allStatuses": "جميع الحالات",
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "invalid": "غير صالح",
+      "table": {
+        "issue": "المشكلة",
+        "author": "المؤلف",
+        "version": "الإصدار",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+        "empty": "لم يُعثر على تقارير أخطاء"
+      },
+      "toast": {
+        "closed": "تم إغلاق تقرير الخطأ",
+        "invalid": "تم تصنيف التقرير كغير صالح",
+        "deleted": "تم حذف تقرير الخطأ"
+      },
+      "confirmClose": "إغلاق هذا التقرير؟",
+      "confirmInvalid": "تصنيف كغير صالح؟",
+      "confirmDelete": "هل أنت متأكد تمامًا؟ سيُحذف تقرير الخطأ نهائيًا."
+    }
+  },
+  "cloud": {
+    "title": "السحابة"
+  },
+  "relations": {
+    "title": "العلاقات",
+    "add": {
+      "button": "إضافة علاقة",
+      "title": "إضافة علاقة",
+      "description": "أضف صديقًا أو عدوًا إلى قائمتك. سيؤثر هذا على طريقة ظهورهم داخل اللعبة.",
+      "type": "نوع العلاقة",
+      "user_type": "نوع المستخدم",
+      "submit": "إضافة علاقة",
+      "submitting": "جاري الإضافة...",
+      "success": "تمت إضافة العلاقة بنجاح",
+      "error": "فشل إضافة العلاقة"
+    },
+    "types": {
+      "friend": "صديق",
+      "enemy": "عدو",
+      "opal": "مستخدم Opal",
+      "minecraft": "Minecraft"
+    },
+    "inputs": {
+      "minecraft_placeholder": "Notch",
+      "opal_placeholder": "اسم المستخدم",
+      "minecraft_label": "اسم المستخدم / UUID",
+      "opal_label": "اسم مستخدم الإعداد"
+    },
+    "list": {
+      "empty": "لم يُعثر على علاقات. أضف بعض الأصدقاء أو الأعداء للبدء!",
+      "remove_success": "تمت إزالة العلاقة",
+      "remove_error": "فشل إزالة العلاقة",
+      "unknown": "غير معروف"
+    },
+    "errors": {
+      "opal_not_found": "لم يُعثر على مستخدم Opal",
+      "self_add": "لا يمكنك إضافة نفسك",
+      "minecraft_not_found": "لم يُعثر على مستخدم Minecraft",
+      "exists": "العلاقة موجودة بالفعل"
+    }
+  },
+  "inbox": {
+    "title": "صندوق الوارد",
+    "unread": "إشعار غير مقروء",
+    "allRead": "لا يوجد جديد",
+    "markAllRead": "تحديد الكل كمقروء",
+    "clearAll": "مسح الكل",
+    "empty": "لا توجد إشعارات",
+    "emptyDescription": "ستظهر الإشعارات هنا عند وصولها"
+  },
+  "blog": {
+    "meta": {
+      "title": "مدونة",
+      "description": "أخبار وعروض وإرشادات وتحديثات حديثة من Opal Client."
+    }
+  },
+  "compare": {
+    "meta": {
+      "title": "قارن",
+      "description": "اطلع على كيفية مقارنة برنامج Opal Client مع برامج Minecraft الأخرى."
+    }
+  },
+  "learn": {
+    "meta": {
+      "title": "تعلّم",
+      "description": "إرشادات وبرامج تعليمية ومصادر خاصة بـ Minecraft PvP و Opal Client."
+    }
+  },
+  "support": {
+    "title": "دعم",
+    "subtitle": "افتح تذكرة وسيتواصل فريقنا معك.",
+    "new": "تذكرة جديدة",
+    "cancel": "إلغاء",
+    "steering": {
+      "intro": "التذاكر مخصصة للدعم المحاسبي والفواتير والدعم الفني.",
+      "bug": "اكتشفت خطأً؟ أبلغ عنه في",
+      "forumsLink": "منتديات",
+      "security": "مشكلة أمنية حرجة؟ ضع تذكرتك على أنها \"أمن\"."
+    },
+    "categories": {
+      "billing": "فوترة",
+      "account": "حساب",
+      "technical": "الدعم الفني",
+      "security": "مشكلة أمنية",
+      "other": "آخر"
+    },
+    "form": {
+      "subject": "الموضوع",
+      "subjectPlaceholder": "بماذا تحتاج مساعدة؟?",
+      "category": "فئة",
+      "securityHint": "تذهب تذاكر الأمان مباشرةً إلى المسؤولين وتتخطى مساعد الدعم.",
+      "body": "رسالة",
+      "bodyPlaceholder": "صف المشكلة بأكبر قدر ممكن من التفصيل.",
+      "submit": "أنشئ تذكرة",
+      "creating": "خلق..",
+      "created": "تذكرة مُنشأة"
+    },
+    "status": {
+      "open": "افتح",
+      "pending": "قيد الانتظار",
+      "resolved": "حُلّ",
+      "closed": "مغلق"
+    },
+    "message": "رسالة",
+    "messages": "رسائل",
+    "untitled": "تذكرة غير مسماة",
+    "openConversation": "حوار مفتوح",
+    "empty": "لا تذاكر حتى الآن",
+    "emptyDescription": "عندما تفتح تذكرة، تظهر هنا.",
+    "failed": "الدعم غير متوفر حاليًا.",
+    "retry": "حاول مرة أخرى",
+    "errors": {
+      "generic": "حدث خطأ ما. حاول مرة أخرى.",
+      "too_many_open_tickets": "لديك عدد كبير جدًا من التذاكر المفتوحة. أغلق واحدة قبل فتح تذكرة أخرى.",
+      "unknown_product": "لم نتمكن من ربط حسابك بمنتج. أعد التحميل وحاول مرة أخرى.",
+      "ticket_closed": "تم إغلاق هذه التذكرة ولن تقبل أي ردود."
+    },
+    "thread": {
+      "back": "عودة للدعم",
+      "you": "أنتَ (ʾanta)",
+      "agent": "وكيل دعم",
+      "system": "نظام",
+      "empty": "لا توجد رسائل بعد.",
+      "send": "أرسل",
+      "replyPlaceholder": "اكتب ردًا…",
+      "hint": "مد الخط يدعم. الضغط على Ctrl+Enter يرسل.",
+      "closed": "تم إغلاق هذه التذكرة. افتح تذكرة جديدة إذا كنت بحاجة إلى مزيد من المساعدة.",
+      "seen": "رُئِيَ",
+      "copyTranscript": "نسخة نصية",
+      "copied": "مُلْخَص مُنْسَخ",
+      "copyFailed": "لم يتمكن من نسخ النص",
+      "notFound": "لم يتم العثور على التذكرة",
+      "notFoundDescription": "ربما تم حذفه، أو أن الرابط خاطئ."
+    }
+  },
+  "supportAgent": {
+    "title": "قائمة الدعم",
+    "subtitle": "تصنيف تذاكر العملاء، والرد عليها، وحلها.",
+    "filters": {
+      "all": "كل",
+      "open": "افتح",
+      "pending": "قيد الانتظار",
+      "resolved": "حُلّ",
+      "closed": "مغلق"
+    },
+    "categories": {
+      "billing": "فوترة",
+      "account": "حساب",
+      "technical": "الدعم الفني",
+      "security": "أمن",
+      "other": "آخر"
+    },
+    "status": {
+      "open": "افتح",
+      "pending": "قيد الانتظار",
+      "resolved": "حُلّ",
+      "closed": "مغلق"
+    },
+    "priority": {
+      "low": "منخفض",
+      "normal": "عادي",
+      "high": "عالي"
+    },
+    "aiSuggested": "اقتراح الذكاء الاصطناعي: {category}",
+    "emailCustomer": "أيضًا، راسل العميل",
+    "columns": {
+      "subject": "الموضوع",
+      "customer": "زبون",
+      "status": "حالة",
+      "category": "فئة",
+      "priority": "أولوية",
+      "updated": "مُحدَّث",
+      "assignee": "المُخَصَّص"
+    },
+    "thread": {
+      "back": "عودة إلى الصف",
+      "customer": "زبون",
+      "you": "أنتَ (ʾanta)",
+      "agent": "وكيل",
+      "system": "نظام",
+      "assignToMe": "خَلِّيها لي",
+      "assigned": "مُكَلَّفٌ بك",
+      "status": "حالة",
+      "category": "فئة",
+      "empty": "لا توجد رسائل بعد.",
+      "send": "أرسل",
+      "replyPlaceholder": "اكتب ردًا…",
+      "hint": "مد الخط يدعم. الضغط على Ctrl+Enter يرسل.",
+      "closed": "تم إغلاق هذه التذكرة.",
+      "reopen": "أَعِدْ فَتْحَ",
+      "seen": "رُئِيَ",
+      "copyTranscript": "نسخة نصية",
+      "copied": "مُلْخَص مُنْسَخ",
+      "copyFailed": "لم يتمكن من نسخ النص",
+      "notFound": "لم يتم العثور على التذكرة"
+    },
+    "searchPlaceholder": "ابحث عن موضوع أو عميل…",
+    "searchClear": "بحث واضح",
+    "emptySearch": "لا توجد تذاكر تطابق بحثك أو عوامل التصفية.",
+    "empty": "الصفوف واضحة",
+    "emptyDescription": "تظهر التذاكر الجديدة هنا مع فتح العملاء لها.",
+    "failed": "الدعم غير متوفر حاليًا.",
+    "retry": "حاول مرة أخرى",
+    "untitled": "تذكرة غير مسماة",
+    "unassigned": "غير مُعيَّن",
+    "older": "تذاكر قديمة",
+    "errors": {
+      "generic": "حدث خطأ ما. حاول مرة أخرى."
+    }
+  },
+  "creator": {
+    "title": "خالق",
+    "description": "قناتك، والنقرات، وإحصائيات الدفع.",
+    "profile": {
+      "title": "قناة",
+      "tier": "طبقة",
+      "tiers": {
+        "eval": "إيفال",
+        "perpetual": "أبديّ",
+        "paid": "مدفوع",
+        "giveaway": "هَدِيَّة"
+      },
+      "platform": "منصة",
+      "handle": "مقبض",
+      "synced": "آخر تحديث",
+      "subscribers": "مُشْتَرِكِين",
+      "views": "آراء",
+      "videos": "فيديوهات"
+    },
+    "clicks": {
+      "title": "نقرات",
+      "total": "النقرات الإجمالية",
+      "last30": "آخر 30 يومًا",
+      "empty": "لم يتم تسجيل أي نقرات حتى الآن."
+    },
+    "discount": {
+      "title": "رمز الخصم",
+      "redemptions": "فِدْيَة",
+      "keyRedemptions": "فِداءاتٌ مُهِمَّة",
+      "none": "لم يتم تخصيص رمز خصم حتى الآن."
+    },
+    "payouts": {
+      "title": "مدفوعات",
+      "payable": "مدفوع",
+      "held": "مُمْسَكٌ",
+      "paid": "دُفِعَ",
+      "displayOnly": "تكون الأرصدة إعلامية؛ ويتم تسوية المدفوعات يدويًا من قبل الفريق.",
+      "recent": "المدفوعات الأخيرة",
+      "empty": "لم يتم الدفع بعد.",
+      "date": "تاريخ",
+      "product": "منتج",
+      "amount": "كمية",
+      "status": "حالة",
+      "statuses": {
+        "held": "مُمْسَكٌ",
+        "payable": "مدفوع",
+        "paid": "مدفوع",
+        "void": "فراغ"
+      }
+    }
+  },
+  "creatorLanding": {
+    "badge": "شريك مُبدِع",
+    "title": "{name} x Opal",
+    "subtitle": "{name} دعوتك لتجربة Opal، برنامج Minecraft المساعد المتميز.",
+    "percentOff": "خصم {percent}%",
+    "amountOff": "خصم {amount}",
+    "discountCallout": "استخدم الرمز {code} عند الدفع للحصول على رخصتك {discount}.",
+    "cta": "احصل على خصمك",
+    "ctaGeneric": "اِجْتَمِعْ Opal",
+    "secondary": "تعرّف على المزيد Opal",
+    "generic": {
+      "title": "ابدأ بـ Opal",
+      "subtitle": "لم يعد رابط الإنشاء هذا نشطًا، ولكن لا يزال بإمكانك تفعيل ترخيص أو الحصول على مفتاح."
+    },
+    "meta": {
+      "title": "{name} x Opal خصم",
+      "description": "{name} تعاونت مع Opal Client. اتبع رابط المُنشئ الخاص بهم للبدء باستخدام برنامج Minecraft المساعد المتميز.",
+      "descriptionDiscount": "{name} تعاونت مع Opal Client — استخدم رمزهم للحصول على خصم {discount} على برنامج Minecraft المتميز.",
+      "genericTitle": "رابط المنشئ",
+      "genericDescription": "هذا الرابط الخاص بالمُنشئ غير نشط. يمكنك الحصول على برنامج Opal Client، برنامج Minecraft المساعد المتميز، رغم ذلك."
+    }
+  },
+  "errors": {
+    "title": "خطأ في النظام",
+    "description": "حدث خطأ غير متوقع. تم إبلاغ فريقنا.",
+    "retry": "حاول مرة أخرى",
+    "home": "اِرْجِعْ لِبَيْتِكَ",
+    "reference": "رقم مرجعي",
+    "card": {
+      "title": "لم يتم تحميل هذا اللوح. قم بتحديث الصفحة لإعادة المحاولة.",
+      "retry": "لوحة إعادة المحاولة"
+    }
+  }
+}
