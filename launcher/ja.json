@@ -5,14 +5,14 @@
     "waiting": "ログイン待ち...",
     "dialog": {
       "title": "ログインが必要です",
-      "description": "Opalアカウントにログインして、続きをお願いします.",
-      "redirectNotice": "ブラウザで認証を完了するようリダイレクトされます.",
-      "loginButton": "ブラウザでログインしてください"
+      "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
+      "redirectNotice": "ブラウザで認証するため、リダイレクトされます。",
+      "loginButton": "ブラウザでログイン"
     },
     "screen": {
       "title": "ログインが必要です",
       "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
-      "loginButton": "リダイレクトしてログイン"
+      "loginButton": "ブラウザでログイン"
     },
     "checking": {
       "title": "認証確認中",
@@ -34,11 +34,11 @@
     "saved": "変更を保存しました!",
     "close": "閉じる",
     "browse": "閲覧する",
-    "back": "後",
+    "back": "戻る",
     "retry": "再試行",
     "loading": "読み込み中…",
-    "add": "足す",
-    "remove": "取り除く",
+    "add": "追加",
+    "remove": "削除",
     "delete": "削除",
     "edit": "編集",
     "confirm": "確認してください",
@@ -56,7 +56,7 @@
   "home": {
     "welcome": "ようこそ",
     "welcomeBack": "おかえりなさい! {name}",
-    "subtitle": "プロフィール、Mod、および起動設定の管理ができます。準備ができたら、ゲームを開始しましょう!",
+    "subtitle": "起動構成、Mod、および起動設定の管理をして、準備ができたら、ゲームを開始しましょう!",
     "stats": {
       "userId": "ユーザーID",
       "launch": "起動",
@@ -65,7 +65,7 @@
     },
     "news": {
       "title": "ニュース",
-      "empty": "まだ情報はありません"
+      "empty": "まだニュースはありません"
     }
   },
   "logs": {
@@ -73,19 +73,19 @@
     "copied": "Copied {count, plural, one {# line} other {# lines}}",
     "uploadError": "ログのアップロードに失敗しました。代わりにコピーを試してください。",
     "linkCopied": "ログリンクをコピーしました",
-    "copyAll": "ログをすべてコピーしてください",
+    "copyAll": "ログをすべてコピー",
     "shareTitle": "Mclo.gs (リンクコピー済み)",
-    "shareAria": "Mclo.gs にログを共有してください",
-    "searchPlaceholder": "アクセスログ…",
-    "searchAria": "検索ログ",
-    "clearSearch": "明確な検索",
+    "shareAria": "Mclo.gs にログを共有",
+    "searchPlaceholder": "ログを検索…",
+    "searchAria": "ログ検索",
+    "clearSearch": "検索をクリア",
     "empty": {
       "title": "ログはまだありません",
       "hint": "ゲームを開始すると、ログがここに出力されます."
     },
     "noMatches": {
       "title": "該当なし",
-      "hint": "「{query}」に一致するものはありません."
+      "hint": "「{query}」に一致するものはありません。"
     }
   },
   "mods": {
@@ -101,12 +101,12 @@
       "body": "FabricまたはOpalに切り替えるとModが導入可能になります。"
     },
     "table": {
-      "selectAll": "全てを選択してください",
-      "selectRow": "行を選択してください",
+      "selectAll": "全選択",
+      "selectRow": "行を選択",
       "name": "名前",
       "version": "バージョン",
       "deleteSelected": "{count, plural, one {Delete # selected} other {Delete # selected}}",
-      "noResults": "結果なし."
+      "noResults": "結果なし。"
     },
     "search": {
       "placeholder": "検索…."
@@ -115,7 +115,7 @@
       "viewOnModrinth": "Modrinth での表示"
     },
     "required": {
-      "present": "必要なModが揃っています",
+      "present": "必要なModが揃っています ({count})",
       "missing": "必要なModが{count}個不足しています",
       "warning": "必要なModが不足しているため、起動できません"
     },
@@ -176,7 +176,7 @@
       "loadFailed": "ローカルパックの読み込みに失敗しました",
       "imported": "{name}を追加しました",
       "importFailed": "パックのインポートに失敗しました",
-      "noActiveProfile": "アクティブな起動構成は選択されていません",
+      "noActiveProfile": "アクティブな起動構成が選択されていません",
       "packEnabled": "パック有効",
       "packDisabled": "パック無効",
       "toggleFailed": "パックの切り替えに失敗しました",
@@ -187,12 +187,12 @@
   },
   "profiles": {
     "count": "{count, plural, one {# profile} other {# profiles}}",
-    "confirmDelete": "このプロフィールを削除しますか?",
-    "namePlaceholder": "プロフィール名",
-    "descriptionPlaceholder": "説明",
+    "confirmDelete": "この起動構成を削除しますか?",
+    "namePlaceholder": "起動構成名",
+    "descriptionPlaceholder": "これは何用の起動構成?",
     "descriptionOptionalPlaceholder": "説明（任意）",
-    "selectProfile": "プロフィールを選択してください{name}",
-    "defaultCannotDelete": "デフォルトのプロフィールは削除できません",
+    "selectProfile": "起動構成を選択してください{name}",
+    "defaultCannotDelete": "デフォルトの起動構成は削除できません",
     "create": {
       "title": "新しく起動構成を作成する",
       "submit": "作成"
@@ -236,7 +236,7 @@
   },
   "settings": {
     "title": "設定",
-    "description": "ゲームのインストール設定を、お好みに合わせてください。",
+    "description": "ゲームやランチャーに関する設定を変更できます。",
     "memory": {
       "label": "メモリ割り当て",
       "hint": "(RAM) MB",
@@ -252,7 +252,7 @@
     },
     "language": {
       "label": "言語",
-      "hint": "（ランチャー）"
+      "hint": "（ランチャー内の言語設定）"
     }
   },
   "sidebar": {
@@ -265,7 +265,7 @@
       "play": "起動",
       "preparing": "準備中",
       "downloading": "ダウンロード中…",
-      "extracting": "抽出中…",
+      "extracting": "展開中…",
       "launching": "起動中…",
       "stop": "停止"
     }
@@ -275,7 +275,7 @@
     "searchAria": "スクリプトを検索",
     "clearSearch": "明確な検索",
     "emptyTitle": "スクリプトはまだありません",
-    "emptyHint": "クライアント用のスクリプトはこちらに表示されます",
+    "emptyHint": "クライアント用のスクリプトはここに表示されます",
     "noMatches": "該当なし",
     "noMatchesHint": "「{query}」に一致するものはありません",
     "pinned": "ピン止め",
