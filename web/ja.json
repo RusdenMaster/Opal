@@ -101,7 +101,7 @@
     },
     "features": {
       "title": "なぜOpalを選ぶの？",
-      "subtitle": "豊富な機能を備えていて、他のクライアントに戻りたくなくなるでしょう。",
+      "subtitle": "洗練された豊富な機能を備えています。他のクライアントを使う理由はありません。",
       "items": {
         "abundant": {
           "title": "多彩な機能",
@@ -326,9 +326,9 @@
         }
       },
       "success": {
-        "title": "おめでとうございます!",
+        "title": "ありがとうございます!",
         "description": "Opalへのアクセスが認められました。 <br />ようこそ！",
-        "dashboard": "ダッシュボードへ進む"
+        "dashboard": "ダッシュボードへ"
       },
       "errors": {
         "invalidKey": "コードが存在しないか、すでに有効化されています。",
@@ -368,19 +368,19 @@
       "nameLabel": "名前",
       "namePlaceholder": "{name}の素晴らしいConfig",
       "descriptionLabel": "説明",
-      "descriptionPlaceholder": "このコンフィグは何のためですか？共有したいメモがあれば追加してください。",
+      "descriptionPlaceholder": "このConfigは何のためですか？共有したいメモがあれば追加してください。",
       "saveChanges": "変更を保存",
       "copyCommand": "コマンドをコピー",
       "copiedToast": "コマンドをクリップボードにコピーしました!",
       "publish": "公開",
-      "publishTitle": "あなたのコンフィグを公開しましょう！",
-      "publishDescription": "既存の公開コンフィグを選択して更新するか、設定を新規として公開する。設定を公開すると、他のユーザーが閲覧できるようになります。",
-      "chooseConfig": "公開するコンフィグを選択",
-      "publishNew": "新しいコンフィグとして公開",
-      "clone": "非公開のコンフィグに複製",
-      "cloneTitle": "本当にそれでいいですか？",
-      "cloneDescription": "あなたはこのコンフィグを自分の非公開のコンフィグとして複製しようとしています。",
-      "cancel": "中断",
+      "publishTitle": "あなたのConfigを公開しましょう!",
+      "publishDescription": "既存の公開Configを選択して更新するか、設定を新規として公開する。設定を公開すると、他のユーザーが閲覧できるようになります。",
+      "chooseConfig": "公開するConfigを選択",
+      "publishNew": "新しいConfigとして公開",
+      "clone": "非公開のConfigに複製",
+      "cloneTitle": "実行しますか?",
+      "cloneDescription": "あなたはこのConfigを自分用の非公開のConfigとして複製しようとしています。",
+      "cancel": "キャンセル",
       "continue": "続行",
       "delete": "削除",
       "deleteTitle": "本当に実行しますか?",
@@ -399,10 +399,10 @@
       "title": "アカウント",
       "username": {
         "title": "ユーザー名",
-        "description": "これはあなたのアカウントに関連付けられているユーザー名です。",
-        "toast": "ユーザー名が変更されました！",
-        "cooldown": "ユーザーネームが再び変更できるようになるまで: {time}.",
-        "requirements": "ユーザー名は1 ~ 24までの間に設定しないといけません",
+        "description": "あなたのOpalアカウントのユーザー名です。",
+        "toast": "ユーザー名が変更されました!",
+        "cooldown": "ユーザーネームはあと{time}で変更可能になります。",
+        "requirements": "ユーザー名は1 ~ 24文字以内に設定してください。",
         "save": "変更を保存"
       },
       "email": {
@@ -521,7 +521,7 @@
       "twoFactor": {
         "title": "2段階認証コード",
         "back": "戻る",
-        "hint": "認証アプリから6桁のコードを入力、それかバックアップコード。"
+        "hint": "認証アプリから6桁のコードを入力してください。利用できない場合はバックアップコードを入力します。"
       }
     },
     "authorize": {
