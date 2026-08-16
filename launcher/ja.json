@@ -2,7 +2,7 @@
   "auth": {
     "loginSuccess": "ログインに成功しました!",
     "loginFailed": "ログインに失敗しました。もう一度お試しください。",
-    "waiting": "ログイン待ち...",
+    "waiting": "待機中...",
     "dialog": {
       "title": "ログインが必要です",
       "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
@@ -90,14 +90,14 @@
   },
   "mods": {
     "header": {
-      "description": "Modを管理する",
-      "descriptionFor": "{name}のModを管理する",
-      "descriptionForStream": "{name} ({stream}) のModを管理する",
+      "description": "Modを管理",
+      "descriptionFor": "{name}のModを管理",
+      "descriptionForStream": "{name} ({stream}) のModを管理",
       "refresh": "同期",
       "openFolder": "Modsフォルダを開く"
     },
     "vanilla": {
-      "title": "バニラ版はModが無効化されています。",
+      "title": "VanillaはModが無効化されています。",
       "body": "FabricまたはOpalに切り替えるとModが導入可能になります。"
     },
     "table": {
@@ -109,7 +109,7 @@
       "noResults": "結果なし。"
     },
     "search": {
-      "placeholder": "検索…."
+      "placeholder": "検索…"
     },
     "ruleCard": {
       "viewOnModrinth": "Modrinth での表示"
@@ -206,7 +206,7 @@
       "fabric": "Fabric"
     },
     "stream": {
-      "stable": "安定版",
+      "stable": "Stable (リリース)",
       "canary": "Canary (開発版)",
       "nightly": "Nightly (開発版)"
     },
@@ -259,8 +259,8 @@
     "selectProfile": "起動構成を選択してください",
     "release": "リリース:",
     "version": "バージョン:",
-    "hostVersion": "ホスト v{version}",
-    "launcherVersion": "ランチャー v{version}",
+    "hostVersion": "Host v{version}",
+    "launcherVersion": "Launcher v{version}",
     "status": {
       "play": "起動",
       "preparing": "準備中",

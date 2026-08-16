@@ -100,7 +100,7 @@
       "badge": "8.99$ 永久アクセス"
     },
     "features": {
-      "title": "なぜOpalを選ぶの？",
+      "title": "なぜOpalを選ぶの?",
       "subtitle": "洗練された豊富な機能を備えています。他のクライアントを使う理由はありません。",
       "items": {
         "abundant": {
@@ -196,7 +196,7 @@
       "description": "信頼できるパートナーから地域に合わせた支払い方法とサポートでOpalを購入できます。",
       "visit": "ストアを見る",
       "localized": {
-        "title": "多様な決済方法が使えます",
+        "title": "色々な決済方法が使えます",
         "description": "地域別の価格設定や上記に記載されていない特定の支払い方法をお探しですか？公式代理店が対応いたします。"
       }
     },
@@ -240,7 +240,7 @@
       "discord": "Discord",
       "docs": "説明書",
       "setup": "セットアップ",
-      "configs": "コンフィグ",
+      "configs": "Config",
       "changelog": "更新ログ",
       "activate": "有効化",
       "settings": "設定",
@@ -326,14 +326,14 @@
         }
       },
       "success": {
-        "title": "おめでとうございます!",
+        "title": "ありがとうございます!",
         "description": "Opalへのアクセスが認められました。 <br />ようこそ!",
         "dashboard": "ダッシュボードへ"
       },
       "errors": {
         "invalidKey": "コードが存在しないか、すでに有効化されています。",
         "invalidCredentials": "無効な情報",
-        "generic": "問題が発生しました。後ほど再度お試しください。",
+        "generic": "問題が発生しました。後ほどお試しください。",
         "failedCheckout": "チェックアウトに失敗しました"
       },
       "buy": {
@@ -343,7 +343,7 @@
         "appliedCreator": "クリエイターコード",
         "appliedCoupon": "クーポン",
         "card": "カード",
-        "crypto": "暗号",
+        "crypto": "暗号通貨",
         "cta": "支払い手続きを続行してください",
         "haveKey": "ライセンスキーをお持ちですか?",
         "checkFailed": "現在、このコードを確認できません。もう一度お試しください。",
@@ -359,27 +359,27 @@
     }
   },
   "configs": {
-    "title": "公開コンフィグ",
+    "title": "公開Config",
     "card": {
       "noDescription": "説明がありません",
       "ago": "前",
       "edit": "編集",
       "editTitle": "{name} を編集する",
       "nameLabel": "名前",
-      "namePlaceholder": "{name}の素晴らしいコンフィグ",
+      "namePlaceholder": "{name}の素晴らしいConfig",
       "descriptionLabel": "説明",
-      "descriptionPlaceholder": "このコンフィグをどのように使用しますか?共有したいメモがあれば追加してください。",
+      "descriptionPlaceholder": "このConfigをどのように使用しますか?共有したいメモがあれば追加してください。",
       "saveChanges": "変更を保存",
       "copyCommand": "コマンドをコピー",
       "copiedToast": "コマンドをクリップボードにコピーしました!",
       "publish": "公開",
-      "publishTitle": "あなたのコンフィグを公開しましょう!",
-      "publishDescription": "既存の公開コンフィグを選択して更新するか、新規のコンフィグとして公開することができます。設定を公開すると、他のユーザーが閲覧できるようになります。",
-      "chooseConfig": "公開するコンフィグを選択",
-      "publishNew": "新しいコンフィグとして公開",
-      "clone": "非公開のコンフィグに複製",
+      "publishTitle": "あなたのConfigを公開しましょう!",
+      "publishDescription": "既存の公開Configを選択して更新するか、新規のConfigとして公開することができます。設定を公開すると、他のユーザーが閲覧できるようになります。",
+      "chooseConfig": "公開するConfigを選択",
+      "publishNew": "新しいConfigとして公開",
+      "clone": "非公開のConfigに複製",
       "cloneTitle": "よろしいですか?",
-      "cloneDescription": "このコンフィグを自分の非公開のコンフィグとして複製します。",
+      "cloneDescription": "このConfigを自分の非公開のConfigとして複製します。",
       "cancel": "キャンセル",
       "continue": "続行",
       "delete": "削除",
@@ -401,7 +401,7 @@
         "title": "ユーザー名",
         "description": "あなたのOpalアカウントのユーザー名です。",
         "toast": "ユーザー名が変更されました!",
-        "cooldown": "ユーザーネームが再び変更できるようになるまで: {time}",
+        "cooldown": "ユーザーネームを変更するには{time}待つ必要があります。",
         "requirements": "ユーザー名は1 ~ 24文字以内に設定してください。",
         "save": "変更を保存"
       },
