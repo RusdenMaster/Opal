@@ -231,8 +231,10 @@
       "updated": "Profil güncellendi",
       "updateFailed": "Profil güncellenemedi",
       "deleted": "Profil silindi",
-      "deleteFailed": "Profil silinemedi"
-    }
+      "deleteFailed": "Profil silinemedi",
+      "openFolderFailed": "Profil klasörü açılamadı"
+    },
+    "openFolder": "Klasörü aç"
   },
   "settings": {
     "title": "Ayarlar",
@@ -244,7 +246,9 @@
     },
     "gameDirectory": {
       "label": "Oyunlar Yönetimi",
-      "hint": "(Minecraft klasörü)"
+      "hint": "(Minecraft klasörü)",
+      "openFolder": "Klasörü aç",
+      "openFolderFailed": "Klasör açılamadı"
     },
     "resolution": {
       "label": "Çözüm",
@@ -253,6 +257,52 @@
     "language": {
       "label": "Dil",
       "hint": "(Başlatma arayüzü)"
+    },
+    "storage": {
+      "label": "Depolama",
+      "hint": "(kategoriye göre disk kullanımı)",
+      "clearAll": "Tümünü temizle",
+      "clear": "Temizle",
+      "loading": "Hesaplanıyor…",
+      "gameRunningHint": "Depolamayı temizlemeden önce oyunu kapatın.",
+      "noGameDirectory": "Depolama kullanımını görmek için bir oyun dizini ayarlayın.",
+      "categories": {
+        "assets": "Varlıklar",
+        "libraries": "Kitaplıklar",
+        "javaRuntimes": "Java çalışma zamanları",
+        "clientBuilds": "İstemci derlemeleri",
+        "orphaned": "Sahipsiz profiller"
+      },
+      "confirm": {
+        "title": "{category} temizlensin mi?",
+        "titleAll": "Tüm depolama temizlensin mi?",
+        "body": "Bu işlem {size} dosyayı siler. Gerektiğinde yeniden indirilirler.",
+        "bodyAll": "Bu işlem tüm kategorilerdeki {size} veriyi siler. Gerektiğinde her şey yeniden indirilir."
+      },
+      "toast": {
+        "cleared": "{category} temizlendi",
+        "clearedAll": "Depolama temizlendi",
+        "clearFailed": "{category} temizlenemedi",
+        "clearAllFailed": "Depolama temizlenemedi"
+      }
+    },
+    "mcImport": {
+      "label": "Minecraft'tan içe aktar",
+      "hint": "(tuş atamalarınızı, görüntü ayarlarınızı ve sunucu listenizi aktarın)",
+      "button": "İçe aktar",
+      "toast": {
+        "noActiveProfile": "Aktif profil seçilmedi",
+        "notFound": "Ayrı bir Minecraft kurulumu bulunamadı",
+        "nothingToImport": "İçe aktarılacak bir şey yok",
+        "noVersion": "İçe aktarmadan önce bu profil için bir Minecraft sürümü seçin",
+        "success": "{count, plural, one {# dosya} other {# dosya}} içe aktarıldı",
+        "failed": "Minecraft ayarları içe aktarılamadı"
+      },
+      "confirm": {
+        "title": "Mevcut dosyaların üzerine yazılsın mı?",
+        "body": "Bu dosyalar bu profilde zaten var ve üzerlerine yazılacak: {files}",
+        "action": "Üzerine yaz ve içe aktar"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +317,8 @@
       "downloading": "İndiriliyor...",
       "extracting": "Çekiliyor...",
       "launching": "Başlangıç...",
-      "stop": "Durun"
+      "stop": "Durun",
+      "verifying": "Doğrulanıyor"
     }
   },
   "scripts": {
@@ -280,5 +331,12 @@
     "noMatchesHint": "“{query}” eşleşen bir şey bulunmamaktadır.",
     "pinned": "Sabitlemiş",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Minecraft ayarlarımı içe aktar",
+      "success": "Minecraft ayarlarınız içe aktarıldı",
+      "failed": "Minecraft ayarlarınız içe aktarılamadı"
+    }
   }
 }

@@ -226,9 +226,13 @@ async function translateJsxProps(chunk, target) {
   // A display prop that refuses to translate cleanly (single words like
   // "Source" reliably provoke model meta-responses) keeps its English value
   // — one untranslated table header beats failing the whole file.
+  // The result is re-embedded between double quotes, so a straight `"` in
+  // the MT output (Arabic output loves ASCII quotes) would end the attribute
+  // early and break the JSX. Typographic quotes carry no parser meaning; a
+  // trailing backslash would swallow the closing quote in object literals.
   const tryTranslate = async (value) => {
     try {
-      return await translateString(value, target);
+      return (await translateString(value, target)).replaceAll('"', '”').replace(/\\+$/, '');
     } catch {
       return value;
     }
@@ -310,6 +314,19 @@ export async function translateMdx(raw, target) {
     // the whole file.
     let result = null;
     let lastError = 'unknown';
+    // Structural token checks can't see a broken attribute (MT emitting a
+    // stray `"` inside question="…"), which otherwise only surfaces in the
+    // whole-file compile with no retry left. When the source chunk compiles
+    // standalone (bare open/close tag chunks don't), the candidate must too.
+    const chunkCompiles = async (s) => {
+      try {
+        await assertMdxCompiles(s);
+        return true;
+      } catch {
+        return false;
+      }
+    };
+    const mustCompile = /<\/?[A-Z]/.test(chunk) && (await chunkCompiles(chunk));
     for (let attempt = 0; attempt < 3 && result === null; attempt++) {
       try {
         const candidate = stripWrapperFence(await translateString(chunk, target), chunk);
@@ -321,6 +338,10 @@ export async function translateMdx(raw, target) {
           lastError = 'heading count mismatch';
           continue;
         }
+        if (mustCompile && !(await chunkCompiles(candidate))) {
+          lastError = 'chunk does not compile';
+          continue;
+        }
         result = candidate;
       } catch (e) {
         lastError = e.message;
@@ -329,6 +350,7 @@ export async function translateMdx(raw, target) {
     if (result === null && /<\/?[A-Z]/.test(chunk)) {
       result = await translateAroundTags(chunk, target);
       if (headingCount(result) !== headingCount(chunk)) result = null;
+      else if (mustCompile && !(await chunkCompiles(result))) result = null;
     }
     if (result === null && headingCount(chunk) > 0) {
       // The model keeps restyling headings — translate each heading line on

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "kind": "lang",
+  "product": "opal",
+  "stream": "stable",
+  "version": "2.1.1",
+  "locales": [
+    { "code": "en" },
+    { "code": "de" },
+    { "code": "fr" },
+    { "code": "ru" },
+    { "code": "tr" },
+    { "code": "zh" },
+    { "code": "ar" }
+  ],
+  "defaultLocale": "en"
+}

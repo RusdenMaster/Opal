@@ -231,8 +231,10 @@
       "updated": "Profil został zaktualizowany",
       "updateFailed": "Nie udało się zaktualizować profilu",
       "deleted": "Profil usunięto",
-      "deleteFailed": "Nie udało się usunąć profilu"
-    }
+      "deleteFailed": "Nie udało się usunąć profilu",
+      "openFolderFailed": "Nie udało się otworzyć folderu profilu"
+    },
+    "openFolder": "Otwórz folder"
   },
   "settings": {
     "title": "Ustawienia",
@@ -244,7 +246,9 @@
     },
     "gameDirectory": {
       "label": "Katalog gier",
-      "hint": "(Katalog Minecrafta)"
+      "hint": "(Katalog Minecrafta)",
+      "openFolder": "Otwórz folder",
+      "openFolderFailed": "Nie udało się otworzyć folderu"
     },
     "resolution": {
       "label": "Rozwiązanie",
@@ -253,6 +257,52 @@
     "language": {
       "label": "Język",
       "hint": "(interfejs startowy)"
+    },
+    "storage": {
+      "label": "Magazyn",
+      "hint": "(wykorzystanie miejsca według kategorii)",
+      "clearAll": "Wyczyść wszystko",
+      "clear": "Wyczyść",
+      "loading": "Obliczanie…",
+      "gameRunningHint": "Zamknij grę przed czyszczeniem magazynu.",
+      "noGameDirectory": "Ustaw katalog gry, aby zobaczyć wykorzystanie miejsca.",
+      "categories": {
+        "assets": "Zasoby",
+        "libraries": "Biblioteki",
+        "javaRuntimes": "Środowiska uruchomieniowe Java",
+        "clientBuilds": "Kompilacje klienta",
+        "orphaned": "Osierocone profile"
+      },
+      "confirm": {
+        "title": "Wyczyścić {category}?",
+        "titleAll": "Wyczyścić cały magazyn?",
+        "body": "Spowoduje to usunięcie {size} plików. Zostaną pobrane ponownie, gdy będą potrzebne.",
+        "bodyAll": "Spowoduje to usunięcie {size} we wszystkich kategoriach. Wszystko zostanie pobrane ponownie, gdy będzie potrzebne."
+      },
+      "toast": {
+        "cleared": "Wyczyszczono {category}",
+        "clearedAll": "Magazyn wyczyszczony",
+        "clearFailed": "Nie udało się wyczyścić {category}",
+        "clearAllFailed": "Nie udało się wyczyścić magazynu"
+      }
+    },
+    "mcImport": {
+      "label": "Importuj z Minecrafta",
+      "hint": "(przenieś swoje sterowanie, ustawienia grafiki i listę serwerów)",
+      "button": "Importuj",
+      "toast": {
+        "noActiveProfile": "Nie wybrano aktywnego profilu",
+        "notFound": "Nie znaleziono osobnej instalacji Minecrafta",
+        "nothingToImport": "Nie ma nic do zaimportowania",
+        "noVersion": "Przed importem wybierz wersję Minecrafta dla tego profilu",
+        "success": "Zaimportowano {count, plural, one {# plik} other {# plików}}",
+        "failed": "Nie udało się zaimportować ustawień Minecrafta"
+      },
+      "confirm": {
+        "title": "Nadpisać istniejące pliki?",
+        "body": "Te pliki już istnieją w tym profilu i zostaną nadpisane: {files}",
+        "action": "Nadpisz i importuj"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +317,8 @@
       "downloading": "Pobieranie...",
       "extracting": "Wyciągamy...",
       "launching": "Wymykamy...",
-      "stop": "Przestań"
+      "stop": "Przestań",
+      "verifying": "Weryfikacja"
     }
   },
   "scripts": {
@@ -280,5 +331,12 @@
     "noMatchesHint": "Nic nie pasuje do „{query}”.",
     "pinned": "Przyklejone",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Zaimportuj moje ustawienia Minecrafta",
+      "success": "Zaimportowano Twoje ustawienia Minecrafta",
+      "failed": "Nie udało się zaimportować Twoich ustawień Minecrafta"
+    }
   }
 }

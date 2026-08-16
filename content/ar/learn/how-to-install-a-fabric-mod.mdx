@@ -1,0 +1,113 @@
+---
+title: كيفية تثبيت مود Fabric (دليل 2026)
+description: "تثبيت مود Fabric يتطلب ثلاث خطوات: تثبيت Fabric Loader لإصدار Minecraft الخاص بك، وإضافة Fabric API، ثم وضع ملف الـ JAR الخاص بالـ mod في مجلد الـ mods."
+excerpt: "ثلاث خطوات لتثبيت أي تعديل Fabric: المُحمِّل، Fabric API، ثم ملف JAR الخاص بالتعديل. إليكِ الدليل الكامل وإصلاحات المشاكل عند عدم التحميل."
+date: 2026-06-04
+lastUpdated: 2026-06-04
+category: Guides
+author: trq
+faqs:
+  - q: هل أحتاج إلى Fabric API لكل تعديل؟?
+    a: تعتمد معظم تعديلات Fabric عليها، لذا قم بتثبيتها افتراضيًا. بعض التعديلات المستقلة لا تحتاج إليها، ولكن إضافتها لن تضرّ أبدًا.
+  - q: لماذا يتوقف برنامج التعديل الخاص بي عن العمل عند بدء التشغيل؟?
+    a: عادةً ما يكون السبب عدم تطابق الإصدارات أو فقدان Fabric API. تأكد من أن المُحمِّل و Fabric API والوحدة النمطية (mod) تستهدف جميعها نفس إصدار Minecraft.
+  - q: إلى أين تذهب تعديلات Fabric؟?
+    a: في مجلد التعديلات (mods) داخل مجلد Minecraft الخاص بك. على نظام ويندوز، يكون المسار هو %appdata%\.minecraft\mods. قم بتشغيل ملف تعريف Fabric مرة واحدة إذا لم يكن المجلد موجودًا بعد.
+  - q: هل يمكنني تشغيل عدة تعديلات Fabric في وقت واحد؟?
+    a: نعم. ضع كل علبة في نفس مجلد التعديلات. طالما أنها تستهدف إصدار Minecraft الخاص بك ولا تتعارض، يقوم المُحمِّل بتشغيلها معًا.
+---
+
+<KeyTakeaways>
+
+- تثبيت مود Fabric يتطلب ثلاث خطوات: الـ Loader، ثم Fabric API، وأخيراً ملف الـ JAR الخاص بالـ Mod.
+- يجب أن يستهدف كل جزء (الـ Loader، الـ API، الـ Mod) نفس إصدار Minecraft.
+- تقع الـ Mods في مجلد "mods" داخل دليل Minecraft الخاص بك.
+- معظم حالات فشل التثبيت ناتجة عن عدم تطابق الإصدارات أو فقدان Fabric API.
+
+</KeyTakeaways>
+
+تركيب تعديل [Fabric](https://fabricmc.net/) يتطلب ثلاث خطوات: تثبيت برنامج Fabric Loader الخاص بإصدار Minecraft الدقيق لديك، وضع Fabric API في مجلد التعديلات، ثم وضع ملف الـ jar الخاص بالتعديل بجانبه. قم بتشغيل ملف تعريف Fabric وسيتم تحميل التعديل. معظم مشاكل التثبيت تنشأ عن عدم تطابق الإصدارات، لذا تأكد من مطابقة كل جزء مع إصدار Minecraft نفسه.
+
+<Callout variant="info" title="التثبيت Opal">
+
+Opal تتبع نفس الخطوات: إنها Fabric تعديل. للاطلاع على الإصدار الدقيق ووسائط JVM الموصى بها، استخدم [دليل الإعداد](/ar/docs/setup).
+
+</Callout>
+
+## الخطوات الثلاث
+
+<Steps>
+
+<Step number={1} title="ثبّت مُحمّل Fabric">
+
+قم بتثبيت مُحمّل [Fabric](https://fabricmc.net/) لإصدار Minecraft الخاص بك، باستخدام مُثبِّت Fabric الرسمي أو مُشغّل يدعم Fabric. راجع [طريقة تثبيت مُحمّل Fabric](https://example.com/en/learn/how-to-install-fabric-loader) للحصول على شرح كامل
+
+</Step>
+
+<Step number={2} title="أضف واجهة برمجة التطبيقات Fabric">
+
+ضع ملف [Fabric API](/ar/learn/what-is-the-fabric-api) في مجلد التعديلات. تعتمد معظم التعديلات عليه
+
+</Step>
+
+<Step number={3} title="أضِفّ التعديل">
+
+ضع ملف تعديل (mod) في نفس مجلد التعديلات، بجانب Fabric API
+
+</Step>
+
+</Steps>
+
+ثم قم بتشغيل ملف Fabric، وسيتم تحميل التعديل عند بدء التشغيل. إذا لم يظهر، تحقق من قائمة استكشاف الأخطاء وإصلاحها أدناه.
+
+## مكان وجود مجلد التعديلات
+
+| نظام التشغيل | المسار |
+| :--- | :--- |
+| Windows | `%appdata%\.minecraft\mods` |
+| macOS | `~/Library/Application Support/minecraft/mods` |
+| Linux | `~/.minecraft/mods` |
+
+إذا لم يكن مجلد `mods` موجودًا بعد، قم بتشغيل ملف Fabric مرة واحدة وسيتم إنشاؤه لك.
+
+## متى لا يتم تحميل تعديل
+
+<Checklist>
+
+<ChecklistItem>لم يظهر المود: الـ jar في المجلد الخطأ، أو قمت بتشغيل ملف تعريف غير Fabric.</ChecklistItem>
+<ChecklistItem>تعطل عند التشغيل مع وجود خطأ في الفئة المفقودة: الـ API الخاص بـ Fabric مفقود أو الإصدار غير صحيح.</ChecklistItem>
+<ChecklistItem>عدم تطابق الإصدار: يجب أن يستهدف كل من الـ loader و الـ API الخاص بـ Fabric والمود نفس إصدار Minecraft.</ChecklistItem>
+
+</Checklist>
+
+## الأسئلة الشائعة
+
+<FAQList>
+
+<FAQItem question="هل أحتاج إلى Fabric API لكل تعديل؟?">
+
+معظم تعديلات Fabric تعتمد عليه، لذا قم بتثبيته افتراضيًا. بعض التعديلات المستقلة لا تحتاجه، ولكن إضافته لا تضر أبدًا
+
+</FAQItem>
+
+<FAQItem question="لماذا يتوقف برنامج التعديل الخاص بي عن العمل عند بدء التشغيل؟?">
+
+عادةً ما يكون السبب عدم تطابق الإصدارات أو غياب واجهة برمجة التطبيقات Fabric. تأكد من أن المحمل وواجهة برمجة التطبيقات Fabric والوحدة النمطية (mod) تستهدف جميعها نفس إصدار Minecraft
+
+</FAQItem>
+
+<FAQItem question="إلى أين تذهب تعديلات Fabric؟?">
+
+في مجلد `mods` الموجود داخل مجلد Minecraft الخاص بك (المسارات المذكورة أعلاه). قم بتشغيل ملف تعريف Fabric مرة واحدة إذا لم يكن المجلد موجودًا بعد
+
+</FAQItem>
+
+</FAQList>
+
+<Related links={[
+  { href: "/ar/learn/how-to-install-fabric-loader", label: "كيفية تثبيت مُحمِّل Fabric", description: "الخطوة الأولى، بتفصيل كامل." },
+  { href: "/ar/learn/what-is-the-fabric-api", label: "ما هي واجهة برمجة التطبيقات Fabric؟?", description: "لماذا يحتاجه كل تعديل تقريبًا." },
+  { href: "/ar/blog/essential-fabric-mods-every-player-should-have", label: "جوهريّ Fabric تعديلات", description: "قاعدة متينة لتثبيتها بمجرد الانتهاء من الإعداد." },
+]} />
+
+<CTA href="/ar/purchase">احصل على Opal، عميل Fabric، مقابل $8.99</CTA>

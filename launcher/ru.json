@@ -60,7 +60,7 @@
     "stats": {
       "userId": "Идентификатор пользователя",
       "launch": "Запуск",
-      "launches": "Запускаются",
+      "launches": "Запусков",
       "online": "Онлайн"
     },
     "news": {
@@ -130,12 +130,12 @@
   "nav": {
     "home": "Дом",
     "mods": "Моды",
-    "packs": "Коробки",
+    "packs": "Наборы",
     "profiles": "Профили",
     "changelog": "Изменения",
     "logs": "Журналы",
     "settings": "Настройки",
-    "scripts": "Сценарии"
+    "scripts": "Скрипты"
   },
   "packs": {
     "browser": {
@@ -144,7 +144,7 @@
       "import": "Импорт"
     },
     "tabs": {
-      "resource": "Ресурсные пакеты",
+      "resource": "Ресурс паки",
       "shader": "Шейдеры"
     },
     "emptyState": {
@@ -231,8 +231,10 @@
       "updated": "Профиль обновлен",
       "updateFailed": "Не удалось обновить профиль",
       "deleted": "Профиль удален",
-      "deleteFailed": "Не удалось удалить профиль"
-    }
+      "deleteFailed": "Не удалось удалить профиль",
+      "openFolderFailed": "Не удалось открыть папку профиля"
+    },
+    "openFolder": "Открыть папку"
   },
   "settings": {
     "title": "Настройки",
@@ -244,15 +246,63 @@
     },
     "gameDirectory": {
       "label": "Игровой каталог",
-      "hint": "(Папка Minecraft)"
+      "hint": "(Папка Minecraft)",
+      "openFolder": "Открыть папку",
+      "openFolderFailed": "Не удалось открыть папку"
     },
     "resolution": {
-      "label": "Резолюция",
+      "label": "Разрешение",
       "hint": "(ширина × высота)"
     },
     "language": {
       "label": "Язык",
-      "hint": "(интерфейс запуска)"
+      "hint": "(язык интерфейса)"
+    },
+    "storage": {
+      "label": "Хранилище",
+      "hint": "(использование диска по категориям)",
+      "clearAll": "Очистить всё",
+      "clear": "Очистить",
+      "loading": "Вычисление…",
+      "gameRunningHint": "Закройте игру перед очисткой хранилища.",
+      "noGameDirectory": "Укажите папку игры, чтобы увидеть использование хранилища.",
+      "categories": {
+        "assets": "Ресурсы",
+        "libraries": "Библиотеки",
+        "javaRuntimes": "Среды выполнения Java",
+        "clientBuilds": "Сборки клиента",
+        "orphaned": "Осиротевшие профили"
+      },
+      "confirm": {
+        "title": "Очистить «{category}»?",
+        "titleAll": "Очистить всё хранилище?",
+        "body": "Это удалит {size} файлов. Они будут загружены заново, когда понадобятся.",
+        "bodyAll": "Это удалит {size} по всем категориям. Всё будет загружено заново, когда понадобится."
+      },
+      "toast": {
+        "cleared": "«{category}» очищено",
+        "clearedAll": "Хранилище очищено",
+        "clearFailed": "Не удалось очистить «{category}»",
+        "clearAllFailed": "Не удалось очистить хранилище"
+      }
+    },
+    "mcImport": {
+      "label": "Импорт из Minecraft",
+      "hint": "(перенести управление, настройки видео и список серверов)",
+      "button": "Импорт",
+      "toast": {
+        "noActiveProfile": "Нет выбранного активного профиля",
+        "notFound": "Отдельная установка Minecraft не найдена",
+        "nothingToImport": "Нечего импортировать",
+        "noVersion": "Перед импортом выберите версию Minecraft для этого профиля",
+        "success": "Импортировано {count, plural, one {# файл} other {# файлов}}",
+        "failed": "Не удалось импортировать настройки Minecraft"
+      },
+      "confirm": {
+        "title": "Перезаписать существующие файлы?",
+        "body": "Эти файлы уже существуют в этом профиле и будут перезаписаны: {files}",
+        "action": "Перезаписать и импортировать"
+      }
     }
   },
   "sidebar": {
@@ -267,7 +317,8 @@
       "downloading": "Загрузка...",
       "extracting": "Извлечение...",
       "launching": "Запуск...",
-      "stop": "Прекратите"
+      "stop": "Прекратите",
+      "verifying": "Проверка"
     }
   },
   "scripts": {
@@ -280,5 +331,12 @@
     "noMatchesHint": "Ничего не соответствует “{query}”.",
     "pinned": "Приколото",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "Импортировать мои настройки Minecraft",
+      "success": "Ваши настройки Minecraft импортированы",
+      "failed": "Не удалось импортировать ваши настройки Minecraft"
+    }
   }
 }

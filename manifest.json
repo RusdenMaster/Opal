@@ -5,12 +5,13 @@
     { "code": "de", "nativeName": "Deutsch", "rtl": false },
     { "code": "ru", "nativeName": "Русский", "rtl": false },
     { "code": "tr", "nativeName": "Türkçe", "rtl": false },
-    { "code": "zh", "nativeName": "中文", "rtl": false }
+    { "code": "zh", "nativeName": "中文", "rtl": false },
+    { "code": "ar", "nativeName": "العربية", "rtl": true }
   ],
   "themes": [
     { "name": "default", "label": "Default" }
   ],
-  "sections": ["blog", "learn", "compare", "docs"],
+  "sections": ["blog", "learn", "compare"],
   "defaultLocale": "en",
   "products": {
     "opal": {

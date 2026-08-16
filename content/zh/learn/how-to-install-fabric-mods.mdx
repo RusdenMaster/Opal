@@ -1,7 +1,7 @@
 ---
 title: 如何在 Minecraft 中安装 Fabric 模组
 description: 逐步指南：安装Fabric加载器和Minecraft模组，包括Opal Client.
-excerpt: Minecraft 1.21.10 中设置 Fabric Loader 并安装模组的入门指南.
+excerpt: Minecraft 26.2 中设置 Fabric Loader 并安装模组的入门指南.
 date: 2026-04-06
 lastUpdated: 2026-06-04
 category: Setup
@@ -11,18 +11,18 @@ faqs:
     a: 是的，Opal 是一个 Fabric 模组。Opal 启动器会自动处理 Fabric 的安装，但如果手动安装，您需要先安装 Fabric Loader.
   - q: 我可以使用 Fabric 模组搭配 Forge 吗？?
     a: 不。Fabric 和 Forge 是独立的模组加载器，格式不兼容。Opal 仅需 Fabric.
-  - q: Minecraft 1.21 需要哪个版本的 Java？?
-    a: Java 21 或更高版本。旧版本（Java 8、17）将无法与现代 Minecraft 配合使用。请从 Adoptium 或 Oracle 下载 Java 21.
+  - q: Minecraft 26.2 需要哪个版本的 Java？?
+    a: Java 25 或更高版本。旧版本（Java 8、17）将无法与现代 Minecraft 配合使用。请从 Adoptium 或 Oracle 下载 Java 25.
   - q: Fabric 模组会破坏我的 Minecraft 安装吗？?
     a: No. Fabric 模组文件都保存在模组文件夹内。如果出现问题，请移除模组的 JAR 文件并启动原版游戏。您的世界和存档不受影响.
   - q: 我可以使用其他 Fabric 模组一起运行 Opal 吗？?
-    a: 通常是这样，只要其他模组之间没有冲突即可。Opal 旨在作为 Fabric 1.21.10 的独立客户端模组运行.
+    a: 通常是这样，只要其他模组之间没有冲突即可。Opal 旨在作为 Fabric 26.2 的独立客户端模组运行.
 ---
 
 <KeyTakeaways>
 
 - Fabric 是一个轻量级的模组加载器；首先安装 Fabric Loader，然后将模组 JAR 文件放入 mods 文件夹。
-- 对于 Minecraft 1.21，您需要 Java 21 或更高版本，并且在安装之前至少启动过 Minecraft 一次。
+- 对于 Minecraft 26.2，您需要 Java 25 或更高版本，并且在安装之前至少启动过 Minecraft 一次。
 - 模组 JAR 文件放在 Windows 上的 %appdata%\.minecraft\mods 目录下（macOS 和 Linux 平台有相应的目录）。
 - Opal 使用加载器系统：Opal 启动器为您处理 Fabric、身份验证、安装和更新.
 
@@ -33,7 +33,7 @@ Fabric 是一个轻量级的 [模组加载器](/zh/learn/what-is-a-minecraft-mod
 在开始之前，请确保您已具备：
 
 - **Minecraft Java 版** 已安装并至少启动过一次
-- 已安装 **Java 21** 或更高版本（MC 1.21+ 需要）
+- 已安装 **Java 25** 或更高版本（MC 26.2+ 需要）
 - 稳定的互联网连接
 ## 安装Fabric加载器
 
@@ -50,7 +50,7 @@ Fabric 是一个轻量级的 [模组加载器](/zh/learn/what-is-a-minecraft-mod
 运行您下载的 Fabric 安装程序 JAR 文件，然后确保以下设置正确：
 
 - **客户端** 选项卡已选中
-- **Minecraft 版本：** 1.21.10 (或您的目标版本)
+- **Minecraft 版本：** 26.2 (或您的目标版本)
 - **加载器版本：** 最新稳定版 (推荐使用 0.17.x)
 - **安装位置：** 您的默认 `.minecraft` 目录
 
@@ -60,7 +60,7 @@ Fabric 是一个轻量级的 [模组加载器](/zh/learn/what-is-a-minecraft-mod
 
 <Step title="验证安装">
 
-打开 Minecraft 启动器，点击 **安装** 选项卡，然后找到一个名为 **fabric-loader-1.21.10**（或类似名称）的新配置文件。选择它并点击 **游玩**。如果 Minecraft 启动时标题界面显示 Fabric 标志，那么一切正常
+打开 Minecraft 启动器，点击 **安装** 选项卡，然后找到一个名为 **fabric-loader-26.2**（或类似名称）的新配置文件。选择它并点击 **游玩**。如果 Minecraft 启动时标题界面显示 Fabric 标志，那么一切正常
 
 </Step>
 
@@ -132,7 +132,7 @@ Opal 使用**加载器系统**：您不会将完整的客户端直接放入模�
 请确保您已为正确的 Minecraft 版本安装了 Fabric。如果需要，请重新运行安装程序。
 
 ### “游戏启动时崩溃”
-- 检查您是否已安装 **Java 21**（而不是 Java 8 或 17）
+- 检查您是否已安装 **Java 25**（而不是 Java 8 或 17）
 - 从 `mods` 文件夹中删除任何不兼容的模组
 - 确保 Fabric Loader 是最新版本
 
@@ -172,9 +172,9 @@ Opal 使用**加载器系统**：您不会将完整的客户端直接放入模�
 
 </FAQItem>
 
-<FAQItem question="Minecraft 1.21 需要哪个版本的 Java？?">
+<FAQItem question="Minecraft 26.2 需要哪个版本的 Java？?">
 
-Java 21 或更高版本。旧版 Java (8, 17) 不适用于现代 Minecraft。请从 Adoptium 或 Oracle 下载 Java 21
+Java 25 或更高版本。旧版 Java (8, 17) 不适用于现代 Minecraft。请从 Adoptium 或 Oracle 下载 Java 25
 
 </FAQItem>
 
@@ -186,7 +186,7 @@ No. Fabric 模组文件都隔离在 `mods` 文件夹中。如果出现问题，�
 
 <FAQItem question="我可以使用其他 Fabric 模组一起运行 Opal 吗？?">
 
-通常是这样，只要其他模组之间没有冲突即可。Opal 旨在作为 Fabric 1.21.10 的独立客户端模组运行
+通常是这样，只要其他模组之间没有冲突即可。Opal 旨在作为 Fabric 26.2 的独立客户端模组运行
 
 </FAQItem>
 
@@ -198,4 +198,4 @@ No. Fabric 模组文件都隔离在 `mods` 文件夹中。如果出现问题，�
   { href: "/zh/blog/essential-fabric-mods-every-player-should-have", label: "必需的 Fabric 模式", description: "接下来应该把什么放在你的mods文件夹里." },
 ]} />
 
-<CTA href="/zh/purchase">获取 Fabric 1.21.10 的 Opal 插件，适用于 $8.99</CTA>
+<CTA href="/zh/purchase">获取 Fabric 26.2 的 Opal 插件，适用于 $8.99</CTA>

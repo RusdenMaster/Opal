@@ -1,6 +1,6 @@
 # resources
 
-Translations and localized content for Opal, served as a public repository.
+Translations, documentation, and localized content for [Opal](https://opal.wtf), served straight from this repo as a public, versioned data source. The client, the docs site, and the marketing site all read from here instead of shipping their own copies, so a translation or a doc page only needs to change in one place.
 
 ## Layout
 
@@ -30,4 +30,16 @@ Translations and localized content for Opal, served as a public repository.
 
 `.lang` files are UTF-8, one `key=value` per line; `#` starts a comment; the key
 is split on the first `=`; surrounding whitespace is trimmed. Resolution for a
+<<<<<<< HEAD
 display-name key is `theme → language → key`; other keys resolve `language → key`.
+=======
+display-name key is `theme → language → key`; other keys resolve `language → key`.
+
+## Related repos
+
+The Opal scripting docs under `docs/en/scripting/` describe the API these projects build on:
+
+- [scripts](https://github.com/opalclient/scripts) — example and demo scripts
+- [opal-scripting-ide](https://github.com/opalclient/opal-scripting-ide) — VS Code and JetBrains extensions
+- [opal-script-skills](https://github.com/opalclient/opal-script-skills) — an AI assistant skill package
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1

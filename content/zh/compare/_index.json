@@ -349,19 +349,6 @@
     "author": "trq"
   },
   {
-    "slug": "opal-vs-silhouette",
-    "title": "Opal 对 剪影：哪个 Minecraft 客户胜诉 2026",
-    "description": "Opal 对比 “Silhouette”：一款抛光型、价格 8.99 美元的混合客户端，拥有玻璃 UI 和 70 个模块，与基于每防作弊调整和仓库账户管理器的现代 Fabric 客户端进行对比.",
-    "excerpt": "剪影游戏调整了其反作弊系统的绕过机制，并发布了一款简洁流畅的账户管理工具。Opal 售价 8.99 美元，旨在让你在登录后立即感受到完善的体验.",
-    "date": "2026-07-13",
-    "category": "Comparison",
-    "type": "versus",
-    "competitors": [
-      "Silhouette"
-    ],
-    "author": "trq"
-  },
-  {
     "slug": "opal-vs-slinky",
     "title": "Opal 对斯林奇：哪个 Minecraft 客户胜诉 2026",
     "description": "Opal 对比 Slinky：一款 8.99 美元的 MC 26.2 混合客户端，专为BedWars和SkyWars风格的战斗而设计，与 Slinky 的原生幽灵客户端，用于 1.7.10/1.8.9 版本的排名 PvP 对比.",

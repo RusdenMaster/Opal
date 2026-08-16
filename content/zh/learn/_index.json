@@ -345,7 +345,7 @@
     "slug": "how-to-install-fabric-mods",
     "title": "如何在 Minecraft 中安装 Fabric 模组",
     "description": "逐步指南：安装Fabric加载器和Minecraft模组，包括Opal Client.",
-    "excerpt": "Minecraft 1.21.10 中设置 Fabric Loader 并安装模组的入门指南.",
+    "excerpt": "Minecraft 26.2 中设置 Fabric Loader 并安装模组的入门指南.",
     "category": "Setup",
     "date": "2026-04-06",
     "author": "trq"

@@ -2,7 +2,11 @@
   "auth": {
     "loginSuccess": "ログインに成功しました!",
     "loginFailed": "ログインに失敗しました。もう一度お試しください。",
+<<<<<<< HEAD
     "waiting": "待機中...",
+=======
+    "waiting": "ログイン待ち...",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "dialog": {
       "title": "ログインが必要です",
       "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
@@ -12,7 +16,11 @@
     "screen": {
       "title": "ログインが必要です",
       "description": "Opal Launcherを使用するには、ログインが必要です。ブラウザを開いて認証を完了します。",
+<<<<<<< HEAD
       "loginButton": "ブラウザでログイン"
+=======
+      "loginButton": "リダイレクトしてログイン"
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     },
     "checking": {
       "title": "認証確認中",
@@ -56,7 +64,11 @@
   "home": {
     "welcome": "ようこそ",
     "welcomeBack": "おかえりなさい! {name}",
+<<<<<<< HEAD
     "subtitle": "起動構成、Mod、および起動設定の管理をして、準備ができたら、ゲームを開始しましょう!",
+=======
+    "subtitle": "プロフィール、Mod、および起動設定の管理ができます。準備ができたら、ゲームを開始しましょう!",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "stats": {
       "userId": "ユーザーID",
       "launch": "起動",
@@ -90,14 +102,24 @@
   },
   "mods": {
     "header": {
+<<<<<<< HEAD
       "description": "Modを管理",
       "descriptionFor": "{name}のModを管理",
       "descriptionForStream": "{name} ({stream}) のModを管理",
+=======
+      "description": "Modを管理する",
+      "descriptionFor": "{name}のModを管理する",
+      "descriptionForStream": "{name} ({stream}) のModを管理する",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
       "refresh": "同期",
       "openFolder": "Modsフォルダを開く"
     },
     "vanilla": {
+<<<<<<< HEAD
       "title": "VanillaはModが無効化されています。",
+=======
+      "title": "バニラ版はModが無効化されています。",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
       "body": "FabricまたはOpalに切り替えるとModが導入可能になります。"
     },
     "table": {
@@ -176,7 +198,11 @@
       "loadFailed": "ローカルパックの読み込みに失敗しました",
       "imported": "{name}を追加しました",
       "importFailed": "パックのインポートに失敗しました",
+<<<<<<< HEAD
       "noActiveProfile": "アクティブな起動構成が選択されていません",
+=======
+      "noActiveProfile": "アクティブな起動構成は選択されていません",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
       "packEnabled": "パック有効",
       "packDisabled": "パック無効",
       "toggleFailed": "パックの切り替えに失敗しました",
@@ -187,9 +213,15 @@
   },
   "profiles": {
     "count": "{count, plural, one {# profile} other {# profiles}}",
+<<<<<<< HEAD
     "confirmDelete": "この起動構成を削除しますか?",
     "namePlaceholder": "起動構成名",
     "descriptionPlaceholder": "これは何用の起動構成?",
+=======
+    "confirmDelete": "このプロフィールを削除しますか?",
+    "namePlaceholder": "プロフィール名",
+    "descriptionPlaceholder": "説明",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "descriptionOptionalPlaceholder": "説明（任意）",
     "selectProfile": "起動構成を選択してください{name}",
     "defaultCannotDelete": "デフォルトの起動構成は削除できません",
@@ -206,7 +238,11 @@
       "fabric": "Fabric"
     },
     "stream": {
+<<<<<<< HEAD
       "stable": "Stable (リリース)",
+=======
+      "stable": "安定版",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
       "canary": "Canary (開発版)",
       "nightly": "Nightly (開発版)"
     },
@@ -231,12 +267,23 @@
       "updated": "起動構成を更新しました",
       "updateFailed": "起動構成を更新できませんでした",
       "deleted": "削除済み",
+<<<<<<< HEAD
       "deleteFailed": "削除できませんでした"
     }
   },
   "settings": {
     "title": "設定",
     "description": "ゲームやランチャーに関する設定を変更できます。",
+=======
+      "deleteFailed": "削除できませんでした",
+      "openFolderFailed": "プロフィールフォルダを開けませんでした"
+    },
+    "openFolder": "フォルダを開く"
+  },
+  "settings": {
+    "title": "設定",
+    "description": "ゲームのインストール設定を、お好みに合わせてください。",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "memory": {
       "label": "メモリ割り当て",
       "hint": "(RAM) MB",
@@ -244,7 +291,13 @@
     },
     "gameDirectory": {
       "label": "ゲームディレクトリ",
+<<<<<<< HEAD
       "hint": "(%appdata%/.minecraft)"
+=======
+      "hint": "(%appdata%/.minecraft)",
+      "openFolder": "フォルダを開く",
+      "openFolderFailed": "フォルダを開けませんでした"
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     },
     "resolution": {
       "label": "起動時の解像度",
@@ -252,22 +305,84 @@
     },
     "language": {
       "label": "言語",
+<<<<<<< HEAD
       "hint": "（ランチャー内の言語設定）"
+=======
+      "hint": "（ランチャー）"
+    },
+    "storage": {
+      "label": "ストレージ",
+      "hint": "（カテゴリ別のディスク使用量）",
+      "clearAll": "すべて消去",
+      "clear": "消去",
+      "loading": "計算中…",
+      "gameRunningHint": "ストレージを消去する前にゲームを終了してください。",
+      "noGameDirectory": "ストレージの使用状況を確認するには、ゲームディレクトリを設定してください。",
+      "categories": {
+        "assets": "アセット",
+        "libraries": "ライブラリ",
+        "javaRuntimes": "Javaランタイム",
+        "clientBuilds": "クライアントビルド",
+        "orphaned": "孤立した起動構成"
+      },
+      "confirm": {
+        "title": "{category}を消去しますか？",
+        "titleAll": "すべてのストレージを消去しますか？",
+        "body": "これにより{size}のファイルが削除されます。必要になった際に再度ダウンロードされます。",
+        "bodyAll": "これによりすべてのカテゴリの{size}が削除されます。必要になった際にすべて再度ダウンロードされます。"
+      },
+      "toast": {
+        "cleared": "{category}を消去しました",
+        "clearedAll": "ストレージを消去しました",
+        "clearFailed": "{category}の消去に失敗しました",
+        "clearAllFailed": "ストレージの消去に失敗しました"
+      }
+    },
+    "mcImport": {
+      "label": "Minecraftからインポート",
+      "hint": "（キー配置、映像設定、サーバーリストを引き継ぎます）",
+      "button": "インポート",
+      "toast": {
+        "noActiveProfile": "アクティブな起動構成が選択されていません",
+        "notFound": "個別のMinecraftインストールが見つかりません",
+        "nothingToImport": "インポートする項目がありません",
+        "noVersion": "インポートする前に、このプロファイルのMinecraftバージョンを選択してください",
+        "success": "{count, plural, one {#個のファイル} other {#個のファイル}}をインポートしました",
+        "failed": "Minecraftの設定のインポートに失敗しました"
+      },
+      "confirm": {
+        "title": "既存のファイルを上書きしますか？",
+        "body": "これらのファイルはこの起動構成にすでに存在し、上書きされます：{files}",
+        "action": "上書きしてインポート"
+      }
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     }
   },
   "sidebar": {
     "selectProfile": "起動構成を選択してください",
     "release": "リリース:",
     "version": "バージョン:",
+<<<<<<< HEAD
     "hostVersion": "Host v{version}",
     "launcherVersion": "Launcher v{version}",
+=======
+    "hostVersion": "ホスト v{version}",
+    "launcherVersion": "ランチャー v{version}",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "status": {
       "play": "起動",
       "preparing": "準備中",
       "downloading": "ダウンロード中…",
+<<<<<<< HEAD
       "extracting": "展開中…",
       "launching": "起動中…",
       "stop": "停止"
+=======
+      "extracting": "抽出中…",
+      "launching": "起動中…",
+      "stop": "停止",
+      "verifying": "確認中"
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     }
   },
   "scripts": {
@@ -275,10 +390,21 @@
     "searchAria": "スクリプトを検索",
     "clearSearch": "明確な検索",
     "emptyTitle": "スクリプトはまだありません",
+<<<<<<< HEAD
     "emptyHint": "クライアント用のスクリプトはここに表示されます",
+=======
+    "emptyHint": "クライアント用のスクリプトはこちらに表示されます",
+>>>>>>> 47a16b5eb89333d53647910311e6c7dffdbf41e1
     "noMatches": "該当なし",
     "noMatchesHint": "「{query}」に一致するものはありません",
     "pinned": "ピン止め",
     "installs": "{count, plural, one {install} other {installs}}"
+  },
+  "setup": {
+    "importVanilla": {
+      "label": "自分のMinecraft設定をインポートする",
+      "success": "Minecraft設定をインポートしました",
+      "failed": "Minecraft設定をインポートできませんでした"
+    }
   }
 }

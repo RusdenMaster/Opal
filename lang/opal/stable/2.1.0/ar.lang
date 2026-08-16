@@ -1,0 +1,985 @@
+# Names from the community Arabic translation pack; the rest machine-translated (LTEngine).
+# ============================================================
+# Combat
+# ============================================================
+
+# Anti Bot
+module.anti_bot.name=مضاد للبوتات
+module.anti_bot.description=فحوصات إضافية لاكتشاف البوتات عند تحديد الأهداف
+module.anti_bot.basic_checks.name=الفحوصات البسيطة
+module.anti_bot.basic_checks.description=تجميع العلامات الخفيفة الخاصة بكل لاعب والتي تُستخدم لتحديد الكيان كبوتة لأغراض الاستهداف.
+module.anti_bot.tablist.name=ليستة اللاعبين
+module.anti_bot.tablist.description=يُعلَم اللاعب بأنه برنامج نصي عندما يكون مُعرّفه الفريد (UUID) غائبًا عن قائمة علامات التبويب الخاصة بالخادم.
+module.anti_bot.no_gamemode.name=فحص وضع اللعب
+module.anti_bot.no_gamemode.description=تمت إضافة أعلام لاعب إلى قائمة علامات التبويب بدون تحديد وضع اللعبة.
+module.anti_bot.no_properties.name=فحص غياب الخصائص
+module.anti_bot.no_properties.description=تُعلَّمُ علامةٌ للاعب أُضيفَ إلى قائمة علامات التبويب بدون خصائص ملف شخصي مثل بيانات الجلد.
+module.anti_bot.illegal_pitch.name=رمي غير قانوني
+module.anti_bot.illegal_pitch.description=يُحذّر اللاعب الذي يتجاوز زاوية ميلان رأسه الحد الطبيعي البالغ 90 درجة.
+module.anti_bot.illegal_health.name=قيم صحة غير طبيعية
+module.anti_bot.illegal_health.description=تُحذّر اللاعب الذي تتجاوز صحته المُبلغ عنها الحد الأقصى لصحته.
+module.anti_bot.fake_entity_id.name=معرّف كيان مزيف
+module.anti_bot.fake_entity_id.description=يُعلِمُ عن لاعبٍ مُعرَّفُهُ سالبٌ أو يتجاوزُ المليار.
+module.anti_bot.duplicate_name.name=اسم مكرر
+module.anti_bot.duplicate_name.description=يُعلِمُ اللاعب الذي يتطابق اسمه مع اسم لاعب آخر عبر الإنترنت، ولكن بمعرّف UUID مختلف.
+module.anti_bot.invalid_ground.name=أرضية غير صالحة
+module.anti_bot.invalid_ground.description=تجميع مفتاح التبديل والعتبة لتحديد اللاعبين الذين لديهم حركة غير متسقة على أرض الملعب.
+module.anti_bot.invalid_ground.enabled.name=مُفعَّل
+module.anti_bot.invalid_ground.enabled.description=يُفعّل تتبّع اللاعبين الذين يُقدّمون تقارير من أرض الملعب أثناء تغير موقعهم الرأسي.
+module.anti_bot.invalid_ground.threshold.name=الحدّ
+module.anti_bot.invalid_ground.threshold.description=يحدد عدد مخالفات الأرض غير الصالحة التي يجب على اللاعب ارتكابها قبل أن يتم تحديده.
+module.anti_bot.not_swung.name=لم يتم الهجوم
+module.anti_bot.not_swung.description=تجميع خيار التبديل والعمر لتحديد اللاعبين الذين لا يرسلون رسومًا متحركة للضربة أبدًا.
+module.anti_bot.not_swung.enabled.name=مُفعَّل
+module.anti_bot.not_swung.enabled.description=يتم تفعيل وضع العلامة للاعبين الذين لم يرسلوا حزمة رسوم متحركة لضربة اليد بعد.
+module.anti_bot.not_swung.min_age.name=أدنى عمر
+module.anti_bot.not_swung.min_age.description=يحدد الحد الأدنى لعمر علامة الكيان قبل أن يتمكن اللاعب الذي لم يقم بتأرجح أبدًا من أن يتم تحديده.
+module.anti_bot.always_in_radius.name=دائمًا ضمن النطاق
+module.anti_bot.always_in_radius.description=تجميع خيار التبديل والنطاق لتحديد اللاعبين الذين لا يتركون مسافة محددة أبدًا.
+module.anti_bot.always_in_radius.enabled.name=مُفعَّل
+module.anti_bot.always_in_radius.enabled.description=يُفعّل وضع التنبيه للاعبين الذين لم يتجاوزوا النطاق المحدد.
+module.anti_bot.always_in_radius.range.name=المدى
+module.anti_bot.always_in_radius.range.description=يحدد المسافة بالكتل التي يجب أن يتجاوزها اللاعب ليتم إلغاء تأثير علم الإشعاع.
+module.anti_bot.latency_timing.name=توقيت الكمون
+module.anti_bot.latency_timing.description=تجميع مفتاح التبديل وعتبة الإبلاغ عن اللاعبين بناءً على توقيت تحديث زمن الاستجابة المشبوه.
+module.anti_bot.latency_timing.enabled.name=مُفعَّل
+module.anti_bot.latency_timing.enabled.description=يُفعّل وضع التنبيه للاعبين الذين تنخفض زمن استجابتهم إلى الصفر خلال الفترة الزمنية المحددة.
+module.anti_bot.latency_timing.threshold_ms.name=الحدّ (بالميلي ثانية)
+module.anti_bot.latency_timing.threshold_ms.description=يُحدّدُ الفترة الزمنية القصوى بالمللي ثانية بين تحديثات زمن الاستجابة للاعب ليتمّ وضع علامة عليه.
+
+# Aim Assist
+module.aim_assist.name=مساعدة الهدف
+module.aim_assist.description=يساعد على استهداف اللاعبين القريبين مع تصحيحات بأسلوب طبيعي
+module.aim_assist.mode.name=الوضع
+module.aim_assist.mode.description=يختار مستوى التصحيح: بسيط، متقدم، تكيفي، أو حساسية.
+module.aim_assist.silent.name=صامت
+module.aim_assist.silent.description=يُطبّق تصحيحات الهدف دون تحريك الكاميرا المرئية؛ والإيقاف يدور بمنظورك.
+module.aim_assist.targeting.name=الاستهداف
+module.aim_assist.targeting.description=تجميع إعدادات تحديد الهدف: الجزء، مجال الرؤية، المدى، السرعة، والمغناطيس.
+module.aim_assist.body_part.name=جزء الجسم
+module.aim_assist.body_part.description=يختار أي جزء من الجسم يستهدفه: الأقرب، الرأس، الصدر، أو القدمين.
+module.aim_assist.fov.name=زاوية الرؤية
+module.aim_assist.fov.description=يحدد مخروط مجال الرؤية بالدرجات، والذي يمكن ضمنه اختيار الهدف.
+module.aim_assist.range.name=المدى
+module.aim_assist.range.description=يحدد أقصى مسافة بالكتل التي يمكن عندها اختيار الهدف.
+module.aim_assist.speed.name=السرعة
+module.aim_assist.speed.description=يحدد مدى قوة تأثير تصحيح كل نقرة نحو الهدف، كنسبة مئوية.
+module.aim_assist.magnet.name=مغناطيس
+module.aim_assist.magnet.description=يزيد من قوة الشد بمجرد أن يكون مؤشر التصويب الخاص بك قريبًا من الهدف.
+module.aim_assist.visible_smoothing.name=تنعيم عند الرؤية
+module.aim_assist.visible_smoothing.description=إعدادات الهدف المرئي للمجموعات: معامل التنعيم و أقصى دوران لكل تكة.
+module.aim_assist.smoothing.name=التنعيم
+module.aim_assist.smoothing.description=يحدد مدى تباعد التعديلات المرئية التدريجية؛ القيم المنخفضة تجعل الحركة أكثر سلاسة.
+module.aim_assist.max_rotation/tick.name=الحد الأقصى للدوران لكل تيك
+module.aim_assist.max_rotation/tick.description=عدد الدرجات التي يمكن أن تدور بها الرؤية المرئية في نقرة واحدة.
+module.aim_assist.curve.name=الانحناء
+module.aim_assist.curve.description=تجميع إعدادات المنحنى المتقدمة: تنعيم المنحنى والتسارع.
+module.aim_assist.curve_smoothing.name=تنعيم المنحنى
+module.aim_assist.curve_smoothing.description=يحدد القاسم الذي يشكل منحنى التصحيح؛ القيم الأعلى تسهل الحركة بشكل أكبر.
+module.aim_assist.acceleration.name=التسارع
+module.aim_assist.acceleration.description=يحدد أسّ المنحنى الذي يزيد من قوة التصحيح كلما اتسع الفارق عن الهدف.
+module.aim_assist.randomization.name=العشوائية
+module.aim_assist.randomization.description=تجميع إعدادات التباين لكل نقرة: تباين السرعة، والارتعاش، والتجاوز.
+module.aim_assist.speed_variance.name=تفاوت السرعة
+module.aim_assist.speed_variance.description=يحدد نطاق الزيادة/النقصان العشوائي المضاف إلى سرعة التصحيح في كل تكة.
+module.aim_assist.yaw_jitter.name=تذبذب الدوران الأفقي
+module.aim_assist.yaw_jitter.description=يضيف هذا القدر من درجات التباين الأفقي العشوائي إلى التصحيحات.
+module.aim_assist.pitch_jitter.name=تذبذب الدوران العمودي
+module.aim_assist.pitch_jitter.description=يضيف هذا القدر من الدرجات العشوائية للتغير الرأسي إلى التصحيحات.
+module.aim_assist.overshoot.name=التجاوز
+module.aim_assist.overshoot.description=دع التصحيحات تمرّ بالهدف لفترة وجيزة حتى زاوية تصل إلى هذا المقدار قبل الاستقرار.
+module.aim_assist.adaptive.name=تكيفي
+module.aim_assist.adaptive.description=تجميع إعدادات التكيف: الحد الأقصى للقوة والحساسية التكيفية.
+module.aim_assist.max_strength.name=أقصى قوة
+module.aim_assist.max_strength.description=قد ينطبق وضع الضرب المتكيف على قوة التصحيح.
+module.aim_assist.adaptive_sensitivity.name=حساسية تكيفية
+module.aim_assist.adaptive_sensitivity.description=يحدد مدى سرعة قيام الوضع التكيفي بزيادة المقاومة نحو الحد الأقصى.
+module.aim_assist.sensitivity.name=حساسية تكيفية
+module.aim_assist.sensitivity.description=تجميع إعدادات وضع الحساسية: المضاعف، ونطاق الرؤية النشط، ومقياس المسافة.
+module.aim_assist.sens_multiplier.name=مضاعف الحساسية
+module.aim_assist.sens_multiplier.description=يضاعف حساسية الماوس بهذه القيمة عند استهداف هدف.
+module.aim_assist.activation_fov.name=زاوية التفعيل
+module.aim_assist.activation_fov.description=يقتصر تأثير تقليل الحساسية على الهدف الموجود داخل هذا المخروط.
+module.aim_assist.scale_with_distance.name=التدرج مع المسافة
+module.aim_assist.scale_with_distance.description=يُقوّي تقليل الحساسية كلما اقترب هدف التصويب من مركز الهدف.
+module.aim_assist.requirements.name=المتطلبات
+module.aim_assist.requirements.description=تجميع الشروط: يتطلب نقرة، يتطلب سلاحًا، فحص الرؤية، أفقيًا فقط.
+module.aim_assist.require_click.name=يتطلب النقر
+module.aim_assist.require_click.description=يُطلب الضغط باستمرار على مفتاح الهجوم لتفعيل المساعدة في التصويب وتطبيق التصحيحات.
+module.aim_assist.require_weapon.name=يتطلب سلاح
+module.aim_assist.require_weapon.description=يُطلب حمل سلاح لتفعيل المساعدة في التصويب وتطبيق التصحيحات.
+module.aim_assist.visibility_check.name=فحص الرؤية
+module.aim_assist.visibility_check.description=يُمكنه المساعدة فقط نحو الأهداف التي لا تحجبها رؤيتك.
+module.aim_assist.horizontal_only.name=أفقي فقط
+module.aim_assist.horizontal_only.description=تقتصر التصحيحات على الانحراف الأفقي، تاركةً الميل الرأسي دون تغيير.
+module.aim_assist.draw_fov.name=عرض مجال الرؤية
+module.aim_assist.draw_fov.description=يعرض دائرة على الشاشة توضح مخروط مجال الرؤية (FOV) المحدد.
+module.aim_assist.targets.name=الأهداف
+module.aim_assist.targets.description=يحدد أنواع الكيانات المؤهلة للاستهداف.
+
+# Auto Clicker
+module.auto_clicker.name=النقر التلقائي
+module.auto_clicker.description=ينقر لك تلقائيًا
+module.auto_clicker.mode.name=الوضع
+module.auto_clicker.mode.description=يختار نموذج معدل النقر: بسيط، نطاق متقدم، أو ضبط ذاتي تكيفي.
+module.auto_clicker.cps.name=عدد النقرات في الثانية
+module.auto_clicker.cps.description=يحدد عدد النقرات المستهدفة في الثانية المستخدمة في الوضع البسيط.
+module.auto_clicker.cps_range.name=مدى النقرات في الثانية
+module.auto_clicker.cps_range.description=يضبط الحدود الدنيا والعليا لعدد النقرات في الثانية بشكل عشوائي بين كل نقرة.
+module.auto_clicker.variance_refresh.name=تحديث التفاوت
+module.auto_clicker.variance_refresh.description=يحدد عدد النقرات التي تمر قبل إعادة ترتيب مضاعف تباين معدل الانجراف.
+module.auto_clicker.drops.name=الهبوطات
+module.auto_clicker.drops.description=يسمح بانخفاضات موجزة وعرضية طفيفة دون معدل النقر المستهدف.
+module.auto_clicker.drop_chance.name=فرصة الهبوط
+module.auto_clicker.drop_chance.description=يحدد نسبة الاحتمال لكل نقرة لتطبيق انخفاض في المعدل.
+module.auto_clicker.spikes.name=القفزات
+module.auto_clicker.spikes.description=يُمكِّن من اندفاعات قصيرة ومؤقتة أعلى من معدل النقر المستهدف.
+module.auto_clicker.spike_chance.name=فرطة القفزات
+module.auto_clicker.spike_chance.description=يحدد نسبة الاحتمال لكل نقرة لتطبيق دفعة زيادة في المعدل.
+module.auto_clicker.threshold.name=الحد
+module.auto_clicker.threshold.description=يحدد درجة النجاح أو الفشل. يجب أن يصل الوضع التكيفي إلى هذه الدرجة قبل أن يؤثر على معدل نقره.
+module.auto_clicker.increment.name=التزايد
+module.auto_clicker.increment.description=يحدد مقدار تعديل وضع التكيف لمعدل النقر والنتيجة في كل تغيير.
+module.auto_clicker.mouse_buttons.name=أزرار الفأرة
+module.auto_clicker.mouse_buttons.description=يختار أزرار الماوس التي سيقوم برنامج النقر التلقائي بتشغيلها، الأيسر والأيمن.
+module.auto_clicker.require_pressed.name=يتطلب الضغط
+module.auto_clicker.require_pressed.description=يُفعَّل تلقائيًا الزر فقط عندما تضغط عليه فعليًا.
+module.auto_clicker.weapons_only.name=الأسلحة فقط
+module.auto_clicker.weapons_only.description=يصدر الصوت فقط عند حمل سيف أو فأس في اليد الرئيسية.
+module.auto_clicker.block_hit.name=الضرب أثناء التصدي
+module.auto_clicker.block_hit.description=يسمح لبرنامج النقر التلقائي بالاستمرار في العمل أثناء حظر التطبيق.
+module.auto_clicker.requirements.name=المتطلبات
+module.auto_clicker.requirements.description=تجميع شروط النقر: يتطلب الضغط، الأسلحة فقط، وحظر الإصابة.
+
+# Kill Aura
+module.kill_aura.name=كيل أورا
+module.kill_aura.description=يهاجم الكيانات القريبة تلقائيًا
+module.kill_aura.mode.name=الوضع
+module.kill_aura.mode.description=يختار ما إذا كان سيستهدف هدفًا واحدًا أو سيتبدّل بين الأهداف بناءً على الصحة والأحدث.
+module.kill_aura.rotation_range.name=مدى الدوران
+module.kill_aura.rotation_range.description=يحدد أقصى مسافة بالكتل التي يتم البحث فيها وتوجيه الهدف نحوها.
+module.kill_aura.swing_range.name=مدى الهجوم
+module.kill_aura.swing_range.description=يحدد أقصى مسافة بالكتل التي يتم عندها إصدار حركات الأذرع الوهمية الإضافية.
+module.kill_aura.hide_fake_swings.name=إخفاء الضربات الوهمية
+module.kill_aura.hide_fake_swings.description=تتخطى عملية العرض المتأرجح الوهمي عندما لا تنظر مباشرةً إلى كائن ما.
+module.kill_aura.require_attack_key.name=يتطلب زر الهجوم
+module.kill_aura.require_attack_key.description=يتم تشغيل الوحدة النمطية فقط أثناء الضغط باستمرار على مفتاح الهجوم.
+module.kill_aura.require_weapon.name=يتطلب سلاح
+module.kill_aura.require_weapon.description=يشتغل الوحدة فقط عندما يحمل السيف أو الفأس أو المعول.
+module.kill_aura.override_raycast.name=تجاوز فحص خط الرؤية
+module.kill_aura.override_raycast.description=يستبدل نتيجة إصابة الهدف بالصليب بمسار الهدف المحدد، لتسجيل الهجمات عليه.
+module.kill_aura.tick_lookahead.name=استباق التيك
+module.kill_aura.tick_lookahead.description=يُحافظ على دوران الخروج دون تغيير ويؤكد الهدف باستخدام شعاع قبل الهجوم.
+module.kill_aura.fov.name=زاوية الرؤية
+module.kill_aura.fov.description=تحديد الاستهداف بالكائنات داخل زاوية المخروط المرئي بالدرجات أمامك.
+module.kill_aura.teams.name=فحص الفريق
+module.kill_aura.teams.description=يمنع استهداف اللاعبين من فريقك.
+module.kill_aura.visuals.name=المؤشرات البصرية
+module.kill_aura.visuals.description=تُفعِّل المؤشرات المرئية، بما في ذلك مربع مُرسم حول الهدف الحالي.
+module.kill_aura.requirements.name=المتطلبات
+module.kill_aura.requirements.description=تجمع بين شرطي "الإمساك بالسلاح" و "الإمساك بمفتاح الهجوم" اللذين يتحكمان في الوحدة.
+
+# Velocity
+module.velocity.name=لاندفاع
+module.velocity.description=يقلّل أو يُلغي سرعة حركة اللاعب عند تلقي الضربات
+module.velocity.mode.name=الوضع
+module.velocity.mode.description=يختار أي وضع لتقليل السرعة سيتم تطبيقه: عادي، أو حارس المراقبة، أو MushMC.
+
+# Attack Delay
+module.attack_delay.name=تأخير الهجوم
+module.attack_delay.description=يزيل التأخير بعد تفويت الضربة
+module.attack_delay.max_cooldown.name=أقصى زمن انتظار
+module.attack_delay.max_cooldown.description=يحدد عدد التكرارات التي يتم فيها الحد الأقصى لوقت الاستعداد للهجوم بعد الفشل، حيث أن القيمة 0 تلغيه.
+
+# Auto Head
+module.auto_head.name=الرأس التلقائي
+module.auto_head.description=يأكل الرؤوس الذهبية تلقائيًا
+module.auto_head.heal_delay.name=تأخير الشفاء
+module.auto_head.heal_delay.description=يضبط فترة التهدئة بالمللي ثانية التي ينتظرها الموديل بين أكل الرؤوس الذهبية.
+module.auto_head.health.name=نقاط الصحة
+module.auto_head.health.description=يُعيِّن النسبة المئوية للصحة التي تقل عن أو تساويها، عندها يبدأ الوحدة بتناول رأس ذهبي للشفاء.
+
+# Block
+module.block.name=التصدي(البلوك)
+module.block.description=يسمح بإجراءات غير شرعية أثناء التصدي أو يقوم بالتصدي تلقائيًا
+module.block.blocking.name=يتصدى
+module.block.blocking.description=يسمح للاعب بمواصلة التأرجح والهجوم أثناء التصدّي.
+module.block.enabled.name=مُفعَّل
+module.block.enabled.description=يُفعِّل الحماية التلقائية بالسيف أو الدرع عند وجود هدف في نطاق الوصول.
+module.block.require_attack_key.name=يتطلب زر الهجوم
+module.block.require_attack_key.description=يُقيّد الإطلاق التلقائي بحيث يتم فقط عند الضغط باستمرار على مفتاح الهجوم.
+module.block.block_range.name=نطاق التصدي
+module.block.block_range.description=يحدد المسافة، بالأحجار، التي عندها يتم تفعيل الحظر التلقائي للهدف.
+module.block.allow_swing_while....name=...السماح بالضرب أثناء
+module.block.allow_swing_while....description=تجميع زر التبديل الذي يسمح للاعب بالتدحرج والهجوم أثناء الحماية.
+module.block.auto_block.name=تصدي تلقائي
+module.block.auto_block.description=تجميع مفتاح القفل التلقائي وإعدادات مفتاح الهجوم ونطاقه الفرعية.
+
+# Lag Range
+module.lag_range.name=نطاق اللاج
+module.lag_range.description=يقوم بالتخزين المؤقت عند الاقتراب من لاعب لضمان ضربة مؤكدة
+module.lag_range.start_buffering_at.name=بدء التخزين المؤقت عند
+module.lag_range.start_buffering_at.description=المسافة بالأحياء إلى الهدف التي تبدأ عندها حزم البيانات الصادرة في التوقف.
+module.lag_range.release_range.name=نطاق الإطلاق
+module.lag_range.release_range.description=المسافة بالكتل إلى الهدف التي يتم عندها تحرير الحزم المحمولة.
+module.lag_range.release_timer.name=مؤقت الإطلاق
+module.lag_range.release_timer.description=يتم الاحتفاظ بأقصى حزم بالمللي ثانية قبل الإطلاق، بغض النظر عن النطاق.
+module.lag_range.release_options.name=خيارات الإطلاق
+module.lag_range.release_options.description=تُجمّع نطاق الإطلاق ومؤقّت الإطلاق اللذين يتحكمان في وقت إطلاق الحزم المحتفظ بها.
+
+# Piercing
+module.piercing.name=الاختراق
+module.piercing.description=يتيح لك إصابة اللاعبين باختراق الكتل
+
+# Reach
+module.reach.name=المدى
+module.reach.description=يتيح لك التفاعل أو الهجوم من مسافة أبعد
+module.reach.entity_interaction_range.name=مدى التفاعل مع الكيانات
+module.reach.entity_interaction_range.description=يحدد أقصى مسافة بالكتل يمكنك من خلالها مهاجمة الكيانات أو التفاعل معها.
+module.reach.block_interaction_range.name=مدى التفاعل مع المكعبات
+module.reach.block_interaction_range.description=يحدد أقصى مسافة بالكتل يمكنك من خلالها التفاعل مع الكتل.
+
+# TP Aura
+module.tp_aura.name=اورا الانتقال الآني
+module.tp_aura.description= Hypixel يتيح استخدام آلية الانتقال الاني على
+
+# WTap
+module.wtap.name=إعادة بدء الجري
+module.wtap.description=يعيد ضبط الجري لزيادة الارتداد عند الضرب
+module.wtap.chance.name=الاحتمالية
+module.wtap.chance.description=النسبة المئوية لاحتمال أن يؤدي هجوم معين إلى تحرير المفتاح الأمامي.
+module.wtap.delay_ticks.name=التأخير بالتيك
+module.wtap.delay_ticks.description=عدد التكرارات التي يجب الانتظار بعدها بعد الهجوم قبل تحرير مفتاح التحرك إلى الأمام.
+module.wtap.release_ticks.name=الإطلاق بالتيك
+module.wtap.release_ticks.description=عدد النقرات التي يبقى فيها مفتاح التحريك مضغوطًا قبل استئناف الحركة.
+module.wtap.only_sprinting.name=فقط أثناء الجري
+module.wtap.only_sprinting.description=يُفعّل الإطلاق فقط أثناء ركض اللاعب.
+module.wtap.only_ground.name=فقط على الأرض
+module.wtap.only_ground.description=يُفعّل الإطلاق فقط عندما يكون اللاعب على الأرض.
+
+# ============================================================
+# Movement
+# ============================================================
+
+# Clipper
+module.clipper.name=كليبر
+module.clipper.description=يتيح لك إمكانية الانتقال للأعلى أو للأسفل عند توفر ذلك
+module.clipper.limit_distance.name=حد المسافة
+module.clipper.limit_distance.description=حدّد المسح الأفقي والرأسي عند حوالي عشرة مربعات بدلاً من الوصول إلى ارتفاع بناء العالم.
+module.clipper.upwards.name=Upwards
+module.clipper.upwards.description=يُمكِّن من البحث والتثبيت وصولًا إلى المنصة التي تلي منصتك أثناء تواجدك على الأرض.
+
+# Flight
+module.flight.name=الطيران
+module.flight.description=يتيح لك الطيران
+module.flight.mode.name=الوضع
+module.flight.mode.description=يختار استراتيجية الطيران: طيران مجاني تقليدي، انزلاق كرة النار، أو المشي في الهواء.
+
+# Long Jump
+module.long_jump.name=القفزة الطويلة
+module.long_jump.description=يتيح لك القفز لمسافة أبعد
+module.long_jump.mode.name=الوضع
+module.long_jump.mode.description=يختار التقنية التي يستخدمها الوحدة لدفعك إلى الأمام.
+
+# No Slow
+module.no_slow.name=إلغاء التباطؤ
+module.no_slow.description=يزيل تباطؤ اللعبة الأساسي مثل استخدام الأغراض
+module.no_slow.mode.name=الوضع
+module.no_slow.mode.description=يختار الاستراتيجية التي يستخدمها المكوّن لإزالة التباطؤ عند استخدام عنصر.
+module.no_slow.allow_sprinting.name=السماح بالجري
+module.no_slow.allow_sprinting.description=يُبقيك تركض بينما تستخدم عنصرًا بدلًا من التباطؤ إلى المشي.
+
+# Movement Recorder
+module.movement_recorder.name=مسجل الحركة
+module.movement_recorder.description=يسجل حركة اللاعب ويعيد تشغيلها.
+module.movement_recorder.show_breadcrumbs.name=إظهار أثر الحركة
+module.movement_recorder.show_breadcrumbs.description=يرسم مسار فتات الخبز الذي يتتبع المسار المسجل عبر العالم.
+module.movement_recorder.show_block_highlights.name=إظهار تمييز المكعبات
+module.movement_recorder.show_block_highlights.description=يُحدّد نقاط بداية ونهاية التسجيل بإبرازات متلاشية في العالم.
+module.movement_recorder.dynamic_island.name=الجزيرة الديناميكية
+module.movement_recorder.dynamic_island.description=يُظهر أداة التحكم في الجزيرة الديناميكية للمسجل أثناء التسجيل أو التشغيل.
+module.movement_recorder.mode.name=الوضع
+module.movement_recorder.mode.description=يختار ما إذا كان المُسجِّل يسجل الحركة أو يعيد تشغيلها.
+module.movement_recorder.loop_playback.name=تشغيل متكرر
+module.movement_recorder.loop_playback.description=يعيد تشغيل التسجيل من البداية عند انتهاء التسجيل.
+module.movement_recorder.teleport_to_start.name=الانتقال إلى البداية
+module.movement_recorder.teleport_to_start.description=يُعيد ضبط موضعك مباشرةً إلى نقطة بداية التسجيل عند بدء التشغيل.
+module.movement_recorder.wait_for_position.name=الانتظار حتى الوصول للموقع
+module.movement_recorder.wait_for_position.description=ينتظر حتى تصل إلى نقطة البداية قبل بدء التشغيل.
+module.movement_recorder.rotation_speed.name=سرعة الدوران
+module.movement_recorder.rotation_speed.description=يحدد مدى سرعة دوران العرض نحو الزوايا المسجلة أثناء التشغيل.
+module.movement_recorder.default_name.name=الاسم الافتراضي
+module.movement_recorder.default_name.description=يُحدّد الاسم الافتراضي الذي يُعطى للتسجيل الجديد المحفوظ.
+module.movement_recorder.path_detail.name=تفاصيل المسار
+module.movement_recorder.path_detail.description=يحدد مقدار التفاصيل التي يتم الاحتفاظ بها عند تبسيط المسار المسجل.
+module.movement_recorder.filter_by_server.name=تصفية حسب السيرفر
+module.movement_recorder.filter_by_server.description=يُحدِّد قائمة التسجيلات لتقتصر على تلك المحفوظة على الخادم الحالي.
+module.movement_recorder.auto_trim.name=قص تلقائي
+module.movement_recorder.auto_trim.description=يُزيل تلقائيًا الإطارات شبه الثابتة من نهاية التسجيل.
+module.movement_recorder.trim_threshold.name=حد القص
+module.movement_recorder.trim_threshold.description=يحدد المسافة التي تقل عنھا الحركات التي تُعتبر ثابتة لتقليم تلقائي.
+module.movement_recorder.show_info_panel.name=إظهار لوحة المعلومات
+module.movement_recorder.show_info_panel.description=يعرض لوحة معلومات HUD الخاصة بالمسجل على الشاشة.
+module.movement_recorder.panel_pos.name=موضع اللوحة
+module.movement_recorder.panel_pos.description=يضبط موضع لوحة معلومات المسجل على الشاشة.
+module.movement_recorder.visuals.name=العرض المرئي
+module.movement_recorder.visuals.description=تجميع عناصر التنقل، وإبراز الكتلة، ومفاتيح تشغيل الواجهة الديناميكية.
+module.movement_recorder.playback.name=التشغيل
+module.movement_recorder.playback.description=تجمع بين إعدادات الحلقة، والنقل الآني، والانتظار في الموضع، وسرعة تشغيل الدوران.
+module.movement_recorder.recording.name=التسجيل
+module.movement_recorder.recording.description=تجمع بين الاسم الافتراضي، وتفاصيل المسار، ومرشح الخادم، وإعدادات تقليم التسجيل.
+module.movement_recorder.overlay.name=الطبقة العلوية
+module.movement_recorder.overlay.description=تجميع تبديل لوحة المعلومات وإعدادات موضعها الظاهر.
+
+# Speed
+module.speed.name=السرعة
+module.speed.description=يزيد من سرعة حركة اللاعب
+module.speed.mode.name=الوضع
+module.speed.mode.description=يختار الاستراتيجية السرعية التي يطبقها الوحدة لزيادة حركتك الأفقية.
+
+# Eagle
+module.eagle.name=إيجل
+module.eagle.description=ينحني تلقائيًا عند حافة البلوكات
+module.eagle.only_blocks.name=فقط البلوكات
+module.eagle.only_blocks.description=يتم التسلل التلقائي فقط أثناء حمل كتلة قابلة للوضع في يدك الرئيسية أو الإضافية.
+module.eagle.only_right_click.name=عند النقر بالزر الأيمن فقط
+module.eagle.only_right_click.description=فقط التسلل التلقائي أثناء الضغط على مفتاح الاستخدام (النقر الأيمن).
+
+# Fast Stop
+module.fast_stop.name=الإيقاف السريع
+module.fast_stop.description=يجعلك تتوقف عن الحركة بشكل أسرع
+module.fast_stop.conditions.name=الشروط
+module.fast_stop.conditions.description=يختار ما إذا كان التباطؤ الأسرع ينطبق على الأرض، أو في الهواء، أو كليهما.
+module.fast_stop.multiplier.name=المضاعف
+module.fast_stop.multiplier.description=يضبط العامل من 0 إلى 1 الذي يتم به قياس السرعة الأفقية عند تحرير الحركة.
+
+# Inventory Move
+module.inventory_move.name=تحرك الحقيبة
+module.inventory_move.description=يتيح لك التحرك أثناء فتح الحقيبة
+
+# Jump Cooldown
+module.jump_cooldown.name=تأخير القفز
+module.jump_cooldown.description=يغيّر تأخير القفز الافتراضي
+module.jump_cooldown.max_cooldown.name=أقصى زمن انتظار
+module.jump_cooldown.max_cooldown.description=يحدد عدد التكتات بين القفزات، حيث أن القيمة 0 تزيل التأخير بحيث تقفز في كل تكتة.
+
+# Movement Fix
+module.movement_fix.name=إصلاح الحركة
+module.movement_fix.description=يربط حركتك باتجاه دورانك
+module.movement_fix.mode.name=الوضع
+module.movement_fix.mode.description=اختر الوضع العادي (إعادة إسقاط المدخلات على اتجاه نظرك) أو الركض فقط (تثبيت الركض).
+module.movement_fix.packet_only.name=باكيت فقط
+module.movement_fix.packet_only.description=في وضع التشغيل السريع فقط، تتم إزالة التشغيل السريع من الحزمة الصادرة بدلاً من حالة العميل.
+
+# Phase
+module.phase.name=العبور
+module.phase.description=يتيح لك اختراق الجدران
+module.phase.auto_disable.name=الإيقاف التلقائي
+module.phase.auto_disable.description=أوقف الوحدة بمجرد تجاوز الجدار والخروج من الكتلة.
+
+# Safe Walk
+module.safe_walk.name=المشي الآمن
+module.safe_walk.description=يتيح لك التحرك دون السقوط من حواف البلوكات
+module.safe_walk.holding_block_check.name=فحص حمل البلوك
+module.safe_walk.holding_block_check.description=يمنع فقط السقوط من الحواف أثناء حمل عنصر كتلة قابل للوضع.
+module.safe_walk.direction_check.name=فحص الاتجاه
+module.safe_walk.direction_check.description=يمنع فقط السقوط من الحواف أثناء الضغط على مفتاح حركة.
+
+# Spider
+module.spider.name=عنكبوت
+module.spider.description=يتيح لك تسلق الجدران
+module.spider.speed.name=السرعة
+module.spider.speed.description=يحدد السرعة الرأسية المطبقة عند الضغط على الحائط للتسلق.
+
+# Sprint
+module.sprint.name=الركض
+module.sprint.description=يغيّر آلية الجري في اللعبة
+module.sprint.omnidirectional.name=متعدد الاتجاهات
+module.sprint.omnidirectional.description=يسمح بالركض السريع في أي اتجاه للحركة، وليس فقط عند التحرك إلى الأمام.
+module.sprint.keep_sprint.name=الحفاظ على الجري
+module.sprint.keep_sprint.description=يمنع الركض من التوقف بسبب الإجراءات التي عادةً ما تلغيه.
+
+# Strafe
+module.strafe.name=الحركة الجانبية
+module.strafe.description=يزيد من الحركة الجانبية أثناء القتال
+module.strafe.conditions.name=الشروط
+module.strafe.conditions.description=يُحدِّد هذا الخيار متى يتم تطبيق تصحيح الانزلاق: على الأرض، أو في الهواء، أو كليهما.
+module.strafe.ncp_max.name=NCPالحد الأقصى لـ
+module.strafe.ncp_max.description=تزيد من سرعة حركتك إلى حد أقصى ثابت أثناء التحرك الجانبي.
+module.strafe.strength.name=القوة
+module.strafe.strength.description=مقدار الانحراف الذي يوجه حركتك نحو اتجاه الإدخال، كنسبة مئوية.
+
+# Target Strafe
+module.target_strafe.name=المراوغة حول الهدف
+module.target_strafe.description=يجعلك تتحرك بشكل دائري حول الأهداف
+module.target_strafe.strafe_mode.name=نمط المراوغة
+module.target_strafe.strafe_mode.description=يختار كيف تدور حركة الهدف: بالدوران حوله أو بالبقاء خلفه مباشرةً.
+module.target_strafe.requirements.name=المتطلبات
+module.target_strafe.requirements.description=تفعيل عند الانزلاق: فقط أثناء الضغط على زر القفز، وفقط مع تشغيل وحدة السرعة.
+module.target_strafe.range.name=النطاق
+module.target_strafe.range.description=يحدد المسافة بالكتل التي تُحافظ عليها من الهدف أثناء الانزلاق حوله.
+module.target_strafe.show_ring.name=إظهار الحلقة
+module.target_strafe.show_ring.description=يرسم دائرة على الأرض حول الهدف أثناء انزلاقك الجانبي.
+module.target_strafe.auto_3rd_person.name=منظور الشخص الثالث التلقائي
+module.target_strafe.auto_3rd_person.description=يُبدّل الكاميرا إلى منظور الشخص الثالث أثناء الانزلاق الجانبي، ثم يعود إلى منظور الشخص الأول بعد ذلك.
+
+# ============================================================
+# Utility
+# ============================================================
+
+# Disabler
+module.disabler.name=المعطّل
+module.disabler.description=يقلّل من قوة نظام مكافحة الغش
+module.disabler.mode.name=الوضع
+module.disabler.mode.description=يختار برنامج الإبطال الهدف من برامج مكافحة الغش، سواء وضع Watchdog أو وضع Cubecraft.
+
+# Chest Stealer
+module.chest_stealer.name=سارق الصناديق
+module.chest_stealer.description=يسحب فقط العناصر المفيدة أو المطوّرة من الصناديق
+module.chest_stealer.smart.name=ذكي
+module.chest_stealer.smart.description=يقتصر على الأخذ من الأشياء التي تزيد قيمتها على ما تملك بالفعل، بدلًا من الاستيلاء على كل شيء.
+module.chest_stealer.highlight_items.name=تمييز العناصر
+module.chest_stealer.highlight_items.description=يُبرز بصريًا فتحات الدرع التي يرى وضع الذكاء أنها تستحق التفعيل.
+module.chest_stealer.delay.name=التأخير
+module.chest_stealer.delay.description=يضبط فترة الانتظار العشوائية بالمللي ثانية بين كل عنصر يتم سحبه من الصندوق.
+
+# Auto Armor
+module.auto_armor.name=الدروع التلقائية
+module.auto_armor.description=يقوم بارتداء أفضل دروع ممكنة تلقائيًا
+module.auto_armor.delay.name=التأخير
+module.auto_armor.delay.description=يحدد المدة الزمنية بالمللي ثانية للفترة الزمنية بين كل عملية تزويد أو سقوط درع.
+
+# Inventory Manager
+module.inventory_manager.name=مدير الحقيبة
+module.inventory_manager.description=يدير محتويات الحقيبة الخاصة بك
+module.inventory_manager.delay.name=التأخير
+module.inventory_manager.delay.description=يحدد الميلي ثانية بين تحركات المخزون، مع توزيع عشوائي ضمن النطاق.
+module.inventory_manager.slots.name=الخانات
+module.inventory_manager.slots.description=يختار أنواع العناصر التي سيتم ترتيبها في فتحات شريط الأدوات المفضل لديه.
+module.inventory_manager.sword_slot.name=خانة السيف
+module.inventory_manager.sword_slot.description=يضبط خانة شريط الأدوات الساخن (1-9) التي يتم نقل أفضل سيف إليها.
+module.inventory_manager.pickaxe_slot.name=خانة البيكاكس
+module.inventory_manager.pickaxe_slot.description=يحدد فتحة شريط الأدوات الساخن (1-9) التي يتم نقل الفأس الأفضل إليها.
+module.inventory_manager.axe_slot.name=خانة الفأس
+module.inventory_manager.axe_slot.description=يضبط خانة شريط الأدوات الساخن (1-9) التي سيتم نقل أفضل فأس إليها.
+module.inventory_manager.block_slot.name=خانة البلوكات
+module.inventory_manager.block_slot.description=يُعيِّن خانة شريط الأدوات الساخن (1-9) التي سيتم نقل أكبر مجموعة من الكتل إليها.
+
+# No Fall
+module.no_fall.name=إلغاء السقوط
+module.no_fall.description=يلغي ضرر السقوط على اللاعب
+module.no_fall.mode.name=الوضع
+module.no_fall.mode.description=يختار استراتيجية عدم السقوط: يقوم المحاكي بتعديل علم الواقع أو يعيد مشاهدة حركة الحارس.
+
+# Anti Void
+module.anti_void.name=مضاد الفويد
+module.anti_void.description=يمنعك من السقوط إلى الفويد
+
+# Auto Chest
+module.auto_chest.name=الصندوق التلقائي
+module.auto_chest.description=يقوم بإيداع وسحب الموارد من الصناديق تلقائيًا
+module.auto_chest.ticks.name=التيكات
+module.auto_chest.ticks.description=يضبط عدد التكرارات بين كل مجموعة موارد يتم نقلها إلى أو من الصندوق.
+module.auto_chest.auto_deposit.name=الإيداع التلقائي
+module.auto_chest.auto_deposit.description=يبدأ بإيداع موارِدك تلقائيًا بمجرد فتح شاشة الصندوق.
+
+# Auto Hypixel
+module.auto_hypixel.name=Hypixel أتمتة
+module.auto_hypixel.description=Hypixelميزات مفيدة ل
+module.auto_hypixel.enabled.name=مُفعَّل
+module.auto_hypixel.enabled.description=يقوم بتشغيل وحدة Auto Hypixel، مما يتيح ميزات Hypixel المريحة.
+module.auto_hypixel.message.name=الرسالة
+module.auto_hypixel.message.description=يُعيّن النص المُرسل في الدردشة العامة كرسالة GG بعد انتهاء اللعبة.
+module.auto_hypixel.delay.name=التأخير
+module.auto_hypixel.delay.description=يحدد عدد الثواني التي يجب الانتظار قبل إرسال /play لإعادة وضع التسجيل، من 0 إلى 8.
+module.auto_hypixel.auto_leave_on_ban.name=الخروج التلقائي عند الحظر
+module.auto_hypixel.auto_leave_on_ban.description=تُفعَّل عند مغادرة لاعب للّعبة الحاليّة.
+module.auto_hypixel.auto_gg.name= GGتلقائيًا إرسال
+module.auto_hypixel.auto_gg.description=يرسل رسالة GG الخاصة بك في الدردشة العامة عند اكتشاف سطر كارما في نهاية اللعبة.
+module.auto_hypixel.auto_play.name=اللعب التلقائي
+module.auto_hypixel.auto_play.description=تُطبَّق /تُلعَب في الوضع الحالي عند الدخول في قائمة الانتظار أو انتهاء مباراة.
+
+# Auto Tool
+module.auto_tool.name=الأداة التلقائية
+module.auto_tool.description=يبدّل تلقائيًا إلى أفضل أداة في شريط الاختصارات
+module.auto_tool.only_when_sneaking.name=فقط أثناء الانحناء
+module.auto_tool.only_when_sneaking.description=يقتصر تبديل الأدوات التلقائي على حالات التسلل فقط.
+module.auto_tool.requirements.name=المتطلبات
+module.auto_tool.requirements.description=تجميع الشروط التي يجب استيفاؤها قبل أن ينتقل الموديل إلى أدوات أخرى.
+
+# Blink
+module.blink.name=وميض
+module.blink.description=يوقف إرسال حزم الشبكة مؤقتًا
+module.blink.direction.name=الاتجاه
+module.blink.direction.description=يختار ما إذا كان سيحتفظ بالحزم الواردة، أو الحزم الصادرة، أو بكليهما.
+module.blink.pulse.name=نبضة
+module.blink.pulse.description=يُطلق الحزم المحتفظ بها بشكل دوري بدلاً من الاحتفاظ بها إلى أجل غير مسمى.
+module.blink.pulse_delay.name=تأخير النبضة
+module.blink.pulse_delay.description=يحدد نطاق الميلي ثانية الأدنى والأقصى الذي ينتظر فيه كل نبضة قبل إطلاق الحزم المحتجزة.
+
+# Fast Use
+module.fast_use.name=الاستخدام السريع
+module.fast_use.description=يستخدم العناصر بشكل أسرع
+module.fast_use.enabled.name=مُفعَّل
+module.fast_use.enabled.description=تفعيل سلوك "التباعد" الذي يزيل التأخير الافتراضي بين وضع العناصر.
+module.fast_use.placements.name=التركيب
+module.fast_use.placements.description=تُزيل فترة التهدئة للنقر بزر الماوس الأيمن في كل تكة، مما يسمح بوضع الكتل والعناصر بدون التأخير الافتراضي.
+
+# IRC
+module.irc.name=IRC
+module.irc.description=يتيح لك الدردشة مع مستخدمي أوبال الآخرين
+
+# No Rotate
+module.no_rotate.name=منع التدوير
+module.no_rotate.description=يمنع السيرفر من تغيير دورانك
+module.no_rotate.ignore_teleports.name=تجاهل الانتقالات
+module.no_rotate.ignore_teleports.description=تتخطى الحفاظ على زاوية مظهرك لعمليات النقل لمسافات طويلة (أكثر من 10 كتل).
+
+# Party Spam
+module.party_spam.name=إزعاج الدعوات
+module.party_spam.description=يرسل دعوات فريق بشكل متكرر للاعب محدد
+module.party_spam.username.name=اسم اللاعب
+module.party_spam.username.description=يضبط اسم اللاعب المستهدف، ويرسل دعوات المشاركة المتكررة، وأوامر الحل.
+
+# Spammer
+module.spammer.name=المزعج
+module.spammer.description=يرسل رسائل متكررة في الدردشة
+module.spammer.delay.name=التأخير
+module.spammer.delay.description=الوقت بالمللي ثانية بين كل رسالة دردشة يتم إرسالها.
+module.spammer.message.name=الرسالة
+module.spammer.message.description=نص رسالة الدردشة لإرسالها بشكل متكرر.
+module.spammer.anti_spam_bypass.name=تجاوز نظام منع الإزعاج
+module.spammer.anti_spam_bypass.description=يُضيف رقمًا عشوائيًا إلى كل رسالة لضمان عدم تطابق الرسائل المرسلة بالتتابع.
+
+# ============================================================
+# World
+# ============================================================
+
+# Timer
+module.timer.name=المؤقت
+module.timer.description=يغيّر سرعة اللعبة
+module.timer.game_speed.name=سرعة اللعبة
+module.timer.game_speed.description=يضبط المضاعف المطبق على معدل تكرار اللعبة، مما يسرع أو يبطئ اللعب.
+
+# Fast Break
+module.fast_break.name=الكسر السريع
+module.fast_break.description=يكسر المكعبات بشكل أسرع
+module.fast_break.enabled.name=مُفعَّل
+module.fast_break.enabled.description=يقوم بتشغيل أو إيقاف وحدة "الاندفاع السريع".
+module.fast_break.speed.name=السرعة
+module.fast_break.speed.description=يُمكِّن من تعزيز سرعة التعدين، مما يسمح بتكسير الكتل بشكل أسرع.
+module.fast_break.cooldown.name=التأخير
+module.fast_break.cooldown.description=يحدد مقدار تسارع تكسر الكتل، كنسبة مئوية تزيد من سرعة التعدين.
+module.fast_break.break_slowdown.name=إبطاء الكسر
+module.fast_break.break_slowdown.description=ينفي تباطؤ عمليات التعدين الناتج عن العوامل الجوية، والمائية، وتعب التعدين.
+module.fast_break.spoof_ground_state.name=تزوير حالة الأرض
+module.fast_break.spoof_ground_state.description=تُظهرُك كأنتَ على الأرض في حزم حركة أثناء التعدين في الهواء.
+module.fast_break.break_cooldown.name=تأخير الكسر
+module.fast_break.break_cooldown.description=تتجاوز التأخير بالنقرات بين فواصل الكتل المتتالية.
+
+# Scaffold
+module.scaffold.name=السقال
+module.scaffold.description=يضع البلوكات تلقائيًا تحتك أثناء الحركة
+module.scaffold.enabled.name=مُفعَّل
+module.scaffold.enabled.description=يُفعّل ذكاء الحركة، موجهًا اتجاه حركتك نحو الكتل القابلة للوضع.
+module.scaffold.diagonal_movement.name=الحركة القطرية
+module.scaffold.diagonal_movement.description=دع الذكاء الحركي يوجه المسار على طول الخطوط المائلة بدلًا من الاتجاهات الأساسية فقط.
+module.scaffold.snap_movement.name=حركة الالتقاط
+module.scaffold.snap_movement.description=يُثَبِّت اتجاه الحركة الموجهة إلى خطوات زاوية منفصلة.
+module.scaffold.steps.name=الخطوات
+module.scaffold.steps.description=يحدد عدد خطوات الزاوية المنفصلة التي يستخدمها تثبيت الحركة، من واحد إلى ثلاثة.
+module.scaffold.interact_cps.name=نقرات التفاعل في الثانية
+module.scaffold.interact_cps.description=يحدد معدل النقرات في الثانية لتفاعلات وضع الكتل المحاكية.
+module.scaffold.mode.name=الوضع
+module.scaffold.mode.description=يختار استراتيجية التموضع: تقليدي، مضاد لكراسي الألعاب، أو حارس.
+module.scaffold.tower.name=البرج
+module.scaffold.tower.description=تُنشئ كتلًا عموديًا أسفلَك بينما تضغط على زرّ القفز لكي ترتفعَ بشكلٍ رأسيّ.
+module.scaffold.switch_mode.name=تبديل النمط
+module.scaffold.switch_mode.description=يختار الطريقة التي يتم بها تحديد فتحة شريط الأدوات السريع: عادي، شريط الأدوات، أو كامل.
+module.scaffold.swing_mode.name=نمط التأرجح عند البناء
+module.scaffold.swing_mode.description=يحدد ما إذا كانت حركة الذراع في التنسيب تتم من جهة العميل أم تُرسل إلى الخادم.
+module.scaffold.snap_rotations.name=التدوير السريع
+module.scaffold.snap_rotations.description=تُطبَّق دوران العناصر بشكل فوري بدلاً من التدرج نحوها.
+module.scaffold.override_raycast.name=تجاوز فحص خط الرؤية
+module.scaffold.override_raycast.description=يستبدل شعاع الإسقاط الخاص بالعميل بنتيجة الاصطدام الخاصة بوحدة التموضع.
+module.scaffold.auto_jump.name=القفز التلقائي
+module.scaffold.auto_jump.description=يقفز تلقائيًا عند عبور مسافة ثابتة في وضع Y نفسه.
+module.scaffold.block_overlay.name=تمييز المكعبات
+module.scaffold.block_overlay.description=يرسم طبقة تراكبية باهتة تحدد أماكن وضع الكتل.
+module.scaffold.dynamic_island.name=الجزيرة الديناميكية
+module.scaffold.dynamic_island.description=يُظهر حالة النوافذ المنبثقة الديناميكية الخاصة بـ Scaffold على الشاشة.
+module.scaffold.hypixel_addons.name=Hypixel إضافات
+module.scaffold.hypixel_addons.description=يُمكِّن من إضافات خاصة بـ Hypixel، مثل خيار الـ Boost عند التواجد على Hypixel.
+module.scaffold.movement_intelligence.name=ذكاء الحركة
+module.scaffold.movement_intelligence.description=تُجمّع بين مفاتيح التحكم في الذكاء الحركي التي توجه حركتك نحو الكتل القابلة للوضع.
+
+# Breaker
+module.breaker.name=الكاسر
+module.breaker.description=يكسر البلوكات المهمة في الألعاب المصغّرة
+module.breaker.swing_mode.name=نمط التأرجح
+module.breaker.swing_mode.description=يُحدّد ما إذا كانت حركة الذراع أثناء الكسر تُرسَل إلى الخادم أم تُعرض فقط من جهة العميل.
+module.breaker.range.name=النطاق
+module.breaker.range.description=يحدد أقصى مسافة، بالأحجار، التي يتم البحث فيها عن الأحجار المستهدفة وتكسيرها.
+module.breaker.break_surroundings.name=كسر المحيط
+module.breaker.break_surroundings.description=تكسر الكتلة المجاورة الأضعف بالأداة الأسرع بدلًا من سريرها فقط.
+
+# ============================================================
+# Visual
+# ============================================================
+
+# Tab GUI
+module.tab_gui.name="Tab" واجهة
+module.tab_gui.description=واجهة للتفاعل مع ميزات العميل
+
+# Streamer Mode
+module.streamer_mode.name=وضع البث
+module.streamer_mode.description=ميزات مخصصة لصنّاع المحتوى
+module.streamer_mode.hide_server_id.name=إخفاء معرّف السيرفر
+module.streamer_mode.hide_server_id.description=يُخفي مُعرّف الخادم الوجهة الخاص بـ Hypixel في رسائل الدردشة الخاصة بنقل الخوادم.
+module.streamer_mode.hide_username.name=إخفاء اسم المستخدم
+module.streamer_mode.hide_username.description=يستبدل اسم المستخدم الخاص بك في النصوص المعروضة باسم المستخدم المخصص الذي تم تكوينه.
+module.streamer_mode.custom_username.name=اسم مستخدم مخصص
+module.streamer_mode.custom_username.description=يُحدّد الاسم البديل الظاهر بدلًا من اسم المستخدم الخاص بك عند تفعيل إخفاء اسم المستخدم.
+
+# Post Processing
+module.post_processing.name=المؤثرات اللاحقة
+module.post_processing.description=يتيح لك ضبط تأثيرات المؤثرات اللاحقة
+module.post_processing.enabled.name=مُفعَّل
+module.post_processing.enabled.description=لا يوجد مفتاح منفصل؛ تعمل تمريرة الضباب كأداة رئيسية لتأثيرات المعالجة اللاحقة.
+module.post_processing.radius.name=نصف القطر
+module.post_processing.radius.description=يضبط نصف قطر تأثير الضبابية في مساحة الشاشة بالبكسل، ويمكن تعديله من 1 إلى 20.
+module.post_processing.blur.name=التمويه
+module.post_processing.blur.description=يُحدث ضبابية في مساحة الشاشة خلف واجهة المستخدم ويعمل كمرجع لعملية الإضاءة المتوهجة.
+module.post_processing.bloom.name=الإضاءة المتوهجة
+module.post_processing.bloom.description=يضيف تأثير توهج على عناصر واجهة المستخدم، وهو نشط فقط عند تفعيل خاصية التمويه أيضاً.
+
+# No Hurt Camera
+module.no_hurt_camera.name=إلغاء كاميرة الضرر
+module.no_hurt_camera.description=يعطّل ميلان الكاميرا عند تلقي الضرر
+module.no_hurt_camera.no_player_model_hurt.name=إلغاء تأثر نموذج اللاعب بالضرر
+module.no_hurt_camera.no_player_model_hurt.description=يزيل أيضًا وميض الضرر الأحمر من نموذج شخصيتك عند تعرضك للضرر.
+
+# Full Bright
+module.full_bright.name=السطوع الكامل
+module.full_bright.description=يزيد سطوع اللعبة إلى أقصى حد
+
+# Discord RPC
+module.discord_rpc.name=Discord RPC
+module.discord_rpc.description=Discord يعرض معلومات الحالة المتقدمة في
+module.discord_rpc.hide_server.name=إخفاء السيرفر
+module.discord_rpc.hide_server.description=يستبدل اسم الخادم في حالتك على ديسكورد بتسمية مخفية عامة.
+
+# Click GUI
+module.click_gui.name=Click GUI
+module.click_gui.description=A display for interacting with client features.
+module.click_gui.allow_movement.name=Allow Movement
+module.click_gui.allow_movement.description=يُبقي مفاتيح الحركة نشطةً، لكي تتمكن من الاستمرار في المشي أثناء فتح واجهة المستخدم القابلة للنقر.
+
+# Cape
+module.cape.name=العباءة
+module.cape.description=يمنحك عباءة من اختيارك
+module.cape.type.name=النوع
+module.cape.type.description=يختار تصميم الرداء الذي سيتم عرضه ويقوم بمزامنة الاختيار مع حسابك.
+
+# Break Progress
+module.break_progress.name=تقدم الكسر
+module.break_progress.description=يعرض تقدم كسر المكعب الذي تقوم بكسره
+
+# Attack Effects
+module.attack_effects.name=تأثيرات الهجوم
+module.attack_effects.description=يضيف أو يغيّر التأثيرات التي تحدث عند مهاجمة كيان
+module.attack_effects.particles.name=الجسيمات
+module.attack_effects.particles.description=تُطلق جسيمات ضرر حادّة ومُهلكة على الكائنات التي تهاجمها.
+module.attack_effects.sounds.name=الأصوات
+module.attack_effects.sounds.description=يُشغّل فقط أصوات الهجوم التي تُمكّنها، ويُخمّد الباقي عند ضرب كيان.
+
+# Animations
+module.animations.name=الحركات
+module.animations.description=يعدّل الحركات داخل اللعبة
+module.animations.enabled.name=مُفعَّل
+module.animations.enabled.description=يُمكِّن من تشغيل حركة حجب السيف، بحيث يظهر السيف المحمول في وضعية الحجب.
+module.animations.block_animation.name=Block Animation
+module.animations.block_animation.description=يختار نمط حركة حجب السيف (1.7، 1.8، روب، ستيلا، بانس، إلخ).
+module.animations.always_hidden.name=مخفي دائمًا
+module.animations.always_hidden.description=يخفي عنصر الدرع من طريقة العرض الأولى دائماً.
+module.animations.hide_offhand_slot.name=إخفاء خانة اليد الثانوية
+module.animations.hide_offhand_slot.description=يخفي فتحة الدرع الثانوي من شريط الأدوات.
+module.animations.old_backwards_walking.name=المشي للخلف القديم
+module.animations.old_backwards_walking.description=يستعيد الرسوم المتحركة للمشي للخلف.
+module.animations.old_armor_damage_tint.name=تظليل ضرر الدروع القديم
+module.animations.old_armor_damage_tint.description=يُعيد لون الصبغة الحمراء الموروث الظاهر على الدروع عند تلقي الضرر.
+module.animations.old_sneaking.name=الانحناء القديم
+module.animations.old_sneaking.description=يستعيد وضعية التسلل الموروثة.
+module.animations.fix_pose_repeat.name=إصلاح تكرار الوضعية
+module.animations.fix_pose_repeat.description=يُطبّق إصلاحًا يمنع تكرار حركة وضعية اللاعب.
+module.animations.scale.name=المقياس
+module.animations.scale.description=يُحدّد مضاعِفًا موحّدًا للمقياس للعنصر الذي يُمسَك باليد (يترك القيمة 1 العنصر دون تغيير).
+module.animations.offset_x.name=X إزاحة بأتجاه
+module.animations.offset_x.description=يُحَرِّكُ العنصرَ المَخْتَارَ في اليدِ الرَئيسِيَّةِ إلى اليسارِ أو اليَمينِ في طريقةِ العرضِ من منظورِ الشخصِ الأَوَّلِ.
+module.animations.offset_y.name=Y إزاحة بأتجاه
+module.animations.offset_y.description=يُحَرِّكُ العنصرَ المَخَزَّنَ في اليدِ الرَئيسِيَّةِ إلى الأعلى أو الأسفل في طريقة العرض من منظور الشخص الأول.
+module.animations.swing_slowdown.name=إبطاء التأرجح
+module.animations.swing_slowdown.description=يبطئ حركة تأرجح اليد، وتؤدي القيم الأعلى إلى إطالة مدة كل حركة.
+module.animations.old_cooldown_animation.name=أنيميشن التبريد القديم
+module.animations.old_cooldown_animation.description=يستعيد حركة التأرجح الخاصة بعنصر الـ cooldown الموروث.
+module.animations.visual_swing_on_use.name=تأرجح بصري عند الاستخدام
+module.animations.visual_swing_on_use.description=يُجري حركة يد بصرية أثناء استخدام عنصر ما.
+module.animations.hide_drop_swing.name=إخفاء تأرجح الإسقاط
+module.animations.hide_drop_swing.description=تمنع الرسوم المتحركة لهزّ اليد التي يتم تشغيلها عند إسقاط عنصر.
+module.animations.equip_offset.name=إزاحة التجهيز
+module.animations.equip_offset.description=يُمكِّن من إزاحة (رفع) حركة تفعيل العنصر.
+module.animations.sword_blocking.name=التصدي بالسيف
+module.animations.sword_blocking.description=تجميع زر حجب السيف ومحدد نمط الرسوم المتحركة الخاص به.
+module.animations.shields.name=الدروع
+module.animations.shields.description=تجميع الخيارات لإخفاء عنصر الدرع وفتحة شريط الأدوات المساعد.
+module.animations.player.name=اللاعب
+module.animations.player.description=تجميع مفاتيح الرسوم المتحركة لجسم اللاعب القديم (المشي والتسلل واللون والوضعية).
+module.animations.item.name=العنصر
+module.animations.item.description=تجميع خيارات العنصر المحتفظ به للتحويلات المتباعدة، والتكبير، والتأرجح، والتجهيز.
+
+# Ambience
+module.ambience.name=الأجواء
+module.ambience.description=يغيّر وقت اليوم في اللعبة
+module.ambience.use_real_time.name=استخدام الوقت الحقيقي
+module.ambience.use_real_time.description=يستخلص وقت اليوم العالمي من ساعة النظام المحلي لجهاز الكمبيوتر الخاص بك في كل مرة.
+module.ambience.time.name=الوقت
+module.ambience.time.description=يُحدّد الوقت الثابت من اليوم الذي يُفرض على العالم، بوحدة Minecraft للتكتات (0-23450).
+module.ambience.end_sky.name=سماء الإند
+module.ambience.end_sky.description=يستبدل السماء بصندوق السماء الخاص بنجمات بُعد النهاية أثناء تفعيل الوحدة.
+
+# Overlay
+module.overlay.name=الواجهة العلوية
+module.overlay.description=يعرض واجهة العميل
+module.overlay.theme.name=السمة
+module.overlay.theme.description=يختار نظام الألوان المسبق للعميل، أو "مخصص" لتوجيه اللمسات من ألوانك الخاصة.
+module.overlay.primary_color.name=اللون الأساسي
+module.overlay.primary_color.description=يحدد اللون الأساسي المستخدم من قبل التراكب عند تحديد سمة مخصصة.
+module.overlay.secondary_color.name=اللون الثانوي
+module.overlay.secondary_color.description=يحدد اللون الثانوي المستخدم في التراكب عند تحديد السمة المخصصة.
+module.overlay.enabled.name=مُفعَّل
+module.overlay.enabled.description=تُفعِّل طبقة تأثير الحالة المخصصة، مُستبدلةً عرض تأثيرات الجرعة الافتراضي.
+module.overlay.text_shadow.name=ظل النص
+module.overlay.text_shadow.description=يرسم نص لوحة النتائج المخصصة بظل متدرج.
+module.overlay.left-aligned.name=محاذاة لليسار
+module.overlay.left-aligned.description=يثبّت الجزيرة الديناميكية على الجانب الأيسر من الشاشة بدلاً من المنتصف.
+module.overlay.minecraft_elements.name=عناصر ماينكرافت
+module.overlay.minecraft_elements.description=تجميع عناصر واجهة المستخدم الافتراضية المُعاد تصميمها: تأثيرات الحالة، ولوحة النتائج، وشريط الزعيم.
+module.overlay.status_effect_overlay.name=عرض تأثيرات الحالة
+module.overlay.status_effect_overlay.description=تجميع إعدادات التراكب المخصص لتأثير الحالة.
+module.overlay.scoreboard.name=لوحة النتائج
+module.overlay.scoreboard.description=تجميع إعدادات التمكين والحجم وظلال النص للوحة النتائج المخصصة.
+module.overlay.bossbar.name=شريط البوس
+module.overlay.bossbar.description=يُمكِّن من استخدام واجهة مخصصة لشريط الحالة بدلًا من شريط الحالة الافتراضي.
+module.overlay.dynamic_island.name=الجزيرة الديناميكية
+module.overlay.dynamic_island.description=تجميع إعدادات الجزيرة الديناميكية، بما في ذلك مفتاح التثبيت المحاذي لليسار.
+
+# Target Information (Overlay)
+module.overlay.target_information.name=معلومات الهدف
+module.overlay.target_information.description=تجميع إعدادات التمكين والموقع والحجم وتوجيه الجزيرة لبطاقة معلومات الهدف القتالي.
+module.overlay.screen_position.name=موضع الشاشة
+module.overlay.screen_position.description=يضبط موضع بطاقة معلومات الهدف على الشاشة من خلال إحداثيات قابلة للسحب.
+
+# Spotify (Overlay)
+module.overlay.spotify.name=Spotify واجهة
+module.overlay.spotify.description=تجميع إعدادات التمكين والموضع والحجم والجزر واللون الألبوم لبطاقة التشغيل الحالية.
+module.overlay.position.name=الموضع
+module.overlay.position.description=يضبط موضع العنصر المتراكب على الشاشة من خلال إحداثيات قابلة للسحب.
+module.overlay.use_album_color.name=استخدام لون الألبوم
+module.overlay.use_album_color.description=يستخدم اللون الغالب في صورة الألبوم كلون ثانوي لبطاقة Spotify.
+
+# Session Stats (Overlay)
+module.overlay.session_stats.name=إحصائيات الجلسة
+module.overlay.session_stats.description=تجميع إعدادات التمكين والموضع والحجم لعنصر إحصائيات الجلسة.
+
+# Notifications (Overlay)
+module.overlay.notifications.name=الإشعارات
+module.overlay.notifications.description=تجميع إعدادات عنصر الإشعار، بما في ذلك نافذة منبثقة لتبديل الوحدة.
+module.overlay.on_module_toggle.name=عند تفعيل/تعطيل الموديول
+module.overlay.on_module_toggle.description=يظهر مربع إشعار منبثق في كل مرة يتم فيها تفعيل وحدة أو تعطيلها.
+
+# Toggled Modules (Overlay)
+module.overlay.toggled_modules.name=الموديولات المفعّلة
+module.overlay.toggled_modules.description=تجميع إعدادات قائمة الوحدات النشطة: التفعيل، والتنسيق، واللاحقة، والإزاحة، والفئات.
+module.overlay.bar_mode.name=وضع الشريط
+module.overlay.bar_mode.description=تحدد المجموعة الحافة التي ترسم شريط التأكيد في كل صف من الوحدات، أو تعطله.
+module.overlay.lowercase.name=أحرف صغيرة
+module.overlay.lowercase.description=يُحوِّل أسماء الوحدات النمطية في قائمة الوحدات النمطية النشطة إلى أحرف صغيرة.
+module.overlay.show_suffix.name=إظهار اللاحقة
+module.overlay.show_suffix.description=يُظهر اللاحقة الخاصة بالقيمة النشطة لكل وحدة بجوار اسمها في القائمة.
+module.overlay.offset_scoreboard.name=إزاحة لوحة النتائج
+module.overlay.offset_scoreboard.description=يدفع لوحة النتائج بالفانيليا جانبًا حتى لا تتداخل مع قائمة الوحدات النشطة.
+module.overlay.visible_categories.name=الفئات الظاهرة
+module.overlay.visible_categories.description=يختار فئات الوحدات النمطية التي تظهر في قائمة الوحدات النمطية النشطة.
+
+# Keystrokes (Overlay)
+module.overlay.keystrokes.name=عرض الازرار
+module.overlay.keystrokes.description=تجمع بين إعدادات التمكين والموضع والحجم وعرض المفاتيح لعنصر مفاتيح الإدخال.
+module.overlay.spacebar.name=زر المسافة
+module.overlay.spacebar.description=يُظهر مفتاح المسافة في عرض خطوات الإدخال.
+module.overlay.show_cps.name=إظهار النقرات بالثانية
+module.overlay.show_cps.description=يُظهر معدل النقر في الثانية الحالية لأزرار الماوس في عرض مفاتيح الضغط.
+module.overlay.mouse_buttons.name=أزرار الفأرة
+module.overlay.mouse_buttons.description=يُظهر مفتاحي زرّي الفأرة الأيمن والأيسر في عرض مفاتيح الضغط.
+
+# Entity ESP
+module.entity_esp.name=إظهار الكيانات
+module.entity_esp.description=يعرض تراكبات مرئية على اللاعبين والكيانات
+module.entity_esp.box.name=الصندوق
+module.entity_esp.box.description=يرسم مربعًا ثنائي الأبعاد حول المربع المحيط المتوقع لكل كيان مستهدف.
+module.entity_esp.box.enabled.name=مُفعَّل
+module.entity_esp.box.enabled.description=تفعيل التراكب الصندوقي للكِيانات المستهدفة.
+module.entity_esp.box.stroke.name=سُمك الخط
+module.entity_esp.box.stroke.description=يضيف حدًا خارجيًا حول مربع الكيان للحصول على حواف أكثر حدة.
+module.entity_esp.health_bar.name=شريط الصحة
+module.entity_esp.health_bar.description=يرسم شريطًا رأسيًا بجانب كل كيان، يوضح صحته الحالية.
+module.entity_esp.health_bar.enabled.name=مُفعَّل
+module.entity_esp.health_bar.enabled.description=يُفعِّل شريط الصحة الشفاف للعناصر المستهدفة.
+module.entity_esp.health_bar.stroke.name=سُمك الخط
+module.entity_esp.health_bar.stroke.description=يضيف حدًا خارجيًا حول شريط الصحة للحصول على حواف أكثر حدة.
+module.entity_esp.skeletons.name=الهياكل العظمية
+module.entity_esp.skeletons.description=يرسم خطوطًا تربط أطراف اللاعب لتتبع وضعية جسده.
+module.entity_esp.skeletons.enabled.name=مُفعَّل
+module.entity_esp.skeletons.enabled.description=تفعيل طبقة الهيكل العظمي الزائد لعناصر اللاعب.
+module.entity_esp.name_tags.name=أسماء اللاعبين
+module.entity_esp.name_tags.description=يرسم علامة نصية عائمة فوق كل كيان مستهدف.
+module.entity_esp.name_tags.enabled.name=مُفعَّل
+module.entity_esp.name_tags.enabled.description=تفعيل طبقة اسم الجهات المستهدفة.
+module.entity_esp.name_tags.elements.name=العناصر
+module.entity_esp.name_tags.elements.description=يختار الحقول التي ستظهر في العلامة: الاسم، والصحة، والمسافة، والمعدات.
+module.entity_esp.name_tags.indicators.name=المؤشرات
+module.entity_esp.name_tags.indicators.description=يختار رموز الحالة في العلامة: متسلل، قوة، غير مرئي، وحاجز.
+module.entity_esp.glow.name=التوهج
+module.entity_esp.glow.description=يُبرِز الكِيانات المُستهدَفة بَتَأْثِيرِ تَوهُّجٍ مُلَوَّن.
+module.entity_esp.glow.enabled.name=مُفعَّل
+module.entity_esp.glow.enabled.description=يُفعِّل إضاءة الخطوط المحيطة بالكائنات المستهدفة.
+module.entity_esp.glow.color.name=اللون
+module.entity_esp.glow.color.description=ألوان الإضاءة: مصدر اللون: الموضوع، لون الفريق، أو لون يعتمد على الصحة.
+module.entity_esp.glow.hurt_flash.name=وميض عند الضرر
+module.entity_esp.glow.hurt_flash.description=تتلألأ بضوء أحمر لفترة وجيزة عندما يتلقى الكيان ضررًا.
+
+# Item ESP
+module.item_esp.name=إظهار العناصر
+module.item_esp.description=يعرض أسماء على العناصر الملقاة على الأرض
+module.item_esp.name_tags.name=أسماء العناصر
+module.item_esp.name_tags.description=تجميع خيارات اسم العنصر المنسدل: التفعيل، ونطاق البحث، والعناصر التي ستظهر.
+module.item_esp.name_tags.enabled.name=مُفعَّل
+module.item_esp.name_tags.enabled.description=تفعيل أو تعطيل عرض علامة الاسم للعناصر المتساقطة.
+module.item_esp.name_tags.range.name=المدى
+module.item_esp.name_tags.range.description=يحدد هذا المدى الذي يتم به البحث عن العناصر المتساقطة وتصنيفها حولك، بوحدات البلوك.
+module.item_esp.name_tags.elements.name=العناصر
+module.item_esp.name_tags.elements.description=يختار أي أجزاء شارة الاسم تظهر: اسم العنصر، وعدد المكدس، والمسافة.
+
+# Block ESP
+module.block_esp.name=إظهار البلوكات
+module.block_esp.description=يعرض تراكبات مرئية على الحاويات والموارد
+module.block_esp.containers.name=الحاويات
+module.block_esp.containers.description=مجموعة إعدادات تتحكم في التراكبات المربعة المرسومة على كتل الحاويات مثل الصناديق.
+module.block_esp.containers.enabled.name=مُفعَّل
+module.block_esp.containers.enabled.description=يُفعِّل التراكبات المربعة المرسومة حول كتل الحاويات القريبة.
+module.block_esp.containers.filled.name=مملوء
+module.block_esp.containers.filled.description=يُرْسِم وَجْهًا مُتَجَاوِزًا مُلَوَّنًا بِدَاخِلِ مُرَبَّعِ التَّظْهِيرِ لِكُلِّ حَاوِيَة.
+module.block_esp.containers.outline.name=المخطط
+module.block_esp.containers.outline.description=يرسم خطوط الحواف التي تحدد مربع التمييز لكل حاوية.
+module.block_esp.containers.types.name=الأنواع
+module.block_esp.containers.types.description=يختار أنواع الحاويات التي يتم تمييزها، مثل الصناديق والبراميل والمخازن.
+module.block_esp.resources.name=الموارد
+module.block_esp.resources.description=مجموعة إعدادات تتحكم في التراكبات المربعة المرسومة على كتل الخامات والمعادن.
+module.block_esp.resources.enabled.name=مُفعَّل
+module.block_esp.resources.enabled.description=يُفعِّل التراكبات المربعة المرسومة حول الخامات وكتل المعادن القريبة.
+module.block_esp.resources.filled.name=مملوء
+module.block_esp.resources.filled.description=يرسم وجهًا شبه شفاف وملون داخل مربع التمييز الخاص بكل مورد.
+module.block_esp.resources.outline.name=المخطط
+module.block_esp.resources.outline.description=يرسم خطوط الحواف التي تحدد مربع التمييز لكل مورد.
+module.block_esp.resources.range.name=النطاق
+module.block_esp.resources.range.description=يحدد أقصى مسافة للكتلة، تتراوح بين 16 و 128، ضمنها يتم تمييز الموارد.
+module.block_esp.resources.ores.name=الخامات
+module.block_esp.resources.ores.description=يختار كتلّ المعادن التي سيتم تمييزها، مثل الماس والزمرد والحطام القديم.
+module.block_esp.resources.blocks.name=البلوكات
+module.block_esp.resources.blocks.description=يختار أي كتل التخزين المعدنية يتم تمييزها، مثل الماس أو النذرية.
+
+
+# ==========================================================
+# Combat (added)
+# ==========================================================
+
+# Anti Fireball
+module.anti_fireball.name=كرة نارية مضادة
+module.anti_fireball.description=تصدّي تلقائي لأشعة النار القريبة.
+module.anti_fireball.attack_range.name=مدى الهجوم
+module.anti_fireball.attack_range.description=يحدد أقصى مسافة بالكتل التي تنحرف عندها كرة النار.
+module.anti_fireball.rotate_range.name=نطاق الدوران
+module.anti_fireball.rotate_range.description=يحدد أقصى مسافة بالكتل التي يتجه عندها الهدف نحو كرة النار.
+
+# Criticals
+module.criticals.name=نقاد
+module.criticals.description=يجعل كل هجوم ضربة حاسمة.
+module.criticals.mode.name=نمط
+module.criticals.mode.description=يختار طريقة الكريتيكال؛ حاليًا Packet.
+# ==========================================================
+# Movement (added)
+# ==========================================================
+
+# Jesus
+module.jesus.name=يسوع
+module.jesus.description=يُمكّنك من المشي على الماء.
+
+# Keep Sprint
+module.keep_sprint.name=حافظ على السرعة
+module.keep_sprint.description=يحافظ على سرعتك من خلال إجراءات تعيدها إلى نقطة البداية.
+
+# Step
+module.step.name=خطوة
+module.step.description=تَتَجاوزُ البُناتُ المَرتفِعَةُ ارتفاعَ البُنّيّةِ.
+module.step.height.name=طول
+module.step.height.description=يحدد الحد الأقصى لارتفاع الكتلة الذي يمكنك الانتقال إليه تلقائيًا.
+# ==========================================================
+# Utility (added)
+# ==========================================================
+
+# Auto Potion
+module.auto_potion.name=جرعة تلقائية
+module.auto_potion.description=يرمي تلقائيًا جرعات متفجرة عند قدميك.
+module.auto_potion.splash_speed.name=رشقة سرعة
+module.auto_potion.splash_speed.description=يرمي جرعة السرعة على قدميك عندما تكون متاحة.
+module.auto_potion.splash_health.name=سبلاش هيلث
+module.auto_potion.splash_health.description=يرمي بجرعة شفاء على قدميك عندما يكون صحتك منخفضة.
+module.auto_potion.heal_hp.name=عالج HP
+module.auto_potion.heal_hp.description=يحدد مستوى الصحة الذي، إذا انخفض تحته، يتم إلقاء جرعة شفاء فورية.
+module.auto_potion.delay.name=تأخير
+module.auto_potion.delay.description=يضبط الميلي ثانية للانتظار بين الرميات التلقائية للجرعات.
+module.auto_potion.ignore_frog_potion.name=تجاهل جرعة الضفدع
+module.auto_potion.ignore_frog_potion.description=يتجاهل جرعات الضفدع عند اختيار جرعة سرعة لرميها.
+# ==========================================================
+# Visual (added)
+# ==========================================================
+
+# View Clip
+module.view_clip.name=شاهد المقطع
+module.view_clip.description=دع الكاميرا الشخص الثالث تمر عبر الجدران.
+# ==========================================================
+# Other (added)
+# ==========================================================
+
+# Anti AFK
+module.anti_afk.name=لا تغادر عن عمد
+module.anti_afk.description=يمنعك من الطرد بسبب عدم النشاط.
+module.anti_afk.interval.name=فترة
+module.anti_afk.interval.description=يحدد تكرار تنفيذ حركة تلقائية لمكافحة الخمول.
+
+# Hacker Detector
+module.hacker_detector.name=كاشف المخترق
+module.hacker_detector.description=يكتشف غشاشين في لعبتك.
+module.hacker_detector.settings.name=الإعدادات
+module.hacker_detector.settings.description=تجميع فحوصات المُستشعِر وخيارات الإشعارات.
+module.hacker_detector.checks.name=فحوصات
+module.hacker_detector.checks.description=يختار أي عمليات فحص الغش ستعمل: الحظر التلقائي، والركض الشامل، والسقالة.
+module.hacker_detector.auto_block.name=تَوَقُّفٌ آليّ
+module.hacker_detector.auto_block.description=يُحذّر اللاعبين الذين يبدو أنهم يسدون الطريق ويهاجمون في الوقت نفسه.
+module.hacker_detector.omni_sprint.name=أومني спринт
+module.hacker_detector.omni_sprint.description=يُحدّد اللاعبين الذين يركضون في اتجاهات لا تسمح بها الحركة الافتراضية.
+module.hacker_detector.scaffold.name=سقالة
+module.hacker_detector.scaffold.description=يُحذّر اللاعبين الذين يضعون كتل الجسر بتوقيت أو دوران مشبوه.
+module.hacker_detector.chat.name=دردشة
+module.hacker_detector.chat.description=يطبع رسالة دردشة عند تعثر لاعب في فحص.
+module.hacker_detector.notifications.name=إشعارات
+module.hacker_detector.notifications.description=يظهر إشعارًا منبثقًا عندما يتعثر لاعب على فحص.

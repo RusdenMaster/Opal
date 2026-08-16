@@ -95,7 +95,7 @@
         }
       ],
       "brand": "Opal Client",
-      "description": "Wysokiej klasy modyfikacja użytkowa do Minecrafta, stworzona z myślą o zapewnieniu najlepszych możliwych wrażeń. Opal wspiera obecnie środowisko Fabric dla wersji Minecraft 1.21.10, oferując płynną i przyjemną rozgrywkę zarówno na serwerach 1.8, jak i na najnowszych wersjach gry.",
+      "description": "Wysokiej klasy modyfikacja użytkowa do Minecrafta, stworzona z myślą o zapewnieniu najlepszych możliwych wrażeń. Opal wspiera obecnie środowisko Fabric dla wersji Minecraft 26.2, oferując płynną i przyjemną rozgrywkę zarówno na serwerach 1.8, jak i na najnowszych wersjach gry.",
       "purchase": "Kupno",
       "badge": "$8.99 życie"
     },
@@ -1242,6 +1242,10 @@
       "replyPlaceholder": "Napisz odpowiedź…",
       "hint": "Obsługiwany jest Markdown. Ctrl+Enter wysyła.",
       "closed": "Ten bilet został zamknięty. Otwórz nowy, jeśli potrzebujesz dalszej pomocy.",
+      "seen": "Widziany",
+      "copyTranscript": "Kopia transkryptu",
+      "copied": "Przepis skopiowano",
+      "copyFailed": "Nie można było skopiować transkryptu",
       "notFound": "Bilet nie znaleziono",
       "notFoundDescription": "Możliwe, że to zostało usunięte, albo link jest nieprawidłowy."
     }
@@ -1301,6 +1305,10 @@
       "hint": "Obsługiwany jest Markdown. Ctrl+Enter wysyła.",
       "closed": "Bilet został zamknięty.",
       "reopen": "Ponownie otworzyć",
+      "seen": "Widziany",
+      "copyTranscript": "Kopia transkryptu",
+      "copied": "Przepis skopiowano",
+      "copyFailed": "Nie można było skopiować transkryptu",
       "notFound": "Bilet nie znaleziono"
     },
     "searchPlaceholder": "Wyszukaj temat lub klienta…",
@@ -1399,6 +1407,32 @@
     "card": {
       "title": "Nie udało się załadować tego panelu. Odśwież stronę, aby spróbować ponownie.",
       "retry": "Załaduj panel ponownie"
+    }
+  },
+  "disclosures": {
+    "meta": {
+      "title": "Komunikaty bezpieczeństwa",
+      "description": "Raporty o przejrzystości dotyczące incydentów bezpieczeństwa związanych z Opal."
+    },
+    "july2026": {
+      "heading": "Komunikat bezpieczeństwa: lipiec 2026",
+      "statusLabel": "Status",
+      "statusValue": "Aktywne ostrzeżenie",
+      "subheading": "W obiegu jest złamana kopia Opal",
+      "intro1": "W lipcu 2026 roku pojawiła się zmodyfikowana (\"złamana\") wersja Opal, rozprowadzana poza naszymi oficjalnymi kanałami. Publikujemy ten komunikat, żebyś potrafił ją rozpoznać i trzymać się od niej z daleka.",
+      "intro2": "Za tę wersję nie możemy ręczyć. Zmienił ją ktoś inny, nie została przez nas podpisana i krąży kanałami, których nie prowadzimy. Nie mamy jak sprawdzić, co jest w środku, więc traktuj ją jako niezaufaną.",
+      "pointsTitle": "Na co możemy konkretnie wskazać",
+      "points": [
+        "Jest rozpowszechniana poza oficjalnym launcherem i stroną, a to jedyne dwa miejsca, w których udostępniamy Opal.",
+        "Jest zmodyfikowana i niepodpisana. Kod został zmieniony względem prawdziwego wydania i nie ma naszego podpisu.",
+        "Jej pliki nie zgadzają się z rozmiarem oficjalnego pobrania, a niezgodny rozmiar oznacza, że zawartość została zmieniona.",
+        "Część dołączonych do niej obrazów została podmieniona, a podmiana niewinnie wyglądających plików, takich jak obrazy, to częsty sposób na przemycenie złośliwego kodu."
+      ],
+      "meansTitle": "Co to oznacza dla ciebie",
+      "means1": "Przyjmij, że każda złamana lub wyciekła kopia Opal jest niezaufana i może zawierać złośliwe oprogramowanie. Nie możemy potwierdzić, że jest czysta, a powyższe punkty wskazują, że została naruszona.",
+      "means2": "Pobieraj Opal wyłącznie z oficjalnego launchera lub strony. Jeśli uruchomiłeś już kopię z innego źródła, usuń ją, wykonaj skanowanie w poszukiwaniu złośliwego oprogramowania i zmień każde hasło wpisane, gdy była na twoim urządzeniu.",
+      "ctaLabel": "Przejdź do oficjalnej wersji",
+      "closing": "Zaktualizujemy ten komunikat, gdy dowiemy się więcej. Jeśli coś jest niejasne, napisz do nas na Discordzie."
     }
   }
 }

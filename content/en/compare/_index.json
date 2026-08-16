@@ -375,20 +375,6 @@
     "author": "trq"
   },
   {
-    "slug": "opal-vs-silhouette",
-    "title": "Opal vs Silhouette: Which Minecraft Client Wins in 2026",
-    "description": "Opal vs Silhouette: a polished $8.99 hybrid client with a glass UI and 70 modules, compared against a modern Fabric client built around per-anticheat tuning and a repository account manager.",
-    "excerpt": "Silhouette tunes its bypasses per anticheat and ships a slick account manager. Opal is $8.99 and built to feel finished the moment you log in.",
-    "date": "2026-07-13",
-    "lastUpdated": "2026-07-13",
-    "category": "Comparison",
-    "type": "versus",
-    "competitors": [
-      "Silhouette"
-    ],
-    "author": "trq"
-  },
-  {
     "slug": "opal-vs-slinky",
     "title": "Opal vs Slinky: Which Minecraft Client Wins in 2026",
     "description": "Opal vs Slinky: an $8.99 MC 26.2 hybrid client built for BedWars and SkyWars-style combat, compared to Slinky's closed native ghost client for legacy 1.7.10/1.8.9 ranked PvP.",
